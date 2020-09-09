@@ -1,0 +1,136 @@
+:root {
+  --logoAnimationFontSize: 100px;
+}
+.navbar {
+  background-color: var(--dark);
+  display: flex;
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.logo {
+  padding-left: 35px;
+  color: var(--primary);
+  width: 50%;
+  height: 100%;
+  line-height: 70px;
+  z-index: 2;
+  cursor: pointer;
+  font-weight: bolder;
+  font-size: 30px;
+}
+.navLists {
+  list-style: none;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+}
+.navlist {
+  cursor: pointer;
+}
+.navlist a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bolder;
+}
+@media (max-width: 750px){
+  :root{
+    --logoAnimationFontSize: 70px; 
+  }
+}
+
+@media (max-width: 500px) {
+  :root {
+    --logoAnimationFontSize: 50px;
+  }
+  .navLists {
+    position: absolute;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--dark);
+    height: 100vh;
+    z-index: 1;
+    transform: translateX(100%);
+    transition: all 1s ease-in-out;
+  }
+
+  .navVisible {
+    transform: translateX(0%);
+  }
+  .hamburger {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 2;
+    cursor: pointer;
+    outline: none !important;
+    transform: scale(0.8);
+  }
+  .line {
+    width: 80%;
+    height: 10%;
+    background-color: var(--light);
+  }
+  .line2inactive {
+    display: none;
+  }
+  .line1active {
+    transform: rotate(45deg) translateY(355%);
+    transition: all 1s ease-in-out;
+  }
+  .line3active {
+    transform: rotate(-45deg) translateY(-355%);
+    transition: all 1s ease-in-out;
+  }
+}
+
+@keyframes logoAnimation{
+  0%{
+    position: absolute;
+    padding: 0%;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+    background-color: var(--dark);
+    color: rgba(0,0,0, 0);
+    text-align: center;
+    line-height: 70vh;
+    font-size: var(--logoAnimationFontSize);
+  }
+  50%{
+    font-size: var(--logoAnimationFontSize);
+    line-height: 70vh;
+    color: rgba(13,110,253, 1);
+    padding: 0%;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark);
+    text-align: center;
+  }
+  70%{
+    padding: 0%;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--dark);
+    font-size: var(--logoAnimationFontSize);
+    text-align: left;
+    line-height: normal;
+  }
+  100%{
+    position: absolute;
+    height: 70px;
+    width: 100vw;
+    background-color: var(--dark);
+  }
+}

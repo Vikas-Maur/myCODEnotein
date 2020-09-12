@@ -3,6 +3,8 @@
     var(--primary , blue) 
     blue is given in case if primary color doesn't works
 */
+@import "basicStyle.css";
+
 :root{
     --primary: rgb(13,110,253);
     --secondary: rgb(108,117,125);
@@ -17,8 +19,62 @@
 *{
     margin: 0px;
     padding: 0px;
-    
+}
+html{
+    scroll-behavior: smooth;
 }
 body{
     font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+.text-primary{
+    color: var(--primary);
+}
+.text-secondary{
+    color: var(--secondary);
+}
+.text-success{
+    color: var(--success);
+}
+.text-danger{
+    color: var(--danger);
+}
+text-dark{
+    color: var(--dark);
+}
+.text-info{
+    color: var(--info);
+}
+.text-light{
+    color: var(--light);
+}
+.text-warning{
+    color: var(--warning);
+}
+
+
+.bg-primary{
+    background-color: var(--primary);
+}
+.bg-secondary{
+    background-color: var(--secondary);
+}
+.bg-success{
+    background-color: var(--success);
+}
+.bg-danger{
+    background-color: var(--danger);
+}
+.bg-dark{
+    background-color: var(--dark);
+}
+.bg-info{
+    background-color: var(--info);
+}
+.bg-light{
+    background-color: var(--light);
+}
+.bg-warning{
+    background-color: var(--warning);
 }

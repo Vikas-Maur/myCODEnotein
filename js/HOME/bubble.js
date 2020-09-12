@@ -1,5 +1,5 @@
 const tagLine = document.querySelector(".tagline");
-const navAnimationPlay = sessionStorage.getItem("firstViewOnmyCODEnotein");
+const navAnimationPlay = document.querySelector("nav").getAttribute("data-animationPlayed");
 
 if(navAnimationPlay=="false"){
    tagLine.style.setProperty("animation","setClipPath 2s ease-in-out"); 

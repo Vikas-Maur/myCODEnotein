@@ -1,4 +1,4 @@
-const neededScripts = [];
+const neededScripts = ["basicScript.js"];
 const neededStyles = ["navbar.css"];
 const presentScripts = document.querySelector("#mainScriptTag").getAttribute("data-presentScripts") || "";
 const presentStyles = document.querySelector("#mainScriptTag").getAttribute("data-presentStyles") || "";
@@ -10,9 +10,9 @@ const navbar =
             myCODEnotein
         </div>
         <ul class="navLists">
-            <li class="navlist"><a href="#">HOME</a></li>
-            <li class="navlist"><a href="#">BLOG</a></li>
-            <li class="navlist"><a href="#">ABOUT</a></li>
+            <li class="navlist"><a href="/">HOME</a></li>
+            <li class="navlist"><a href="/">BLOG</a></li>
+            <li class="navlist"><a href="/">ABOUT</a></li>
         </ul>
         <div class="hamburger">
             <div class="line line1"></div>
@@ -27,7 +27,7 @@ function AppendScripts() {
     neededScripts.forEach(script => {
         if (!presentScripts.includes(script)) {
             const scriptTag = document.createElement("script");
-            scriptTag.src = `js/${script}`;
+            scriptTag.src = `/js/${script}`;
             document.body.appendChild(scriptTag);
         }
     });
@@ -38,7 +38,7 @@ function AppendStyles() {
         if (!presentStyles.includes(style)) {
             const linkTag = document.createElement("link");
             linkTag.rel = "stylesheet";
-            linkTag.href = `css/${style}`;
+            linkTag.href = `/css/${style}`;
             document.head.appendChild(linkTag);
         }
     });
@@ -73,6 +73,10 @@ function SetNavbar() {
     if(sessionStorage.getItem("firstViewOnmyCODEnotein")===true||sessionStorage.getItem("firstViewOnmyCODEnotein")===null){
         sessionStorage.setItem("firstViewOnmyCODEnotein",false);
         document.querySelector(".logo").style.setProperty("animation","logoAnimation 4s ease-in");
+        document.querySelector("nav").setAttribute("data-animationPlayed","true");
+    }
+    else{
+        document.querySelector("nav").setAttribute("data-animationPlayed","false");
     }
 }
 

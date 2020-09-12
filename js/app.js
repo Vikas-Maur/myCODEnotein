@@ -2,6 +2,8 @@ const neededScripts = ["basicScript.js"];
 const neededStyles = ["navbar.css"];
 const presentScripts = document.querySelector("#mainScriptTag").getAttribute("data-presentScripts") || "";
 const presentStyles = document.querySelector("#mainScriptTag").getAttribute("data-presentStyles") || "";
+let animationsToBePlayed = [];
+
 const navbar =
     `
 <header>
@@ -49,7 +51,7 @@ function SetNavbar() {
     const hamburger = document.querySelector(".hamburger");
     const lines = [hamburger.querySelector(".line1"), hamburger.querySelector(".line2"), hamburger.querySelector(".line3")];
     const navLists = document.querySelector("nav .navLists");
-    
+
     if (window.innerWidth <= 500) {
         navLists.querySelectorAll(".navlist").forEach(list => {
             list.addEventListener("click", () => {
@@ -70,20 +72,39 @@ function SetNavbar() {
         lines[1].classList.toggle("line2inactive");
         lines[2].classList.toggle("line3active");
     });
-    if(sessionStorage.getItem("firstViewOnmyCODEnotein")===true||sessionStorage.getItem("firstViewOnmyCODEnotein")===null){
-        sessionStorage.setItem("firstViewOnmyCODEnotein",false);
-        document.querySelector(".logo").style.setProperty("animation","logoAnimation 4s ease-in");
-        document.querySelector("nav").setAttribute("data-animationPlayed","true");
+    AddAnimation(NavbarAnimation);
+    
+}
+
+function NavbarAnimation(){
+    if (sessionStorage.getItem("firstViewOnmyCODEnotein") === true || sessionStorage.getItem("firstViewOnmyCODEnotein") === null) {
+        sessionStorage.setItem("firstViewOnmyCODEnotein", false);
+        document.querySelector(".logo").style.setProperty("animation", "logoAnimation 4s ease-in");
+        document.querySelector("nav").setAttribute("data-animationPlayed", "true");
     }
-    else{
-        document.querySelector("nav").setAttribute("data-animationPlayed","false");
+    else {
+        document.querySelector("nav").setAttribute("data-animationPlayed", "false");
     }
 }
 
+function AddAnimation(animation){
+    animationsToBePlayed.push(animation);
+}
+
+function PlayAnimations(){
+    animationsToBePlayed.forEach((animation)=>{
+        animation();
+    });
+}
 
 function RunApp() {
     AppendScripts();
     AppendStyles();
     SetNavbar()
+
+    window.onload = () => {
+        document.body.style.display = "initial";
+        PlayAnimations();
+    }
 }
 RunApp()

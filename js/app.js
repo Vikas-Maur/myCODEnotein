@@ -1,4 +1,4 @@
-const neededScripts = ["basicScript.js"];
+const neededScripts = ["content.js","basicScript.js","tableOfContent.js"];
 const neededStyles = ["navbar.css"];
 const presentScripts = document.querySelector("#mainScriptTag").getAttribute("data-presentScripts") || "";
 const presentStyles = document.querySelector("#mainScriptTag").getAttribute("data-presentStyles") || "";
@@ -13,8 +13,9 @@ const navbar =
         </div>
         <ul class="navLists">
             <li class="navlist"><a href="/">HOME</a></li>
-            <li class="navlist"><a href="/">BLOG</a></li>
-            <li class="navlist"><a href="/">ABOUT</a></li>
+            <li class="navlist"><a href="/src/pygame.html">PYGAME</a></li>
+            <li class="navlist"><a href="/src/sql.html">SQL</a></li>
+            <li class="navlist"><a href="https://mycodenotein.blogspot.com">MY OLD WEBSITE</a></li>
         </ul>
         <div class="hamburger">
             <div class="line line1"></div>

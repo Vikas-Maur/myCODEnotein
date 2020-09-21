@@ -41,7 +41,7 @@ body{
 .text-danger{
     color: var(--danger);
 }
-text-dark{
+.text-dark{
     color: var(--dark);
 }
 .text-info{
@@ -78,4 +78,8 @@ text-dark{
 }
 .bg-warning{
     background-color: var(--warning);
+}
+
+.text-upper{
+    text-transform: uppercase;
 }

@@ -1,6 +1,10 @@
 @import "basicAnimations.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
+:root{
+  --basicMarginBottom: 45px;
+}
+
 body{
   counter-reset: headingCounter;
 }
@@ -32,6 +36,81 @@ body{
 .heading::selection {
   background-color: var(--dark);
 }
+
+.section{
+  margin-bottom: 70px;
+  counter-reset: subHeadingCounter;
+  padding-bottom: 20px;
+  border-bottom: 3px solid var(--dark);
+}
+
+.section h2{
+  color: var(--danger);
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  margin-bottom: var(--basicMarginBottom);
+}
+.section h2::before{
+  counter-increment: headingCounter;
+  content: counter(headingCounter)". ";
+  background-color: var(--dark);
+  border-radius: 100%;
+  padding: 10px;
+  margin-right: 20px;
+}
+.section h3{
+  color: var(--warning);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: var(--basicMarginBottom);
+}
+.section h3::before{
+  counter-increment: subHeadingCounter;
+  content: counter(subHeadingCounter)". ";
+  background-color: var(--secondary);
+  border-radius: 100%;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+.section>.code{
+  font-size: 1.5rem;
+  padding: 30px;
+  width: 70%;
+  color: white;
+  background-color: black;
+  margin-bottom: var(--basicMarginBottom);
+  border-radius: 7px;
+  line-height: 1.8;
+  overflow-x: scroll;
+  font-family: Consolas, 'Courier New', monospace;
+  font-weight: bold;
+}
+.section>.code::-webkit-scrollbar {
+  display: none;
+}
+
+.section>.code {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+.code>.comment{
+  color: var(--secondary);
+}
+
+.table , .table th , .table td{
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+.table th , .table td{
+  padding: 15px;
+  text-align: left;
+}
+.table {
+  width: 75%;    
+  background-color: black;
+  color: var(--light);
+}
 #teleporter {
   position: fixed;
   width: 20%;
@@ -51,62 +130,36 @@ body{
   scrollbar-width: none; 
 }
 
-.section{
-  margin-bottom: 70px;
-  counter-reset: subHeadingCounter;
-  padding-bottom: 20px;
-  border-bottom: 3px solid var(--dark);
-}
-
-.section h2{
+#teleporter h1{
+  margin-top: 160px;
   color: var(--danger);
-  font-size: 2.3rem;
-  text-transform: uppercase;
-}
-.section h2::before{
-  counter-increment: headingCounter;
-  content: counter(headingCounter)". ";
-  background-color: var(--dark);
-  border-radius: 100%;
-  padding: 10px;
-  margin-right: 20px;
-}
-.section h3{
-  color: var(--warning);
-  font-size: 1.6rem;
-  text-transform: uppercase;
-}
-.section h3::before{
-  counter-increment: subHeadingCounter;
-  content: counter(subHeadingCounter)". ";
-  background-color: var(--secondary);
-  border-radius: 100%;
-  padding: 10px;
-  margin-right: 20px;
 }
 
-.section>.code{
-  font-size: 1.5rem;
-  padding: 30px;
-  width: 70%;
-  color: white;
-  background-color: black;
-  margin-top: 30px;
-  border-radius: 7px;
-  line-height: 1.8;
-  overflow-x: scroll;
-  font-family: Consolas, 'Courier New', monospace;
+#teleportingList{
+  color: var(--dark);
+  height: 100vh;
+  list-style: none;
+  display: block;
+
 }
-.section>.code::-webkit-scrollbar {
-  display: none;
+#teleportingList li{
+  margin: 20px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+#teleportingList li:hover{
+  color: var(--info);
 }
 
-.section>.code {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
-}
-.code>.comment{
-  color: var(--secondary);
+#hoverDiv{
+  position: absolute;
+  transition: all 0.5s ease-in;
+  border-left: 3px solid var(--warning);
+  margin-left: 10px;
+  z-index: -1;
+  transform: scale(1.5);
+  pointer-events: none;
 }
 
 @media (max-width: 500px) {
@@ -123,6 +176,14 @@ body{
   }
   .section>.code{
     width: 100%;
+  }
+  .section h2::before,
+  .section h3::before{
+    padding: 5px;
+  }
+  .section h2,
+  .section h3{
+    text-align: center;
   }
 
 }

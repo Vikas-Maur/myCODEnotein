@@ -1,3 +1,8 @@
+:root{
+    --bubbleCircle : 455px;
+    --bubbleCircleLocation: 100%;
+}
+
 .firstSection{
     display: flex;
     height: 100vh;
@@ -22,11 +27,64 @@
     padding-top: 40vh;
     text-align: center;
     line-height: 2cm;
-    clip-path: circle(455px at 100%); 
-    -webkit-clip-path: circle(455px at 100%);
+    clip-path: circle(var(--bubbleCircle) at var(--bubbleCircleLocation)); 
+    -webkit-clip-path: circle(var(--bubbleCircle) at var(--bubbleCircleLocation));
 }
 .tagline::selection{
     background: var(--dark);
+}
+
+.einstien{
+    height: 172vh;
+}
+.einstien h1{
+    height: 100vh;
+    text-align: center;
+    font-size: 5rem;
+    line-height: 80vh;
+    background-color: var(--dark);
+    color: rgba(13,110,253,0);
+}
+
+.einstien div{
+    display: flex;
+    background-color: var(--primary);
+}
+.einstien div img{
+    width: 50%;
+    height: 70%;
+    background-size: cover;
+}
+.einstien div .equote{
+    background-color: var(--primary);
+    color: var(--primary);
+    font-weight: bolder;
+    font-size: 3rem;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 6rem;
+    text-align: center;
+}
+
+.mcn{
+    height: 150vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 3rem;
+}
+.mcn h1{
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    line-height: 50vh;
+    color: white;
+}
+.mcnh1{
+    background-color: var(--dark);
+}
+.mcnSays{
+    color: var(--danger) !important;
+    background-color: var(--primary);
 }
 
 @media (max-width:1000px){
@@ -35,15 +93,36 @@
         
     }
 }
+@media (max-width:500px){
+    :root {
+        --bubbleCircle: 160px;
+        --bubbleCircleLocation: 50%;
+    }
+    .firstSection{
+        height: 100%;
+        flex-direction: column-reverse;
+    }
+    .tagline{
+        padding-top: 10vh;
+        height: 60vh;
+        width: 100vw;
+        outline: none;
+        border: none;
+    }
+    .heroImage{
+        margin-left: 50px;
+        transform: scale(0.8);
+    }
+}
 
 @keyframes setClipPath{
     from{
-        clip-path: circle(0px at 100%);
-        -webkit-clip-path: circle(0px at 100%);
+        clip-path: circle(0px at var(--bubbleCircleLocation));
+        -webkit-clip-path: circle(0px at var(--bubbleCircleLocation));
     }
     to{
-        clip-path: circle(455px at 100%);
-        -webkit-clip-path: circle(455px at 100%);
+        clip-path: circle(var(--bubbleCircle) at var(--bubbleCircleLocation)); 
+        -webkit-clip-path: circle(var(--bubbleCircle) at var(--bubbleCircleLocation));
     }
 }
 
@@ -53,5 +132,34 @@
     }
     to{
         background-color: transparent;
+    }
+}
+
+@keyframes animateESaid{
+    from{
+        color: var(--dark);
+    }
+    to{
+        color: var(--primary);
+    }
+}
+
+@keyframes animateEQuote{
+    from{
+        color: var(--primary);
+        transform: translateX(100%);
+    }
+    to{
+        color: var(--dark);
+        transform: translateX(0%);
+    }
+}
+
+@keyframes animatemcnH1{
+    from{
+        color: var(--primary) !important;
+    }
+    to{
+        color: var(--dark) !important;
     }
 }

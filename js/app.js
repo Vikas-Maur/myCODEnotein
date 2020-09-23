@@ -1,5 +1,6 @@
-const neededScripts = ["content.js","basicScript.js","tableOfContent.js"];
-const neededStyles = ["navbar.css"];
+// "content.js" removed
+const neededScripts = ["basicScript.js","teleporter.js","tab.js","addNote.js"];
+const neededStyles = ["navbar.css","addNote.css"];
 const presentScripts = document.querySelector("#mainScriptTag").getAttribute("data-presentScripts") || "";
 const presentStyles = document.querySelector("#mainScriptTag").getAttribute("data-presentStyles") || "";
 let animationsToBePlayed = [];
@@ -103,8 +104,7 @@ function RunApp() {
     AppendStyles();
     SetNavbar()
 
-    window.onload = () => {
-        document.body.style.display = "initial";
+    window.onload = () =>{ 
         PlayAnimations();
     }
 }

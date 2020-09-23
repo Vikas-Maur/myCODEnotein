@@ -1,4 +1,6 @@
 @import "basicAnimations.css";
+@import "teleporter.css";
+@import "tabs.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 :root{
@@ -94,7 +96,7 @@ body{
   -ms-overflow-style: none; 
   scrollbar-width: none; 
 }
-.code>.comment{
+.comment{
   color: var(--secondary);
 }
 
@@ -110,56 +112,8 @@ body{
   width: 75%;    
   background-color: black;
   color: var(--light);
-}
-#teleporter {
-  position: fixed;
-  width: 20%;
-  top: 0%;
-  left: 0%;
-  height: 100%;
-  border-right: 3px solid var(--dark);
-  overflow-y: scroll !important;
-  color: var(--light);
-}
-#teleporter::-webkit-scrollbar {
-  display: none;
-}
-
-#teleporter {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
-}
-
-#teleporter h1{
-  margin-top: 160px;
-  color: var(--danger);
-}
-
-#teleportingList{
-  color: var(--dark);
-  height: 100vh;
-  list-style: none;
-  display: block;
-
-}
-#teleportingList li{
-  margin: 20px;
-  cursor: pointer;
-  font-size: 1.1rem;
-  font-weight: bolder;
-}
-#teleportingList li:hover{
-  color: var(--info);
-}
-
-#hoverDiv{
-  position: absolute;
-  transition: all 0.5s ease-in;
-  border-left: 3px solid var(--warning);
-  margin-left: 10px;
-  z-index: -1;
-  transform: scale(1.5);
-  pointer-events: none;
+  margin-bottom: var(--basicMarginBottom);
+  letter-spacing: 2px;
 }
 
 @media (max-width: 500px) {
@@ -171,9 +125,6 @@ body{
       left: 0%;
       padding-left: 5%;
   }
-  #teleporter {
-    display: none;
-  }
   .section>.code{
     width: 100%;
   }
@@ -184,6 +135,9 @@ body{
   .section h2,
   .section h3{
     text-align: center;
+  }
+  #teleporter {
+    display: none;
   }
 
 }

@@ -1,288 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myCODEnotein</title>
     <link rel='stylesheet' href='/css/style.css'>
 </head>
+
 <body>
     <div class='container'>
         <div class='heading'>SQL --> by myCODEnotein</div>
         <div class='content'>
-            <div class='section' id="USE_OF_CREATE_COMMAND">
-                <h2>USE OF CREATE COMMAND</h2>
+            <div class="section">
+                <h2>DATABASE </h2>
                 <h3>CREATING A DATABASE</h3>
-                <div class='code'>
-                    <span class='text-primary'>CREATE </span><span class='text-danger'>DATABASE</span> nameOfDatabase <span class='text-info'>;</span>
+                <div class="code">
+                    <span class='text-primary'>CREATE </span><span class='text-danger'>DATABASE </span>nameOfDatabase;
                 </div>
+                <h3>MAKING A CONNECTION WITH A DATABASE</h3>
+                <div class="code">
+                    <span class='text-primary'>CONNECT </span>nameOfDatabase <span class='text-info'>;</span><br>OR <br>
+                    <span class='text-primary'>USE </span>nameOfDatabase <span class='text-info'>;</span>
+                </div>
+                <h3>SEEING ALL DATABASES</h3>
+                <div class="code">
+                    <span class='text-primary'>SHOW </span><span class='text-danger'>DATABASES </span><span
+                        class='text-info'>;</span>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2>TABLES IN SQL </h2>
                 <h3>CREATING A TABLE</h3>
                 <div class="code">
-                    <div class="comment">CREATE COMMAND IS USED TO CREATE A TABLE AS WELL. THE SYNTAX IS GIVEN IN THE BLOG . BUT TO SEE IT YOU NEED TO SCROLL LITTLE BIT</div>
+                    <span class='text-primary'>CREATE </span><span class='text-danger'>TABLE </span> <br>
+                    nameOfTable (colName1 <span class="text-info">DATATYPE</span> <span
+                        class="text-warning">CONSTRAINTS</span> , <br>
+                    colName2 <span class="text-info">DATATYPE</span> <span class="text-warning">CONSTRAINTS</span> ,
+                    <span class='text-info'>...</span>)
+                    <span class='text-info'>;</span>
+                </div>
+
+                <h3>GETTING INFO OF TABLE</h3>
+                <div class="code">
+                    <span class='text-primary'>DESC </span>nameOfTable <span class='text-info'>;</span> <br>OR <br>
+                    <span class='text-primary'>DESCRIBE </span>nameOfTable <span class='text-info'>;</span> <br>OR <br>
+                    <span class='text-primary'>EXPLAIN </span>nameOfTable <span class='text-info'>;</span> <br>
+                </div>
+
+                <h3>INSERTING VALUES IN THE TABLE</h3>
+                <div class="code">
+                    <span class='text-primary'>INSERT </span><span class='text-danger'>INTO </span>nameOfTable <br>
+                    <span class='text-primary'>VALUES </span>(<span class="text-warning">value1</span> , <span
+                        class="text-warning">value2</span> , <span class='text-info'>...</span>) <span
+                        class='text-info'>;</span>
+                    <div class="comment">
+                        NOTE THAT MUTLIPLE RECORDS CAN BE INSERTED BY ADD REQ. <br> <span class='text-warning'>"</span>
+                        VALUE(value1,value2,...) <span class='text-warning'>"</span>
+                        SEPARATED BY
+                        COMMAS
+                    </div>
+                </div>
+
+                <h3>SEEING ALL TABLES </h3>
+                <div class="code">
+                    <span class='text-primary'>SHOW </span><span class='text-danger'>TABLES </span><span
+                        class='text-info'>;</span>
+                </div>
+
+                <h3>DATATYPES</h3>
+                <div class="code">
+                    NUMERICAL --> <span class='text-danger'>INT , <br> 
+                    <pre style="display: inline-block;">&Tab;&Tab;</pre> DECIMAL(n,d)</span>
+                    <div class="comment"> <pre style="display: inline-block;">&Tab;&Tab;</pre> n represents no. of digits before decimal <pre style="display: inline-block;">&Tab;&Tab;</pre> and d represents after decimal</div>
+                </div>
+                <div class="code">
+                    TEXT --><span class='text-danger'> VARCHAR(maxSize) , <br> CHAR(maxSize) , <br> ENUM (value1,value2,...)</span>
+                </div>
+                <div class="code">
+                    DATE/TIME --> <span class='text-danger'>DATE <br>TIME <br>YEAR(2 OR 4) <br>DATETIME</span>
+                    <div class="comment">
+                        DATE IS STORED IN THE FORMAT :- yyyy/mm/dd OR yyyy-mm-dd <br>
+                        TIME IS STORED IN THE FORMAT :- hh:mm:ss <br>
+                        YEAR(2) --> stores last two digits of year <br>
+                        YEAR(4) --> stores the full year
+                    </div>
+                </div>
+
+                <h3>CONSTRAINTS</h3>
+                <div class="code">
+                    <span class='text-warning'>1.</span><span class='text-danger'>PRIMARY KEY</span><br>
+                    CAN BE APPLIED AT ROW/COLUMN LEVEL 
+                    <div class="comment"><br>SYNTAX FOR COLUMN LEVEL</div>
+                    colName DATATYPE <span class='text-danger'>PRIMARY KEY</span>
+
+                    <div class="comment"><br> EXAMPLE FOR ROW LEVEL :-</div>
+                    <span class='text-primary'>CREATE </span><span class='text-danger'>TABLE </span>student <span class='text-danger'>VALUES </span>(sno <span class='text-info'>INT</span> , age <span class='text-info'>INT</span> , name <span class='text-info'>CHAR(30)</span>, <span class='text-danger'>PRIMARY KEY</span>(<span class='text-warning'>colName1</span>,<span class='text-warning'>colName2</span>,...));
+                    <div class="comment">NOTE THAT COMPOSITE PRIMARY KEY CAN BE APPLIED AT ROW LEVEL ONLY </div>
+                </div>
+                <div class="code">
+                    <span class='text-warning'>2.</span><span class='text-danger'>UNIQUE KEY</span>
+                    <br> CAN BE APPLIED AT ROW/COLUMN LEVEL
+                    <br> SYNTAX IS SAME AS DESCRIBED IN PRIMARY KEY
+                </div>
+                <div class="code">
+                    <span class='text-warning'>3.</span> <span class='text-danger'>NOT NULL</span><br>
+                    <span class='text-warning'>4.</span> <span class='text-danger'>DEFAULT</span> value<br>
+                    THESE TWO CONSTRAINTS CAN BE APPLIED AT COLUMN LEVEL ONLY
                 </div>
             </div>
 
-            <div class='section' id="USE_OF_SHOW_COMMAND">
-                <h2>USE OF SHOW COMMAND</h2>
-                <h3>TO SHOW ALL DATABASES</h3>
-                <div class='code'>
-                    <span class='text-primary'>SHOW</span> <span class='text-danger'>DATABASES</span> <span class='text-info'>;</span>
-                </div>
-                <h3>TO SHOW ALL TABLES</h3>
+            <div class="section">
+                <h2>QUERYING IN TABLES </h2>
+
+                <h3>TO SEE RECORDS</h3>
                 <div class="code">
-                    <span class='text-primary'>SHOW</span> <span class='text-danger'>TABLES</span> <span class='text-info'>;</span>
-                    <div class="comment">NOTE THAT TO USE THIS COMMAND YOU MUST BE CONNECTED WITH DATABASE.</div>
+                    <span class='text-primary'>SELECT </span>colName1,colName2,... <span class='text-danger'>FROM
+                    </span>nameOfTable <span class='text-info'>;</span>
+                    <div class="comment">
+                        NOTE THAT * REPRESENTS ALL COLUMNS
+                    </div>
+                </div>
+
+                <h3>FILTERING THROUGH RECORDS</h3>
+                <div class="code">
+                    <div class="comment">
+                        WITH THE HELP OF SELECT COMMAND AND USE OF <br> <span class='text-danger'>WHERE</span>
+                        CLAUSE AT THE END OF SELECT COMMAND STATEMENT RECORDS CAN BE FILTERED
+                    </div>
+                    <span class='text-primary'>SELECT </span>colName1,colName2,... <span class='text-danger'>FROM
+                    </span>nameOfTable <br> <span class='text-danger'>WHERE </span>condition <span
+                        class='text-info'>;</span>
+                </div>
+
+                <h3>OPERATORS </h3>
+                <div class="code">
+                    <div class="comment text-danger">COMPARISON/RELATIONAL OPERATORS </div>
+                    <span class='text-info'>
+                        < , > , >= , <= ,=, != or <>
+                    </span>
+                </div>
+                <div class="code">
+                    <div class="comment text-danger">BETWEEN OPERATOR</div>
+                    colName <span class='text-info'>BETWEEN </span>value1 <span class='text-danger'>AND </span>value2
+                    <div class="comment">CONDITION FOR CHECKING IF THE VALUE IS NOT BETWEEN THE SPECIFIED VALUES</div>
+                    colName <span class='text-info'>NOT BETWEEN </span></span>value1 <span class='text-danger'>AND </span>value2
+                </div>
+                <div class="code">
+                    <div class="comment text-danger">IN OPERATOR</div>
+                    colName <span class='text-info'>IN </span>( <span class='text-warning'>value1</span> , <span class='text-warning'>value2</span> , <span class='text-info'>...</span>)
+                    <div class="comment">CONDITION FOR CHECKING IF THE VALUE IS NOT IN SPECIFIED VALUES</div>
+                    colName <span class='text-info'>NOT IN </span>( <span class='text-warning'>value1</span> , <span class='text-warning'>value2</span> , <span class='text-info'>...</span>)
+                </div>
+                <div class="code">
+                    <div class="comment text-danger">IS OPERATOR</div>
+                    <div class="comment">USED TO CHECK EQULATIY <br>
+                    NOTE THAT COLUMN VALUE IS NULL CAN BE CHECKED BY THIS OPERATOR ONLY
+                    </div>
+                    colName <span class='text-info'>IS </span>VALUE
+                    <div class="comment">CONDITION TO CHECK INEQUALITY</div>
+                    colName <span class='text-info'>IS NOT </span>VALUE
+                </div>
+                <div class="code">
+                    <div class="comment text-danger">NOT OPERATOR</div>
+                    <div class="comment">GIVES TRUE IF RESULT IS FALSE AND VICE-VERSA</div>
+                    <span class='text-info'>NOT </span>condition
+                </div>
+                <div class="code">
+                    <div class="comment text-danger">AND OPERATOR</div>
+                    <div class="comment">USED TO JOIN TWO CONDITIONS</div>
+                    condition1 <span class='text-info'>AND </span>condition2
+                </div>
+                <div class="code">
+                    <div class="comment text-danger">OR OPERATOR</div>
+                    <div class="comment">USED TO JOIN TWO CONDITIONSX</div>
+                    condition1 <span class='text-info'>OR </span>condition2
+                </div>
+                <div class="code">
+                    <div class="comment text-danger">LIKE OPERATOR</div>
+                    <span class='text-warning'>%</span> --> represents any no of character from 0 to n <br>
+                    <span class='text-warning'>_</span> --> represents only 1 character <br>
+
+                    colName <span class='text-info'>LIKE </span>""
+                    <div class="comment">EXAMPLE :- </div>
+                    <pre style="display: inline-block;">&Tab;</pre>name <span class='text-info'>LIKE </span><span class='text-warning'>"VIKAS%"</span> <br>
+                    <pre style="display: inline-block;">&Tab;</pre>% represents any no of characters <br>
+                    <pre style="display: inline-block;">&Tab;</pre>after the name VIKAS
                 </div>
             </div>
-
-            <div class="section" id="USE_OF_DROP_COMMAND">
-                <h2>USE OF DROP COMMAND</h2>
-                <h3>DELETING A DATABASE</h3>
-                <div class="code">
-                    <span class='text-primary'>DROP </span><span class='text-danger'>DATABASE</span> nameOfDatabase
-                </div>
-                <h3>DELETING A TABLE</h3>
-                <div class="code">
-                    <span class='text-primary'>DROP </span><span class='text-danger'>TABLE </span>nameOfTable
-                </div>
-            </div>
-
-            <div class='section' id="CONNECTING_WITH_DATABASE">
-                <h2>CONNECTING WITH A DATABASE</h2>
-                <h3>USING CONNECT COMMAND</h3>
-                <div class="code">
-                    <span class='text-primary'>CONNECT </span><span class='text-danger'>nameOfDatabase</span><span class='text-info'> ;</span>
-                </div>
-                <h3>USING USE COMMAND</h3>
-                <div class="code">
-                    <span class='text-primary'>USE </span><span class='text-danger'>nameOfDatabase</span><span class='text-info'> ;</span>
-                </div>
-            </div>
-
-            <div class="section" id="DATATYPES_CONSTRAINTS_IN_SQL">
-                <h2>DATATYPES AND CONSTRAINTS IN SQL</h2>
-                <h3>DATATYPES :- </h3>
-                <div>
-                    <table class="table">
-                            <tr>
-                                <th class="text-warning">DATATYPE</th>
-                                <th class="text-warning">DATATYPE--INFO</th>
-                                <th class="text-warning">TYPE</th>
-                            </tr>
-                            <tr>
-                                <th class='text-danger'>INT</th>
-                                <th class="text-primary">USED TO STORE INTEGER VALUES</th>
-                                <th>NUMERICAL</th>
-                            </tr>
-                            <tr>
-                                <th class="text-danger">DECIMAL(n,d)</th>
-                                <th class="text-primary">USED TO STORE DECIMAL VALUES. <br>n MEANS NUMBER OF DIGITS BEFORE DECIMAL AND d MEANS NUMBER OF DIGITS AFTER DECIMAL</th>
-                                <th>NUMERICAL</th>
-                            </tr>
-                            <tr>
-                                <th class="text-danger">CHAR(maxSize)</th>
-                                <th class="text-primary">USED TO STORE ALPHANUMERIC OR OTHER SYMBOLS TOO. maxSize IS GIVEN TO ALLOW MAX INSERTION OF THE CHARACTERS WHICH CAN TAKE PLACE</th>
-                                <th>TEXT</th>
-                            </tr>
-                            <tr>
-                                <th class="text-danger">VARCHAR(maxSize)</th>
-                                <th class="text-primary">USED TO STORE ALPHANUMERIC OR OTHER SYMBOLS TOO. maxSize IS GIVEN TO ALLOW MAX INSERTION OF THE CHARACTERS WHICH CAN TAKE PLACE</th>
-                                <th>TEXT</th>
-                            </tr>
-                            <tr>
-                                <th class="text-danger">ENUM(value1,value2,...valueN)</th>
-                                <th class="text-primary">ALLOWS STORAGE OF THE GIVEN VALUES ONLY THAT IS value1,value2,.....valueN</th>
-                                <th>TEXT</th>
-                            </tr>
-                            <tr>
-                                <th class="text-danger">DATE</th>
-                                <th class="text-primary">ALLOWS THE STORAGE OF DATE IN "yyyy/mm/dd" WHERE "/" CAN BE REPLACED BY HYPHEN "-"</th>
-                                <th>DATE/TIME</th>
-                            </tr>
-                            <tr>
-                                <th class="text-danger">TIME</th>
-                                <th class="text-primary">ALLOWS THE STORAGE OF TIME IN THE FORMAT hh:mm:ss</th>
-                                <th>DATE/TIME</th>
-                            </tr>
-                            <tr>
-                                <th class="text-danger">YEAR(2 or 4)</th>
-                                <th class="text-primary">ALLOWS THE STORAGE OF YEAR ONLY . YEAR(2) ALLOWS THE STORAGE OF ONLY LAST TWO DIGITS WHILE YEAR(4) ALLOWS STORAGE OF 4 DIGITS OF THE YEAR</th>
-                                <th>DATE/TIME</th>
-                            </tr>
-                            <tr>
-                                <th class="text-danger">DATETIME</th>
-                                <th class="text-primary">ALLOWS THE STORAGE OF DATE FOLLOWED BY TIME IN THE GIVEN FORMAT yyyy-mm-dd hh-mm-ss OR yyyy/mm/dd hh:mm:ss</th>
-                                <th>DATE/TIME</th>
-                            </tr>
-                    </table>
-                </div>
-                <h3>CONSTRAINTS :- </h3>
-                <div>
-                    <table class="table">
-                        <tr>
-                            <th class="text-warning">CONSTRAINT</th>
-                            <th class="text-warning">SYNTAX</th>
-                        </tr>
-                        <tr>
-                            <th class="text-danger">PRIMARY KEY</th>
-                            <th> 
-                                <span class="text-info">1. AT COLUMN LEVEL :- </span><br> colName <span class="text-warning">DATATYPE</span><span class="text-primary"> PRIMARY KEY </span>
-                                <br><br>
-                                <span class="text-info">2. AT ROW LEVEL</span><br><span class="text-primary">PRIMARY KEY</span> ( nameOfCol1 , nameOfCol2,.... )
-                                <br>
-                                <span class="comment">NOTE THAT COMPOSITE PRIMARY KEY CAN BE APPLIED AT ROW LEVEL ONLY</span>
-                            </th>                            
-                        </tr>
-
-                        <tr>
-                            <th class="text-danger">UNIQUE KEY</th>
-                            <th> 
-                                <span class="text-info">1. AT COLUMN LEVEL :- </span><br> colName <span class="text-warning">DATATYPE</span><span class="text-primary"> UNIQUE KEY </span>
-                                <br><br>
-                                <span class="text-info">2. AT ROW LEVEL</span><br><span class="text-primary">UNIQUE KEY</span> ( nameOfCol1 , nameOfCol2,.... )
-                                <br>
-                            </th>                            
-                        </tr>
-
-                        <tr>
-                            <th class="text-danger">NOT NULL</th>
-                            <th>nameOfCol <span class="text-warning">DATATYPE</span> <span class='text-primary'>NOT NULL</span></th>
-                        </tr>
-
-                        <tr>
-                            <th class="text-danger">DEFAULT</th>
-                            <th>nameOfCol <span class="text-warning">DATATYPE</span> <span class="text-primary">DEFAULT </span><span class='text-info'>value</span></th>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-
-            <div class='section' id="TABLE_IN_SQL">
-                <h2>TABLE IN SQL</h2>
-                <h3>CREATING A TABLE</h3>
-                <div class='code'>
-                    <span class='text-primary'>CREATE </span><span class='text-danger'>TABLE </span>nameOfTable <br> (<span class='text-primary'>colName1</span> <span class='text-warning text-upper'>dataType</span> <span class='text-warning text-upper'>constraints</span>,<span class='text-primary'>colName2</span> <span class='text-warning text-upper'>datatype</span> <span class='text-warning text-upper'>constraints</span>,<span class='text-info'>.....</span>)<span class='text-info'>;</span>
-                </div>
-                <h3>INSERTING VALUES IN TABLE</h3>
-                <div class="code">
-                    <span class='text-primary'>INSERT </span><span class='text-danger'>INTO </span>nameOfTable <span class='text-danger'>VALUES</span>(<span class='text-warning'>VALUE1</span>,<span class='text-warning'>VALUE2</span>,<span class='text-info'>....</span>)<span class='text-info'>;</span>
-                </div>
-                <h3>GETTING DESCRIPTION OF THE TABLE</h3>
-                <div class="code">
-                    <span class='text-primary'>DESC</span>/<span class='text-primary'>DESCRIBE</span>/<span class='text-primary'>EXPLAIN</span> nameOftable <span class='text-info'>;</span>
-                </div>
-            </div>
-
-            <div class="section" id="QUERYING_IN_TABLE">
-                <h2>QUERYING IN TABLE</h2>
-                <h3>TO SEE RECORDS (USE OF SELECT COMMAND)</h3>
-                <div class="code">
-                    <span class='text-primary'>SELECT</span> <span class='text-warning'>colName1</span>,<span class='text-warning'>colName2</span>,<span class='text-warning'>....</span> <span class='text-danger'>FROM</span> nameOfTable <span class='text-info'>;</span>
-                    <div class="comment">* REPRESENTS ALL COLUMNS</div>
-                </div>
-                <h3>TO APPLY CONDITIONS WHILE FETCHING RECORDS</h3>
-                <div class="code">
-                    WHERE clause is used with SELECT command <br>
-                    <div class="comment">SYNTAX :-</div>
-                    <span class='text-primary'>WHERE</span> condition 
-                </div>
-            </div>
-
-            <div class="section" id="OPERATORS_IN_SQL">
-                <h2>OPERATORS IN SQL</h2>
-                <h3>RELATIONAL OPERATORS</h3>
-                <div class="code">
-                    <div class="comment">GENERAL SYNTAX :-</div>
-                    <span class='text-danger'>OPERAND1</span> <span class='text-primary'>OPERATOR</span> <span class='text-danger'>OPERAND2</span>
-                    <div class="comment">RESULT :- true or false</div>
-                </div>
-                <table class="table">
-                    <tr>
-                        <th class="warning">OPERATOR</th>
-                        <th class="warning">EXAMPLE</th>
-                    </tr>
-                    <tr>
-                        <th class="text-danger">></th>
-                        <th><span class='text-danger'>age</span><span class='text-primary'>></span><span class='text-danger'>10</span></th>
-                    </tr>
-                    <tr>
-                        <th class="text-danger">>=</th>
-                        <th><span class='text-danger'>date</span><span class='text-primary'>>=</span><span class='text-danger'>"2004/07/13"</span></th>
-                    </tr>
-                    <tr>
-                        <th class="text-danger"><</th>
-                        <th><span class='text-danger'>salary</span><span class='text-primary'><</span><span class='text-danger'>150000</span></th>
-                    </tr>
-                    <tr>
-                        <th class="text-danger"><=</th>
-                        <th><span class='text-danger'>rollNo</span><span class='text-primary'><=</span><span class='text-danger'>5</span></th>
-                    </tr>
-                    <tr>
-                        <th class="text-danger">=</th>
-                        <th><span class='text-danger'>name</span><span class='text-primary'>=</span><span class='text-danger'>"VIKAS"</span></th>
-                    </tr>
-                    <tr>
-                        <th class="text-danger">!= <span class="text-light">OR</span> <></th>
-                        <th>
-                            <span class='text-danger'>age</span><span class='text-primary'>!=</span><span class='text-danger'>15</span>
-                            <br>OR <br>
-                            <span class='text-danger'>age</span><span class='text-primary'><></span><span class='text-danger'>15</span>
-                        </th>
-                    </tr>
-                </table>
-
-                <h3>BETWEEN OPERATOR</h3>
-                <div class="code">
-                    <span class='text-primary'>BETWEEN </span>value1 <span class='text-danger'>AND </span>value2
-                    <div class="comment">VALUE1 AND VALUE2 ARE INCLUDED</div>
-                    <div class="comment">EXAMPLE :-</div>
-                    age <span class='text-primary'>BETWEEN</span> 10 <span class='text-danger'>AND</span> 15
-                    <hr>
-                    <div class="comment">NOT BETWEEN IS USED TO FIND RESULT WHICH IS NOT IN BETWEEN THE SPECIFIED VALUES</div>
-                    age <span class='text-primary'>NOT BETWEEN</span> value1 <span class='text-danger'>AND </span>value2
-                </div>
-
-                <h3>IN OPERATOR</h3>
-                <div class="code">
-                    <span class='text-primary'>IN</span>(<span class='text-warning'>value1</span>,<span class='text-warning'>value2</span>,<span class='text-warning'>....</span>)
-                    <div class="comment">EXAMPLE :-</div>
-                    salary <span class='text-primary'>IN</span>(10000,20000,30000)
-                    <hr>
-                    <div class="comment">NOT IN IS USED TO FIND THE RESULT HAVING VALUES NOT IN SPECIFIED VALUES</div>
-                    salary <span class='text-primary'>NOT IN</span>(10000,20000,30000)
-                </div>
-
-                <h3>AND OPERATOR</h3>
-                <div class="code">
-                    <div class="comment">USED TO COMBINE TWO CONDITIONS AND GIVES RESULT TRUE ONLY WHEN ALL CONDITIONS ARE TRUE</div>
-                    operand1 <span class='text-primary'>AND</span> operand1
-                    <br>OR <br>
-                    operand1 <span class='text-primary'>&&</span> operand1
-                    <div class="comment">NOTE THAT "AND" USED IN BETWEEN OPERATOR IS NOT AND OPERATOR</div>
-                </div>
-
-                <h3>OR OPERATOR</h3>
-                <div class="code">
-                    <div class="comment">USED TO COMBINE TWO CONDITIONS AND GIVES RESULT TRUE ONLY WHEN ANY ONE CONDITION IS TRUE</div>
-                    operand1 <span class='text-primary'>OR</span> operand1
-                    <br>OR <br>
-                    operand1 <span class='text-primary'>||</span> operand1
-                </div>
-
-                <h3>NOT OPERATOR</h3>
-                <div class="code">
-                    <div class="comment">GIVES RESULT TRUE IF CONDITION IS FALSE AND VICE-VERSA</div>
-                    <span class='text-primary'>NOT</span> operand/condition
-                    <br>OR <br>
-                    <span class='text-primary'>!</span> operand/condition
-                    <div class="comment">NOTE THAT "NOT" USED IN "NOT BETWEEN" AND "NOT IN" IS NOT "NOT" OPERATOR</div>
-                    <div class="comment">EXAMPLE :-</div>
-                    <span class='text-primary'>NOT</span> salary <span class='text-danger'>BETWEEN</span> 10000 <span class='text-warning'>AND</span> 300000
-                </div>
-            </div>
-
         </div>
     </div>
     <script id='mainScriptTag' data-presentScripts='' data-presentStyles='' src='/js/app.js'></script>
 </body>
+
 </html>

@@ -1,6 +1,7 @@
 // "content.js" removed
-const neededScripts = ["basicScript.js","teleporter.js","tab.js","addNote.js"];
-const neededStyles = ["navbar.css","addNote.css"];
+// "addNote.js" removed
+const neededScripts = ["basicScript.js", "teleporter.js", "tab.js"];
+const neededStyles = ["navbar.css", "addNote.css"];
 const presentScripts = document.querySelector("#mainScriptTag").getAttribute("data-presentScripts") || "";
 const presentStyles = document.querySelector("#mainScriptTag").getAttribute("data-presentStyles") || "";
 let animationsToBePlayed = [];
@@ -75,10 +76,10 @@ function SetNavbar() {
         lines[2].classList.toggle("line3active");
     });
     AddAnimation(NavbarAnimation);
-    
+
 }
 
-function NavbarAnimation(){
+function NavbarAnimation() {
     if (sessionStorage.getItem("firstViewOnmyCODEnotein") === true || sessionStorage.getItem("firstViewOnmyCODEnotein") === null) {
         sessionStorage.setItem("firstViewOnmyCODEnotein", false);
         document.querySelector(".logo").style.setProperty("animation", "logoAnimation 4s ease-in");
@@ -89,12 +90,12 @@ function NavbarAnimation(){
     }
 }
 
-function AddAnimation(animation){
+function AddAnimation(animation) {
     animationsToBePlayed.push(animation);
 }
 
-function PlayAnimations(){
-    animationsToBePlayed.forEach((animation)=>{
+function PlayAnimations() {
+    animationsToBePlayed.forEach((animation) => {
         animation();
     });
 }
@@ -104,7 +105,8 @@ function RunApp() {
     AppendStyles();
     SetNavbar()
 
-    window.onload = () =>{ 
+    window.onload = () => {
+        document.body.style.backgroundColor = "var(--light)";
         PlayAnimations();
     }
 }

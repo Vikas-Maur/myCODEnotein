@@ -1,165 +1,170 @@
-:root{
-    --bubbleCircle : 455px;
-    --bubbleCircleLocation: 100%;
+@import "/css/card.css";
+:root {
+  --bubbleCircle: 455px;
+  --bubbleCircleLocation: 100%;
 }
 
-.firstSection{
-    display: flex;
-    height: 100vh;
-    align-items: center;
-    overflow-y: hidden;
+.firstSection {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  overflow-y: hidden;
 }
-.heroImage{
-    margin-top: 7%;
-    margin-left: 7%;
-    background-size: cover;
-    height: 480px;
-    width: 615px;
-    background-color: transparent;
+.startNavigation{
+  text-align: center;
+  margin: 0% auto;
+  margin-top: 90px;
+  padding: 90px;
+  background-color: var(--primary);
+  color: var(--dark);
+  font-size: 2rem;
+  width: 80%;
 }
-.tagline{
-    font-size: xx-large;
-    font-weight: bolder;
-    width: 50%;
-    background-color: var(--primary);
-    height: 80%;
-    color: var(--light);
-    padding-top: 40vh;
-    text-align: center;
-    line-height: 2cm;
-    clip-path: circle(var(--bubbleCircle) at var(--bubbleCircleLocation)); 
-    -webkit-clip-path: circle(var(--bubbleCircle) at var(--bubbleCircleLocation));
+.heroImage {
+  margin-top: 7%;
+  margin-left: 7%;
+  margin-bottom: 0;
+  background-size: cover;
+  height: 480px;
+  width: 615px;
+  background-color: transparent;
 }
-.tagline::selection{
-    background: var(--dark);
+.tagline {
+  font-size: xx-large;
+  font-weight: bolder;
+  width: 50%;
+  background-color: var(--primary);
+  height: 80%;
+  color: var(--light);
+  padding-top: 40vh;
+  text-align: center;
+  line-height: 2cm;
+  clip-path: circle(var(--bubbleCircle) at var(--bubbleCircleLocation));
+  -webkit-clip-path: circle(var(--bubbleCircle) at var(--bubbleCircleLocation));
 }
-
-.einstien{
-    height: 172vh;
-}
-.einstien h1{
-    height: 100vh;
-    text-align: center;
-    font-size: 5rem;
-    line-height: 80vh;
-    background-color: var(--dark);
-    color: rgba(13,110,253,0);
-}
-
-.einstien div{
-    display: flex;
-    background-color: var(--primary);
-}
-.einstien div img{
-    width: 50%;
-    height: 70%;
-    background-size: cover;
-}
-.einstien div .equote{
-    background-color: var(--primary);
-    color: var(--primary);
-    font-weight: bolder;
-    font-size: 3rem;
-    font-family: 'Courier New', Courier, monospace;
-    line-height: 6rem;
-    text-align: center;
+.tagline::selection {
+  background: var(--dark);
 }
 
-.mcn{
-    height: 150vh;
-    display: flex;
-    align-items: center;
+.featuredPost,
+.OtherPosts {
+  min-height: 100vh;
+  display: flex;
+}
+.post-info,
+.post-img {
+  width: 50%;
+}
+
+.post-img img {
+  margin-top: 120px;
+}
+
+.post-info-content {
+  box-shadow: 13px 7px 13px 0px rgba(94, 94, 94, 1);
+  font-family: cursive;
+  font-weight: bolder;
+  font-size: 2rem;
+  color: var(--light);
+  background-color: var(--dark);
+  width: 80%;
+  height: 40%;
+  margin: auto;
+  margin-top: 140px;
+  padding-top: 150px;
+  text-align: center;
+}
+.post-info-content a {
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3.5rem;
+  margin-left: 30%;
+  margin-top: 10px;
+  display: block;
+  height: 40px;
+  width: 40%;
+  padding: 10px;
+  background-color: var(--primary);
+  color: var(--dark);
+}
+
+@media (max-width: 1000px) {
+  .firstSection {
     flex-direction: column;
-    font-size: 3rem;
+  }
 }
-.mcn h1{
+@media (max-width: 500px) {
+  :root {
+    --bubbleCircle: 160px;
+    --bubbleCircleLocation: 50%;
+  }
+  .firstSection {
+    height: 100%;
+    flex-direction: column-reverse;
+    overflow-x: hidden;
+  }
+  .startNavigation{
+    font-size: 1rem;
+    margin: 0%;
+    padding: 0;
     width: 100%;
-    height: 50%;
-    text-align: center;
-    line-height: 50vh;
-    color: white;
-}
-.mcnh1{
-    background-color: var(--dark);
-}
-.mcnSays{
-    color: var(--danger) !important;
-    background-color: var(--primary);
-}
-
-@media (max-width:1000px){
-    .firstSection{
-        flex-direction: column;
-        
-    }
-}
-@media (max-width:500px){
-    :root {
-        --bubbleCircle: 160px;
-        --bubbleCircleLocation: 50%;
-    }
-    .firstSection{
-        height: 100%;
-        flex-direction: column-reverse;
-    }
-    .tagline{
-        padding-top: 10vh;
-        height: 60vh;
-        width: 100vw;
-        outline: none;
-        border: none;
-    }
-    .heroImage{
-        margin-left: 50px;
-        transform: scale(0.8);
-    }
+  }
+  .tagline {
+    padding-top: 10vh;
+    height: 60vh;
+    width: 100vw;
+    outline: none;
+    border: none;
+  }
+  .heroImage {
+    transform: scale(0.7);
+  }
+  .featuredPost
+  {
+    flex-direction: column-reverse;
+  }
+  .OtherPosts{
+      flex-direction: column;
+  }
+  .post-img,
+  .post-info {
+    width: 100%;
+  }
+  .post-info {
+    height: 100vh;
+  }
+  .post-info-content a {
+    height: 80px;
+  }
+  .post-img {
+    width: 100vw;
+    height: 45vh;
+  }
+  .post-img img {
+    transform-origin: top left;
+    transform: scale(0.5);
+    margin-left: 100px;
+  }
 }
 
-@keyframes setClipPath{
-    from{
-        clip-path: circle(0px at var(--bubbleCircleLocation));
-        -webkit-clip-path: circle(0px at var(--bubbleCircleLocation));
-    }
-    to{
-        clip-path: circle(var(--bubbleCircle) at var(--bubbleCircleLocation)); 
-        -webkit-clip-path: circle(var(--bubbleCircle) at var(--bubbleCircleLocation));
-    }
+@keyframes setClipPath {
+  from {
+    clip-path: circle(0px at var(--bubbleCircleLocation));
+    -webkit-clip-path: circle(0px at var(--bubbleCircleLocation));
+  }
+  to {
+    clip-path: circle(var(--bubbleCircle) at var(--bubbleCircleLocation));
+    -webkit-clip-path: circle(
+      var(--bubbleCircle) at var(--bubbleCircleLocation)
+    );
+  }
 }
 
-@keyframes setBGforNav{
-    from{
-        background-color: transparent;
-    }
-    to{
-        background-color: transparent;
-    }
-}
-
-@keyframes animateESaid{
-    from{
-        color: var(--dark);
-    }
-    to{
-        color: var(--primary);
-    }
-}
-
-@keyframes animateEQuote{
-    from{
-        color: var(--primary);
-        transform: translateX(100%);
-    }
-    to{
-        color: var(--dark);
-        transform: translateX(0%);
-    }
-}
-
-@keyframes animatemcnH1{
-    from{
-        color: var(--primary) !important;
-    }
-    to{
-        color: var(--dark) !important;
-    }
+@keyframes setBGforNav {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color: transparent;
+  }
 }

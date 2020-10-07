@@ -2,6 +2,7 @@
   --logoAnimationFontSize: 100px;
 }
 .navbar {
+  font-size: 1rem;
   background-color: var(--dark);
   display: flex;
   height: 70px;
@@ -23,7 +24,7 @@
 }
 .navLists {
   list-style: none;
-  color: white;
+  color: var(--light);
   display: flex;
   justify-content: space-evenly;
   width: 50%;
@@ -32,6 +33,9 @@
 }
 .navlist {
   cursor: pointer;
+}
+.navLists li:hover{
+  color: var(--secondary);
 }
 .navlist a {
   text-decoration: none;
@@ -48,9 +52,12 @@
   :root {
     --logoAnimationFontSize: 50px;
   }
+  .navbar{
+    width: 100vw;
+  }
   .navLists {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     flex-direction: column;
     background-color: var(--dark);
     height: 100vh;

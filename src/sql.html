@@ -12,186 +12,175 @@
     <div class='container'>
         <div class='heading'>SQL --> by myCODEnotein</div>
         <div class='content'>
+            <h1 class="text-danger">LET US MAKE A HOSPITAL MANAGEMENT SYSTEM</h1>
             <div class="section">
-                <h2>DATABASE </h2>
-                <h3>CREATING A DATABASE</h3>
+                <h2>CREATING THE DATABASE</h2>
                 <div class="code">
-                    <span class='text-primary'>CREATE </span><span class='text-danger'>DATABASE </span>nameOfDatabase;
+                    <span class='text-primary'>CREATE</span> <span class='text-danger'>DATABASE</span> hospital;
                 </div>
-                <h3>MAKING A CONNECTION WITH A DATABASE</h3>
+                <h3>LET US CONNECT WITH THE DATABASE</h3>
                 <div class="code">
-                    <span class='text-primary'>CONNECT </span>nameOfDatabase <span class='text-info'>;</span><br>OR <br>
-                    <span class='text-primary'>USE </span>nameOfDatabase <span class='text-info'>;</span>
+                    <span class='text-primary'>CONNECT/USE</span> hospital;
                 </div>
-                <h3>SEEING ALL DATABASES</h3>
-                <div class="code">
-                    <span class='text-primary'>SHOW </span><span class='text-danger'>DATABASES </span><span
-                        class='text-info'>;</span>
+            </div>
+            <!-- ***************** -->
+            <div class="section">
+                <h2>CREATING THE TABLE</h2>
+                <img src="/img/sql_images/createTable.jpg" alt="CREATE TABLE COMMAND">
+                <div class="note bg-dark">
+                    <div class="note-list">
+                        <div class="addAStickyNote"></div>
+                        <div>PRIMARY KEY MUST BE WRITTEN AS IT IS . WRITING ONLY "PRIMARY" IS NOT ACCEPTED</div>
+                    </div>
+                    <div class="note-list">
+                        <div class="addAStickyNote"></div>
+                        ONE MORE CONSTRAINT --> UNIQUE KEY <br>
+                        UNIQUE KEY AND PRIMARY KEY CAN BE APPLIED AT ROW LEVEL ALSO <br>
+                    </div>
+                </div>
+                <img src="/img/sql_images/rowLevel.jpg" alt="TABLE AT ROW LEVEL EXAMPLE">
+            </div>
+
+            <!-- ***************** -->
+            <div class="section">
+                <h2>DATATYPES IN SQL</h2>
+                <div style="display: flex;">
+                    <img style="background-size: cover;height: 100vh;" src="/img/sql_images/sql-datatypes.png" alt="DATATYPES IN SQL">
+                    <div class="code-right-img">
+                        <div>
+                            <div class="addAStickyNote"></div>
+                            <span> DATE : yyyy/mm/dd</span>
+                        </div>
+                        <div>
+                            <div class="addAStickyNote"></div>
+                            <span> TIME : hh:mm:ss</span>
+                        </div>
+                        <div>
+                            <div class="addAStickyNote"></div>
+                            <span> DATETIME : yyyy/mm/dd hh:mm:ss</span>
+                        </div>
+                        <div>
+                            <div class="addAStickyNote"></div>
+                            <span>YEAR(2) - last 2 digits of year</span> <br>
+                            <pre class='tab-pre'>&Tab;&nbsp;&nbsp;&nbsp;</pre><span>YEAR(4) - all 4 digits of year</span>
+                        </div>
+                        
+                        <div>
+                            <div class="addAStickyNote"></div>
+                            <span>CHAR - default size is 1 </span><br>
+                            <pre class='tab-pre'>&Tab;&nbsp;&nbsp;&nbsp;</pre><span> ( if not specified )</span>
+                        </div>
+                        <div>
+                            <div class="addAStickyNote"></div>
+                            <span>ENUM - storage of specified </span> <br>
+                            <pre class='tab-pre'>&Tab;&nbsp;&nbsp;&nbsp;</pre><span>values</span>
+                        </div>
+
+                    </div>
                 </div>
             </div>
 
+            <!-- ***************** -->
             <div class="section">
-                <h2>TABLES IN SQL </h2>
-                <h3>CREATING A TABLE</h3>
-                <div class="code">
-                    <span class='text-primary'>CREATE </span><span class='text-danger'>TABLE </span> <br>
-                    nameOfTable (colName1 <span class="text-info">DATATYPE</span> <span
-                        class="text-warning">CONSTRAINTS</span> , <br>
-                    colName2 <span class="text-info">DATATYPE</span> <span class="text-warning">CONSTRAINTS</span> ,
-                    <span class='text-info'>...</span>)
-                    <span class='text-info'>;</span>
-                </div>
+                <h2>INSERT COMMAND IN SQL</h2>
+                <h3>INSERTION OF ONE VALUE</h3>
+                <img src="/img/sql_images/insert1.jpg" alt="INSERTING ONE RECORD">
+                <h3>INSERTION OF MULTIPLE VALUES</h3>
+                <img src="/img/sql_images/insertMutiple.jpg" alt="INSERTING MULTIPLE RECORDS">
+            </div>
 
-                <h3>GETTING INFO OF TABLE</h3>
+            <!-- ***************** -->
+            <div class="section">
+                <h2>QUERYING IN SQL </h2>
+                <h3>SELECTION OF ALL RECORDS</h3>
+                <img src="/img/sql_images/selectAll.jpg" alt="SELECT ALL COLUMNS BY * EXAMPLE">
+                <h3>SELECTION OF SPECIFIC COLUMNS</h3>
+                <img src="/img/sql_images/selectSpecific.jpg" alt="SELECTION OG SPECIFIC COLUMNS">
+                <h3>SELECTION OF SPECIFIC RECORDS</h3>
+                <img src="/img/sql_images/selectANDwhere.jpg" alt="SELECTION OF SPECIFIC RECORDS">
+                <h3>SELECTION OF DISTINCT/DIFFERENT RECORDS</h3>
+                <img src="/img/sql_images/distinct_keyword.jpg" alt="DISTINCT RECORDS">
+                <h3>ORDERING THE RECORDS</h3>
+                <img src="/img/sql_images/orderBy.jpg" alt="ORDER BY EXAMPLE">
                 <div class="code">
-                    <span class='text-primary'>DESC </span>nameOfTable <span class='text-info'>;</span> <br>OR <br>
-                    <span class='text-primary'>DESCRIBE </span>nameOfTable <span class='text-info'>;</span> <br>OR <br>
-                    <span class='text-primary'>EXPLAIN </span>nameOfTable <span class='text-info'>;</span> <br>
+                    ORDER CLAUSE : ORDER BY DESC/ASC <br>
+                    DEFAULT : ASC
                 </div>
+                <h3>DISPLAYING DIFFERENT NAME + EXPRESSIONS IN SQL</h3>
+                <img src="/img/sql_images/use_of_as_and_expression.jpg" alt="USE OF AS AND EXPRESSIONS">
+                <div class="code">AS CAN BE USED WITH SIMPLE COLUMNS AS WELL</div>
+            </div>
 
-                <h3>INSERTING VALUES IN THE TABLE</h3>
+            <!-- ***************** -->
+            <div class="section">
+                <h2>OPERATORS IN SQL</h2>
+                <h3>COMPARISON OPERATORS</h3>
                 <div class="code">
-                    <span class='text-primary'>INSERT </span><span class='text-danger'>INTO </span>nameOfTable <br>
-                    <span class='text-primary'>VALUES </span>(<span class="text-warning">value1</span> , <span
-                        class="text-warning">value2</span> , <span class='text-info'>...</span>) <span
-                        class='text-info'>;</span>
-                    <div class="comment">
-                        NOTE THAT MUTLIPLE RECORDS CAN BE INSERTED BY ADD REQ. <br> <span class='text-warning'>"</span>
-                        VALUE(value1,value2,...) <span class='text-warning'>"</span>
-                        SEPARATED BY
-                        COMMAS
-                    </div>
+                    < , <= , > , >= , = , != or <> <br>
+                    NOTE THAT NULL VALUE CAN'T BE CHECKED BY '=' OPERATOR
                 </div>
+                <h3>"BETWEEN" , "IN" AND "IS" OPERATOR</h3>
+                <div class="code">
+                    <span class='text-danger'>BETWEEN</span> <br>
+                    syntax of using : colname <span class='text-primary'>BETWEEN</span> value1 AND value2 <br>
+                    <span class='text-danger'>IN</span> <br>
+                    syntax of using : colname <span class='text-primary'>IN</span>(val1,valu2,...) <br>
+                    <span class='text-danger'>IS</span> <br>
+                    syntax of using : colname <span class='text-primary'>IS</span> value <br>
+                    checking null value : colname <span class='text-primary'>IS</span> NULL <br>
+                    NOTE: <span class='text-danger'>NOT BETWEEN</span> , <span class='text-danger'>NOT IN</span> AND <span class='text-danger'>IS NOT</span> ALSO EXISTS
 
-                <h3>SEEING ALL TABLES </h3>
-                <div class="code">
-                    <span class='text-primary'>SHOW </span><span class='text-danger'>TABLES </span><span
-                        class='text-info'>;</span>
                 </div>
-
-                <h3>DATATYPES</h3>
+                <h3>"AND" AND "OR" OPERATOR</h3>
                 <div class="code">
-                    NUMERICAL --> <span class='text-danger'>INT , <br> 
-                    <pre style="display: inline-block;">&Tab;&Tab;</pre> DECIMAL(n,d)</span>
-                    <div class="comment"> <pre style="display: inline-block;">&Tab;&Tab;</pre> n represents no. of digits before decimal <pre style="display: inline-block;">&Tab;&Tab;</pre> and d represents after decimal</div>
+                    <span class='text-danger'>AND</span> <br>
+                    syntax : condition1 <span class='text-primary'>AND</span> condition2 <br>
+                    <span class='text-danger'>OR</span> <br>
+                    syntax : condition1 <span class='text-primary'>OR</span> condition2 <br>
+                    NOTE : <span class='text-danger'>NOT AND</span> AND <span class='text-danger'>NOT OR</span> DOES NOT EXISTS
                 </div>
+                <h3>"NOT" OPERATOR</h3>
                 <div class="code">
-                    TEXT --><span class='text-danger'> VARCHAR(maxSize) , <br> CHAR(maxSize) , <br> ENUM (value1,value2,...)</span>
+                    syntax: <span class='text-primary'>NOT</span> condition <br>
+                    <span class='text-primary'>NOT</span> true_condition WILL GIVE FALSE <br> 
+                    <span class='text-primary'>NOT</span> false_condition WILL GIVE TRUE 
                 </div>
+                <h3>"LIKE" OPERATOR</h3>
+                <img src="/img/sql_images/like_with_under_and_percent.jpg" alt="LIKE OPERATOR EXAMPLE">
                 <div class="code">
-                    DATE/TIME --> <span class='text-danger'>DATE <br>TIME <br>YEAR(2 OR 4) <br>DATETIME</span>
-                    <div class="comment">
-                        DATE IS STORED IN THE FORMAT :- yyyy/mm/dd OR yyyy-mm-dd <br>
-                        TIME IS STORED IN THE FORMAT :- hh:mm:ss <br>
-                        YEAR(2) --> stores last two digits of year <br>
-                        YEAR(4) --> stores the full year
-                    </div>
+                    <span class='text-primary'>_</span> REPRESENTS 1 character BEFORE "a" <br>
+                    <span class='text-primary'>%</span> REPRESENTS any no of character(includes 0) AFTER "a" <br>
                 </div>
-
-                <h3>CONSTRAINTS</h3>
+                <h3>LIKE WITH DATE DATATYPE</h3>
+                <img src="/img/sql_images/matching_date_with_like.jpg" alt="DATE DATATYPE WITH LIKE OPERATOR">
                 <div class="code">
-                    <span class='text-warning'>1.</span><span class='text-danger'>PRIMARY KEY</span><br>
-                    CAN BE APPLIED AT ROW/COLUMN LEVEL 
-                    <div class="comment"><br>SYNTAX FOR COLUMN LEVEL</div>
-                    colName DATATYPE <span class='text-danger'>PRIMARY KEY</span>
-
-                    <div class="comment"><br> EXAMPLE FOR ROW LEVEL :-</div>
-                    <span class='text-primary'>CREATE </span><span class='text-danger'>TABLE </span>student <span class='text-danger'>VALUES </span>(sno <span class='text-info'>INT</span> , age <span class='text-info'>INT</span> , name <span class='text-info'>CHAR(30)</span>, <span class='text-danger'>PRIMARY KEY</span>(<span class='text-warning'>colName1</span>,<span class='text-warning'>colName2</span>,...));
-                    <div class="comment">NOTE THAT COMPOSITE PRIMARY KEY CAN BE APPLIED AT ROW LEVEL ONLY </div>
-                </div>
-                <div class="code">
-                    <span class='text-warning'>2.</span><span class='text-danger'>UNIQUE KEY</span>
-                    <br> CAN BE APPLIED AT ROW/COLUMN LEVEL
-                    <br> SYNTAX IS SAME AS DESCRIBED IN PRIMARY KEY
-                </div>
-                <div class="code">
-                    <span class='text-warning'>3.</span> <span class='text-danger'>NOT NULL</span><br>
-                    <span class='text-warning'>4.</span> <span class='text-danger'>DEFAULT</span> value<br>
-                    THESE TWO CONSTRAINTS CAN BE APPLIED AT COLUMN LEVEL ONLY
+                    5 UNDERSCORE FOR : yyyy/ or yyyy- <br>
+                    % FOR : another "/ or -" + any no of character in days <br>
+                    % IS USED BECAUSE WE DON'T CARE ABOUT NO OF CHARACTERS AFTER MONTH <br>
+                    <span class='text-danger'>ANOTHER WAY OF DOING THE SAME THING</span> <br>
+                    INSTEAD OF LIKE OPERATOR : <br>
+                    <span class='text-primary'>MONTH</span>(dateOfAdm) = 11 <br>
+                    SIMILARLY "DAY" AND "YEAR" FUNCTION ALSO EXISTS
                 </div>
             </div>
 
-            <div class="section">
-                <h2>QUERYING IN TABLES </h2>
-
-                <h3>TO SEE RECORDS</h3>
-                <div class="code">
-                    <span class='text-primary'>SELECT </span>colName1,colName2,... <span class='text-danger'>FROM
-                    </span>nameOfTable <span class='text-info'>;</span>
-                    <div class="comment">
-                        NOTE THAT * REPRESENTS ALL COLUMNS
-                    </div>
-                </div>
-
-                <h3>FILTERING THROUGH RECORDS</h3>
-                <div class="code">
-                    <div class="comment">
-                        WITH THE HELP OF SELECT COMMAND AND USE OF <br> <span class='text-danger'>WHERE</span>
-                        CLAUSE AT THE END OF SELECT COMMAND STATEMENT RECORDS CAN BE FILTERED
-                    </div>
-                    <span class='text-primary'>SELECT </span>colName1,colName2,... <span class='text-danger'>FROM
-                    </span>nameOfTable <br> <span class='text-danger'>WHERE </span>condition <span
-                        class='text-info'>;</span>
-                </div>
-
-                <h3>OPERATORS </h3>
-                <div class="code">
-                    <div class="comment text-danger">COMPARISON/RELATIONAL OPERATORS </div>
-                    <span class='text-info'>
-                        < , > , >= , <= ,=, != or <>
-                    </span>
-                </div>
-                <div class="code">
-                    <div class="comment text-danger">BETWEEN OPERATOR</div>
-                    colName <span class='text-info'>BETWEEN </span>value1 <span class='text-danger'>AND </span>value2
-                    <div class="comment">CONDITION FOR CHECKING IF THE VALUE IS NOT BETWEEN THE SPECIFIED VALUES</div>
-                    colName <span class='text-info'>NOT BETWEEN </span></span>value1 <span class='text-danger'>AND </span>value2
-                </div>
-                <div class="code">
-                    <div class="comment text-danger">IN OPERATOR</div>
-                    colName <span class='text-info'>IN </span>( <span class='text-warning'>value1</span> , <span class='text-warning'>value2</span> , <span class='text-info'>...</span>)
-                    <div class="comment">CONDITION FOR CHECKING IF THE VALUE IS NOT IN SPECIFIED VALUES</div>
-                    colName <span class='text-info'>NOT IN </span>( <span class='text-warning'>value1</span> , <span class='text-warning'>value2</span> , <span class='text-info'>...</span>)
-                </div>
-                <div class="code">
-                    <div class="comment text-danger">IS OPERATOR</div>
-                    <div class="comment">USED TO CHECK EQULATIY <br>
-                    NOTE THAT COLUMN VALUE IS NULL CAN BE CHECKED BY THIS OPERATOR ONLY
-                    </div>
-                    colName <span class='text-info'>IS </span>VALUE
-                    <div class="comment">CONDITION TO CHECK INEQUALITY</div>
-                    colName <span class='text-info'>IS NOT </span>VALUE
-                </div>
-                <div class="code">
-                    <div class="comment text-danger">NOT OPERATOR</div>
-                    <div class="comment">GIVES TRUE IF RESULT IS FALSE AND VICE-VERSA</div>
-                    <span class='text-info'>NOT </span>condition
-                </div>
-                <div class="code">
-                    <div class="comment text-danger">AND OPERATOR</div>
-                    <div class="comment">USED TO JOIN TWO CONDITIONS</div>
-                    condition1 <span class='text-info'>AND </span>condition2
-                </div>
-                <div class="code">
-                    <div class="comment text-danger">OR OPERATOR</div>
-                    <div class="comment">USED TO JOIN TWO CONDITIONSX</div>
-                    condition1 <span class='text-info'>OR </span>condition2
-                </div>
-                <div class="code">
-                    <div class="comment text-danger">LIKE OPERATOR</div>
-                    <span class='text-warning'>%</span> --> represents any no of character from 0 to n <br>
-                    <span class='text-warning'>_</span> --> represents only 1 character <br>
-
-                    colName <span class='text-info'>LIKE </span>""
-                    <div class="comment">EXAMPLE :- </div>
-                    <pre style="display: inline-block;">&Tab;</pre>name <span class='text-info'>LIKE </span><span class='text-warning'>"VIKAS%"</span> <br>
-                    <pre style="display: inline-block;">&Tab;</pre>% represents any no of characters <br>
-                    <pre style="display: inline-block;">&Tab;</pre>after the name VIKAS
-                </div>
-            </div>
+            <!-- ***************** -->
         </div>
     </div>
     <script id='mainScriptTag' data-presentScripts='' data-presentStyles='' src='/js/app.js'></script>
+    <script>
+        const stickSVG = 
+        `
+        <svg width="2em" height="1.5em" viewBox="0 0 16 16" class="bi bi-sticky" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" d="M1 2.5A1.5 1.5 0 0 1 2.5 1h11A1.5 1.5 0 0 1 15 2.5v6.086a1.5 1.5 0 0 1-.44 1.06l-4.914 4.915a1.5 1.5 0 0 1-1.06.439H2.5A1.5 1.5 0 0 1 1 13.5v-11zM2.5 2a.5.5 0 0 0-.5.5v11a.5.5 0 0 0 .5.5h6.086a.5.5 0 0 0 .353-.146l4.915-4.915A.5.5 0 0 0 14 8.586V2.5a.5.5 0 0 0-.5-.5h-11z"/>
+        <path fill-rule="evenodd" d="M9.5 9a.5.5 0 0 0-.5.5v5H8v-5A1.5 1.5 0 0 1 9.5 8h5v1h-5z"/>
+        </svg>
+        `;
+        const addAStickyNote = document.querySelectorAll(".addAStickyNote");
+        addAStickyNote.forEach(sticky=>{
+            sticky.innerHTML=stickSVG;
+        });
+    </script>
 </body>
 
 </html>

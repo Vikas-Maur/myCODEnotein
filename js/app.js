@@ -1,7 +1,7 @@
 // "content.js" removed
-// "addNote.js" removed
+// "addNote.js" ,  "addNote.css" removed
 const neededScripts = ["basicScript.js", "teleporter.js", "tab.js"];
-const neededStyles = ["navbar.css", "addNote.css"];
+const neededStyles = ["navbar.css"];
 const presentScripts = document.querySelector("#mainScriptTag").getAttribute("data-presentScripts") || "";
 const presentStyles = document.querySelector("#mainScriptTag").getAttribute("data-presentStyles") || "";
 let animationsToBePlayed = [];

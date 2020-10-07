@@ -9,6 +9,8 @@
 
 body{
   counter-reset: headingCounter;
+  color: rgb(46, 38, 38);
+  font-size: 1.5rem;
 }
 
 .container {
@@ -39,7 +41,12 @@ body{
   background-color: var(--dark);
 }
 
+h1,img{
+  margin-bottom: var(--basicMarginBottom);
+}
+
 .section{
+  line-height: 45px;
   margin-bottom: 70px;
   counter-reset: subHeadingCounter;
   padding-bottom: 20px;
@@ -75,7 +82,7 @@ body{
   margin-right: 20px;
 }
 
-.section>.code{
+.section>.code , .code-right-img{
   font-size: 1.5rem;
   padding: 30px;
   width: 70%;
@@ -83,18 +90,15 @@ body{
   background-color: black;
   margin-bottom: var(--basicMarginBottom);
   border-radius: 7px;
-  line-height: 1.8;
+  line-height: 3.8rem;
   overflow-x: scroll;
   font-family: Consolas, 'Courier New', monospace;
   font-weight: bold;
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
 }
 .section>.code::-webkit-scrollbar {
   display: none;
-}
-
-.section>.code {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
 }
 .comment{
   color: var(--secondary);
@@ -114,6 +118,41 @@ body{
   color: var(--light);
   margin-bottom: var(--basicMarginBottom);
   letter-spacing: 2px;
+}
+
+.note{
+  width: 70%;
+  font-size: 1.5rem;
+  padding: 30px;
+  margin-bottom: var(--basicMarginBottom);
+  border-radius: 7px;
+  color: var(--light);
+}
+
+
+.note-list{
+  display: flex;
+  margin-bottom: var(--basicMarginBottom);
+}
+
+
+.note-list svg{
+  color: var(--warning);
+  margin-right: 10px;
+}
+
+.code-right-img{
+  background-color: var(--dark);
+  width: 50%;
+  margin-left: 10px;
+  overflow-x: hidden;
+  line-height: 0.3rem;
+}
+
+.addAStickyNote{
+  display: inline-block;
+  color: var(--warning);
+  padding: 30px;
 }
 
 @media (max-width: 500px) {

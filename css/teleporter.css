@@ -9,6 +9,7 @@
   color: var(--light);
   -ms-overflow-style: none;
   scrollbar-width: none;
+  font-size: 1rem;
 }
 #teleporter::-webkit-scrollbar {
   display: none;

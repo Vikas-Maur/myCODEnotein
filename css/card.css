@@ -53,11 +53,16 @@
     width: 40%;
     margin-top: 10px;
 }
+.card-to:hover{
+    background-color: var(--success);
+}
+
 .card-to a{
     color: var(--light);
     text-decoration: none;
     font-family: cursive;
 }
+
 
 @media (max-width:500px){
     .card{

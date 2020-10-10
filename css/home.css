@@ -10,16 +10,6 @@
   align-items: center;
   overflow-y: hidden;
 }
-.startNavigation{
-  text-align: center;
-  margin: 0% auto;
-  margin-top: 90px;
-  padding: 90px;
-  background-color: var(--primary);
-  color: var(--dark);
-  font-size: 2rem;
-  width: 80%;
-}
 .heroImage {
   margin-top: 7%;
   margin-left: 7%;
@@ -44,6 +34,17 @@
 }
 .tagline::selection {
   background: var(--dark);
+}
+
+.startNavigation{
+  text-align: center;
+  margin: 0% auto;
+  margin-top: 90px;
+  padding: 90px;
+  background-color: var(--primary);
+  color: var(--dark);
+  font-size: 2rem;
+  width: 80%;
 }
 
 .featuredPost,

@@ -105,6 +105,21 @@ function RunApp() {
     AppendStyles();
     SetNavbar()
 
+    const googleTagManager = 
+    `
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167954453-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-167954453-3');
+</script>
+    `
+
+    document.querySelector("head").innerHTML = googleTagManager+document.querySelector("head").innerHTML;
+
     window.onload = () => {
         document.body.style.backgroundColor = "var(--light)";
         PlayAnimations();

@@ -13,6 +13,8 @@
         <div class='heading'>SQL --> by myCODEnotein</div>
         <div class='content'>
             <h1 class="text-danger">LET US MAKE A HOSPITAL MANAGEMENT SYSTEM</h1>
+
+            <!-- ***************** -->
             <div class="section">
                 <h2>CREATING THE DATABASE</h2>
                 <div class="code">
@@ -23,22 +25,22 @@
                     <span class='text-primary'>CONNECT/USE</span> hospital;
                 </div>
             </div>
+
             <!-- ***************** -->
             <div class="section">
                 <h2>CREATING THE TABLE</h2>
                 <img src="/img/sql_images/createTable.jpg" alt="CREATE TABLE COMMAND">
-                <div class="note bg-dark">
-                    <div class="note-list">
-                        <div class="addAStickyNote"></div>
-                        <div>PRIMARY KEY MUST BE WRITTEN AS IT IS . WRITING ONLY "PRIMARY" IS NOT ACCEPTED</div>
-                    </div>
-                    <div class="note-list">
-                        <div class="addAStickyNote"></div>
-                        ONE MORE CONSTRAINT --> UNIQUE KEY <br>
-                        UNIQUE KEY AND PRIMARY KEY CAN BE APPLIED AT ROW LEVEL ALSO <br>
-                    </div>
+                <div class="code">
+                    <span class='text-warning'>UNIQUE KEY</span> is also a constraint <br>
+                    <span class='text-warning'>UNIQUE KEY</span> and <span class='text-warning'>PRIMARY KEY</span> can be applied at row level also <br>
+                    <span class='text-info'>NOTE :</span>You can write "UNIQUE" instead of "UNIQUE KEY" <br>
+                    but this is not the case with "PRIMARY KEY"
                 </div>
                 <img src="/img/sql_images/rowLevel.jpg" alt="TABLE AT ROW LEVEL EXAMPLE">
+                <div class="code">
+                    TO KNOW ABOUT A TABLE: <br>
+                    <span class='text-primary'>DESC/DESCRIBE/EXPLAIN</span> nameOfTable ; 
+                </div>
             </div>
 
             <!-- ***************** -->

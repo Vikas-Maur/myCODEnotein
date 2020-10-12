@@ -1,0 +1,80 @@
+.pc,.phone{
+    margin-top: 100px;
+    width: 100vw;
+    border-bottom: 5px solid var(--dark);
+}
+
+.phone{
+    margin-bottom: 100px;
+}
+
+.pc>h1,.phone>h1{
+    text-align: center;
+    color: var(--primary);
+}
+
+.wallpaper-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.wallpaper-row{
+    display: flex;
+}
+
+.wallpaper-pc{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 400px;
+    margin-left: 100px;
+}
+
+.wallpaper-phone{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 500px;
+    margin: 0px auto;
+}
+
+.wallpaper-pc img , .wallpaper-phone img{
+    width: 90%;
+    height: 80%;
+    margin: auto;
+    margin-bottom: 0%;
+    background-size: cover;
+}
+
+.wallpaper-pc div a,.wallpaper-phone div a{
+    background-color: var(--success);
+    color: var(--dark);
+    font-weight: bolder;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 10px 0px;
+    width: 90%;
+}
+
+.wallpaper-pc div a:hover,.wallpaper-phone div a:hover{
+    color: var(--light);
+}
+
+@media (max-width:500px){
+
+    .pc>h1,.phone>h1{
+        text-align: left;
+        width: 80%;
+        margin: auto;
+    }
+    .wallpaper-pc,.wallpaper-phone{
+        width: 80%;
+        margin: auto;
+    }
+    .wallpaper-row{
+        flex-direction: column;
+    }
+}

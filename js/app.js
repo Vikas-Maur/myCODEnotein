@@ -17,6 +17,7 @@ const navbar =
             <li class="navlist"><a href="/">HOME</a></li>
             <li class="navlist"><a href="/src/pygame.html">PYGAME</a></li>
             <li class="navlist"><a href="/src/sql.html">SQL</a></li>
+            <li class="navlist"><a href="/page/wallpapers">WALLPAPERS</a></li>
             <li class="navlist"><a href="https://mycodenotein.blogspot.com">MY OLD WEBSITE</a></li>
         </ul>
         <div class="hamburger">

@@ -87,9 +87,3 @@ body{
 .tab-pre{
     display: inline-block;
 }
-
-@media (max-width:500px){
-    *{
-        max-width: 100vw;
-    }
-}

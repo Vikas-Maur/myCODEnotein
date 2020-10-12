@@ -9,23 +9,7 @@ let animationsToBePlayed = [];
 const navbar =
     `
 <header>
-    <nav class="navbar">
-        <div class="logo">
-            myCODEnotein
-        </div>
-        <ul class="navLists">
-            <li class="navlist"><a href="/">HOME</a></li>
-            <li class="navlist"><a href="/src/pygame.html">PYGAME</a></li>
-            <li class="navlist"><a href="/src/sql.html">SQL</a></li>
-            <li class="navlist"><a href="/page/wallpapers">WALLPAPERS</a></li>
-            <li class="navlist"><a href="https://mycodenotein.blogspot.com">MY OLD WEBSITE</a></li>
-        </ul>
-        <div class="hamburger">
-            <div class="line line1"></div>
-            <div class="line line2"></div>
-            <div class="line line3"></div>
-        </div>
-    </nav>
+    
 </header>
 `;
 
@@ -50,65 +34,65 @@ function AppendStyles() {
     });
 }
 
-function SetNavbar() {
-    document.body.innerHTML = navbar + document.body.innerHTML;
-    const hamburger = document.querySelector(".hamburger");
-    const lines = [hamburger.querySelector(".line1"), hamburger.querySelector(".line2"), hamburger.querySelector(".line3")];
-    const navLists = document.querySelector("nav .navLists");
+// function SetNavbar() {
+//     document.body.innerHTML = navbar + document.body.innerHTML;
+//     const hamburger = document.querySelector(".hamburger");
+//     const lines = [hamburger.querySelector(".line1"), hamburger.querySelector(".line2"), hamburger.querySelector(".line3")];
+//     const navLists = document.querySelector("nav .navLists");
 
-    if (window.innerWidth <= 500) {
-        navLists.querySelectorAll(".navlist").forEach(list => {
-            list.addEventListener("click", () => {
-                try {
-                    navLists.classList.remove("navVisible");
-                    lines[0].classList.remove("line1active");
-                    lines[1].classList.remove("line2inactive");
-                    lines[2].classList.remove("line3active");
-                } catch (error) {
-                    console.log(error);
-                }
-            });
-        });
-    }
-    hamburger.addEventListener("click", () => {
-        navLists.classList.toggle("navVisible");
-        lines[0].classList.toggle("line1active");
-        lines[1].classList.toggle("line2inactive");
-        lines[2].classList.toggle("line3active");
-    });
-    AddAnimation(NavbarAnimation);
+//     if (window.innerWidth <= 500) {
+//         navLists.querySelectorAll(".navlist").forEach(list => {
+//             list.addEventListener("click", () => {
+//                 try {
+//                     navLists.classList.remove("navVisible");
+//                     lines[0].classList.remove("line1active");
+//                     lines[1].classList.remove("line2inactive");
+//                     lines[2].classList.remove("line3active");
+//                 } catch (error) {
+//                     console.log(error);
+//                 }
+//             });
+//         });
+//     }
+//     hamburger.addEventListener("click", () => {
+//         navLists.classList.toggle("navVisible");
+//         lines[0].classList.toggle("line1active");
+//         lines[1].classList.toggle("line2inactive");
+//         lines[2].classList.toggle("line3active");
+//     });
+//     AddAnimation(NavbarAnimation);
 
-}
+// }
 
-function NavbarAnimation() {
-    if (sessionStorage.getItem("firstViewOnmyCODEnotein") === true || sessionStorage.getItem("firstViewOnmyCODEnotein") === null) {
-        sessionStorage.setItem("firstViewOnmyCODEnotein", false);
-        document.querySelector(".logo").style.setProperty("animation", "logoAnimation 4s ease-in");
-        document.querySelector("nav").setAttribute("data-animationPlayed", "true");
-    }
-    else {
-        document.querySelector("nav").setAttribute("data-animationPlayed", "false");
-    }
-}
+// function NavbarAnimation() {
+//     if (sessionStorage.getItem("firstViewOnmyCODEnotein") === true || sessionStorage.getItem("firstViewOnmyCODEnotein") === null) {
+//         sessionStorage.setItem("firstViewOnmyCODEnotein", false);
+//         document.querySelector(".logo").style.setProperty("animation", "logoAnimation 4s ease-in");
+//         document.querySelector("nav").setAttribute("data-animationPlayed", "true");
+//     }
+//     else {
+//         document.querySelector("nav").setAttribute("data-animationPlayed", "false");
+//     }
+// }
 
-function AddAnimation(animation) {
-    animationsToBePlayed.push(animation);
-}
+// function AddAnimation(animation) {
+//     animationsToBePlayed.push(animation);
+// }
 
-function PlayAnimations() {
-    animationsToBePlayed.forEach((animation) => {
-        animation();
-    });
-}
+// function PlayAnimations() {
+//     animationsToBePlayed.forEach((animation) => {
+//         animation();
+//     });
+// }
 
-function RunApp() {
-    AppendScripts();
-    AppendStyles();
-    SetNavbar()
+// function RunApp() {
+//     AppendScripts();
+//     AppendStyles();
+//     SetNavbar()
 
-    window.onload = () => {
-        document.body.style.backgroundColor = "var(--light)";
-        PlayAnimations();
-    }
-}
-RunApp()
+//     window.onload = () => {
+//         document.body.style.backgroundColor = "var(--light)";
+//         PlayAnimations();
+//     }
+// }
+// RunApp()

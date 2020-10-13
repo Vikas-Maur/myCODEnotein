@@ -1,4 +1,5 @@
 @import "/css/card.css";
+@import "/css/featurePost.css";
 :root {
   --bubbleCircle: 455px;
   --bubbleCircleLocation: 100%;
@@ -47,46 +48,9 @@
   width: 80%;
 }
 
-.featuredPost,
 .OtherPosts {
   min-height: 100vh;
   display: flex;
-}
-.post-info,
-.post-img {
-  width: 50%;
-}
-
-.post-img img {
-  margin-top: 120px;
-}
-
-.post-info-content {
-  box-shadow: 13px 7px 13px 0px rgba(94, 94, 94, 1);
-  font-family: cursive;
-  font-weight: bolder;
-  font-size: 2rem;
-  color: var(--light);
-  background-color: var(--dark);
-  width: 80%;
-  height: 40%;
-  margin: auto;
-  margin-top: 140px;
-  padding-top: 150px;
-  text-align: center;
-}
-.post-info-content a {
-  text-align: center;
-  text-decoration: none;
-  border-radius: 3.5rem;
-  margin-left: 30%;
-  margin-top: 10px;
-  display: block;
-  height: 40px;
-  width: 40%;
-  padding: 10px;
-  background-color: var(--primary);
-  color: var(--dark);
 }
 
 @media (max-width: 1000px) {
@@ -120,31 +84,8 @@
   .heroImage {
     transform: scale(0.7);
   }
-  .featuredPost
-  {
-    flex-direction: column-reverse;
-  }
   .OtherPosts{
       flex-direction: column;
-  }
-  .post-img,
-  .post-info {
-    width: 100%;
-  }
-  .post-info {
-    height: 100vh;
-  }
-  .post-info-content a {
-    height: 80px;
-  }
-  .post-img {
-    width: 100vw;
-    height: 45vh;
-  }
-  .post-img img {
-    transform-origin: top left;
-    transform: scale(0.5);
-    margin-left: 100px;
   }
 }
 

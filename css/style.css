@@ -25,7 +25,8 @@ html{
 }
 body{
     font-family: sans-serif;
-    overflow-x: hidden;
+    width: 100vw !important;
+    overflow-x: hidden !important;
 }
 
 .text-primary{

@@ -3,8 +3,7 @@
     var(--primary , blue) 
     blue is given in case if primary color doesn't works
 */
-@import "basicStyle.css";
-
+@import "/css/basicStyle.css";
 :root{
     --primary: rgb(13,110,253);
     --secondary: rgb(108,117,125);

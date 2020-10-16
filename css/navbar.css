@@ -1,6 +1,6 @@
 header nav{
   display: flex;
-  height: 10vh;
+  height: 12vh;
   background-color: var(--dark);
   position: fixed;
   top: 0%;
@@ -77,5 +77,6 @@ header nav div{
   .logo{
       width: 80%;
       z-index: 2;
+      font-family: sans-serif;
   }
 }

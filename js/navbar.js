@@ -25,10 +25,9 @@ function AddNavbar() {
         <div class="navLists">
             <ul>
                 <li><a href="/">HOME</a></li>
-                <li><a href="/">PYGAME</a></li>
-                <li><a href="/">SQL</a></li>
-                <li><a href="/">WALLPAPERS</a></li>
-                <li><a href="/">MY OLD WEBSITE</a></li>
+                <li><a href="/src/pygame.html">PYGAME</a></li>
+                <li><a href="/src/sql.html">SQL</a></li>
+                <li><a href="https://mycodenotein.blogspot.com">MY OLD WEBSITE</a></li>
             </ul>
         </div>
         <div class="hamburger">

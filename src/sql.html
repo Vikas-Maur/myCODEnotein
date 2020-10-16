@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myCODEnotein</title>
+    <!-- <link rel="stylesheet" href="/css/style.css"> -->
 </head>
 
 <body>
@@ -176,6 +177,29 @@
                     <span class='text-danger'>SET</span> colName = value <br>
                     <span class='text-danger'>WHERE</span> condition;
                 </div>
+                <h3>CONCAT FUNCTION IN SQL</h3>
+                <div class="code">
+                    <div class="comment">USED TO ADD TWO STRINGS</div>
+                    <span class='text-info'>syntax: </span> <span class='text-primary'>CONCAT</span>(string1 , string2) <br>
+                    <br><span class='text-success'>For e.x.</span>: <br>
+                    <span class='text-primary'>UPDATE</span> patient <br>
+                    <span class='text-danger'>SET</span> name = <span class='text-danger'>CONCAT</span>("Mr." , name) <br>
+                    <span class='text-danger'>WHERE </span>gender = "M" ; 
+                </div>
+                <h3>LEFT FUNCTION IN SQL</h3>
+                <div class="code">
+                    <div class="comment">Used to return letters from a string</div>
+                    <span class='text-info'>syntax </span>: <span class='text-primary'>LEFT</span>(string , noOfCharacters) <br>
+                    <br><span class='text-success'>For e.x.</span>: <br>
+                    <span class='text-primary'>UPDATE</span> patient <br>
+                    <span class='text-danger'>SET</span> name = <span class='text-danger'>LEFT</span>(name,3) ; <br>
+                    <span class='text-info'>Output</span>: <br>
+                    All the name will be having first 3 characters stored only .
+                </div>
+                <img src="/img/sql_images/leftFunction.jpg" alt="LEFT FUNCTION ">
+                <div class="code">
+                    <span class='text-info'>NOTE :</span> This cannot be done on columns having datatypes like ENUM
+                </div>
             </div>
 
             <!-- ***************** -->
@@ -268,6 +292,7 @@
             sticky.innerHTML=stickSVG;
         });
     </script>
+    <!-- <script src="/js/navbar.js"></script> -->
 </body>
 
 </html>

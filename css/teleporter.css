@@ -31,6 +31,7 @@
   cursor: pointer;
   font-size: 1.1rem;
   font-weight: bolder;
+  font-family: consolas;
 }
 #teleportingList li:hover {
   color: var(--info);

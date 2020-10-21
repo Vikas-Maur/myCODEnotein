@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='description' content='Useful python modules ( mysql-connector , os , tkinter ) wrapped up in one blog - by myCODEnotein'>
+    <title>Python Modules -- Python Power in One Page (Fast and Effective) -- by myCODEnotein</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class='container'>
+        <div class='heading'>
+           Python Modules --> by myCODEnotein
+        </div>
+        <div class='content'>
+            <div class="section">
+                <h2>MySQL with Python </h2>
+                <h3>Installing the module</h3>
+                <div class="code">
+                    <span class='text-primary'>pip </span><span class='text-danger'>install</span> mysql-connector
+                </div>
+                <h3>Importing the module</h3>
+                <div class="code">
+                    <span class='text-info'>import</span> mysql.connector <span class='text-danger'>as</span> m
+                </div>
+                <h3>Connecting with the database</h3>
+                <div class="code">
+                    connection = m.<span class='text-primary'>connect</span>(**<span class='text-warning'>options</span>) <br>
+                    <span class='text-info'>For ex</span>: <br>
+                    connection = m.<span class='text-primary'>connect</span>(<span title="IP address of the mysql server instance" class='text-warning'>host</span>="localhost" <br>
+                    ,<span title="user name of the mysql server instance" class='text-warning'>user</span>="root",<span title="password of the mysql server instance" class='text-warning'>password</span>="myCODEnotein",<span title="name of database to connect . If database needs to be created then put empty string" class='text-warning'>database</span>="bestNotes")
+                    <div class="comment">
+                        # To know about option hover on the specific option name you want to know
+                    </div>
+                </div>
+                <h3>Creating a cursor object -- to execute queries</h3>
+                <div class="code">
+                    cursor = connection.<span class='text-primary'>cursor</span>()
+                </div>
+                <h3>Executing queries</h3>
+                <div class="code">
+                    cursor.<span class='text-primary'>execute</span>(query)
+                    <div class="comment">
+                        <span class='text-info'>Note:</span> if a command like <span class='text-success'>"SELECT"</span> is already 
+                        used then another select command can only be executed after you have fetched the retrieved records
+                    </div>
+                </div>
+                <h3>Fetching records</h3>
+                <div class="code">
+                    records = cursor.<span class='text-primary'>fetchall</span>()
+                    <div class="comment">
+                        # To Get One Record
+                    </div>
+                    onlyOneRecord = cursor.<span class='text-primary'>fetchone</span>() 
+                    <div class="comment"># This function works like read function in file handle. After fecthing one record if the function is called again then next record will be returned</div>                    
+                </div>
+                <h3>rowcount function </h3>
+                <div class="code">
+                    rowsAffected = cursor.<span title="Returns the rows affected by a query , usually after a dml command" class='text-primary'>rowcount</span>()
+                    <div class="comment"># Returns the rows affected by a query , usually after a dml command</div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>OS module in python</h2>
+                <h3>Importing os module</h3>
+                <div class="code">
+                    <span class='text-info'>import</span> os
+                </div>
+                <h3>Check if file/dir exists</h3>
+                <div class="code">
+                    os.<span class='text-danger'>path</span>.<span class='text-primary'>isfile</span>(Path) <br>
+                    os.<span class='text-danger'>path</span>.<span class='text-primary'>isdir</span>(Path) <br>
+                </div>
+                <h3>Start A file with os module</h3>
+                <div class="code">
+                    os.<span class='text-primary'>startfile</span>(filePath)
+                </div>
+                <h3>Clearing the CMD screen on which program is running</h3>
+                <div class="code">
+                    os.<span class='text-primary'>system</span>(<span class='text-warning'>"cls"</span>)
+                </div>
+            </div>
+            <div class="section">
+                <h2>Tkinter ---> GUI dev in python</h2>
+                <div class="code">
+                    <a href="https://mycodenotein.blogspot.com/2020/08/tkinter.html">Detailed Notes</a>
+                </div>
+                <h3>Importing tkinter</h3>
+                <div class="code">
+                    <span class='text-info'>import</span> tkinter <br>
+                    <div class="comment"># In this Page below line is used</div>
+                    <span class='text-danger'>from</span> tkinter <span class='text-info'>import</span> *
+                </div>
+                <h3>Required Code </h3>
+                <div class="code">
+                    root = <span class='text-primary'>Tk</span>()
+                    <div class="comment"># Note this is valid only if 2nd import statement is written</div>
+                    root.<span title="sets the size of tkinter window" class='text-primary'>geometry</span>("<span class='text-warning'>width</span><span class='text-info'>x</span><span class='text-warning'>height</span>")
+                    <br>
+                    root.<span title="Specifies the title of tkinter window" class='text-primary'>title</span>("myCODEnotein -- python modules")                   
+                    root.<span title="Runs an infinite loop which runs till the tkinter app is not exited , All the code below this will not work till app is exited" class='text-primary'>mainloop</span>()
+                </div>
+                <h3>Basic widget forming syntax</h3>
+                <div class="code">
+                    widgetHolder = <span class='text-primary'>Widget</span>(master,**options)
+                    <div class="comment"># To know **options run <span class='text-success'>widgetHolder</span>.<span class='text-primary'>keys</span>()</div>                    
+                </div>
+                <h3>Basic widgets</h3>
+                <div class="code">                    
+                <ul>
+                    <li>Label</li>
+                    <li>Frame</li>
+                    <li>Text</li>
+                    <li>Entry</li>
+                    <li>Button</li>
+                    <li>Canvas</li>
+                </ul>
+                </div>
+                <h3>Some New widgets</h3>
+                <div class="code">
+                    <div class="comment text-danger"># To get these new widgets first importing another ttk module in tkinter is required</div>
+                </div>
+                <div class="code">
+                    <span class='text-danger'>from</span> tkinter <span class='text-info'>import</span> ttk
+                </div>
+                <div class="code">
+                    <div class="comment text-info">New Widgets: </div>
+                    <ul>
+                        <li>Combobox --> <span class="comment"># Entry + MenuButton</span></li>
+                        <li>Notebook --> <span class="comment"># Used to give tabs</span></li>
+                        <li>Progressbar</li>
+                        <li>Separator</li>
+                        <li>Sizegrip</li>
+                        <li>Treeview</li>
+                    </ul>
+                    <div class='text-warning'>Click the link for More info :</div>
+                    <a target="_blank" href="https://docs.python.org/3/library/tkinter.ttk.html">Official python tkinter docs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='/js/navbar.js'></script>
+    <script src='/js/teleporter.js'></script>
+</body>
+</html>

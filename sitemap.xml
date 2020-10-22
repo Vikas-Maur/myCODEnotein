@@ -6,10 +6,6 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
-        <loc>https://mycodenotein.netlify.app/</loc>
-        <priority>1.00</priority>
-    </url>
-    <url>
         <loc>https://mycodenotein.netlify.app/src/sql.html</loc>
         <priority>0.80</priority>
     </url>

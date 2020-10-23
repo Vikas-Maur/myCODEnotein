@@ -1,6 +1,7 @@
 @import "basicAnimations.css";
 @import "teleporter.css";
 @import "/css/navbar.css";
+@import "/css/tabSection.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 :root{
@@ -69,6 +70,7 @@ h1,img{
 }
 .section h3{
   color: var(--warning);
+  width: 70%;
   font-size: 1.6rem;
   text-transform: uppercase;
   margin-bottom: var(--basicMarginBottom);

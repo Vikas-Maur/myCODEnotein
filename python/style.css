@@ -24,6 +24,7 @@
 .pythonAlphabet{
     width: 350px;
     min-height: 500px;
+    margin: 20px;
     background-color: var(--dark);
 }
 
@@ -46,10 +47,20 @@
 }
 
 .pythonAlphabet a{
+    display: block;
     color: var(--primary);
     text-decoration: none;
 }
 
 .pythonAlphabet ul li:hover{
     background-color: var(--success);
+}
+.pythonAlphabet a:hover{
+    color: var(--light);
+}
+
+@media (max-width:500px){
+    .starterText{
+        height: 400px;
+    }
 }

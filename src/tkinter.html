@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Tkinter - GUI with Python Power - (fastest notes) - By myCODEnotein
+    </title>
+    <meta
+      name="description"
+      content="Coverting a Black-screened program to a beautiful GUI is what tkinter is made for . It is made to make you feel the Python Power - Fastest notes of tkinter - by myCODEnotein"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">Tkinter--> by myCODEnotein</div>
+      <div class="content">
+        <div class="section">
+          <h2>Importing tkinter and Starter Template</h2>
+          <h3>Importing Tkinter</h3>
+          <div class="code">
+            <span class="text-danger">from</span> tkinter
+            <span class="text-info">import</span> *
+          </div>
+          <h3>Starter Template</h3>
+          <div class="code">
+            <span class="text-danger">from</span> tkinter
+            <span class="text-info">import</span> * <br />
+            root = <span class="text-primary">Tk</span>() <br />
+            root.<span class="text-primary">mainloop</span>()
+          </div>
+        </div>
+        <div class="section">
+          <h2>Methods Of Tk Class / Configuring root</h2>
+          <h3>Basic Method</h3>
+          <div class="code">
+            root.<span
+              title="Sets the title of gui window (the name which appears at the top of any window)"
+              class="text-primary"
+              >title</span
+            >(<span class="text-warning">"title of gui window"</span>) <br />
+            root.<span
+              title="Sets the width and height of tkinter screen window"
+              class="text-primary"
+              >geometry</span
+            >(<span class="text-warning"
+              >"<span class="text-success">{screenWidth}</span>x<span
+                class="text-success"
+                >{screenHeight}</span
+              >"</span
+            >)
+          </div>
+        </div>
+        <div class="section">
+          <h2>Starter Template With Usual Methods</h2>
+          <div class="code">
+            <span class="text-danger">from</span> tkinter
+            <span class="text-info">import</span> * <br />
+            root = <span class="text-primary">Tk</span>() <br />
+            root.<span class="text-primary">geometry</span>(<span
+              class="text-warning"
+              >"1200x700"</span
+            >) <br />
+            root.<span class="text-primary">title</span>(<span
+              class="text-warning"
+              >""</span
+            >) <br />
+            root.<span class="text-primary">mainloop</span>()
+          </div>
+        </div>
+        <div class="section">
+          <h2>Widgets in Tkinter</h2>
+          <div class="code">
+            <ul class="tabSection">
+              <div class="tab" data-target="label_widget_in_tkinter">Label</div>
+              <div class="tab" data-target="frame_widget_in_tkinter">Frame</div>
+              <div class="tab" data-target="button_widget_in_tkinter">
+                Button
+              </div>
+              <div class="tab" data-target="menu_widget_in_tkinter">Menu</div>
+              <div class="tab" data-target="entry_widget_in_tkinter">Entry</div>
+              <div class="tab" data-target="text_widget_in_tkinter">Text</div>
+              <div class="tab" data-target="canvas_widget_in_tkinter">
+                Canvas
+              </div>
+              <div class="tab" data-target="scrollbar_widget_in_tkinter">
+                Scrollbar
+              </div>
+            </ul>
+            <div id="label_widget_in_tkinter">
+              myLabel =
+              <span class="text-primary">Label</span>(master,**options)
+              <div class="comment">
+                # To get **options run myLabel.<span class="text-primary"
+                  >keys</span
+                >()
+              </div>
+            </div>
+            <div id="frame_widget_in_tkinter">
+              myFrame =
+              <span class="text-primary">Frame</span>(master,**options)
+              <div class="comment">
+                # To get **options run myFrame.<span class="text-primary"
+                  >keys</span
+                >()
+              </div>
+            </div>
+            <div id="button_widget_in_tkinter">
+              myButton =
+              <span class="text-primary">Button</span>(master,**options)
+              <div class="comment">
+                # To get **options run myButton.<span class="text-primary"
+                  >keys</span
+                >()
+              </div>
+            </div>
+            <div id="menu_widget_in_tkinter">
+              myMenu = <span class="text-primary">Menu</span>(master,**options)
+              <div class="comment">
+                # To get **options run myMenu.<span class="text-primary"
+                  >keys</span
+                >()
+              </div>
+            </div>
+            <div id="entry_widget_in_tkinter">
+              myEntry =
+              <span class="text-primary">Entry</span>(master,**options)
+              <div class="comment">
+                # To get **options run myEntry.<span class="text-primary"
+                  >keys</span
+                >()
+              </div>
+            </div>
+            <div id="text_widget_in_tkinter">
+              myText = <span class="text-primary">Text</span>(master,**options)
+              <div class="comment">
+                # To get **options run myText.<span class="text-primary"
+                  >keys</span
+                >()
+              </div>
+            </div>
+            <div id="canvas_widget_in_tkinter">
+              myCanvas =
+              <span class="text-primary">Canvas</span>(master,**options)
+              <div class="comment">
+                # To get **options run myCanvas.<span class="text-primary"
+                  >keys</span
+                >()
+              </div>
+            </div>
+            <div id="scrollbar_widget_in_tkinter">
+              myScrollbar =
+              <span class="text-primary">Scrollbar</span>(master,**options)
+              <div class="comment">
+                # To get **options run myScrollbar.<span class="text-primary"
+                  >keys</span
+                >()
+              </div>
+            </div>
+          </div>
+          <h3>Note that:</h3>
+          <div class="code">
+            <span class="text-danger">Text and Button</span> like widget treat
+            width and height options as
+            <span class="text-danger">characters</span> while
+            <span class="text-success">Frame , canvas</span> like widgets treat
+            it as <span class="text-success">pixels</span>
+          </div>
+          <div class="code">
+            Basically , among <span class="text-danger">text</span> and
+            <span class="text-danger">frame</span> of width
+            <span class="text-warning">100</span> ,<span class="text-danger"
+              >text</span
+            >
+            appears to be of larger width than
+            <span class="text-danger">frame</span> <br />Same with height
+          </div>
+        </div>
+        <div class="section">
+          <h2>Menu Widget in Tkinter</h2>
+          <h3>Creating menu widget instance with options</h3>
+          <div class="code">
+            myMenu = <span class="text-primary">Menu</span>(<span
+              class="text-warning"
+              >root</span
+            >,<span class="text-warning">tearoff</span>=0)
+            <div class="comment">
+              # Setting tearoff=0 will remove ugly borders that appears on the
+              widget
+            </div>
+          </div>
+          <h3>Adding the Menu to the Main Window</h3>
+          <div class="code">
+            root/master.<span class='text-primary'>config</span>(<span class='text-warning'>menu</span>=myMenu)
+          </div>
+          <h3>Add Cascade Function Of menu widget</h3>
+          <div class="code">
+            <ul class="tabSection">
+              <div class="tab" data-target="add_cascade_function_code">CODE</div>
+              <div class="tab" data-target="add_cascade_function_desc">DESC</div>
+            </ul>
+            <div id="add_cascade_function_code">
+              myMenu.<span class="text-primary">add_cascade</span>(<span
+                class="text-warning"
+                >label</span
+              >="Name of menu" <br>, <span class="text-warning">menu</span> =
+              menuObject) 
+              <div class="comment"># Use Multiple times to add Multiple menus</div>
+            </div>
+            <div id="add_cascade_function_desc">
+              Adds another Menu widget instance to the myMenu instance <br>
+              Basically adds another menu in the main myMenu . 
+            </div>
+          </div>
+          <img src="/img/tkinter_images/add_cascade.png" alt="Add Cascade function in tkinter" title="Add Cascade function in tkinter">
+          <h3>Add Command Function of menu widget</h3>
+          <div class="code">
+            <ul class='tabSection'>
+              <div class='tab' data-target='add_command_function_code'>CODE</div>
+              <div class='tab' data-target='add_command_function_desc'>DESC</div>
+            </ul>
+            <div id="add_command_function_code">
+              <div class="comment"># Let us give commands to file menu shown in the image</div>
+              menuBar.<span class='text-primary'>add_command</span>(<span class='text-warning'>label</span>="Close" 
+              <br>, <span class='text-warning'>command</span>=exit) 
+              <div class="comment"># Use Multiple Commands to create Multiple Options</div>
+            </div>
+            <div id="add_command_function_desc">
+              This function is used to create options in vertical direction in menu (in this case file)
+              If user clicks the option the command will be executed
+            </div>
+          </div>
+          <img src="/img/tkinter_images/add_command.png" alt="Add Command function example" title="add command function example">
+          <h3>What happens when you use add_command with myMenu and not with child menu</h3>
+          <img src="/img/tkinter_images/menu_without_addCascade.png" alt="Menu Without child menus in tkinter" title="Menu Without child menus in tkinter">
+          <h3>Adding a separator between the menu Options</h3>
+          <div class="code">
+            <span class='text-info'>syntax: </span>menuInstance.<span class='text-primary'>add_separator</span>() <br>
+            <span class='text-success'>example: </span>file.<span class='text-primary'>add_separator</span>()
+          </div>
+          <img src="/img/tkinter_images/add_separator.png" alt="separator example in tkinter" title="separator example in tkinter">
+        </div>
+      </div>
+    </div>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/teleporter.js"></script>
+    <script src="/js/tabSection.js"></script>
+  </body>
+</html>

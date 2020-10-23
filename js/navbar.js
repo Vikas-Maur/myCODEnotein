@@ -25,9 +25,8 @@ function AddNavbar() {
         <div class="navLists">
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/src/pygame.html">Pygame</a></li>
+                <li><a href="/python">Python</a></li>
                 <li><a href="/src/sql.html">SQL</a></li>
-                <li><a href="/src/python-modules.html">Python Modules</a></li>
                 <li><a href="https://mycodenotein.blogspot.com">MY OLD WEBSITE</a></li>
             </ul>
         </div>

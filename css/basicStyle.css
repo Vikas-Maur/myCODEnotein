@@ -2,6 +2,7 @@
 @import "teleporter.css";
 @import "/css/navbar.css";
 @import "/css/tabSection.css";
+@import "/css/copy.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 :root{
@@ -97,6 +98,7 @@ h1,img{
   overflow-x: scroll;
   font-family: Consolas, 'Courier New', monospace;
   font-weight: bold;
+  position: relative;
   -ms-overflow-style: none; 
   scrollbar-width: none; 
 }

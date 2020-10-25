@@ -20,28 +20,42 @@
           <h2>Importing tkinter and Starter Template</h2>
           <h3>Importing Tkinter</h3>
           <div class="code">
-            <span class="text-danger">from</span> tkinter
-            <span class="text-info">import</span> *
+            <button class="copy"></button>
+            <div>
+              <span class="text-danger">from</span> tkinter
+              <span class="text-info">import</span> *
+            </div>
           </div>
           <h3>Starter Template</h3>
           <div class="code">
-            <span class="text-danger">from</span> tkinter
-            <span class="text-info">import</span> * <br />
-            root = <span class="text-primary">Tk</span>() <br />
-            root.<span class="text-primary">mainloop</span>()
+            <button class="copy"></button>
+            <div>
+              <span class="text-danger">from</span> tkinter
+              <span class="text-info">import</span> * <br />
+              root = <span class="text-primary">Tk</span>() <br />
+              root.<span class="text-primary">mainloop</span>()
+            </div>
           </div>
         </div>
         <!-- **************** -->
         <div class="section">
           <h2>Methods Of Tk Class / Configuring root</h2>
-          <h3>Basic Method</h3>
+          <h3>Setting Up Root Title</h3>
           <div class="code">
-            root.<span
-              title="Sets the title of gui window (the name which appears at the top of any window)"
-              class="text-primary"
-              >title</span
+            <button class="copy"></button>
+            <div>
+              root.<span
+            title="Sets the title of gui window (the name which appears at the top of any window)"
+            class="text-primary"
+            >title</span
             >(<span class="text-warning">"title of gui window"</span>) <br />
-            root.<span
+            </div>
+          </div>
+          <h3>Setting Up root geometry</h3>
+          <div class="code">
+            <button class="copy"></button>
+            <div>
+              root.<span
               title="Sets the width and height of tkinter screen window"
               class="text-primary"
               >geometry</span
@@ -51,24 +65,28 @@
                 >{screenHeight}</span
               >"</span
             >)
+            </div>
           </div>
         </div>
         <!-- **************** -->
         <div class="section">
           <h2>Starter Template With Usual Methods</h2>
           <div class="code">
-            <span class="text-danger">from</span> tkinter
-            <span class="text-info">import</span> * <br />
-            root = <span class="text-primary">Tk</span>() <br />
-            root.<span class="text-primary">geometry</span>(<span
-              class="text-warning"
-              >"1200x700"</span
-            >) <br />
-            root.<span class="text-primary">title</span>(<span
-              class="text-warning"
-              >""</span
-            >) <br />
-            root.<span class="text-primary">mainloop</span>()
+            <button class="copy"></button>
+            <div>
+              <span class="text-danger">from</span> tkinter
+              <span class="text-info">import</span> * <br />
+              root = <span class="text-primary">Tk</span>() <br />
+              root.<span class="text-primary">geometry</span>(<span
+                class="text-warning"
+                >"1200x700"</span
+              >) <br />
+              root.<span class="text-primary">title</span>(<span
+                class="text-warning"
+                >""</span
+              >) <br />
+              root.<span class="text-primary">mainloop</span>()
+            </div>
           </div>
         </div>
         <!-- **************** -->
@@ -319,48 +337,75 @@
             </div>
           </div>
         </div>
-        
+
         <!-- **************** -->
         <div class="section">
           <h2>Events in tkinter</h2>
           <div class="code">
-            <span class='text-info'>syntax: </span>widget.<span class='text-primary'>bind</span>(
-              <span class='text-warning'>"&lt;Event&gt;"</span>,<span class='text-warning'>func</span>=function)
-            <div class="comment"># Note that tkinter passes an argument to the given function</div>
+            <span class="text-info">syntax: </span>widget.<span
+              class="text-primary"
+              >bind</span
+            >( <span class="text-warning">"&lt;Event&gt;"</span>,<span
+              class="text-warning"
+              >func</span
+            >=function)
             <div class="comment">
-              # Run <span class='text-primary'>dir</span>(event) <br>
+              # Note that tkinter passes an argument to the given function
+            </div>
+            <div class="comment">
+              # Run <span class="text-primary">dir</span>(event) <br />
               where event is the argument given to function
             </div>
           </div>
           <h3>Use Of Lambda Function</h3>
           <div class="code">
             <div class="comment"># Used to call argumented functions</div>
-            widget.<span class='text-primary'>bind</span>(<span class='text-warning'>"&lt;Event&gt;"</span>,
-            <br>,<span class='text-warning'>func</span>= <span class='text-info'>lambda</span> event: funcToCall(arguments))
+            widget.<span class="text-primary">bind</span>(<span
+              class="text-warning"
+              >"&lt;Event&gt;"</span
+            >, <br />,<span class="text-warning">func</span>=
+            <span class="text-info">lambda</span> event: funcToCall(arguments))
             <div class="comment">
-              # Note that in this case event argument is given to <span class='text-info'>lambda</span>
+              # Note that in this case event argument is given to
+              <span class="text-info">lambda</span>
               function and therefore need not to be given to "funcToCall"
             </div>
           </div>
           <h3>Mouse events</h3>
           <div class="code">
-            <span class='text-warning'>"&lt;Enter&gt;"</span> <span class="comment"># Mouse enters any widget (mouse hover)</span>
-            <br><span class='text-warning'>"&lt;Leave&gt;"</span> <span class="comment"># Mouse leaves any widget (mouse leave)</span>
+            <span class="text-warning">"&lt;Enter&gt;"</span>
+            <span class="comment"># Mouse enters any widget (mouse hover)</span>
+            <br /><span class="text-warning">"&lt;Leave&gt;"</span>
+            <span class="comment"># Mouse leaves any widget (mouse leave)</span>
           </div>
           <h3>Mouse Click Events</h3>
           <div class="code">
-            <span class='text-warning'>"&lt;Button-1&gt;"</span> <span class="comment"># Left clicked on a widget</span> <br>
-            <span class='text-warning'>"&lt;Button-2&gt;"</span> <span class="comment"># Middle clicked on a widget (<span class='text-danger'>now a days mouse does not have middle button</span>)</span> <br>
-            <span class='text-warning'>"&lt;Button-3&gt;"</span> <span class="comment"># Right clicked on a widget</span>
+            <span class="text-warning">"&lt;Button-1&gt;"</span>
+            <span class="comment"># Left clicked on a widget</span> <br />
+            <span class="text-warning">"&lt;Button-2&gt;"</span>
+            <span class="comment"
+              ># Middle clicked on a widget (<span class="text-danger"
+                >now a days mouse does not have middle button</span
+              >)</span
+            >
+            <br />
+            <span class="text-warning">"&lt;Button-3&gt;"</span>
+            <span class="comment"># Right clicked on a widget</span>
           </div>
           <h3>Keyboard events</h3>
           <div class="code">
-            <span class='text-warning'>"&lt;Key&gt;"</span> <span class="comment"># Used pressed a key</span> <br>
-            <span class='text-warning'>"&lt;KeyRelease&gt;"</span> <span class="comment"># User released the key </span>
+            <span class="text-warning">"&lt;Key&gt;"</span>
+            <span class="comment"># Used pressed a key</span> <br />
+            <span class="text-warning">"&lt;KeyRelease&gt;"</span>
+            <span class="comment"># User released the key </span>
           </div>
           <h3>To know more events</h3>
           <div class="code">
-            <span class='text-danger'>RUN: </span><span class='text-primary'>help</span>(widgetName.<span class='text-primary'>bind</span>)
+            <span class="text-danger">RUN: </span
+            ><span class="text-primary">help</span>(widgetName.<span
+              class="text-primary"
+              >bind</span
+            >)
           </div>
         </div>
 
@@ -370,25 +415,60 @@
           <h2>Hoverable Button and events</h2>
           <h3>Creating a button which changes colors on hover</h3>
           <div class="code">
-            <span class='text-danger'>from</span> tkinter <span class='text-info'>import</span> * <br>
-            root = <span class='text-primary'>Tk</span>() <br>
-            <span class='text-info'>def</span> ChangeBG(<span class='text-warning'>event</span>,<span class='text-warning'>color</span>): <br>
-            <pre class="tab-pre">&Tab;</pre>event.<span class='text-danger'>widget</span>.<span class='text-primary'>config</span>(<span class='text-warning'>background</span>=color) <br>
+            <button class="copy"></button>
+            <div>
+              <span class="text-danger">from</span> tkinter
+            <span class="text-info">import</span> * <br />
+            root = <span class="text-primary">Tk</span>() <br />
+            <span class="text-info">def</span> ChangeBG(<span
+              class="text-warning"
+              >event</span
+            >,<span class="text-warning">color</span>): <br />
+            <pre class="tab-pre">&Tab;</pre>
+            event.<span class="text-danger">widget</span>.<span
+              class="text-primary"
+              >config</span
+            >(<span class="text-warning">background</span>=color) <br />
             <div class="comment">
-              <pre class="tab-pre">&Tab;</pre># doing event.widget was not necessary
+              <pre class="tab-pre">&Tab;</pre>
+              # doing event.widget was not necessary
             </div>
-            button = <span class='text-primary'>Button</span>(<span class='text-warning'>root</span>,
-            <span class='text-warning'>text</span>="Hoverable Button",
-            <span class='text-warning'>bg</span>="red",<span class='text-warning'>fg</span>="white") <br>
-            button.<span class='text-primary'>pack</span>() <br>
-            button.<span class='text-primary'>bind</span>(<span class='text-warning'>"&lt;Enter&gt;"</span>,<span class='text-warning'>func</span>
-            =<span class='text-info'>lambda</span> e: <span class='text-primary'>ChangeBG</span>(e,"grey")) <br>
-            button.<span class='text-primary'>bind</span>(<span class='text-warning'>"&lt;Leave&gt;"</span>,<span class='text-warning'>func</span>
-            =<span class='text-info'>lambda</span> e: <span class='text-primary'>ChangeBG</span>(e,"red")) <br>
-            root.<span class='text-primary'>mainloop</span>()
+            button = <span class="text-primary">Button</span>(<span
+              class="text-warning"
+              >root</span
+            >, <span class="text-warning">text</span>="Hoverable Button",
+            <span class="text-warning">bg</span>="red",<span
+              class="text-warning"
+              >fg</span
+            >="white") <br />
+            button.<span class="text-primary">pack</span>() <br />
+            button.<span class="text-primary">bind</span>(<span
+              class="text-warning"
+              >"&lt;Enter&gt;"</span
+            >,<span class="text-warning">func</span> =<span class="text-info"
+              >lambda</span
+            >
+            e: <span class="text-primary">ChangeBG</span>(e,"grey")) <br />
+            button.<span class="text-primary">bind</span>(<span
+              class="text-warning"
+              >"&lt;Leave&gt;"</span
+            >,<span class="text-warning">func</span> =<span class="text-info"
+              >lambda</span
+            >
+            e: <span class="text-primary">ChangeBG</span>(e,"red")) <br />
+            root.<span class="text-primary">mainloop</span>()
+            </div>
           </div>
-          <img src="/img/tkinter_images/bHover.png" alt="Before Hover example" title="Before hover example" >
-          <img src="/img/tkinter_images/aHover.png" alt="On Hover example" title="On hover example" >
+          <img
+            src="/img/tkinter_images/bHover.png"
+            alt="Before Hover example"
+            title="Before hover example"
+          />
+          <img
+            src="/img/tkinter_images/aHover.png"
+            alt="On Hover example"
+            title="On hover example"
+          />
         </div>
 
         <!-- **************** -->
@@ -501,11 +581,11 @@
             title="separator example in tkinter"
           />
         </div>
-
       </div>
     </div>
     <script src="/js/navbar.js"></script>
     <script src="/js/teleporter.js"></script>
     <script src="/js/tabSection.js"></script>
+    <script src="/js/copy.js"></script>
   </body>
 </html>

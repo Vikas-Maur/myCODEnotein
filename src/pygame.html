@@ -1,95 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pygame - Making games with python power (fastest guide) - myCODEnotein</title>
-    <meta name="description" content="Pygame - a python module for making games - If you had not worked on it for days then these notes will help you to remember your concepts of pygame easily and quickly">
-    <link rel='stylesheet' href='/css/style.css'>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Pygame - Making games with python power (fastest guide) - myCODEnotein
+    </title>
+    <meta
+      name="description"
+      content="Pygame - a python module for making games - If you had not worked on it for days then these notes will help you to remember your concepts of pygame easily and quickly"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
     <div class="container">
-        <div class="heading">
-            PYGAME --> by myCODEnotein
+      <div class="heading">PYGAME --> by myCODEnotein</div>
+      <div class="content">
+        <div class="section">
+          <h2>BASIC PYGAME STARTING</h2>
+          <div class="code">
+            <button class="copy"></button>
+            <div>
+              <span class="text-info">import</span> pygame<br />
+              pygame<span class="text-info">.</span
+              ><span class="text-primary">init</span>() <br />
+              screen = pygame.<span class="text-danger">display</span
+              ><span class="text-info">.</span
+              ><span class="text-primary">set_mode</span>((<span
+                class="text-primary"
+                >WIDTH</span
+              >,<span class="text-primary">HEIGHT</span>))
+            </div>
+          </div>
         </div>
-        <div class="content">
-            <div class="section">
-                <h2>
-                    BASIC PYGAME STARTING
-                </h2>
-                <div class="code">
-                    <span class="text-info">import</span> pygame<br>
-                    pygame<span class="text-info">.</span><span class="text-primary">init</span>() <br>
-                    screen = pygame.<span class="text-danger">display</span><span class="text-info">.</span><span class="text-primary">set_mode</span>((<span class="text-primary">WIDTH</span>,<span class="text-primary">HEIGHT</span>))
-                </div>
+        <div class="section">
+          <h2>BASIC REQUIRED CODE</h2>
+          <div class="code">
+            <button class="copy"></button>
+            <div>
+              running = <span class="text-info">True</span><br />
+              <span class="text-info">while</span> running: <br />
+              <pre style="display: inline">&Tab;</pre>
+              <span class="text-info">for </span>event
+              <span class="text-info">in</span> pygame.<span class="text-danger"
+                >event</span
+              >.<span class="text-primary">get</span>(): <br />
+              <pre style="display: inline">&Tab;&Tab;</pre>
+              <span class="text-info">if</span> event.<span class="text-danger"
+                >type </span
+              ><span class="text-info">==</span> QUIT: <br />
+              <pre style="display: inline">&Tab;&Tab;&Tab;</pre>
+              running = <span class="text-info">False</span>
             </div>
-            <div class="section">
-                <h2>
-                    BASIC REQUIRED CODE
-                </h2>
-                <div class="code">
-                running = <span class="text-info">True</span><br>
-                <span class="text-info">while</span> running: <br>
-                <pre style='display:inline;'>&Tab;</pre><span class="text-info">for </span>event <span class="text-info">in</span> pygame.<span class="text-danger">event</span>.<span class="text-primary">get</span>(): <br>
-                <pre style='display:inline;'>&Tab;&Tab;</pre><span class="text-info">if</span> event.<span class="text-danger">type </span><span class="text-info">==</span> QUIT: <br>
-                <pre style='display:inline;'>&Tab;&Tab;&Tab;</pre>running = <span class="text-info">False</span>
-                </div>
-            </div>
-
-            <div class="section">
-                <h2>DRAWING WITH PYGAME</h2>
-                <div class="code">pygame.<span class="text-danger">draw</span>.<span class="text-primary">rect</span>(<span class='text-primary'>surface</span>,(<span class='text-primary'>r</span>,<span class='text-primary'>g</span>,<span class='text-primary'>b</span>),(<span class='text-primary'>x</span>,<span class='text-primary'>y</span>,<span class='text-primary'>width</span>,<span class='text-primary'>height</span>))</div><br>
-                <br><h3>DOING THE SAME THING WITH pygame.Rect</h3>
-                <div class="code">
-                    rect = pygame.<span class='text-primary'>rect</span>(<span class='text-primary'>x</span>,<span class='text-primary'>y</span>,<span class='text-primary'>width</span>,<span class='text-primary'>height</span>) <br>
-                    pygame.<span class='text-danger'>draw</span>.<span class='text-primary'>rect</span>(<span class='text-primary'>surface</span>,(<span class='text-primary'>r</span>,<span class='text-primary'>g</span>,<span class='text-primary'>b</span>),<span class='text-primary'>rect</span>)
-                </div>
-                <br><br>
-                <h3>RESIZING THE RECTANGLE</h3>
-                <div class="code">
-                    rect.<span class='text-primary'>inflate</span>(<span class='text-primary'>width</span>,<span class='text-primary'>height</span>)
-                    <div class="comment"># -ve values make it smaller and vice-versa</div>
-                    <div class="comment"># Note that to see change rect must be draw again</div>
-                    <div class="comment"># on screen ,  if it is already drawn </div>
-                </div>
-                <br><br>
-                <h3>DRAWING A CIRCLE</h3>
-                <div class="code">pygame.<span class='text-danger'>draw</span>.<span class='text-primary'>circle</span>(<span class='text-primary'>surface</span>,(<span class='text-primary'>r</span>,<span class='text-primary'>g</span>,<span class='text-primary'>b</span>),(<span class='text-primary'>x</span>,<span class='text-primary'>y</span>),<span class='text-primary'>radius</span>,<span class='text-primary'>thickness</span>)</div>
-            </div>
-            <div class="section">
-                <h2>MOUSE RELATED FUNCTIONS</h2>
-                <div class="code">
-                    mouseX , mouseY = pygame.<span class='text-danger'>mouse</span>.<span class='text-primary'>get_pos</span>()
-                    <div class="comment"># Returns mouse position</div>
-                </div>
-            </div>
-            <div class="section">
-                <h2>DEALING WITH IMAGES</h2>
-                
-                <br><br>
-                <h3>LOADING THE IMAGE --> FIRST STEP</h3>
-                <div class="code">myImg = pygame.<span class='text-danger'>image</span>.<span class='text-primary'>load</span>(<span class='text-primary'>pathOfImage</span>)</div>
-                
-                <br><br>
-                <h3>LOADING THE IMAGE WITH AN ADDITIONAL PARAMETER</h3>
-                <div class="code">myImg = pygame.<span class='text-danger'>image</span>.<span class='text-primary'>load</span>(<span class='text-primary'>pathOfImage</span>).<span class='text-primary'>convert_alpha</span>()</div>
-            
-                <br><br>
-                <h3>CHANGING IMAGE SIZE</h3>
-                <div class="code">myImg = pygame.<span class='text-danger'>transform</span>.<span class='text-primary'>scale</span>(<span class='text-primary'>myImg</span>,(<span class='text-primary'>width</span>,<span class='text-primary'>height</span>))
-                <div class="comment"># Note that myImg used as argument is already loaded</div>
-                </div>
-
-                <br><br>
-                <h3>DRAWING THE IMAGE ON SCREEN</h3>
-                <div class="code">surface_or_screen.<span class='text-primary'>blit</span>(<span class='text-primary'>myImg</span>,(<span class='text-primary'>x</span>,<span class='text-primary'>y</span>))
-                <div class="comment"># Note that here screen is the variable created at the starting of notes</div>
-                </div>
-
-            </div>
+          </div>
         </div>
+
+        <div class="section">
+          <h2>DRAWING WITH PYGAME</h2>
+          <div class="code">
+            <button class="copy"></button>
+            <div>
+              pygame.<span class="text-danger">draw</span>.<span
+                class="text-primary"
+                >rect</span
+              >
+              (<span class="text-primary">surface</span>
+              <br />
+              ,(<span class="text-primary">r</span>,<span class="text-primary"
+                >g</span
+              >,<span class="text-primary">b</span>),(<span class="text-primary"
+                >x</span
+              >,<span class="text-primary">y</span>,<span class="text-primary"
+                >width</span
+              >,<span class="text-primary">height</span>))
+            </div>
+          </div>
+          <h3>DOING THE SAME THING WITH pygame.Rect</h3>
+          <div class="code">
+            <button class="copy"></button>
+            <div>
+              rect = pygame.<span class="text-primary">rect</span>(<span
+                class="text-primary"
+                >x</span
+              >,<span class="text-primary">y</span>,<span class="text-primary"
+                >width</span
+              >,<span class="text-primary">height</span>) <br />
+              pygame.<span class="text-danger">draw</span>.<span
+                class="text-primary"
+                >rect</span
+              >(<span class="text-primary">surface</span>,(<span
+                class="text-primary"
+                >r</span
+              >,<span class="text-primary">g</span>,<span class="text-primary"
+                >b</span
+              >),<span class="text-primary">rect</span>)
+            </div>
+          </div>
+          <h3>RESIZING THE RECTANGLE</h3>
+          <div class="code">
+            <button class="copy"></button>
+            <div>
+              rect.<span class="text-primary">inflate</span>(<span
+                class="text-primary"
+                >width</span
+              >,<span class="text-primary">height</span>)
+            </div>
+            <div class="comment">
+              # -ve values make it smaller and vice-versa
+            </div>
+            <div class="comment">
+              # Note that to see change rect must be draw again
+            </div>
+            <div class="comment"># on screen , if it is already drawn</div>
+          </div>
+          <h3>DRAWING A CIRCLE</h3>
+          <div class="code">
+            <button class="copy"></button>
+            <div>
+              pygame.<span class="text-danger">draw</span>.<span
+                class="text-primary"
+                >circle</span
+              >(<span class="text-primary">surface</span>,(<span
+                class="text-primary"
+                >r</span
+              >,<span class="text-primary">g</span>,<span class="text-primary"
+                >b</span
+              >),(<span class="text-primary">x</span>,<span class="text-primary"
+                >y</span
+              >),<span class="text-primary">radius</span>,<span
+                class="text-primary"
+                >thickness</span
+              >)
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <h2>MOUSE RELATED FUNCTIONS</h2>
+          <div class="code">
+            <button class="copy"></button>
+            <div>
+              mouseX , mouseY = pygame.<span class="text-danger">mouse</span
+              >.<span class="text-primary">get_pos</span>()
+            </div>
+            <div class="comment"># Returns mouse position</div>
+          </div>
+        </div>
+        <div class="section">
+          <h2>DEALING WITH IMAGES</h2>
+          <h3>LOADING THE IMAGE --> FIRST STEP</h3>
+          <div class="code">
+            <button class="copy"></button>
+            <div>
+              myImg = pygame.<span class="text-danger">image</span>.<span
+                class="text-primary"
+                >load</span
+              >(<span class="text-primary">pathOfImage</span>)
+            </div>
+          </div>
+
+          <h3>LOADING THE IMAGE WITH AN ADDITIONAL PARAMETER</h3>
+          <div class="code">
+            <button class="copy"></button>
+            <div>
+              <br />
+              myImg = pygame.<span class="text-danger">image</span>.<span
+                class="text-primary"
+                >load</span
+              >(<span class="text-primary">pathOfImage</span>).<span
+                class="text-primary"
+                >convert_alpha</span
+              >()
+            </div>
+          </div>
+
+          <h3>CHANGING IMAGE SIZE</h3>
+          <div class="code">
+            <button class="copy"></button>
+            <div>
+              <br />
+              myImg = pygame.<span class="text-danger">transform</span>.<span
+                class="text-primary"
+                >scale</span
+              >(<span class="text-primary">myImg</span>,(<span
+                class="text-primary"
+                >width</span
+              >,<span class="text-primary">height</span>))
+            </div>
+            <div class="comment">
+              # Note that myImg used as argument is already loaded
+            </div>
+          </div>
+
+          <h3>DRAWING THE IMAGE ON SCREEN</h3>
+          <div class="code">
+            <button class="copy"></button>
+            <div>
+              surface_or_screen.<span class="text-primary">blit</span>(<span
+                class="text-primary"
+                >myImg</span
+              >,(<span class="text-primary">x</span>,<span class="text-primary"
+                >y</span
+              >))
+            </div>
+            <div class="comment">
+              # Note that here screen is the variable created at the starting of
+              notes
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="/js/navbar.js"></script>
     <script src="/js/teleporter.js"></script>
-</body>
+    <script src="/js/copy.js"></script>
+  </body>
 </html>

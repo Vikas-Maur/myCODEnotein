@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Tkinter - GUI with Python Power - (fastest notes) - By myCODEnotein
+      tkinter - GUI with Python Power - (fastest notes) - By myCODEnotein
     </title>
     <meta
       name="description"
@@ -31,6 +31,7 @@
             root.<span class="text-primary">mainloop</span>()
           </div>
         </div>
+        <!-- **************** -->
         <div class="section">
           <h2>Methods Of Tk Class / Configuring root</h2>
           <h3>Basic Method</h3>
@@ -52,6 +53,7 @@
             >)
           </div>
         </div>
+        <!-- **************** -->
         <div class="section">
           <h2>Starter Template With Usual Methods</h2>
           <div class="code">
@@ -69,10 +71,11 @@
             root.<span class="text-primary">mainloop</span>()
           </div>
         </div>
+        <!-- **************** -->
         <div class="section">
           <h2>Widgets in Tkinter</h2>
           <div class="code">
-            <ul class="tabSection">
+            <ul class="tabSection moreTabs">
               <div class="tab" data-target="label_widget_in_tkinter">Label</div>
               <div class="tab" data-target="frame_widget_in_tkinter">Frame</div>
               <div class="tab" data-target="button_widget_in_tkinter">
@@ -177,6 +180,218 @@
             <span class="text-danger">frame</span> <br />Same with height
           </div>
         </div>
+        <!-- **************** -->
+        <div class="section">
+          <h2>Grid , Pack and Config methods</h2>
+          <h3>Pack</h3>
+          <div class="code">
+            <span class="text-info">syntax</span>: widget.<span
+              class="text-primary"
+              >pack</span
+            >(<span class="text-warning">**opt</span>)
+          </div>
+          <div class="code">
+            <span class="text-warning">**opt</span> includes : <br />
+            <span class="text-success">side</span>: LEFT,RIGHT,TOP,BOTTOM <br />
+            <span class="text-success">expand</span>: True,False <br />
+            <span class="text-success">fill</span>: X , Y , BOTH
+          </div>
+          <div class="code">
+            <div class="comment">
+              For ex: LEFT is a variable made in tkinter which represents "left"
+              Similarly other <span class="text-warning">"side"</span> and
+              <span class="text-warning">"fill"</span> values works
+            </div>
+          </div>
+          <h3>Grid</h3>
+          <div class="code">
+            <span class="text-info">syntax: </span>widget.<span
+              class="text-primary"
+              >grid</span
+            >( <span class="text-warning">row</span>= rowNo ,
+            <span class="text-warning">column</span>=columnNo ,<span
+              class="text-warning"
+              >**opt</span
+            >) <br />
+          </div>
+          <div class="code">
+            <span class="text-warning">**opt</span> includes: <br />
+            <span class="text-success">sticky</span>: "n","s","e","w","nsew" ,
+            ..etc
+          </div>
+          <div class="code">
+            <div class="comment">
+              To know other values you can put wrong values in it. Then tkinter
+              will throw an error which will tell you the correct values
+            </div>
+          </div>
+          <h3>Note that:</h3>
+          <div class="code">
+            <span class="text-danger">Pack</span> and
+            <span class="text-danger">Grid</span> cannot be used with each other
+            <br />
+            <span class="text-info">For ex :</span> Suppose a widget is packed
+            in root . Then another widget cannot be gridded in root.
+            <br />
+            <div class="comment">
+              For That purpose frames are used which behave like root for its
+              inner widgets
+            </div>
+          </div>
+          <h3>.config Method in tkinter</h3>
+          <div class="code">
+            <ul class="tabSection">
+              <div class="tab" data-target="config_exp_code">CODE</div>
+              <div class="tab" data-target="config_exp_desc">DESC</div>
+            </ul>
+            <div id="config_exp_code">
+              <span class="text-info">syntax: </span>widget.<span
+                class="text-primary"
+                >config</span
+              >(<span class="text-warning">**opt</span>)
+              <div class="comment">
+                # bg and fg short forms signifies another values in this method
+                . Use full forms
+              </div>
+            </div>
+            <div id="config_exp_desc">
+              Used to change/modify/add an option later in the code with a
+              widget
+            </div>
+          </div>
+          <img
+            src="/img/tkinter_images/config_before.png"
+            alt="Before using config method example"
+            title="Before using config method example"
+          />
+          <img
+            src="/img/tkinter_images/config_after.png"
+            alt="After using config method example"
+            title="AFter using config method example"
+          />
+        </div>
+        <!-- **************** -->
+        <div class="section">
+          <h2>Some Common Widget Options</h2>
+          <div class="code">
+            <span class="text-warning">bg</span> or
+            <span class="text-warning">background</span> - Sets the background
+            color <br />
+            <span class="text-warning">fg</span> or
+            <span class="text-warning">foreground</span> - Sets the foreground
+            color
+            <div class="comment">
+              # bg and fg options does not works with ".config" method . Need to
+              specify background/foreground
+            </div>
+          </div>
+          <div class="code">
+            <span class="text-warning">font</span> - Sets the font <br />
+            <span class="text-info">syntax</span> : <br />
+            either a tuple : (<span class="text-warning">fontFamily</span>,<span
+              class="text-warning"
+              >fontSize</span
+            >,<span class="text-warning">"bold"/"italic"</span>) <br />
+            or a string : "{<span class="text-warning">fontFamily</span>} {<span
+              class="text-warning"
+              >fontSize</span
+            >} <span class="text-warning">bold/italic</span>"
+            <div class="comment">
+              # Some Font-Families -
+              <span class="text-warning">Helvetica</span> ,
+              <span class="text-warning">Consolas</span>
+            </div>
+          </div>
+          <div class="code">
+            <span class="text-warning">width</span>,<span class="text-warning"
+              >height</span
+            >
+            <br />
+            <span class="text-warning">cursor</span> - specifies the cursor
+            which appears on widget
+            <div class="comment">
+              You can find cursor values at :
+              <a
+                target="_blank"
+                href="https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/cursors.html"
+                >Cursor Values</a
+              >
+            </div>
+          </div>
+        </div>
+        
+        <!-- **************** -->
+        <div class="section">
+          <h2>Events in tkinter</h2>
+          <div class="code">
+            <span class='text-info'>syntax: </span>widget.<span class='text-primary'>bind</span>(
+              <span class='text-warning'>"&lt;Event&gt;"</span>,<span class='text-warning'>func</span>=function)
+            <div class="comment"># Note that tkinter passes an argument to the given function</div>
+            <div class="comment">
+              # Run <span class='text-primary'>dir</span>(event) <br>
+              where event is the argument given to function
+            </div>
+          </div>
+          <h3>Use Of Lambda Function</h3>
+          <div class="code">
+            <div class="comment"># Used to call argumented functions</div>
+            widget.<span class='text-primary'>bind</span>(<span class='text-warning'>"&lt;Event&gt;"</span>,
+            <br>,<span class='text-warning'>func</span>= <span class='text-info'>lambda</span> event: funcToCall(arguments))
+            <div class="comment">
+              # Note that in this case event argument is given to <span class='text-info'>lambda</span>
+              function and therefore need not to be given to "funcToCall"
+            </div>
+          </div>
+          <h3>Mouse events</h3>
+          <div class="code">
+            <span class='text-warning'>"&lt;Enter&gt;"</span> <span class="comment"># Mouse enters any widget (mouse hover)</span>
+            <br><span class='text-warning'>"&lt;Leave&gt;"</span> <span class="comment"># Mouse leaves any widget (mouse leave)</span>
+          </div>
+          <h3>Mouse Click Events</h3>
+          <div class="code">
+            <span class='text-warning'>"&lt;Button-1&gt;"</span> <span class="comment"># Left clicked on a widget</span> <br>
+            <span class='text-warning'>"&lt;Button-2&gt;"</span> <span class="comment"># Middle clicked on a widget (<span class='text-danger'>now a days mouse does not have middle button</span>)</span> <br>
+            <span class='text-warning'>"&lt;Button-3&gt;"</span> <span class="comment"># Right clicked on a widget</span>
+          </div>
+          <h3>Keyboard events</h3>
+          <div class="code">
+            <span class='text-warning'>"&lt;Key&gt;"</span> <span class="comment"># Used pressed a key</span> <br>
+            <span class='text-warning'>"&lt;KeyRelease&gt;"</span> <span class="comment"># User released the key </span>
+          </div>
+          <h3>To know more events</h3>
+          <div class="code">
+            <span class='text-danger'>RUN: </span><span class='text-primary'>help</span>(widgetName.<span class='text-primary'>bind</span>)
+          </div>
+        </div>
+
+        <!-- **************** -->
+
+        <div class="section">
+          <h2>Hoverable Button and events</h2>
+          <h3>Creating a button which changes colors on hover</h3>
+          <div class="code">
+            <span class='text-danger'>from</span> tkinter <span class='text-info'>import</span> * <br>
+            root = <span class='text-primary'>Tk</span>() <br>
+            <span class='text-info'>def</span> ChangeBG(<span class='text-warning'>event</span>,<span class='text-warning'>color</span>): <br>
+            <pre class="tab-pre">&Tab;</pre>event.<span class='text-danger'>widget</span>.<span class='text-primary'>config</span>(<span class='text-warning'>background</span>=color) <br>
+            <div class="comment">
+              <pre class="tab-pre">&Tab;</pre># doing event.widget was not necessary
+            </div>
+            button = <span class='text-primary'>Button</span>(<span class='text-warning'>root</span>,
+            <span class='text-warning'>text</span>="Hoverable Button",
+            <span class='text-warning'>bg</span>="red",<span class='text-warning'>fg</span>="white") <br>
+            button.<span class='text-primary'>pack</span>() <br>
+            button.<span class='text-primary'>bind</span>(<span class='text-warning'>"&lt;Enter&gt;"</span>,<span class='text-warning'>func</span>
+            =<span class='text-info'>lambda</span> e: <span class='text-primary'>ChangeBG</span>(e,"grey")) <br>
+            button.<span class='text-primary'>bind</span>(<span class='text-warning'>"&lt;Leave&gt;"</span>,<span class='text-warning'>func</span>
+            =<span class='text-info'>lambda</span> e: <span class='text-primary'>ChangeBG</span>(e,"red")) <br>
+            root.<span class='text-primary'>mainloop</span>()
+          </div>
+          <img src="/img/tkinter_images/bHover.png" alt="Before Hover example" title="Before hover example" >
+          <img src="/img/tkinter_images/aHover.png" alt="On Hover example" title="On hover example" >
+        </div>
+
+        <!-- **************** -->
         <div class="section">
           <h2>Menu Widget in Tkinter</h2>
           <h3>Creating menu widget instance with options</h3>
@@ -192,55 +407,101 @@
           </div>
           <h3>Adding the Menu to the Main Window</h3>
           <div class="code">
-            root/master.<span class='text-primary'>config</span>(<span class='text-warning'>menu</span>=myMenu)
+            root/master.<span class="text-primary">config</span>(<span
+              class="text-warning"
+              >menu</span
+            >=myMenu)
           </div>
           <h3>Add Cascade Function Of menu widget</h3>
           <div class="code">
             <ul class="tabSection">
-              <div class="tab" data-target="add_cascade_function_code">CODE</div>
-              <div class="tab" data-target="add_cascade_function_desc">DESC</div>
+              <div class="tab" data-target="add_cascade_function_code">
+                CODE
+              </div>
+              <div class="tab" data-target="add_cascade_function_desc">
+                DESC
+              </div>
             </ul>
             <div id="add_cascade_function_code">
               myMenu.<span class="text-primary">add_cascade</span>(<span
                 class="text-warning"
                 >label</span
-              >="Name of menu" <br>, <span class="text-warning">menu</span> =
-              menuObject) 
-              <div class="comment"># Use Multiple times to add Multiple menus</div>
+              >="Name of menu" <br />, <span class="text-warning">menu</span> =
+              menuObject)
+              <div class="comment">
+                # Use Multiple times to add Multiple menus
+              </div>
             </div>
             <div id="add_cascade_function_desc">
-              Adds another Menu widget instance to the myMenu instance <br>
-              Basically adds another menu in the main myMenu . 
+              Adds another Menu widget instance to the myMenu instance <br />
+              Basically adds another menu in the main myMenu .
             </div>
           </div>
-          <img src="/img/tkinter_images/add_cascade.png" alt="Add Cascade function in tkinter" title="Add Cascade function in tkinter">
+          <img
+            src="/img/tkinter_images/add_cascade.png"
+            alt="Add Cascade function in tkinter"
+            title="Add Cascade function in tkinter"
+          />
           <h3>Add Command Function of menu widget</h3>
           <div class="code">
-            <ul class='tabSection'>
-              <div class='tab' data-target='add_command_function_code'>CODE</div>
-              <div class='tab' data-target='add_command_function_desc'>DESC</div>
+            <ul class="tabSection">
+              <div class="tab" data-target="add_command_function_code">
+                CODE
+              </div>
+              <div class="tab" data-target="add_command_function_desc">
+                DESC
+              </div>
             </ul>
             <div id="add_command_function_code">
-              <div class="comment"># Let us give commands to file menu shown in the image</div>
-              menuBar.<span class='text-primary'>add_command</span>(<span class='text-warning'>label</span>="Close" 
-              <br>, <span class='text-warning'>command</span>=exit) 
-              <div class="comment"># Use Multiple Commands to create Multiple Options</div>
+              <div class="comment">
+                # Let us give commands to file menu shown in the image
+              </div>
+              menuBar.<span class="text-primary">add_command</span>(<span
+                class="text-warning"
+                >label</span
+              >="Close" <br />, <span class="text-warning">command</span>=exit)
+              <div class="comment">
+                # Use Multiple Commands to create Multiple Options
+              </div>
             </div>
             <div id="add_command_function_desc">
-              This function is used to create options in vertical direction in menu (in this case file)
-              If user clicks the option the command will be executed
+              This function is used to create options in vertical direction in
+              menu (in this case file) If user clicks the option the command
+              will be executed
             </div>
           </div>
-          <img src="/img/tkinter_images/add_command.png" alt="Add Command function example" title="add command function example">
-          <h3>What happens when you use add_command with myMenu and not with child menu</h3>
-          <img src="/img/tkinter_images/menu_without_addCascade.png" alt="Menu Without child menus in tkinter" title="Menu Without child menus in tkinter">
+          <img
+            src="/img/tkinter_images/add_command.png"
+            alt="Add Command function example"
+            title="add command function example"
+          />
+          <h3>
+            What happens when you use add_command with myMenu and not with child
+            menu
+          </h3>
+          <img
+            src="/img/tkinter_images/menu_without_addCascade.png"
+            alt="Menu Without child menus in tkinter"
+            title="Menu Without child menus in tkinter"
+          />
           <h3>Adding a separator between the menu Options</h3>
           <div class="code">
-            <span class='text-info'>syntax: </span>menuInstance.<span class='text-primary'>add_separator</span>() <br>
-            <span class='text-success'>example: </span>file.<span class='text-primary'>add_separator</span>()
+            <span class="text-info">syntax: </span>menuInstance.<span
+              class="text-primary"
+              >add_separator</span
+            >() <br />
+            <span class="text-success">example: </span>file.<span
+              class="text-primary"
+              >add_separator</span
+            >()
           </div>
-          <img src="/img/tkinter_images/add_separator.png" alt="separator example in tkinter" title="separator example in tkinter">
+          <img
+            src="/img/tkinter_images/add_separator.png"
+            alt="separator example in tkinter"
+            title="separator example in tkinter"
+          />
         </div>
+
       </div>
     </div>
     <script src="/js/navbar.js"></script>

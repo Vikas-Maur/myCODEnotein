@@ -33,13 +33,17 @@
                 <img src="/img/sql_images/createTable.jpg" alt="CREATE TABLE COMMAND">
                 <div class="code">
                     <span class='text-warning'>UNIQUE KEY</span> is also a constraint <br>
-                    <span class='text-warning'>UNIQUE KEY</span> and <span class='text-warning'>PRIMARY KEY</span> can be applied at row level also <br>
-                    <span class='text-info'>NOTE :</span>You can write "UNIQUE" instead of "UNIQUE KEY" <br>
-                    but this is not the case with "PRIMARY KEY"
+                    <span class='text-warning'>UNIQUE KEY</span> and <span class='text-warning'>PRIMARY KEY</span>
+                     can be applied at row level also
+                </div>
+                <div class="code">
+                    <span class='text-info'>NOTE</span>: You can write 
+                    "<span class='text-warning'>UNIQUE</span>" instead of "<span class='text-warning'>UNIQUE KEY</span>" <br>               
+                    but this is not the case with "<span class='text-primary'>PRIMARY KEY</span>"
                 </div>
                 <img src="/img/sql_images/rowLevel.jpg" alt="TABLE AT ROW LEVEL EXAMPLE">
                 <div class="code">
-                    TO KNOW ABOUT A TABLE: <br>
+                    <div class="comment">To know about a Table</div>
                     <span class='text-primary'>DESC/DESCRIBE/EXPLAIN</span> nameOfTable ; 
                 </div>
             </div>
@@ -52,30 +56,30 @@
                     <div class="code-right-img">
                         <div>
                             <div class="addAStickyNote"></div>
-                            <span> DATE : yyyy/mm/dd</span>
+                            <span> <span class='text-info'>DATE</span> : yyyy/mm/dd</span>
                         </div>
                         <div>
                             <div class="addAStickyNote"></div>
-                            <span> TIME : hh:mm:ss</span>
+                            <span> <span class='text-info'>TIME</span> : hh:mm:ss</span>
                         </div>
                         <div>
                             <div class="addAStickyNote"></div>
-                            <span> DATETIME : yyyy/mm/dd hh:mm:ss</span>
+                            <span> <span class='text-info'>DATETIME</span> : yyyy/mm/dd hh:mm:ss</span>
                         </div>
                         <div>
                             <div class="addAStickyNote"></div>
-                            <span>YEAR(2) - last 2 digits of year</span> <br>
-                            <pre class='tab-pre'>&Tab;&nbsp;&nbsp;&nbsp;</pre><span>YEAR(4) - all 4 digits of year</span>
+                            <span><span class='text-info'>YEAR(2)</span> - last 2 digits of year</span> <br>
+                            <pre class='tab-pre'>&Tab;</pre><span><span class='text-info'>YEAR(4)</span> - all 4 digits of year</span>
                         </div>
                         
                         <div>
                             <div class="addAStickyNote"></div>
-                            <span>CHAR - default size is 1 </span><br>
+                            <span><span class='text-info'>CHAR</span> - default size is 1 </span><br>
                             <pre class='tab-pre'>&Tab;&nbsp;&nbsp;&nbsp;</pre><span> ( if not specified )</span>
                         </div>
                         <div>
                             <div class="addAStickyNote"></div>
-                            <span>ENUM - storage of specified </span> <br>
+                            <span><span class='text-info'>ENUM</span> - storage of specified </span> <br>
                             <pre class='tab-pre'>&Tab;&nbsp;&nbsp;&nbsp;</pre><span>values</span>
                         </div>
 
@@ -106,12 +110,14 @@
                 <h3>ORDERING THE RECORDS</h3>
                 <img src="/img/sql_images/orderBy.jpg" alt="ORDER BY EXAMPLE">
                 <div class="code">
-                    ORDER CLAUSE : <span class='text-primary'>ORDER BY</span> <span class='text-success'>DESC/ASC</span> <br>
-                    DEFAULT : <span class='text-success'>ASC</span> (ASCENDING)
+                    <span class='text-info'>ORDER</span> clause: <span class='text-primary'>ORDER BY</span> <span class='text-success'>DESC/ASC</span> <br>
+                    <span class='text-info'>Default</span>: <span class='text-success'>ASC</span> (ASCENDING)
                 </div>
                 <h3>DISPLAYING DIFFERENT NAME OF COLUMN + EXPRESSIONS IN SQL</h3>
                 <img src="/img/sql_images/use_of_as_and_expression.jpg" alt="USE OF AS AND EXPRESSIONS">
-                <div class="code">AS CAN BE USED WITH SIMPLE COLUMNS AS WELL</div>
+                <div class="code">
+                    <span class='text-info'>Note</span>: <span class='text-danger'>AS</span> can be used with simple columns as well
+                </div>
                 <h3>DISPLAYING DIFFRENT VALUES IN RECORDS IF THE VALUE IS NULL</h3>
                 <img src="/img/sql_images/ifnull_function.jpg" alt="IFNULL FUNCTION IN SQL">
             </div>
@@ -121,41 +127,62 @@
                 <h2>OPERATORS IN SQL</h2>
                 <h3>COMPARISON OPERATORS</h3>
                 <div class="code">
-                    < , <= , > , >= , = , != or <> <br>
-                    NOTE THAT NULL VALUE CAN'T BE CHECKED BY '=' OPERATOR
+                    < , <= , > , >= , = , != or <> 
+                    <div class="comment">Note that <span class='text-danger'>NULL</span> value can not be checked by "=" operator</div>
                 </div>
                 <h3>"BETWEEN" , "IN" AND "IS" OPERATOR</h3>
                 <div class="code">
-                    <span class='text-danger'>BETWEEN</span> <br>
-                    syntax of using : colname <span class='text-primary'>BETWEEN</span> value1 AND value2 <br>
-                    <span class='text-danger'>IN</span> <br>
-                    syntax of using : colname <span class='text-primary'>IN</span>(val1,valu2,...) <br>
-                    <span class='text-danger'>IS</span> <br>
-                    syntax of using : colname <span class='text-primary'>IS</span> value <br>
-                    checking null value : colname <span class='text-primary'>IS</span> NULL <br>
-                    NOTE: <span class='text-danger'>NOT BETWEEN</span> , <span class='text-danger'>NOT IN</span> AND <span class='text-danger'>IS NOT</span> ALSO EXISTS
-
+                    <ul class='tabSection'>
+                        <div class='tab' data-target='between_in_is_op_code'>CODE</div>
+                        <div class='tab' data-target='between_in_is_op_note'>Note that</div>
+                    </ul>
+                    <div id="between_in_is_op_code">
+                        <span class='text-danger'>BETWEEN</span> <br>
+                        <span class='text-info'>syntax</span>: colname <span class='text-primary'>BETWEEN</span> <span class='text-warning'>value1</span> AND <span class='text-warning'>value2</span> <br>
+                        <span class='text-danger'>IN</span> <br>
+                        <span class='text-info'>syntax</span>: colname <span class='text-primary'>IN</span>(<span class='text-warning'>val1</span>,<span class='text-warning'>val2</span>,...) <br>
+                        <span class='text-danger'>IS</span> <br>
+                        <span class='text-info'>syntax</span>: colname <span class='text-primary'>IS</span> <span class='text-warning'>value</span> <br>
+                        <span class='text-info'>To Check For null value</span> : colname <span class='text-primary'>IS</span> <span class='text-danger'>NULL</span>
+                    </div>
+                    <div id="between_in_is_op_note"><span class='text-info'>Note</span>: <span class='text-danger'>NOT BETWEEN</span> , <span class='text-danger'>NOT IN</span> AND <span class='text-danger'>IS NOT</span> ALSO EXISTS</div>
                 </div>
                 <h3>"AND" AND "OR" OPERATOR</h3>
                 <div class="code">
-                    <span class='text-danger'>AND / &&</span> <br>
-                    syntax : condition1 <span class='text-primary'>AND</span> condition2 <br>
-                    <span class='text-danger'>OR / ||</span> <br>
-                    syntax : condition1 <span class='text-primary'>OR</span> condition2 <br>
-                    <span class='text-info'>Note: </span><span class='text-danger'>NOT AND</span> AND <span class='text-danger'>NOT OR</span> DOES NOT EXISTS
-                    <div class="comment"><span class='text-info'>NOTE: </span>AND used in "BETWEEN" operator is not "AND" operator and cannot be replaced by "&&" symbol</div>
+                    <ul class='tabSection'>
+                        <div class='tab' data-target='and_op_or_op_code'>CODE</div>
+                        <div class='tab' data-target='and_op_or_op_note'>Note that</div>
+                    </ul>
+                    <div id="and_op_or_op_code">
+                        <span class='text-danger'>AND</span>/<span class='text-danger'>&&</span> <br>
+                        <span class='text-info'>syntax</span> : condition1 <span class='text-primary'>AND</span> condition2 <br>
+                        <span class='text-danger'>OR</span>/<span class='text-danger'>||</span> <br>
+                        <span class='text-info'>syntax</span> : condition1 <span class='text-primary'>OR</span> condition2
+                    </div>
+                    <div id="and_op_or_op_note">
+                        <span class='text-info'>Note</span>: <span class='text-danger'>NOT AND</span> AND <span class='text-danger'>NOT OR</span> DOES NOT EXISTS <br>
+                        <span class='text-info'>Note</span>: <span class='text-warning'>AND</span> used in "<span class='text-warning'>BETWEEN</span>" operator is <span class='text-danger'>not "AND" operator</span> and cannot be replaced by "&&" symbol
+                    </div>
                 </div>
                 <h3>"NOT" OPERATOR</h3>
                 <div class="code">
-                    syntax: <span class='text-primary'>NOT</span> condition <br>
-                    <span class='text-primary'>NOT</span> true_condition WILL GIVE FALSE <br> 
-                    <span class='text-primary'>NOT</span> false_condition WILL GIVE TRUE 
+                    <ul class='tabSection'>
+                        <div class='tab' data-target='not_operator_code'>CODE</div>
+                        <div class='tab' data-target='not_operator_desc'>DESC</div>
+                    </ul>
+                    <div id="not_operator_code">
+                        <span class='text-info'>syntax</span>: <span class='text-primary'>NOT</span> condition
+                    </div>
+                    <div id="not_operator_desc">
+                        Converts a condition which is <span class='text-danger'>true to false</span> and <span class='text-danger'>vice-versa</span>
+                    </div> 
                 </div>
                 <h3>"LIKE" OPERATOR</h3>
                 <img src="/img/sql_images/like_with_under_and_percent.jpg" alt="LIKE OPERATOR EXAMPLE">
+                <h3>Wild Card Characters</h3>
                 <div class="code">
-                    <span class='text-primary'>_</span> REPRESENTS 1 character BEFORE "a" <br>
-                    <span class='text-primary'>%</span> REPRESENTS any no of character(includes 0) AFTER "a" <br>
+                    <span class='text-primary'>_</span> REPRESENTS <span class='text-success'>1</span> character BEFORE "a" <br>
+                    <span class='text-primary'>%</span> REPRESENTS <span class='text-success'>any no</span> of character(includes 0) AFTER "a" <br>
                 </div>
                 <div class="code">
                     <span class='text-info'>Similarly: </span><span class='text-primary'>NOT LIKE </span>also exists
@@ -163,13 +190,15 @@
                 <h3>LIKE WITH DATE DATATYPE</h3>
                 <img src="/img/sql_images/matching_date_with_like.jpg" alt="DATE DATATYPE WITH LIKE OPERATOR">
                 <div class="code">
-                    5 UNDERSCORE FOR : yyyy/ or yyyy- <br>
-                    % FOR : another "/ or -" + any no of character in days <br>
-                    % IS USED BECAUSE WE DON'T CARE ABOUT NO OF CHARACTERS AFTER MONTH <br>
-                    <span class='text-danger'>ANOTHER WAY OF DOING THE SAME THING</span> <br>
-                    INSTEAD OF LIKE OPERATOR : <br>
-                    <span class='text-primary'>MONTH</span>(dateOfAdm) = 11 <br>
-                    SIMILARLY "DAY" AND "YEAR" FUNCTION ALSO EXISTS
+                    <span class='text-info'>5 underscores for</span>: yyyy/ or yyyy- <br>
+                    <span class='text-info'>% for</span>: another "/ or -" + any no of character in days <br>
+                    <div class="comment">% is used because we don't care about no of characters after month </div>
+                </div>
+                <div class="code">
+                    <div class="comment">Another way of doing the same thing</div>
+                    <span class='text-primary'>SELECT</span> * <span class='text-danger'>FROM</span> patient <br>
+                    <span class='text-danger'>WHERE</span> <span class='text-info'>MONTH</span>(dateOfAdm) = 11 ;
+                    <div class="comment">Similarly "day" and "year" function also exists</div>
                 </div>
             </div>
 
@@ -185,7 +214,9 @@
                 <div class="code">
                     <div class="comment">USED TO ADD TWO STRINGS</div>
                     <span class='text-info'>syntax: </span> <span class='text-primary'>CONCAT</span>(string1 , string2) <br>
-                    <br><span class='text-success'>For e.x.</span>: <br>
+                </div>
+                <div class="code">
+                    <span class='text-success'>For e.x.</span>: <br>
                     <span class='text-primary'>UPDATE</span> patient <br>
                     <span class='text-danger'>SET</span> name = <span class='text-danger'>CONCAT</span>("Mr." , name) <br>
                     <span class='text-danger'>WHERE </span>gender = "M" ; 
@@ -194,11 +225,15 @@
                 <div class="code">
                     <div class="comment">Used to return letters from a string</div>
                     <span class='text-info'>syntax </span>: <span class='text-primary'>LEFT</span>(string , noOfCharacters) <br>
-                    <br><span class='text-success'>For e.x.</span>: <br>
+                </div>
+                <div class="code">
+                    <span class='text-success'>For e.x.</span>: <br>
                     <span class='text-primary'>UPDATE</span> patient <br>
                     <span class='text-danger'>SET</span> name = <span class='text-danger'>LEFT</span>(name,3) ; <br>
-                    <span class='text-info'>Output</span>: <br>
-                    All the name will be having first 3 characters stored only .
+                    <div class="comment">
+                        <span class='text-info'>Output</span>:
+                        All the name will be having first 3 characters stored only .
+                    </div>
                 </div>
                 <img src="/img/sql_images/leftFunction.jpg" alt="LEFT FUNCTION ">
                 <div class="code">
@@ -219,7 +254,7 @@
             <div class="section">
                 <h2>DROP COMMAND IN SQL</h2>
                 <div class="code">
-                    SYNTAX:- <span class='text-primary'>DROP</span> <span class='text-danger'>DATABASE/TABLE</span> nameOf_Datbase/Table
+                    <span class='text-info'>syntax</span>: <span class='text-primary'>DROP</span> <span class='text-danger'>DATABASE/TABLE</span> nameOf_Datbase/Table
                 </div>
             </div>
 
@@ -227,56 +262,77 @@
             <div class="section">
                 <h2>ALTER COMMAND IN SQL</h2>
                 <div class="code">
-                    BASIC SYNTAX :- <br> <span class='text-primary'>ALTER</span> <span class='text-danger'>TABLE</span> nameOfTable <span class='text-danger'>CLAUSE</span> changeInStructure ; 
+                    <span class='text-info'>basic syntax</span> :- <br> <span class='text-primary'>ALTER</span> <span class='text-danger'>TABLE</span> nameOfTable <span class='text-danger'>CLAUSE</span> changeInStructure ; 
                 </div>
                 <div class="code">
-                    5 clauses: <br>
+                    <span class='text-info'>5 clauses used </span>: <br>
                     <span class='text-danger'>ADD</span>,<span class='text-danger'>RENAME</span>,<span class='text-danger'>CHANGE</span>,<span class='text-danger'>DROP</span>,<span class='text-danger'>MODIFY</span><br>
                     <div class="comment"><span class='text-info'>NOTE:</span> ADD THE SYNTAX OF ALL CLAUSES (EXPLAINED BELOW) AFTER "ALTER TABLE nameOfTable"</div>
                 </div>
+                <h3>rename clause</h3>
                 <div class="code">
-                    <span class='text-danger'>RENAME CLAUSE</span> <br>
-                    USED TO RENAME A TABLE <br>
-                    syntax : <span class='text-danger'>RENAME</span> newName; <br>
+                    <div class="comment">Used to rename a column</div>
+                    <span class='text-info'>syntax</span>: <span class='text-danger'>RENAME</span> newName; <br>
+                </div>
+                <h3>drop clause</h3>
+                <div class="code">
+                    <div class="comment">Used to remove a COLUMN/PRIMARY-KEY/UNIQUE-KEY</div>
+                    1. <span class='text-warning'>TO REMOVE A COLUMN</span>:- <br>
+                    <span class='text-success'>syntax:</span> <span class='text-danger'>DROP</span> nameOfColumn ; 
                 </div>
                 <div class="code">
-                    <span class='text-danger'>DROP CLAUSE</span> <br>
-                    USED TO REMOVE A COLUMN/PRIMARY KEY/UNIQUE KEY <br>
-                    1. <span class='text-warning'>TO REMOVE A COLUMN</span>:- <br>
-                    <span class='text-success'>syntax:</span> <span class='text-danger'>DROP</span> nameOfColumn ; <br><br>
                     2. <span class='text-warning'>TO REMOVE THE PRIMARY KEY</span>:- <br>
-                    <span class='text-success'>syntax:</span> <span class='text-danger'>DROP</span> PRIMARY KEY ; <br><br>
+                    <span class='text-success'>syntax:</span> <span class='text-danger'>DROP</span> <span class='text-primary'>PRIMARY KEY</span> ;
+                </div>
+                <div class="code">
                     3. <span class='text-warning'>TO REMOVE THE UNIQUE KEY</span>:- <br>
                     <span class='text-success'>syntax:</span> <span class='text-danger'>DROP INDEX</span> indexOfUniqueKey; <br>                    
-                    <span class='text-info'>Note:</span> Usually indexOfUniqueKey is the name of column <br>
-                    To see the index type :- <br>
+                    <div class="comment"><span class='text-info'>Note:</span> Usually indexOfUniqueKey is the name of column </div>
+                    <span class='text-info'>To see the index</span>:
                     <span class='text-primary'>SHOW </span><span class='text-danger'>CREATE TABLE</span> nameOfTable;
                 </div>
                 <div class="code">
-                    <span class='text-danger'>ADD CLAUSE</span> <br>
-                    USED TO ADD COLUMN / PRIMARY KEY / UNIQUE KEY <br>
+                    <span class='text-info'>SHOW</span> <span class='text-primary'>CREATE </span>
+                    <span class='text-danger'>DATABASE</span> nameOfDatabase ; 
+                    <div class="comment">This is also a valid command</div>
+                </div>
+                <h3>Add Clause</h3>
+                <div class="code">
+                    <div class="comment">Used to add COLUMN / PRIMARY KEY / UNIQUE KEY </div>
                     1. <span class='text-warning'>ADDING COLUMN</span>:- <br>
-                    <span class='text-danger'>ADD</span> colname <span class='text-warning'>DATATYPE</span> CONSTRAINTS; <br> <br>
-                    2. <span class='text-warning'>ADDING PRIMARY KEY/UNIQUE KEY</span>:- <br>
-                    <span class='text-danger'>ADD</span> PRIMARY KEY(nameOfCol1,nameOfCol2,..) <br>
-                    <span class='text-danger'>ADD</span> UNIQUE KEY(nameOfCol1,nameOfCol2,..)
-                    
+                    <span class='text-danger'>ADD</span> colname <span class='text-warning'>DATATYPE</span> CONSTRAINTS
                 </div>
                 <div class="code">
-                    <span class='text-danger'>CHANGE CLAUSE</span> <br>
-                    To changer/rename the column names <br>
-                    <span class='text-success'>syntax: </span><span class='text-danger'>CHANGE</span> oldName newName <span class='text-warning'>DATATYPE</span>;<br>
+                    <div class="comment">2. ADDING PRIMARY KEY/UNIQUE KEY</div>
+                    <span class='text-danger'>ADD</span> <span class='text-warning'>PRIMARY KEY</span>(nameOfCol1,nameOfCol2,..) <br>
+                    <span class='text-danger'>ADD</span> <span class='text-warning'>UNIQUE KEY</span>(nameOfCol1,nameOfCol2,..)
                 </div>
+                <h3>Change Clause</h3>
                 <div class="code">
-                    <span class='text-danger'>MODIFY CLAUSE</span> <br>
+                    <div class="comment">To changer/rename the column names</div>
+                    <span class='text-danger'>CHANGE</span> oldName newName <span class='text-warning'>DATATYPE</span>;<br>
+                </div>
+                <h3>Modify clause</h3>
+                <div class="code">
                     Used to apply default,not null,null(store null value) constraint <br>
                     To change the datatype or datatype size , to reorder the columns  <br>
                 </div>
                 <div class="code">
-                    To apply constraints or change datatype or reorder: <br>
-                    <span class='text-success'>syntax:</span> <br><span class='text-danger'>MODIFY</span> colName <span class='text-warning'>NEW/OLD_DATATYPE</span> NULL/NOT NULL/ <br> DEFAULT value FIRST/<span class='text-danger'>AFTER</span> colname;
-                    <div class="comment"><span class='text-info'>NOTE:</span> if column order value not specified then it will remain the same <br> reorder can be done in ADD clause as well</div>
-                    <div class="comment"><span class='text-info'>NOTE:</span> applying constraint is not neccessary but if not applied then previous not null/default constraint will be removed if exists</div>
+                    <div class="comment">To apply constraints or change datatype or reorder:</div>
+                    <span class='text-primary'>MODIFY</span> 
+                    colName <span class='text-warning'>NEW/OLD_DATATYPE</span> <span class='text-danger'>NULL</span>/
+                    <span class='text-danger'>NOT NULL</span>/ <br>
+                    <span class='text-danger'>DEFAULT value</span>
+                    <span class='text-info'>FIRST</span>/<span class='text-danger'>AFTER</span> colname;
+                </div>
+                <div class="code">
+                    <div class="comment"><span class='text-info'>NOTE:</span>
+                        Reorder can be done in <span class='text-danger'>ADD</span> clause as well</div>
+                </div>
+                <div class="code">
+                    <div class="comment"><span class='text-info'>NOTE:</span> applying constraint is not neccessary 
+                        but if not applied then previous 
+                        <span class='text-danger'>NOT NULL</span>/<span class='text-danger'>DEFAULT</span> constraint will be removed if exists</div>
                 </div>
             </div>
 
@@ -298,6 +354,7 @@
     </script>
     <script src="/js/navbar.js"></script>
     <script src="/js/teleporter.js"></script>
+    <script src="/js/tabSection.js"></script>
 </body>
 
 </html>

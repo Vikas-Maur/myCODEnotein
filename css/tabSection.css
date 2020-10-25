@@ -6,7 +6,7 @@
 }
 
 .tab{
-    width: 100px;
+    min-width: 100px;
     text-align: center;
 }
 
@@ -21,4 +21,14 @@
 
 .hiddenTab{
     display: none;
+}
+
+@media (max-width:500px){
+    .moreTabs{
+        flex-direction: column;
+    }
+    .moreTabs .tabBorder{
+        border-bottom: none;
+        border-left: 2px solid var(--light);
+    }
 }

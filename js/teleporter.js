@@ -23,8 +23,10 @@ try {
         liTag.addEventListener("click", () => {
             const scrolliny = section.offsetTop;
             window.scrollTo(x = 0, y = scrolliny + 300);
-
             ShiftHoverDiv(liTag);
+            if(window.innerWidth<=500){
+                teleporter.classList.toggle("shiftTeleporter");
+            }
         });
     });
 
@@ -32,3 +34,14 @@ try {
     container.appendChild(teleporter);
 }
 catch (e) { }
+
+if(window.innerWidth<=500){
+    const showTeleporter = document.createElement("button");
+    showTeleporter.id = "showTeleporter";
+    showTeleporter.innerHTML = "Teleporter";
+    document.querySelector(".container").appendChild(showTeleporter);
+    showTeleporter.addEventListener("click",()=>{
+        teleporter.classList.toggle("shiftTeleporter"); 
+    });
+
+}

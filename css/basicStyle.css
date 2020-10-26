@@ -172,9 +172,6 @@ h1,img{
   .section h3{
     text-align: center;
   }
-  #teleporter {
-    display: none;
-  }
   img{
     max-width: 100vw !important;
     background-size: cover;

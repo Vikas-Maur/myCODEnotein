@@ -39,3 +39,38 @@
   transform: scale(1.5);
   pointer-events: none;
 }
+@media (max-width: 500px) {
+  #teleporter {
+    position: fixed;
+    top:12%;
+    left: 0%;
+    background-color: var(--dark);
+    width: 100vw;
+    height: 100vh;
+    transition: all 1s ease-in;
+    z-index: 2;
+  }
+  .shiftTeleporter{
+    transform: translateY(1000%);
+  }
+  #teleportingList{
+    color: var(--light);
+  }
+  #hoverDiv{
+    display: none;
+  }
+  #showTeleporter{
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    background-color: var(--dark);
+    color: var(--light);
+    z-index: 10;
+    height: 50px;
+    width: 150px;
+    border-radius: 10px;
+  }
+}

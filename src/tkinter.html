@@ -8,7 +8,7 @@
     </title>
     <meta
       name="description"
-      content="Coverting a Black-screened program to a beautiful GUI is what tkinter is made for . It is made to make you feel the Python Power - Fastest notes of tkinter - by myCODEnotein"
+      content="Coverting a Black-screened program to a beautiful GUI is what tkinter is made for . It is made to make you feel the Python Power (Advanced notes) - Fastest notes of tkinter - by myCODEnotein"
     />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
@@ -37,6 +37,7 @@
             </div>
           </div>
         </div>
+
         <!-- **************** -->
         <div class="section">
           <h2>Methods Of Tk Class / Configuring root</h2>
@@ -45,10 +46,10 @@
             <button class="copy"></button>
             <div>
               root.<span
-            title="Sets the title of gui window (the name which appears at the top of any window)"
-            class="text-primary"
-            >title</span
-            >(<span class="text-warning">"title of gui window"</span>) <br />
+                title="Sets the title of gui window (the name which appears at the top of any window)"
+                class="text-primary"
+                >title</span
+              >(<span class="text-warning">"title of gui window"</span>) <br />
             </div>
           </div>
           <h3>Setting Up root geometry</h3>
@@ -56,18 +57,90 @@
             <button class="copy"></button>
             <div>
               root.<span
-              title="Sets the width and height of tkinter screen window"
-              class="text-primary"
-              >geometry</span
-            >(<span class="text-warning"
-              >"<span class="text-success">{screenWidth}</span>x<span
-                class="text-success"
-                >{screenHeight}</span
-              >"</span
-            >)
+                title="Sets the width and height of tkinter screen window"
+                class="text-primary"
+                >geometry</span
+              >(<span class="text-warning"
+                >"<span class="text-success">{screenWidth}</span>x<span
+                  class="text-success"
+                  >{screenHeight}</span
+                >"</span
+              >)
+            </div>
+          </div>
+          <h3>Making The window transparent</h3>
+          <div class="code">
+            <button class="copy"></button>
+            <div>
+              root.<span class="text-primary">attributes</span>(<span
+                class="text-warning"
+                >"-alpha"</span
+              >,value)
+            </div>
+            <div class="comment">
+              # value lies between 0 (fully-transparent) and 1
+              (full-non-transparent)
+            </div>
+          </div>
+          <h3>Making the window remain at top of all windows</h3>
+          <div class="code">
+            <ul class='tabSection'>
+              <div class='tab' data-target='topmost_window_code'>CODE</div>
+              <div class='tab' data-target='topmost_window_desc'>DESC</div>
+            </ul>
+            <div id="topmost_window_code">
+              <button class="copy"></button>
+              <div>
+                root.<span class="text-primary">attributes</span>(<span
+                  class="text-warning"
+                  >"-topmost"</span
+                >,value)
+              </div>
+            </div>
+            <div id="topmost_window_desc">
+              <span class='text-warning'>value</span> is either --> <span class='text-info'>1</span> or <span class='text-info'>0</span>
+              <br>
+              <span class='text-info'>1</span> signifies that window <span class='text-danger'>must be at the top of other windows</span> (always)
+              <br><span class='text-info'>0</span> signifies that window <span class='text-danger'>may or may not be at the top of other windows</span>
+            </div>
+          </div>
+          <h3>Making the GUI full screen</h3>
+          <div class="code">
+            <ul class='tabSection'>
+              <div class='tab' data-target='fullscreen_window_code'>CODE</div>
+              <div class='tab' data-target='fullscreen_window_desc'>DESC</div>
+            </ul>
+            <div id="fullscreen_window_code">
+              <button class="copy"></button>
+              <div>root.<span class='text-primary'>attributes</span>(<span class='text-warning'>"-fullscreen"</span>,value)</div>
+            </div>
+            <div id="fullscreen_window_desc">
+              <span class='text-warning'>Value</span>=<span class='text-info'>0</span> represents the window is not fullscreen.
+              <br>
+              <span class='text-warning'>Value</span>><span class='text-info'>0</span> represents full screen mode
+            </div>
+          </div>
+          <h3>To know more attribute of root</h3>
+          <div class="code">
+            <span class='text-info'>Run</span>: root.<span class='text-primary'>attributes</span>()
+            <div class="comment"># Returns the attributes and their corresponding values . You
+            <span class='text-info'>print</span> them if you want to know .
+            </div>
+          </div>
+          <h3>To minimize the window through code</h3>
+          <div class="code">
+            <span class='text-info'>Run</span>: root.<span class='text-primary'>iconify</span>()
+          </div>
+          <div class="code">
+            root.<span class='text-primary'>deiconify</span>()
+            <div class="comment"># Makes the window normal.</div>
+            <div class="comment">
+              # <span class='text-info'>Note</span>: that iconfiy is like someone has pressed the "-"
+              button at the top of window
             </div>
           </div>
         </div>
+
         <!-- **************** -->
         <div class="section">
           <h2>Starter Template With Usual Methods</h2>
@@ -89,6 +162,7 @@
             </div>
           </div>
         </div>
+
         <!-- **************** -->
         <div class="section">
           <h2>Widgets in Tkinter</h2>
@@ -198,6 +272,7 @@
             <span class="text-danger">frame</span> <br />Same with height
           </div>
         </div>
+
         <!-- **************** -->
         <div class="section">
           <h2>Grid , Pack and Config methods</h2>
@@ -288,6 +363,7 @@
             title="AFter using config method example"
           />
         </div>
+
         <!-- **************** -->
         <div class="section">
           <h2>Some Common Widget Options</h2>
@@ -357,6 +433,15 @@
               where event is the argument given to function
             </div>
           </div>
+          <h3>The Function is something like</h3>
+          <div class="code">
+            <button class="copy"></button>
+            <div>
+              <span class='text-info'>def</span> function(<span class='text-warning'>event</span>): <br>
+              <pre class="tab-pre">&Tab;</pre><span class='text-primary'>dir</span>(<span class='text-warning'>event</span>)
+            </div>
+            <pre class="tab-pre">&Tab;</pre><span class="comment"># event argument is given by tkinter</span>
+          </div>
           <h3>Use Of Lambda Function</h3>
           <div class="code">
             <div class="comment"># Used to call argumented functions</div>
@@ -418,57 +503,48 @@
             <button class="copy"></button>
             <div>
               <span class="text-danger">from</span> tkinter
-            <span class="text-info">import</span> * <br />
-            root = <span class="text-primary">Tk</span>() <br />
-            <span class="text-info">def</span> ChangeBG(<span
-              class="text-warning"
-              >event</span
-            >,<span class="text-warning">color</span>): <br />
-            <pre class="tab-pre">&Tab;</pre>
-            event.<span class="text-danger">widget</span>.<span
-              class="text-primary"
-              >config</span
-            >(<span class="text-warning">background</span>=color) <br />
-            <div class="comment">
+              <span class="text-info">import</span> * <br />
+              root = <span class="text-primary">Tk</span>() <br />
+              <span class="text-info">def</span> ChangeBG(<span
+                class="text-warning"
+                >event</span
+              >,<span class="text-warning">color</span>): <br />
               <pre class="tab-pre">&Tab;</pre>
-              # doing event.widget was not necessary
-            </div>
-            button = <span class="text-primary">Button</span>(<span
-              class="text-warning"
-              >root</span
-            >, <span class="text-warning">text</span>="Hoverable Button",
-            <span class="text-warning">bg</span>="red",<span
-              class="text-warning"
-              >fg</span
-            >="white") <br />
-            button.<span class="text-primary">pack</span>() <br />
-            button.<span class="text-primary">bind</span>(<span
-              class="text-warning"
-              >"&lt;Enter&gt;"</span
-            >,<span class="text-warning">func</span> =<span class="text-info"
-              >lambda</span
-            >
-            e: <span class="text-primary">ChangeBG</span>(e,"grey")) <br />
-            button.<span class="text-primary">bind</span>(<span
-              class="text-warning"
-              >"&lt;Leave&gt;"</span
-            >,<span class="text-warning">func</span> =<span class="text-info"
-              >lambda</span
-            >
-            e: <span class="text-primary">ChangeBG</span>(e,"red")) <br />
-            root.<span class="text-primary">mainloop</span>()
+              event.<span class="text-danger">widget</span>.<span
+                class="text-primary"
+                >config</span
+              >(<span class="text-warning">background</span>=color) <br />
+              <div class="comment">
+                <pre class="tab-pre">&Tab;</pre>
+                # doing event.widget was not necessary
+              </div>
+              button = <span class="text-primary">Button</span>(<span
+                class="text-warning"
+                >root</span
+              >, <span class="text-warning">text</span>="Hoverable Button",
+              <span class="text-warning">bg</span>="red",<span
+                class="text-warning"
+                >fg</span
+              >="white") <br />
+              button.<span class="text-primary">pack</span>() <br />
+              button.<span class="text-primary">bind</span>(<span
+                class="text-warning"
+                >"&lt;Enter&gt;"</span
+              >,<span class="text-warning">func</span> =<span class="text-info"
+                >lambda</span
+              >
+              e: <span class="text-primary">ChangeBG</span>(e,"grey")) <br />
+              button.<span class="text-primary">bind</span>(<span
+                class="text-warning"
+                >"&lt;Leave&gt;"</span
+              >,<span class="text-warning">func</span> =<span class="text-info"
+                >lambda</span
+              >
+              e: <span class="text-primary">ChangeBG</span>(e,"red")) <br />
+              root.<span class="text-primary">mainloop</span>()
             </div>
           </div>
-          <img
-            src="/img/tkinter_images/bHover.png"
-            alt="Before Hover example"
-            title="Before hover example"
-          />
-          <img
-            src="/img/tkinter_images/aHover.png"
-            alt="On Hover example"
-            title="On hover example"
-          />
+          <video src="/vid/tkinter/hoverableButton.mp4" controls></video>
         </div>
 
         <!-- **************** -->
@@ -581,6 +657,176 @@
             title="separator example in tkinter"
           />
         </div>
+
+        <!-- **************** -->
+        <div class="section">
+          <h2>Text widget in tkinter</h2>
+          <h3>Creating the text widget instance</h3>
+          <div class="code">
+            <button class="copy"></button>
+            <div>myText = <span class='text-primary'>Text</span>(<span class='text-warning'>master</span>,
+              <span class='text-warning'>**opt</span>)</div>
+          </div>
+          <div class="code">
+            <span class='text-info'>Note</span>: frame of width 100 is smaller than text of width 100.
+            Similar with height
+          </div>
+          <h3>Insertontime and insertofftime options</h3>
+          <div class="code">
+            <ul class='tabSection'>
+              <div class='tab' data-target='insert_ontime_offtime_code'>CODE</div>
+              <div class='tab' data-target='insert_ontime_offtime_desc'>DESC</div>
+            </ul>
+            <div id="insert_ontime_offtime_code">
+              <div class="comment"># Let us use config to change text widget options</div>
+            myText.<span class='text-primary'>config</span>(<span class='text-warning'>insertontime</span>=num1 
+            , <span class='text-warning'>insertofftime</span>=num2)
+            <div class="comment">
+              # Default <span class='text-warning'>insertontime</span> - <span class='text-info'>300</span> <br>
+              # Default <span class='text-warning'>insertofftime</span> - <span class='text-info'>600</span> <br>
+            </div>
+            </div>
+            <div id="insert_ontime_offtime_desc">
+              <span class='text-info'>insertontime</span>: time for which insertion cursor is on the screen 
+              <br>
+              <span class='text-info'>insertofftime</span>: time for which insertion cursor is not on the screen 
+            </div>
+          </div>
+          <video src="/vid/tkinter/insertofftime.mp4" controls></video>
+          <h3>Indexing in text widget - tkinter</h3>
+          <div class="code">
+            <div class="comment"># Basic indexing</div>
+            <span class='text-info'>index</span>: 
+            <span class='text-warning'>"{<span class='text-danger'>lineNo</span>}.{<span class='text-danger'>columnNo</span>}"</span>
+          </div>
+          <div class="code">
+            <div class="comment"># End index of a line</div>
+            <span class='text-info'>index</span>:
+            <span class='text-warning'>"{<span class='text-danger'>lineNo</span>}.end"</span>
+          </div>
+          <div class="code">
+            <div class="comment"># Index of insertion cursor</div>
+            <span class='text-info'>index</span>: 
+            <span class='text-warning'>INSERT</span> or <span class='text-warning'>"insert"</span>
+          </div>
+          <div class="code">
+            <div class="comment"># Index of selected text</div>
+            <span class='text-info'>index</span>:  <br>
+            <span class='text-warning'>SEL_FIRST</span> <span class="comment"># For first index</span> <br>
+            <span class='text-warning'>SEL_LAST</span> <span class="comment"># For last index</span>
+          </div>
+          <img src="/img/tkinter_images/sel_first_last_index.png" alt="SEl_FIRST and SEL_LAST in tkinter"
+          title="SEl_FIRST and SEL_LAST in tkinter">
+          <div class="code">
+            <div class="comment"># index method</div>
+            <span class='text-info'>For ex</span>: <span class="comment"># If you want the index of insertion cursor in "line.col" format</span>
+            <br>
+            insertIndex = myText.<span class='text-primary'>index</span>(<span class='text-warning'>INSERT</span>)
+          </div>
+          <div class="code">
+            <div class="comment">For more info about indexing: </div>
+            <a target="_blank" href="http://effbot.org/tkinterbook/text.htm#:~:text=Indexes%20are%20used%20to%20point,line%2Fcolumn%20(%E2%80%9Cline.">Detailed indexing knowledge</a>
+          </div>
+          <h3>Tags in tkinter</h3>
+          <div class="code">
+            <div class="comment"># What are Tags</div>
+            <span class='text-primary'>tags</span> are like <span class='text-warning'>class in css</span>.
+            <br>You can set a <span class='text-primary'>tag</span> between 2 indices
+            <br>and then you can configure that <span class='text-primary'>tag</span> to change options 
+            like <span class='text-warning'>background</span>,<span class='text-warning'>foreground</span>,
+            <span class='text-warning'>font</span>...etc
+            <br> for that particular region containing that <span class='text-primary'>tag</span>
+          </div>
+          <div class="code">
+            <ul class='tabSection'>
+              <div class='tab' data-target='tag_add_code_tkinter'>CODE</div>
+              <div class='tab' data-target='tag_add_desc_tkinter'>DESC</div>
+            </ul>
+            <div id="tag_add_code_tkinter">
+              <div class="comment"># Adding a tag</div>
+            <button class="copy"></button>
+            <div>myText.<span class='text-primary'>tag_add</span>(<span class='text-warning'>tagName</span>
+              ,<span class='text-warning'>startIndex</span>,<span class='text-warning'>endIndex</span>)
+            </div>
+
+            </div>
+            <div id="tag_add_desc_tkinter">
+              The <span class='text-warning'>tagName</span> can be user defined 
+              <br>Few tags are defined by tkinter itself like
+              <span class='text-warning'>"sel"</span>
+            </div>
+          </div>
+          <div class="code">
+            <ul class='tabSection'>
+              <div class='tab' data-target='config_tag_in_tkinter_code'>CODE</div>
+              <div class='tab' data-target='config_tag_in_tkinter_desc'>DESC</div>
+            </ul>
+            <div id="config_tag_in_tkinter_code">
+              <div class="comment"># Configuring a tag</div>
+              <button class="copy"></button>
+              <div>
+                myText.<span class='text-primary'>tag_config</span>(<span class='text-warning'>tagName</span>
+              ,<span class='text-warning'>**opt</span>)
+              </div>
+            </div>
+            <div id="config_tag_in_tkinter_desc">
+              <div class="comment"># <span class='text-warning'>**opt</span>
+              includes basic text widget options like font,background,foreground,selectbackground ... etc</div>
+            </div>
+          </div>
+          <div class="code">
+            <div class="comment"># Deleting a tag</div>
+            <button class="copy"></button>
+            <div>myText.<span class='text-primary'>tag_delete</span>(<span class='text-warning'>tagName</span>)</div>
+          </div>
+          <h3>Marks in text widget</h3>
+          <div class="code">
+            <div class="comment"># What are marks</div>
+            <span class='text-primary'>marks</span> are like tag with <span class='text-danger'>startIndex=endIndex</span>
+            <br>They are used to mark a specific index in text widget <br>
+            <div class="comment"># <span class='text-primary'>INSERT</span> is also a mark made by tkinter</div>
+          </div>
+          <div class="code">
+            <div class="comment"># Creating a mark</div>
+            <button class="copy"></button>
+            <div>
+              myText.<span class='text-primary'>mark_set</span>(<span class='text-warning'>markName</span>
+              ,<span class='text-warning'>IndexToPlace</span>)
+            </div>
+            <div class="comment"># <span class='text-warning'>markName</span> can be user defined</div>
+          </div>
+          <div class="code">
+            <ul class='tabSection'>
+              <div class='tab' data-target='mark_gravity_code'>CODE</div>
+              <div class='tab' data-target='mark_gravity_desc'>DESC</div>
+            </ul>
+            <div id="mark_gravity_code">
+              <div class="comment"># Setting up mark gravity</div>
+              <button class="copy"></button>
+              <div>
+                myText.<span class='text-primary'>mark_gravity</span>(<span class='text-warning'>markName</span>,
+                <span class='text-warning'>value</span>)
+              </div>
+            </div>
+            <div id="mark_gravity_desc">
+              <span class='text-warning'>value</span> can be <br>
+              <span class='text-primary'>LEFT</span>/<span class='text-primary'>"left"</span> <br>
+              or <br>
+              <span class='text-primary'>RIGHT</span>/<span class='text-primary'>"right"</span> <br>
+              <span class='text-primary'>RIGHT</span> is default . 
+            </div>
+          </div>
+          <h3>A video showing mark_gravity effect</h3>
+          <video src="/vid/tkinter/mark_in_tkinter.mp4" controls></video>
+          <h3>Resources for text widget</h3>
+          <div class="code">
+            1. <a href="http://effbot.org/tkinterbook/text.htm" target="_blank">Effbot website</a>
+          </div>
+          <div class="code">
+            2. <a target="_blank" href="https://www.geeksforgeeks.org/python-tkinter-text-widget/">Geeks for geeks website</a>
+          </div>
+        </div>
+
       </div>
     </div>
     <script src="/js/navbar.js"></script>

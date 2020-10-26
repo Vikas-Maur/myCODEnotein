@@ -1,6 +1,7 @@
 function ShiftHoverDiv(liTag) {
-    hoverDiv.style.top = `${liTag.offsetTop}px`;
-    hoverDiv.style.height = `${liTag.offsetHeight}px`;
+    const [top,height] = [liTag.getBoundingClientRect().top-75,liTag.getBoundingClientRect().height];
+    hoverDiv.style.top = `${top}px`;
+    hoverDiv.style.height = `${height}px`;
 }
 
 try {

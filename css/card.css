@@ -70,4 +70,7 @@
         transform: scale(0.8);
         transform-origin: center;
     }
+    .card-tagline{
+        font-family: sans-serif;
+    }
 }

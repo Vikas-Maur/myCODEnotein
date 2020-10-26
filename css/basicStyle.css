@@ -154,6 +154,9 @@ h1,img{
     font-size: xx-large;
     margin-left: 0%;
   }
+  video{
+    width: 300px;
+  }
   .content{
       left: 0%;
       padding-left: 5%;

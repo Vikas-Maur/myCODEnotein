@@ -48,7 +48,7 @@
     width: 100vw;
     height: 100vh;
     transition: all 1s ease-in;
-    z-index: 2;
+    z-index: 3;
   }
   .shiftTeleporter{
     transform: translateY(1000%);
@@ -68,7 +68,7 @@
     border: none;
     background-color: var(--dark);
     color: var(--light);
-    z-index: 10;
+    z-index: 1;
     height: 50px;
     width: 150px;
     border-radius: 10px;

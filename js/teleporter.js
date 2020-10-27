@@ -43,5 +43,5 @@ if(window.innerWidth<=500){
     showTeleporter.addEventListener("click",()=>{
         teleporter.classList.toggle("shiftTeleporter"); 
     });
-
+    teleporter.classList.add("shiftTeleporter");
 }

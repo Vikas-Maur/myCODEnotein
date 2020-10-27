@@ -71,6 +71,31 @@
                     os.<span class='text-danger'>path</span>.<span class='text-primary'>isfile</span>(Path) <br>
                     os.<span class='text-danger'>path</span>.<span class='text-primary'>isdir</span>(Path) <br>
                 </div>
+                <h3>Directory Functions</h3>
+                <div class="code">
+                    <ul class='tabSection moreTabs'>
+                        <div class='tab' data-target='mkdir_code'>MakeDir</div>
+                        <div class='tab' data-target='rmdir_code'>RemoveDir</div>
+                        <div class='tab' data-target='listdir_code'>ListDir</div>
+                        <div class='tab' data-target='getcwd_code'>CurrentDir</div>
+                        <div class='tab' data-target='chdir_code'>ChangeCurrentDir</div>
+                    </ul>
+                    <div id="mkdir_code">os.<span class='text-primary'>mkdir</span>(nameOfDir)</div>
+                    <div id="rmdir_code">os.<span class='text-primary'>rmdir</span>(nameOfDir)</div>
+                    <div id="listdir_code">
+                        os.<span class='text-primary'>listdir</span>(pathOfDir)
+                        <div class="comment"># <span class='text-light'>pathOfDir</span> is the dir of which child directories/files are returned</div>
+                        <div class="comment"># <span class='text-light'>pathOfDir</span> is by default current working dir</div>
+                    </div>
+                    <div id="getcwd_code">
+                        os.<span class='text-primary'>getcwd</span>()
+                        <div class="comment"># returns current working directory</div>
+                    </div>
+                    <div id="chdir_code">
+                        os.<span class='text-primary'>chdir</span>(pathOfDir)
+                        <div class="comment"># changes current working directory to pathOfDir</div>
+                    </div>
+                </div>
                 <h3>Start A file with os module</h3>
                 <div class="code">
                     os.<span class='text-primary'>startfile</span>(filePath)
@@ -83,12 +108,10 @@
             <div class="section">
                 <h2>Tkinter ---> GUI dev in python</h2>
                 <div class="code">
-                    <a href="/src/tkinter.html">Detailed Notes</a>
+                    Click the link for <a href="/src/tkinter.html">Detailed Notes</a>
                 </div>
                 <h3>Importing tkinter</h3>
                 <div class="code">
-                    <span class='text-info'>import</span> tkinter <br>
-                    <div class="comment"># In this Page below line is used</div>
                     <span class='text-danger'>from</span> tkinter <span class='text-info'>import</span> *
                 </div>
                 <h3>Required Code </h3>
@@ -141,5 +164,6 @@
     </div>
     <script src='/js/navbar.js'></script>
     <script src='/js/teleporter.js'></script>
+    <script src="/js/tabSection.js"></script>
 </body>
 </html>

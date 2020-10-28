@@ -82,7 +82,7 @@
               (full-non-transparent)
             </div>
           </div>
-          <video src="/vid/tkinter/transparentWindow.mp4" controls></video>
+          <video src="/vid/tkinter/transparentWindow.mp4" controls muted></video>
           <h3>Making the window remain at top of all windows</h3>
           <div class="code">
             <ul class='tabSection'>
@@ -732,7 +732,9 @@
           <div class="code">
             <div class="comment"># What are Tags</div>
             <span class='text-primary'>tags</span> are like <span class='text-warning'>class in css</span>.
-            <br>You can set a <span class='text-primary'>tag</span> between 2 indices
+          </div>
+          <div class="code">
+            You can set a <span class='text-primary'>tag</span> between 2 indices
             <br>and then you can configure that <span class='text-primary'>tag</span> to change options 
             like <span class='text-warning'>background</span>,<span class='text-warning'>foreground</span>,
             <span class='text-warning'>font</span>...etc
@@ -826,6 +828,29 @@
           <div class="code">
             2. <a target="_blank" href="https://www.geeksforgeeks.org/python-tkinter-text-widget/">Geeks for geeks website</a>
           </div>
+        </div>
+
+        <!-- **************** -->
+        <div class="section">
+          <h2>Adding a Scrollbar To Text widget (Full Template)</h2>
+          <div class="code">
+            <button class="copy"></button>
+            <div>
+              myText = <span class='text-primary'>Text</span>(master,<span class='text-warning'>**opt</span>) <br>
+              myText.<span class='text-primary'>pack</span>(<span class='text-warning'>side</span>=LEFT,
+              <span class='text-warning'>expand</span>=<span class='text-info'>True</span>,
+              <span class='text-warning'>fill</span>=BOTH) <br>
+              myScroll = <span class='text-primary'>Scrollbar</span>(master,
+              <span class='text-warning'>command</span>=myText.<span class='text-info'>yview</span>) <br>
+              myScroll.<span class='text-primary'>pack</span>(<span class='text-warning'>side</span>=RIGHT,
+              <span class='text-warning'>expand</span>=<span class='text-info'>True</span>,
+              <span class='text-warning'>fill</span>=Y)
+              <br>
+              myText.<span class='text-primary'>config</span>(<span class='text-warning'>yscrollcommand</span>=
+              myScroll.set)
+            </div>
+          </div>
+          <video src="/vid/tkinter/scrollbar.mp4" controls></video>
         </div>
 
       </div>

@@ -546,8 +546,26 @@
             </div>
           </div>
           <video src="/vid/tkinter/hoverableButton.mp4" controls></video>
+          <h3>A Class For Making An Hoverable Button</h3>
+          <div class="code">
+            <button class="copy"></button>
+            <div>
+              <span class='text-info'>class</span> mCnButton(<span class='text-primary'>Button</span>): <br>
+              <pre class="tab-pre">&Tab;</pre><span class='text-info'>def</span> __init__(<span class='text-danger'>self</span>,<span class='text-warning'>master</span>,<span class='text-warning'>**kwargs</span>): <br>
+              <pre class="tab-pre">&Tab;&Tab;</pre><span class='text-primary'>super</span>(mCnButton,<span class='text-danger'>self</span>).<span class='text-primary'>__init__</span>(<span class='text-warning'>master</span><br>
+              <pre class="tab-pre">&Tab;&Tab;&Tab;&Tab;</pre>,<span class='text-warning'>**kwargs</span>) <br>              
+              <pre class="tab-pre">&Tab;&Tab;</pre><span class='text-danger'>self</span>.normal = {<span class='text-warning'>"background"</span>:<span class='text-warning'>kwargs</span>["bg"], <br>
+              <pre class="tab-pre">&Tab;&Tab;&Tab;&Tab;</pre><span class='text-warning'>"foreground"</span>:<span class='text-warning'>kwargs</span>["fg"]} <br> <br>
+              <pre class="tab-pre">&Tab;&Tab;</pre><span class='text-danger'>self</span>.onHover = {<span class='text-warning'>"background"</span>:"black", <br>
+              <pre class="tab-pre">&Tab;&Tab;&Tab;&Tab;</pre><span class='text-warning'>"foreground"</span>:"white"} <br> <br>
+              <pre class="tab-pre">&Tab;</pre><span class='text-info'>def</span> MakeHoverable(<span class='text-danger'>self</span>): <br>
+              <pre class="tab-pre">&Tab;&Tab;</pre><span class='text-danger'>self</span>.<span class='text-primary'>bind</span>(<span class='text-warning'>"&lt;Enter&gt;"</span>,func = <span class='text-info'>lambda</span> e:
+              <br><pre class="tab-pre">&Tab;&Tab;&Tab;</pre><span class='text-danger'>self</span>.<span class='text-primary'>config</span>(**<span class='text-danger'>self</span>.onHover))
+              <br><pre class="tab-pre">&Tab;&Tab;</pre><span class='text-danger'>self</span>.<span class='text-primary'>bind</span>(<span class='text-warning'>"&lt;Leave&gt;"</span>,func = <span class='text-info'>lambda</span> e:
+              <br><pre class="tab-pre">&Tab;&Tab;&Tab;</pre><span class='text-danger'>self</span>.<span class='text-primary'>config</span>(**<span class='text-danger'>self</span>.normal))
+            </div>
+          </div>
         </div>
-
         <!-- **************** -->
         <div class="section">
           <h2>Menu Widget in Tkinter</h2>
@@ -727,6 +745,29 @@
           <div class="code">
             <div class="comment">For more info about indexing: </div>
             <a target="_blank" href="http://effbot.org/tkinterbook/text.htm#:~:text=Indexes%20are%20used%20to%20point,line%2Fcolumn%20(%E2%80%9Cline.">Detailed indexing knowledge</a>
+          </div>
+          <h3>Common Methods</h3>
+          <div class="code">
+            <ul class='tabSection'>
+              <div class='tab' data-target='get_text_code'>get</div>
+              <div class='tab' data-target='insert_text_code'>insert</div>
+            </ul>
+            <div id="get_text_code">
+              <button class="copy"></button>
+              <div>
+                myText.<span class='text-primary'>get</span>(<span class='text-warning'>index1</span>
+                ,<span class='text-warning'>index2</span>)
+              </div>
+              <div class="comment"># Returns text from index1 to index2</div>
+            </div>
+            <div id="insert_text_code">
+              <button class="copy"></button>
+              <div>
+                myText.<span class='text-primary'>insert</span>(<span class='text-warning'>index</span>,
+                <span class='text-warning'>text</span>)
+              </div>
+              <div class="comment"># Inserts text on index</div>
+            </div>
           </div>
           <h3>Tags in tkinter</h3>
           <div class="code">

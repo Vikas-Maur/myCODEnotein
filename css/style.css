@@ -4,6 +4,13 @@
     blue is given in case if primary color doesn't works
 */
 @import "/css/basicStyle.css";
+@import "/css/teleporter.css";
+@import "/css/navbar.css";
+@import "/css/tabSection.css";
+@import "/css/copy.css";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
 :root{
     --primary: rgb(13,110,253);
     --secondary: rgb(108,117,125);

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python - by myCODEnotein - The Blog Which Is Designed To Make You Remember Your Python Powers</title>
+    <meta name='description' content=''>
+    <link rel='stylesheet' href='/css/style.css'>
+</head>
+<body>
+    <div class='container'>
+        <div class='heading'>
+           Python --> by myCODEnotein
+        </div>
+        <div class='content'>
+            <div class="section">
+                <h2>Variable and Constants</h2>
+                <h3>Constants</h3>
+                <div class="code">
+                    Constants are fixed values which can not be changed
+                    <br>
+                    <span class='text-info'>For ex</span>: 1 , 1.5 , "vikas"
+                </div>
+                <h3>Variables</h3>
+                <div class="code">
+                    Variables are those values which can be changed.
+                    <br>
+                    <span class='text-info'>For ex</span>: a=1
+                    <div class="comment"># a is a variable </div>
+                </div>
+                <h3>Rules for naming Variables</h3>
+                <div class="code">
+                    <ul>
+                        <li>name can contain alphabets , digits or underscores</li>
+                        <li>name cannot start with digits</li>
+                        <li>name cannot be a <span class='text-danger'>reserved</span> keyword</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Character Set In Python</h2>
+                <h3>What is a character set ?</h3>
+                <div class="code">
+                    Simply , the set of all <span class='text-danger'>characters/symbols</span> which are defined in any language are called character-sets
+                    <div class="comment">
+                        <span class='text-info'>For ex</span>:All alphabets (a-z) are character-sets of english language
+                    </div>
+                </div>
+                <h3>Character set used In Python</h3>
+                <div class="code">
+                    Python uses <span class='text-danger'>UNICODE</span> character set <br>
+                    The size of character is <span class='text-primary'>2 bytes</span> <br>
+                    meaning that it can contain upto 2<sup>16</sup> characters or symbols
+                </div>
+                <h3>Similarly</h3>
+                <div class="code">
+                    Similarly , there is ASCII character sets
+                    <br>
+                    <span class='text-info'>ASCII-7</span>(7 bits) <span class="comment"># can contain upto 2<sup>7</sup> characters or symbols</span> <br>
+                    <span class='text-info'>ASCII-8</span>(8 bits) <span class="comment"># can contain upto 2<sup>8</sup> characters or symbols</span>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Tokens in python</h2>
+                <div class="code">
+                    <div class="comment"># There Are 5 types of tokens in python</div>
+                    <ul>
+                        <li>Keywords</li>
+                        <li>Literals</li>
+                        <li>Identifiers</li>
+                        <li>Operators</li>
+                        <li>Punctuators</li>
+                    </ul>
+                </div>
+                <h3>Keywords</h3>
+                <div class="code">
+                    Keywords are fixed words which are defined by python language
+                    <div class="comment"># To get a list of Keywords run :</div>
+                    <span class='text-primary'>help</span>("keywords")
+                </div>
+                <div class="code">
+                    <div class="comment text-danger"># List of Keywords:</div> 
+                    <button class="copy"></button>
+                    <div>
+                        keywords = ["<span class='text-info'>False</span>", "<span class='text-info'>None</span>", "<span class='text-info'>True</span>" <br>
+                        , "<span class='text-info'>__peg_parser__</span>", "<span class='text-info'>and</span>", "<span class='text-info'>as</span>", "<span class='text-info'>assert</span>", "<span class='text-info'>async</span>", "<span class='text-info'>await</span>", "<span class='text-info'>break</span>", "<span class='text-info'>class</span>", "<span class='text-info'>continue</span>", "<span class='text-info'>def</span>", "<span class='text-info'>del</span>", "<span class='text-info'>elif</span>", "<span class='text-info'>else</span>", "<span class='text-info'>except</span>", "<span class='text-info'>finally</span>", "<span class='text-info'>for</span>", "<span class='text-info'>from</span>", "<span class='text-info'>global</span>", "<span class='text-info'>if</span>", "<span class='text-info'>import</span>", "<span class='text-info'>in</span>", "<span class='text-info'>is</span>", "<span class='text-info'>lambda</span>", "<span class='text-info'>nonlocal</span>", "<span class='text-info'>not</span>", "<span class='text-info'>or</span>", "<span class='text-info'>pass</span>", "<span class='text-info'>raise</span>", "<span class='text-info'>return</span>", "<span class='text-info'>try</span>", "<span class='text-info'>while</span>", "<span class='text-info'>with</span>", "<span class='text-info'>yield</span>"]
+                    </div>
+                    <div class="comment"># keywords might vary version to version (This list is obtained from python 3.9.0)</div>
+                </div>
+                <div class="code">
+                    <div class="comment"># Note:</div>
+                    <span class='text-info'>you can also run</span>: <span class='text-primary'>help</span>()
+                    <div class="comment">and then type keywords </div>
+                </div>
+                <h3>Literals</h3>
+                <div class="code">
+                    <div class="comment"># Literals are fixed values</div>
+                    <span class='text-danger'>Examples of literals</span>: <br>
+                    <ul>
+                        <li>Numerical Literals <span class="comment"># ex: 1(int) , 2.5(float)</span></li> 
+                        <li>String Literals <span class="comment"># ex: "amit sir","Vikas","myCODEnotein"</span></li> 
+                        <li>Boolean Literals <span class="comment"># ex: <span class='text-primary'>True</span>/<span class='text-primary'>False</span></span></li> 
+                        <li><span class='text-primary'>None</span></li>
+                    </ul>
+                    <div class="comment text-danger">
+                        # <span class='text-primary'>True</span> , <span class='text-primary'>False</span>
+                        and <span class='text-primary'>None</span> are keywords also.
+                    </div>
+                </div>
+                <h3>Identifiers</h3>
+                <div class="code">
+                    <ul class='tabSection'>
+                        <div class='tab' data-target='identifier_python_desc'>Desc</div>
+                        <div class='tab' data-target='identifier_python_note'>Note</div>
+                        <div class='tab' data-target='identifier_python_rules'>Rules</div>
+                    </ul>
+                    <div id="identifier_python_desc">
+                        <span class='text-primary'>Identifiers</span>
+                         are names used to <span class='text-warning'>identify a piece of data</span> like variables,name of functions,name of classes
+                    </div>  
+                    <div id="identifier_python_note">
+                        <span class='text-info'>Note</span>: You can also say that all keywords are also Identifiers
+                    </div>
+                    <div id="identifier_python_rules">
+                        <span class='text-info'>Rules for defining vaiables</span>
+                        = <span class='text-info'>Rules for defining Identifiers</span>
+                    </div>
+                </div>
+                <h3>Punctuators</h3>
+                <div class="code">
+                    <span class='text-primary'>Punctuators</span> are symbols in python which helps to organise the code . <br>
+                    <span class='text-info'>symobls</span> like : , ; ()
+                    <br>are considered as <span class='text-primary'>Punctuators</span>
+                </div>
+                <h3>Operators</h3>
+                <div class="code">
+                    <div class="comment text-danger"># Arithmetic Operators</div>
+                    <span class='text-info'>op</span>: + , - , * , / , // , % , ** 
+                </div>
+                <div class="code">
+                    <ul class='tabSection'>
+                        <div class='tab' data-target='arithmetic_ops_**'>**</div>
+                        <div class='tab' data-target='arithmetic_ops_//'>//</div>
+                        <div class='tab' data-target='arithmetic_ops_%'>%</div>
+                    </ul>
+                    <div id="arithmetic_ops_**">
+                        <div class="comment"># The operator is known as exponential operator</div>
+                        <span class='text-info'>for ex</span>: 2<span class='text-primary'>**</span>5 <br>
+                        <span class='text-danger'>is read as</span>: 2 raise to the power 5 (2<sup>5</sup>) <br>
+                        <span class='text-success'>returns</span>: 32
+                    </div>
+                    <div id="arithmetic_ops_//">
+                    <div class="comment"># Operator is known as floor-division operator</div>
+                    <span class='text-info'>for ex</span>: 9<span class='text-primary'>//</span>4 <br>
+                    <span class='text-success'>returns</span>: 2 (/ operator returns 2.25) <br>
+                    <span class='text-danger'>desc</span>: returns largest-integer , smaller than quotient
+                    </div>
+                    <div id="arithmetic_ops_%">
+                        <div class="comment"># Operator is known as modulus operator</div>
+                        <span class='text-info'>for ex</span>: 3<span class='text-primary'>%</span>5 <br>
+                        <span class='text-success'>returns</span>: 3 (remainder got by dividing 3 by 5) <br>
+                        <span class='text-danger'>desc</span>: returns remainder 
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2>Quick Functions</h2>
+                <h3>Dir Function</h3>
+                <div class="code">
+                    <div class="comment"># returns a list of functions/classes in a class or module</div>
+                </div>
+                <img src="/img/python/dir_function.png" alt="Dir function with module in python" title="dir function with module in python">
+                <img src="/img/python/dir_function_class.png" alt="Dir function with class in python" title="dir function with class in python">
+                <h3>Help Function</h3>
+                <div class="code">
+                    <span class='text-primary'>help</span>(argument)
+                    <div class="comment">
+                        # <span class='text-warning'>argument</span> can be any function or class or module name
+                    </div>
+                    <div class="comment"># returns a description of the given argument</div>
+                </div>
+                <h3>Input Function</h3>
+                <div class="code">
+                    <button class="copy"></button>
+                    <div>name = <span class='text-primary'>input</span>("message to display")</div>
+                    <div class="comment"># Used to take user input , <span class='text-warning'>obviously</span></div>
+                </div>
+                <h3>Enumerate</h3>
+                <div class="code">
+                    <div class="comment"># Used to get index and value while using for a loop</div>
+                    <div class="comment"># Let us understand enumerate by example</div>
+                    <span class='text-info'>for</span> index,value <span class='text-info'>in</span> 
+                    <span class='text-primary'>enumerate</span>(list_of_values): <br>
+                    <pre class="tab-pre">&Tab;</pre><span class="comment"># Code Here</span> <br>
+                    <pre class="tab-pre">&Tab;</pre><span class='text-primary'>print</span>(index,value)
+                </div>
+                <h3>All and Any Functions</h3>
+                <div class="code">
+                    <div class="comment"># Let there be a list of conditions</div>
+                    list_of_conditions = [<span class='text-warning'>condition1</span>,<span class='text-warning'>condition2</span>,...]
+                    <br>
+                    <span class='text-primary'>all</span>(list_of_conditions) == True <span class="comment"># only if all conditions are True</span>
+                    <br><span class='text-primary'>any</span>(list_of_conditions) == True <span class="comment"># even if one condition is True</span>
+                </div>
+                <h3>Split and Strip functions</h3>
+                <div class="code">
+                    <ul class='tabSection'>
+                        <div class='tab' data-target='split_function_in_python'>split</div>
+                        <div class='tab' data-target='strip_function_in_python'>strip</div>
+                    </ul>
+                    <div id="split_function_in_python">
+                        <div class="comment"># Let there be a string</div>
+                        a = <span class='text-warning'>"Hello world my name is vikas"</span><br>
+                        a = a.<span class='text-primary'>split</span>(" ")
+                        <div class="comment"># Now a=["Hello","world","my","name","is","vikas"]</div>
+                    </div>
+                    <div id="strip_function_in_python">
+                        <div class="comment"># Let there be a string</div>
+                        <pre>a = <span class='text-warning'>"     myCODEnotein  is    best     "</span></pre>
+                        a = a.<span class='text-primary'>strip</span>() 
+                        <pre class="comment"># Now a="myCODEnotein  is    best"</pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/app.js"></script>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/teleporter.js"></script>
+    <script src="/js/tabSection.js"></script>
+    <script src="/js/copy.js"></script>
+</body>
+</html>

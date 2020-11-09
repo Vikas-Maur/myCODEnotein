@@ -1,6 +1,7 @@
 https://mycodenotein.netlify.app/
-https://mycodenotein.netlify.app/python
+https://mycodenotein.netlify.app/python/
 https://mycodenotein.netlify.app/src/pygame.html
 https://mycodenotein.netlify.app/src/sql.html
 https://mycodenotein.netlify.app/src/python-modules.html
 https://mycodenotein.netlify.app/src/tkinter.html
+https://mycodenotein.netlify.app/src/python.html

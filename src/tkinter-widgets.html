@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tkinter widgets,classes,templates - by myCODEnotein</title>
+    <meta name="description" content="" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">tkinter widgets --> by myCODEnotein</div>
+      <div class="content">
+
+        <!-- **************** -->
+        <div class="section">
+          <h2>Starter Template With Usual Methods</h2>
+          <div class="code">
+            <button class="copy"></button>
+            <div>
+              <span class="text-danger">from</span> tkinter
+              <span class="text-info">import</span> * <br />
+              <br />
+              root = <span class="text-primary">Tk</span>() <br />
+              root.<span class="text-primary">geometry</span>(<span
+                class="text-warning"
+                >"1200x700"</span
+              >) <br />
+              root.<span class="text-primary">title</span>(<span
+                class="text-warning"
+                >""</span
+              >) <br /> <br>
+              root.<span class="text-primary">mainloop</span>()
+            </div>
+          </div>
+        </div>
+
+        <!-- **************** -->
+
+        <div class="section">
+            <h2>Hoverable Button and events</h2>
+            <h3>Creating a button which changes colors on hover</h3>
+            <div class="code">
+              <button class="copy"></button>
+              <div>
+                <span class="text-danger">from</span> tkinter
+                <span class="text-info">import</span> * <br />
+                root = <span class="text-primary">Tk</span>() <br />
+                <span class="text-info">def</span> ChangeBG(<span
+                  class="text-warning"
+                  >event</span
+                >,<span class="text-warning">color</span>): <br />
+                <pre class="tab-pre">&Tab;</pre>
+                event.<span class="text-danger">widget</span>.<span
+                  class="text-primary"
+                  >config</span
+                >(<span class="text-warning">background</span>=color) <br />
+                <div class="comment">
+                  <pre class="tab-pre">&Tab;</pre>
+                  # doing event.widget was not necessary
+                </div>
+                button = <span class="text-primary">Button</span>(<span
+                  class="text-warning"
+                  >root</span
+                >, <span class="text-warning">text</span>="Hoverable Button",
+                <span class="text-warning">bg</span>="red",<span
+                  class="text-warning"
+                  >fg</span
+                >="white") <br />
+                button.<span class="text-primary">pack</span>() <br />
+                button.<span class="text-primary">bind</span>(<span
+                  class="text-warning"
+                  >"&lt;Enter&gt;"</span
+                >,<span class="text-warning">func</span> =<span class="text-info"
+                  >lambda</span
+                >
+                e: <span class="text-primary">ChangeBG</span>(e,"grey")) <br />
+                button.<span class="text-primary">bind</span>(<span
+                  class="text-warning"
+                  >"&lt;Leave&gt;"</span
+                >,<span class="text-warning">func</span> =<span class="text-info"
+                  >lambda</span
+                >
+                e: <span class="text-primary">ChangeBG</span>(e,"red")) <br />
+                root.<span class="text-primary">mainloop</span>()
+              </div>
+            </div>
+            <video src="/vid/tkinter/hoverableButton.mp4" controls></video>
+            <h3>A Class For Making An Hoverable Button</h3>
+            <div class="code">
+              <button class="copy"></button>
+              <div>
+                <span class='text-info'>class</span> mCnButton(<span class='text-primary'>Button</span>): <br>
+                <pre class="tab-pre">&Tab;</pre><span class='text-info'>def</span> __init__(<span class='text-danger'>self</span>,<span class='text-warning'>master</span>,<span class='text-warning'>**kwargs</span>): <br>
+                <pre class="tab-pre">&Tab;&Tab;</pre><span class='text-primary'>super</span>(mCnButton,<span class='text-danger'>self</span>).<span class='text-primary'>__init__</span>(<span class='text-warning'>master</span><br>
+                <pre class="tab-pre">&Tab;&Tab;&Tab;&Tab;</pre>,<span class='text-warning'>**kwargs</span>) <br>              
+                <pre class="tab-pre">&Tab;&Tab;</pre><span class='text-danger'>self</span>.normal = {<span class='text-warning'>"background"</span>:<span class='text-warning'>kwargs</span>["bg"], <br>
+                <pre class="tab-pre">&Tab;&Tab;&Tab;&Tab;</pre><span class='text-warning'>"foreground"</span>:<span class='text-warning'>kwargs</span>["fg"]} <br> <br>
+                <pre class="tab-pre">&Tab;&Tab;</pre><span class='text-danger'>self</span>.onHover = {<span class='text-warning'>"background"</span>:"black", <br>
+                <pre class="tab-pre">&Tab;&Tab;&Tab;&Tab;</pre><span class='text-warning'>"foreground"</span>:"white"} <br> <br>
+                <pre class="tab-pre">&Tab;</pre><span class='text-info'>def</span> MakeHoverable(<span class='text-danger'>self</span>): <br>
+                <pre class="tab-pre">&Tab;&Tab;</pre><span class='text-danger'>self</span>.<span class='text-primary'>bind</span>(<span class='text-warning'>"&lt;Enter&gt;"</span>,func = <span class='text-info'>lambda</span> e:
+                <br><pre class="tab-pre">&Tab;&Tab;&Tab;</pre><span class='text-danger'>self</span>.<span class='text-primary'>config</span>(**<span class='text-danger'>self</span>.onHover))
+                <br><pre class="tab-pre">&Tab;&Tab;</pre><span class='text-danger'>self</span>.<span class='text-primary'>bind</span>(<span class='text-warning'>"&lt;Leave&gt;"</span>,func = <span class='text-info'>lambda</span> e:
+                <br><pre class="tab-pre">&Tab;&Tab;&Tab;</pre><span class='text-danger'>self</span>.<span class='text-primary'>config</span>(**<span class='text-danger'>self</span>.normal))
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </div>
+    <script src="/js/navbar.js"></script>
+    <script src="/js/teleporter.js" async></script>
+    <script src="/js/copy.js" async></script>
+    <script src="/js/app.js" async></script>
+  </body>
+</html>

@@ -8,7 +8,7 @@
     </title>
     <meta
       name="description"
-      content="Coverting a Black-screened program to a beautiful GUI is what tkinter is made for . It is made to make you feel the Python Power (Advanced notes) - Fastest notes of tkinter - by myCODEnotein"
+      content="Want to convert a black screened program to a beautiful GUI. Then You are at correct stop . (Advanced notes)(fastest notes) - by myCODEnotein"
     />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
@@ -345,6 +345,23 @@
             alt="After using config method example"
             title="AFter using config method example"
           />
+        </div>
+
+        <!-- **************** -->
+        <div class="section">
+          <h2>tkraise method in tkinter (related to grid)</h2>
+          <h3>When this method is used</h3>
+          <div class="code">
+            This method is used when two widgets with same row and same column are gridded and one needs to be raised to bring 
+            forwards/upwards 
+          </div>
+          <div class="code">
+            <span class='text-info'>by default</span>: tkinter will bring the widget forwards/upwards which is gridded after
+          </div>
+          <h3>syntax</h3>
+          <div class="code">
+            widget.<span class='text-primary'>tkraise</span>()
+          </div>
         </div>
 
         <!-- **************** -->
@@ -797,25 +814,25 @@
 
         <!-- **************** -->
         <div class="section">
-          <h2>Adding a Scrollbar To Text widget (Full Template)</h2>
+          <h2>Scrollbar widget in tkinter</h2>
           <div class="code">
-            <button class="copy"></button>
-            <div>
-              myText = <span class='text-primary'>Text</span>(master,<span class='text-warning'>**opt</span>) <br>
-              myText.<span class='text-primary'>pack</span>(<span class='text-warning'>side</span>=LEFT,
-              <span class='text-warning'>expand</span>=<span class='text-info'>True</span>,
-              <span class='text-warning'>fill</span>=BOTH) <br>
-              myScroll = <span class='text-primary'>Scrollbar</span>(master,
-              <span class='text-warning'>command</span>=myText.<span class='text-info'>yview</span>) <br>
-              myScroll.<span class='text-primary'>pack</span>(<span class='text-warning'>side</span>=RIGHT,
-              <span class='text-warning'>expand</span>=<span class='text-info'>True</span>,
-              <span class='text-warning'>fill</span>=Y)
-              <br>
-              myText.<span class='text-primary'>config</span>(<span class='text-warning'>yscrollcommand</span>=
-              myScroll.set)
-            </div>
+            To get scrollbar widget templates (free) click <br>
+            <a href="/src/tkinter-widgets.html">This Link</a>
           </div>
-          <video src="/vid/tkinter/scrollbar.mp4" controls></video>
+          <div class="code">
+            myScroll = <span class='text-primary'>Scrollbar</span>(<span class='text-warning'>master</span>,<span class='text-warning'>**kwargs</span>)
+          </div>
+          <h3>Required **kwargs</h3>
+          <div class="code">
+            <span class='text-warning'>command</span> parameter must be set . <br>
+            <span class='text-info'>for ex</span>: <span class='text-warning'>command</span> = widget.<span class='text-danger'>yview</span>
+            <div class="comment"># just replace widget by the widget instance</div>
+          </div>
+          <h3>Settings Required for widget instance</h3>
+          <div class="code">
+            <div class="comment"># You need to define yscrollcommand of the widget</div>
+            widget.<span class='text-primary'>config</span>(<span class='text-warning'>yscrollcommand</span> = myScroll.<span class='text-danger'>set</span>)
+          </div>
         </div>
 
       </div>

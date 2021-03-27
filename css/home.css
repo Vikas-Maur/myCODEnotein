@@ -1,112 +1,128 @@
-@import "/css/card.css";
-@import "/css/featurePost.css";
-:root {
-  --bubbleCircle: 455px;
-  --bubbleCircleLocation: 100%;
+.first-section{
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+.first-section-small-devices{
+    display: none;
+}
+#logo-center{
+    width: 450px;
+    height: 450px;
+    animation: logo-animation 4s ease-in forwards;
 }
 
-.firstSection {
-  display: flex;
-  height: 100vh;
-  align-items: center;
-  overflow-y: hidden;
-}
-.heroImage {
-  margin-top: 7%;
-  margin-left: 7%;
-  margin-bottom: 0;
-  background-size: cover;
-  height: 480px;
-  width: 615px;
-  background-color: transparent;
-}
-.tagline {
-  font-size: xx-large;
-  font-weight: bolder;
-  width: 50%;
-  background-color: var(--primary);
-  height: 80%;
-  color: var(--light);
-  padding-top: 40vh;
-  text-align: center;
-  line-height: 2cm;
-  clip-path: circle(var(--bubbleCircle) at var(--bubbleCircleLocation));
-  -webkit-clip-path: circle(var(--bubbleCircle) at var(--bubbleCircleLocation));
-}
-.tagline::selection {
-  background: var(--dark);
+.first-section-child{
+    position: absolute;
+    opacity: 0;
 }
 
-.startNavigation{
-  text-align: center;
-  margin: 0% auto;
-  margin-top: 90px;
-  padding: 90px;
-  background-color: var(--primary);
-  color: var(--dark);
-  font-size: 2rem;
-  width: 80%;
+.card1{
+    animation: card1-animation 1.5s ease-in 1.5s forwards;
+}
+.card2{
+    animation: card2-animation 1.5s ease-in 2s forwards;
+}
+.card3{
+    animation: card3-animation 1.5s ease-in 2.5s forwards;
+}
+.start-reading{
+    animation: start-reading-animation 1.5s ease-in 3s forwards;
+    transition: transform 300ms ease-in;
 }
 
-.OtherPosts {
-  min-height: 100vh;
-  display: flex;
+.start-reading:hover{
+    transform: scale(1.1);
 }
 
-@media (max-width: 1000px) {
-  .firstSection {
-    flex-direction: column;
-  }
+.second-section{
+    min-height: 100vh;
 }
-@media (max-width: 500px) {
-  :root {
-    --bubbleCircle: 160px;
-    --bubbleCircleLocation: 50%;
-  }
-  .firstSection {
-    height: 100%;
-    flex-direction: column-reverse;
-    overflow-x: hidden;
-  }
-  .startNavigation{
-    font-size: 1rem;
-    margin: 0%;
-    padding: 0;
-    width: 100%;
-  }
-  .tagline {
-    padding-top: 10vh;
-    height: 60vh;
-    width: 100vw;
-    outline: none;
-    border: none;
-  }
-  .heroImage {
-    transform: scale(0.7);
-  }
-  .OtherPosts{
-      flex-direction: column;
-  }
+.second-section>h1{
+    color: var(--danger);
+    margin-top: 20px;
+    font-size: 4rem;
 }
 
-@keyframes setClipPath {
-  from {
-    clip-path: circle(0px at var(--bubbleCircleLocation));
-    -webkit-clip-path: circle(0px at var(--bubbleCircleLocation));
-  }
-  to {
-    clip-path: circle(var(--bubbleCircle) at var(--bubbleCircleLocation));
-    -webkit-clip-path: circle(
-      var(--bubbleCircle) at var(--bubbleCircleLocation)
-    );
-  }
+@keyframes logo-animation{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
 }
 
-@keyframes setBGforNav {
-  from {
-    background-color: transparent;
-  }
-  to {
-    background-color: transparent;
-  }
+@keyframes card1-animation{
+    from{
+        top: 50%;
+        left: 50%;
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        top: 75px;
+        left: 100px;
+    }
 }
+
+@keyframes card2-animation{
+    from{
+        bottom: 50%;
+        left: 50%;
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        bottom: 75px;
+        left: 20px;
+    }
+}
+
+@keyframes card3-animation{
+    from{
+        top: 50%;
+        right: 50%;
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        top: 75px;
+        right: 20px;
+    }
+}
+
+@keyframes start-reading-animation{
+    from{
+        bottom: 50%;
+        right: 50%;
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        bottom: 100px;
+        right: 100px;
+    }
+}
+
+@media (max-width:1000px){
+    .first-section{
+        display: none;
+    }
+    .first-section-small-devices{
+        display: initial;
+    }
+    #logo-smaller-device{
+        width: 100px;
+        height: 100px;
+    }
+}
+

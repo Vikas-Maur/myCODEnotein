@@ -1,15 +1,4 @@
-/* 
-    var(customName , default) # TO USE CUSTOM PROPERTY
-    var(--primary , blue) 
-    blue is given in case if primary color doesn't works
-*/
-@import "/css/basicStyle.css";
-@import "/css/teleporter.css";
-@import "/css/navbar.css";
-@import "/css/tabSection.css";
-@import "/css/copy.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-
 
 :root{
     --primary: rgb(13,110,253);
@@ -22,77 +11,119 @@
     --dark: rgb(52,58,64);
 
 }
-*{
-    margin: 0px;
-    padding: 0px;
-}
-a{
-    text-decoration: none;
-}
-html{
-    scroll-behavior: smooth;
-}
-body{
-    font-family: sans-serif;
-    width: 100vw !important;
-    overflow-x: hidden !important;
-}
 
-.text-primary{
+h1{
     color: var(--primary);
+    margin-bottom: 50px;
+    font-weight: bolder;
+    text-align: center;
+    /* font-size: 3rem; */
 }
-.text-secondary{
-    color: var(--secondary);
-}
-.text-success{
-    color: var(--success);
-}
-.text-danger{
+
+h2{
     color: var(--danger);
-}
-.text-dark{
-    color: var(--dark);
-}
-.text-info{
-    color: var(--info);
-}
-.text-light{
-    color: var(--light);
-}
-.text-warning{
-    color: var(--warning);
-}
-
-
-.bg-primary{
-    background-color: var(--primary);
-}
-.bg-secondary{
-    background-color: var(--secondary);
-}
-.bg-success{
-    background-color: var(--success);
-}
-.bg-danger{
-    background-color: var(--danger);
-}
-.bg-dark{
-    background-color: var(--dark);
-}
-.bg-info{
-    background-color: var(--info);
-}
-.bg-light{
-    background-color: var(--light);
-}
-.bg-warning{
-    background-color: var(--warning);
-}
-
-.text-upper{
+    margin-bottom: 40px;
+    font-weight: bold;
     text-transform: uppercase;
 }
 
-.tab-pre{
-    display: inline-block;
+h3{
+    color: var(--warning);
+    margin-bottom: 30px;
+    text-transform: uppercase;
 }
+
+video , img{
+    margin-bottom: 30px;
+}
+
+.section{
+    margin-bottom: 40px;
+}
+
+
+#teleporter-holder{
+    height: 85vh;
+    overflow: hidden;
+    overflow-y: auto;
+    position: fixed;
+}
+
+#teleporter{
+    min-height: 100%;
+    width: 300px;
+}
+
+#content{
+    position: relative;
+}
+
+code{
+    background-color: transparent !important;
+}
+
+pre,.normal{
+    color: var(--light);
+    background-color: black;
+    font-weight: bolder;
+    font-family: consolas !important ;
+    font-size: 1.3rem;
+    padding: 8px;
+    border: 0px !important;
+    border-radius: 8px !important;
+    line-height: 2rem;
+    margin-bottom: 30px !important;
+    white-space: pre-wrap !important;
+    white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap !important;      /* Opera 4-6 */
+    white-space: -o-pre-wrap !important;    /* Opera 7 */
+    word-wrap: break-word !important;       /*Internet Explorer 5.5+*/
+    tab-size: 4;
+}  
+
+
+.callout-info{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #e9ecef;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+    border-left-color: var(--info);
+}
+.callout-warning{
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #e9ecef;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+    border-left-color: var(--warning);
+}
+.callout-danger{    
+    font-size: 1.2rem;
+    font-weight: bolder;
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #e9ecef;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+    border-left-color: var(--danger);
+}
+   
+pre>code>a
+, .normal>a{
+    color: var(--primary) !important;
+    text-decoration: none;
+}
+pre>code>a:hover
+,.normal>a:hover{
+    color: var(--secondary) !important;
+    text-decoration: none !important;
+}
+

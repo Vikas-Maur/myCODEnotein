@@ -1,846 +1,996 @@
+<!-- ! NOTE THAT IF THE TEMPLATE INCLUDE '{}' THEN   -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      tkinter - GUI with Python Power - (fastest notes) - By myCODEnotein
-    </title>
-    <meta
-      name="description"
-      content="Want to convert a black screened program to a beautiful GUI. Then You are at correct stop . (Advanced notes)(fastest notes) - by myCODEnotein"
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="/css/style.css" />
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/agate.min.css">
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+    <title>tkinter - GUI with Python Power - (fastest notes) - By myCODEnotein</title>
+    <meta name="description" content="Want to convert a black screened program to a beautiful GUI. Then You are at correct stop . (Advanced notes)(fastest notes) - by myCODEnotein">
   </head>
-  <body>
-    <div class="container">
-      <div class="heading">Tkinter--> by myCODEnotein</div>
-      <div class="content">
-        <div class="section">
-          <h2>Importing tkinter and Starter Template</h2>
-          <h3>Importing Tkinter</h3>
-          <div class="code">
-            <button class="copy"></button>
-            <div>
-              <span class="text-danger">from</span> tkinter
-              <span class="text-info">import</span> *
-            </div>
-          </div>
-          <h3>Starter Template</h3>
-          <div class="code">
-            Get Full Version Of Starter Template at:  <br>
-            <a href="/src/tkinter.html">This Link</a>
-          </div>
-          <div class="code">
-            <button class="copy"></button>
-            <div>
-              <span class="text-danger">from</span> tkinter
-              <span class="text-info">import</span> * <br />
-              root = <span class="text-primary">Tk</span>() <br />
-              root.<span class="text-primary">mainloop</span>()
-            </div>
+  <body data-bs-spy="scroll" data-bs-target="#teleporter" data-bs-offset="0" tabindex="0">
+
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+      <div class="container-fluid">
+        <a class="navbar-brand mr-5 fw-bold fs-3" href="#"><span class='text-warning'>my</span><span class='text-primary'>CODE</span><span class='text-danger'>notein</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item mr-3">
+              <a class="nav-link" aria-current="page" href="#">Blogs |</a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link" href="/src/sql.html">SQL</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Python
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/src/pygame.html">Pygame</a></li>
+                <li><a class="dropdown-item" href="/src/python.html">Python</a></li>
+                <li><a class="dropdown-item" href="/src/python-modules.html">Python Modules</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/src/tkinter.html">tkinter</a></li>
+                <li><a class="dropdown-item" href="/src/tkinter-widgets.html">tkinter-widgets</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mr-5">
+            <a class="btn btn-outline-success mr-5" href="/">Home</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-sm-3">
+          <div id="teleporter-holder" class="d-none d-sm-none d-md-none d-lg-block">
+            <nav id="teleporter" class="nav nav-pills flex-column bg-light p-5 pt-0 text-wrap">
+                <a href="#" class="navbar-brand text-danger fw-bolder">Teleporter</a>
+                
+<a class='nav-link' href='#h2-14'>Importing tkinter and Starter Template</a>
+
+<nav class='nav nav-pills flex-column ml-3 my-1'>
+
+<a class='nav-link' href='#h3-24'>Importing Tkinter</a>
+
+<a class='nav-link' href='#h3-25'>Starter Template</a>
+
+</nav>
+
+<a class='nav-link' href='#h2-15'>Methods Of Tk Class / Configuring root</a>
+
+<nav class='nav nav-pills flex-column ml-3 my-1'>
+
+<a class='nav-link' href='#h3-26'>Setting Up Root Title</a>
+
+<a class='nav-link' href='#h3-27'>Setting Up root geometry</a>
+
+<a class='nav-link' href='#h3-28'>Making The window transparent</a>
+
+<a class='nav-link' href='#h3-29'>Making the window remain at top of all windows</a>
+
+<a class='nav-link' href='#h3-30'>Making the GUI full screen</a>
+
+<a class='nav-link' href='#h3-31'>To know more attribute of root</a>
+
+<a class='nav-link' href='#h3-32'>To minimize the window through code</a>
+
+</nav>
+
+<a class='nav-link' href='#h2-16'>Widgets in Tkinter</a>
+
+<nav class='nav nav-pills flex-column ml-3 my-1'>
+
+<a class='nav-link' href='#h3-33'>Note that:</a>
+
+</nav>
+
+<a class='nav-link' href='#h2-17'>Some Common Widget Options</a>
+
+<nav class='nav nav-pills flex-column ml-3 my-1'>
+
+</nav>
+
+<a class='nav-link' href='#h2-18'>Grid , Pack and Config methods</a>
+
+<nav class='nav nav-pills flex-column ml-3 my-1'>
+
+<a class='nav-link' href='#h3-34'>Pack</a>
+
+<a class='nav-link' href='#h3-35'>Grid</a>
+
+<a class='nav-link' href='#h3-36'>Note that:</a>
+
+<a class='nav-link' href='#h3-37'>.config Method in tkinter</a>
+
+</nav>
+
+<a class='nav-link' href='#h2-19'>tkraise method in tkinter (related to grid)</a>
+
+<nav class='nav nav-pills flex-column ml-3 my-1'>
+
+<a class='nav-link' href='#h3-38'>When this method is used</a>
+
+<a class='nav-link' href='#h3-39'>syntax</a>
+
+</nav>
+
+<a class='nav-link' href='#h2-20'>Events in tkinter</a>
+
+<nav class='nav nav-pills flex-column ml-3 my-1'>
+
+<a class='nav-link' href='#h3-40'>The Function is something like</a>
+
+<a class='nav-link' href='#h3-41'>Use Of Lambda Function</a>
+
+<a class='nav-link' href='#h3-42'>Mouse events</a>
+
+<a class='nav-link' href='#h3-43'>Mouse Click Events</a>
+
+<a class='nav-link' href='#h3-44'>Keyboard events</a>
+
+<a class='nav-link' href='#h3-45'>To know more events</a>
+
+</nav>
+
+<a class='nav-link' href='#h2-21'>Menu Widget in Tkinter</a>
+
+<nav class='nav nav-pills flex-column ml-3 my-1'>
+
+<a class='nav-link' href='#h3-46'>Creating menu widget instance with options</a>
+
+<a class='nav-link' href='#h3-47'>Adding the Menu to the Main Window</a>
+
+<a class='nav-link' href='#h3-48'>Add Cascade Function Of menu widget</a>
+
+<a class='nav-link' href='#h3-49'>Add Command Function of menu widget</a>
+
+<a class='nav-link' href='#h3-50'>What happens when you use add_command with myMenu and not with child menu</a>
+
+<a class='nav-link' href='#h3-51'>Adding a separator between the menu Options</a>
+
+</nav>
+
+<a class='nav-link' href='#h2-22'>Text widget in tkinter</a>
+
+<nav class='nav nav-pills flex-column ml-3 my-1'>
+
+<a class='nav-link' href='#h3-52'>Creating the text widget instance</a>
+
+<a class='nav-link' href='#h3-53'>Insertontime and insertofftime options</a>
+
+<a class='nav-link' href='#h3-54'>Indexing in text widget - tkinter</a>
+
+<a class='nav-link' href='#h3-55'>Common Methods</a>
+
+<a class='nav-link' href='#h3-56'>Tags in tkinter</a>
+
+<a class='nav-link' href='#h3-57'>Some more tag methods</a>
+
+<a class='nav-link' href='#h3-58'>Marks in text widget</a>
+
+<a class='nav-link' href='#h3-59'>Setting up gravity of mark</a>
+
+<a class='nav-link' href='#h3-60'>A video showing mark_gravity effect</a>
+
+<a class='nav-link' href='#h3-61'>Great Resource for text widget</a>
+
+</nav>
+
+<a class='nav-link' href='#h2-23'>Scrollbar widget in tkinter</a>
+
+<nav class='nav nav-pills flex-column ml-3 my-1'>
+
+<a class='nav-link' href='#h3-62'>Required **kwargs</a>
+
+<a class='nav-link' href='#h3-63'>Settings Required for widget instance</a>
+
+</nav>
+
+            </nav>
           </div>
         </div>
 
-        <!-- **************** -->
-        <div class="section">
-          <h2>Methods Of Tk Class / Configuring root</h2>
-          <h3>Setting Up Root Title</h3>
-          <div class="code">
-            <button class="copy"></button>
-            <div>
-              root.<span
-                title="Sets the title of gui window (the name which appears at the top of any window)"
-                class="text-primary"
-                >title</span
-              >(<span class="text-warning">"title of gui window"</span>) <br />
+        <div id="content" class="col-sm-7 p-3">
+<h1 id='h1-13'><span class='badge bg-primary'> </span> Tkinter --> by myCODEnotein <span class='badge bg-primary'> </span></h1>
+
+<div class='section'><h2 id='h2-14'><span class='badge bg-danger'> </span> Importing tkinter and Starter Template</h2>
+
+<h3 id='h3-24'><span class='badge bg-warning'> </span> Importing Tkinter</h3>
+
+<pre id='code-64'><code class='python' language='python'>from tkinter import *</code></pre>
+
+<h3 id='h3-25'><span class='badge bg-warning'> </span> Starter Template</h3>
+
+<div id='normal-0' class='normal'>Get Full Version Of Starter Template at:<a href="/src/tkinter-widgets.html">This Link</a></div>
+
+<pre id='code-65'><code class='python' language='python'>from tkinter import *
+root = Tk()
+root.mainloop()</code></pre>
+
+</div><div class='section'><h2 id='h2-15'><span class='badge bg-danger'> </span> Methods Of Tk Class / Configuring root</h2>
+
+<h3 id='h3-26'><span class='badge bg-warning'> </span> Setting Up Root Title</h3>
+
+<pre id='code-66'><code class='python' language='python'>root.title("title of gui window")</code></pre>
+
+<h3 id='h3-27'><span class='badge bg-warning'> </span> Setting Up root geometry</h3>
+
+<pre id='code-67'><code class='python' language='python'>root.geometry("{screenWidth}x{screenHeight}")</code></pre>
+
+<pre id='code-68'><code class='python' language='python'># Optional 
+root.geometry("{screenWidth}x{screenHeight}{x_coordinate}{y_coordinate}")</code></pre>
+
+<pre id='code-69'><code class='python' language='python'>For Example
+1. root.geometry("1100x500+100+5") # Opens window at (100,5)
+2. root.geometry("1100x500-29+5") # Opens window at (-29,5)</code></pre>
+
+<h3 id='h3-28'><span class='badge bg-warning'> </span> Making The window transparent</h3>
+
+<pre id='code-70'><code class='python' language='python'>root.attributes("-alpha",value)
+# value lies between 0 and 1
+# 0 is fully transparent and 1 is fully visible</code></pre>
+
+<video class="container-fluid" controls="" muted="" preload="none" src="/vid/tkinter/transparentWindow.mp4" title="If the video does not load then please refresh/reload the page"></video>
+
+<h3 id='h3-29'><span class='badge bg-warning'> </span> Making the window remain at top of all windows</h3>
+
+
+<div id='code+tab-107'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-107-0' aria-controls='tab-target-107-0' href='#tab-target-107-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Code</a>
+
+<a id='tab-link-107-1' aria-controls='tab-target-107-1' href='#tab-target-107-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Desc</a>
+
             </div>
-          </div>
-          <h3>Setting Up root geometry</h3>
-          <div class="code">
-            <button class="copy"></button>
-            <div>
-              root.<span
-                title="Sets the width and height of tkinter screen window"
-                class="text-primary"
-                >geometry</span
-              >(<span class="text-warning"
-                >"<span class="text-success">{screenWidth}</span>x<span
-                  class="text-success"
-                  >{screenHeight}</span
-                >"</span
-              >)
-            </div>
-          </div>
-          <h3>Making The window transparent</h3>
-          <div class="code">
-            <button class="copy"></button>
-            <div>
-              root.<span class="text-primary">attributes</span>(<span
-                class="text-warning"
-                >"-alpha"</span
-              >,value)
-            </div>
-            <div class="comment">
-              # value lies between 0 (fully-transparent) and 1
-              (full-non-transparent)
-            </div>
-          </div>
-          <video src="/vid/tkinter/transparentWindow.mp4" controls muted></video>
-          <h3>Making the window remain at top of all windows</h3>
-          <div class="code">
-            <ul class='tabSection'>
-              <div class='tab' data-target='topmost_window_code'>CODE</div>
-              <div class='tab' data-target='topmost_window_desc'>DESC</div>
-            </ul>
-            <div id="topmost_window_code">
-              <button class="copy"></button>
-              <div>
-                root.<span class="text-primary">attributes</span>(<span
-                  class="text-warning"
-                  >"-topmost"</span
-                >,value)
-              </div>
-            </div>
-            <div id="topmost_window_desc">
-              <span class='text-warning'>value</span> is either --> <span class='text-info'>1</span> or <span class='text-info'>0</span>
-              <br>
-              <span class='text-info'>1</span> signifies that window <span class='text-danger'>must be at the top of other windows</span> (always)
-              <br><span class='text-info'>0</span> signifies that window <span class='text-danger'>may or may not be at the top of other windows</span>
-            </div>
-          </div>
-          <h3>Making the GUI full screen</h3>
-          <div class="code">
-            <ul class='tabSection'>
-              <div class='tab' data-target='fullscreen_window_code'>CODE</div>
-              <div class='tab' data-target='fullscreen_window_desc'>DESC</div>
-            </ul>
-            <div id="fullscreen_window_code">
-              <button class="copy"></button>
-              <div>root.<span class='text-primary'>attributes</span>(<span class='text-warning'>"-fullscreen"</span>,value)</div>
-            </div>
-            <div id="fullscreen_window_desc">
-              <span class='text-warning'>Value</span>=<span class='text-info'>0</span> represents the window is not fullscreen.
-              <br>
-              <span class='text-warning'>Value</span>><span class='text-info'>0</span> represents full screen mode
-            </div>
-          </div>
-          <h3>To know more attribute of root</h3>
-          <div class="code">
-            <span class='text-info'>Run</span>: root.<span class='text-primary'>attributes</span>()
-            <div class="comment"># Returns the attributes and their corresponding values . You
-            <span class='text-info'>print</span> them if you want to know .
-            </div>
-          </div>
-          <h3>To minimize the window through code</h3>
-          <div class="code">
-            <span class='text-info'>Run</span>: root.<span class='text-primary'>iconify</span>()
-          </div>
-          <div class="code">
-            root.<span class='text-primary'>deiconify</span>()
-            <div class="comment"># Makes the window normal.</div>
-            <div class="comment">
-              # <span class='text-info'>Note</span>: that iconfiy is like someone has pressed the "-"
-              button at the top of window
-            </div>
-          </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-107-0' aria-labelledby='tab-link-107-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>root.attributes("-topmost",value) # value=1 or value=0</code></pre>
+</div>
+
+<div id='tab-target-107-1' aria-labelledby='tab-link-107-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>value=1 signifies that window must be at the top of other windows always
+
+value=2 signifies that window may or may not be at the top of other windows always</code></pre>
+</div>
+
         </div>
+</div>
 
-        <!-- **************** -->
-        <div class="section">
-          <h2>Widgets in Tkinter</h2>
-          <div class="code">
-            <ul class="tabSection moreTabs">
-              <div class="tab" data-target="label_widget_in_tkinter">Label</div>
-              <div class="tab" data-target="frame_widget_in_tkinter">Frame</div>
-              <div class="tab" data-target="button_widget_in_tkinter">
-                Button
-              </div>
-              <div class="tab" data-target="menu_widget_in_tkinter">Menu</div>
-              <div class="tab" data-target="entry_widget_in_tkinter">Entry</div>
-              <div class="tab" data-target="text_widget_in_tkinter">Text</div>
-              <div class="tab" data-target="canvas_widget_in_tkinter">
-                Canvas
-              </div>
-              <div class="tab" data-target="scrollbar_widget_in_tkinter">
-                Scrollbar
-              </div>
-            </ul>
-            <div id="label_widget_in_tkinter">
-              myLabel =
-              <span class="text-primary">Label</span>(master,**options)
-              <div class="comment">
-                # To get **options run myLabel.<span class="text-primary"
-                  >keys</span
-                >()
-              </div>
+
+<h3 id='h3-30'><span class='badge bg-warning'> </span> Making the GUI full screen</h3>
+
+
+<div id='code+tab-108'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-108-0' aria-controls='tab-target-108-0' href='#tab-target-108-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Code</a>
+
+<a id='tab-link-108-1' aria-controls='tab-target-108-1' href='#tab-target-108-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Desc</a>
+
             </div>
-            <div id="frame_widget_in_tkinter">
-              myFrame =
-              <span class="text-primary">Frame</span>(master,**options)
-              <div class="comment">
-                # To get **options run myFrame.<span class="text-primary"
-                  >keys</span
-                >()
-              </div>
-            </div>
-            <div id="button_widget_in_tkinter">
-              myButton =
-              <span class="text-primary">Button</span>(master,**options)
-              <div class="comment">
-                # To get **options run myButton.<span class="text-primary"
-                  >keys</span
-                >()
-              </div>
-            </div>
-            <div id="menu_widget_in_tkinter">
-              myMenu = <span class="text-primary">Menu</span>(master,**options)
-              <div class="comment">
-                # To get **options run myMenu.<span class="text-primary"
-                  >keys</span
-                >()
-              </div>
-            </div>
-            <div id="entry_widget_in_tkinter">
-              myEntry =
-              <span class="text-primary">Entry</span>(master,**options)
-              <div class="comment">
-                # To get **options run myEntry.<span class="text-primary"
-                  >keys</span
-                >()
-              </div>
-            </div>
-            <div id="text_widget_in_tkinter">
-              myText = <span class="text-primary">Text</span>(master,**options)
-              <div class="comment">
-                # To get **options run myText.<span class="text-primary"
-                  >keys</span
-                >()
-              </div>
-            </div>
-            <div id="canvas_widget_in_tkinter">
-              myCanvas =
-              <span class="text-primary">Canvas</span>(master,**options)
-              <div class="comment">
-                # To get **options run myCanvas.<span class="text-primary"
-                  >keys</span
-                >()
-              </div>
-            </div>
-            <div id="scrollbar_widget_in_tkinter">
-              myScrollbar =
-              <span class="text-primary">Scrollbar</span>(master,**options)
-              <div class="comment">
-                # To get **options run myScrollbar.<span class="text-primary"
-                  >keys</span
-                >()
-              </div>
-            </div>
-          </div>
-          <h3>Note that:</h3>
-          <div class="code">
-            <span class="text-danger">Text and Button</span> like widget treat
-            width and height options as
-            <span class="text-danger">characters</span> while
-            <span class="text-success">Frame , canvas</span> like widgets treat
-            it as <span class="text-success">pixels</span>
-          </div>
-          <div class="code">
-            Basically , among <span class="text-danger">text</span> and
-            <span class="text-danger">frame</span> of width
-            <span class="text-warning">100</span> ,<span class="text-danger"
-              >text</span
-            >
-            appears to be of larger width than
-            <span class="text-danger">frame</span> <br />Same with height
-          </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-108-0' aria-labelledby='tab-link-108-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>root.attributes("-fullscreen",value) # value=0 or value&gt;0</code></pre>
+</div>
+
+<div id='tab-target-108-1' aria-labelledby='tab-link-108-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>value=0 signifies that window is not in full screen mode
+
+value=1 signifies that window is in full screen mode</code></pre>
+</div>
+
         </div>
+</div>
 
-        <!-- **************** -->
-        <div class="section">
-          <h2>Grid , Pack and Config methods</h2>
-          <h3>Pack</h3>
-          <div class="code">
-            <span class="text-info">syntax</span>: widget.<span
-              class="text-primary"
-              >pack</span
-            >(<span class="text-warning">**opt</span>)
-          </div>
-          <div class="code">
-            <span class="text-warning">**opt</span> includes : <br />
-            <span class="text-success">side</span>: LEFT,RIGHT,TOP,BOTTOM <br />
-            <span class="text-success">expand</span>: True,False <br />
-            <span class="text-success">fill</span>: X , Y , BOTH
-          </div>
-          <div class="code">
-            <div class="comment">
-              For ex: LEFT is a variable made in tkinter which represents "left"
-              Similarly other <span class="text-warning">"side"</span> and
-              <span class="text-warning">"fill"</span> values works
+
+<h3 id='h3-31'><span class='badge bg-warning'> </span> To know more attribute of root</h3>
+
+<pre id='code-71'><code class='python' language='python'># You can run
+root.attributes()
+# returns the attributes of the root window.</code></pre>
+
+<h3 id='h3-32'><span class='badge bg-warning'> </span> To minimize the window through code</h3>
+
+
+<div id='code+tab-109'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-109-0' aria-controls='tab-target-109-0' href='#tab-target-109-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>iconify</a>
+
+<a id='tab-link-109-1' aria-controls='tab-target-109-1' href='#tab-target-109-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>deiconify</a>
+
             </div>
-          </div>
-          <h3>Grid</h3>
-          <div class="code">
-            <span class="text-info">syntax: </span>widget.<span
-              class="text-primary"
-              >grid</span
-            >( <span class="text-warning">row</span>= rowNo ,
-            <span class="text-warning">column</span>=columnNo ,<span
-              class="text-warning"
-              >**opt</span
-            >) <br />
-          </div>
-          <div class="code">
-            <span class="text-warning">**opt</span> includes: <br />
-            <span class="text-success">sticky</span>: "n","s","e","w","nsew" ,
-            ..etc
-          </div>
-          <div class="code">
-            <div class="comment">
-              To know other values you can put wrong values in it. Then tkinter
-              will throw an error which will tell you the correct values
-            </div>
-          </div>
-          <h3>Note that:</h3>
-          <div class="code">
-            <span class="text-danger">Pack</span> and
-            <span class="text-danger">Grid</span> cannot be used with each other
-            <br />
-            <span class="text-info">For ex :</span> Suppose a widget is packed
-            in root . Then another widget cannot be gridded in root.
-            <br />
-            <div class="comment">
-              For That purpose frames are used which behave like root for its
-              inner widgets
-            </div>
-          </div>
-          <h3>.config Method in tkinter</h3>
-          <div class="code">
-            <ul class="tabSection">
-              <div class="tab" data-target="config_exp_code">CODE</div>
-              <div class="tab" data-target="config_exp_desc">DESC</div>
-            </ul>
-            <div id="config_exp_code">
-              <span class="text-info">syntax: </span>widget.<span
-                class="text-primary"
-                >config</span
-              >(<span class="text-warning">**opt</span>)
-              <div class="comment">
-                # bg and fg short forms signifies another values in this method
-                . Use full forms
-              </div>
-            </div>
-            <div id="config_exp_desc">
-              Used to change/modify/add an option later in the code with a
-              widget
-            </div>
-          </div>
-          <img
-            src="/img/tkinter_images/config_before.png"
-            alt="Before using config method example"
-            title="Before using config method example"
-          />
-          <img
-            src="/img/tkinter_images/config_after.png"
-            alt="After using config method example"
-            title="AFter using config method example"
-          />
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-109-0' aria-labelledby='tab-link-109-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>root.iconify() # Minimizes the window</code></pre>
+</div>
+
+<div id='tab-target-109-1' aria-labelledby='tab-link-109-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>root.deiconify() 
+# Pops up the window at the top
+# If window is minimized then displays the window</code></pre>
+</div>
+
         </div>
+</div>
 
-        <!-- **************** -->
-        <div class="section">
-          <h2>tkraise method in tkinter (related to grid)</h2>
-          <h3>When this method is used</h3>
-          <div class="code">
-            This method is used when two widgets with same row and same column are gridded and one needs to be raised to bring 
-            forwards/upwards 
-          </div>
-          <div class="code">
-            <span class='text-info'>by default</span>: tkinter will bring the widget forwards/upwards which is gridded after
-          </div>
-          <h3>syntax</h3>
-          <div class="code">
-            widget.<span class='text-primary'>tkraise</span>()
-          </div>
+
+</div><div class='section'><h2 id='h2-16'><span class='badge bg-danger'> </span> Widgets in Tkinter</h2>
+
+
+<div id='code+tab-110'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-110-0' aria-controls='tab-target-110-0' href='#tab-target-110-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Frame</a>
+
+<a id='tab-link-110-1' aria-controls='tab-target-110-1' href='#tab-target-110-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Label</a>
+
+<a id='tab-link-110-2' aria-controls='tab-target-110-2' href='#tab-target-110-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Button</a>
+
+<a id='tab-link-110-3' aria-controls='tab-target-110-3' href='#tab-target-110-3' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Menu</a>
+
+<a id='tab-link-110-4' aria-controls='tab-target-110-4' href='#tab-target-110-4' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Entry</a>
+
+<a id='tab-link-110-5' aria-controls='tab-target-110-5' href='#tab-target-110-5' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Text</a>
+
+<a id='tab-link-110-6' aria-controls='tab-target-110-6' href='#tab-target-110-6' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Canvas</a>
+
+<a id='tab-link-110-7' aria-controls='tab-target-110-7' href='#tab-target-110-7' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Scrollbar</a>
+
+            </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-110-0' aria-labelledby='tab-link-110-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>myFrame = Frame(master,**options)</code></pre>
+</div>
+
+<div id='tab-target-110-1' aria-labelledby='tab-link-110-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myLabel = Label(master,**options)</code></pre>
+</div>
+
+<div id='tab-target-110-2' aria-labelledby='tab-link-110-2' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myButton = Button(master,**options)</code></pre>
+</div>
+
+<div id='tab-target-110-3' aria-labelledby='tab-link-110-3' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myMenu = Menu(master,**option)</code></pre>
+</div>
+
+<div id='tab-target-110-4' aria-labelledby='tab-link-110-4' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myEntry = Entry(master,**options)</code></pre>
+</div>
+
+<div id='tab-target-110-5' aria-labelledby='tab-link-110-5' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myText = Text(master,**options)</code></pre>
+</div>
+
+<div id='tab-target-110-6' aria-labelledby='tab-link-110-6' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myCanvas = Canvas(master,**options)</code></pre>
+</div>
+
+<div id='tab-target-110-7' aria-labelledby='tab-link-110-7' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myScrollbar = Scrollbar(master,**options)</code></pre>
+</div>
+
         </div>
+</div>
 
-        <!-- **************** -->
-        <div class="section">
-          <h2>Some Common Widget Options</h2>
-          <div class="code">
-            <span class="text-warning">bg</span> or
-            <span class="text-warning">background</span> - Sets the background
-            color <br />
-            <span class="text-warning">fg</span> or
-            <span class="text-warning">foreground</span> - Sets the foreground
-            color
-            <div class="comment">
-              # bg and fg options does not works with ".config" method . Need to
-              specify background/foreground
+
+<pre id='code-72'><code class='python' language='python'># To know **options , you can run:
+Widget.keys() # returns all the **options</code></pre>
+
+<h3 id='h3-33'><span class='badge bg-warning'> </span> Note that:</h3>
+
+<div id='normal-1' class='normal'>width and height options as
+characters while
+Frame , canvas like widgets treat
+it as pixels</div>
+
+<div id='normal-2' class='normal'>Basically , among text and frame of width 100
+,text appears to be of larger width than
+frame. Same with height.</div>
+
+</div><div class='section'><h2 id='h2-17'><span class='badge bg-danger'> </span> Some Common Widget Options</h2>
+
+<pre id='code-73'><code class='python' language='python'>bg or background - sets the background color</code></pre>
+
+<pre id='code-74'><code class='python' language='python'>fg or foreground - sets the foreground color</code></pre>
+
+<pre id='code-75'><code class='python' language='python'># you can't use bg or fg option in .config method
+# there you need to give background/foreground for your purpose.</code></pre>
+
+<pre id='code-76'><code class='python' language='python'>font - sets the font 
+# syntax: 
+1.either a tuple: (font_family,font_size,"bold"/"italic") 
+2. or a string  : "font_family,font_size,bold/italic" 
+
+# you can also set any one property if you want</code></pre>
+
+<div id='normal-3' class='normal'>Some font families: helvetica , consolas</div>
+
+<pre id='code-77'><code class='python' language='python'>width,height # takes integer values
+cursor - specifies the cursor when arrow is on the widgets.
+You can find cursor values at <a href="https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/cursors.html" target="_blank">This Link</a></code></pre>
+
+</div><div class='section'><h2 id='h2-18'><span class='badge bg-danger'> </span> Grid , Pack and Config methods</h2>
+
+<h3 id='h3-34'><span class='badge bg-warning'> </span> Pack</h3>
+
+<pre id='code-78'><code class='python' language='python'>#syntax
+widget.pack(**options)</code></pre>
+
+<pre id='code-79'><code class='python' language='python'>To know **options you can run
+help(widget.pack)</code></pre>
+
+<h3 id='h3-35'><span class='badge bg-warning'> </span> Grid</h3>
+
+<pre id='code-80'><code class='python' language='python'>#syntax
+widget.grid(row=ROW_NO,column=COLUMN_NO,**options)</code></pre>
+
+<pre id='code-81'><code class='python' language='python'>To know **options , you can run:</code></pre>
+
+<pre id='code-82'><code class='python' language='python'>help(widget.grid)</code></pre>
+
+<h3 id='h3-36'><span class='badge bg-warning'> </span> Note that:</h3>
+
+<div id='normal-4' class='normal'>Pack and grid cannot be used together.
+Basically , widgets sharing same parent/master
+can either use pack or grid.</div>
+
+<h3 id='h3-37'><span class='badge bg-warning'> </span> .config Method in tkinter</h3>
+
+
+<div id='code+tab-111'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-111-0' aria-controls='tab-target-111-0' href='#tab-target-111-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Code</a>
+
+<a id='tab-link-111-1' aria-controls='tab-target-111-1' href='#tab-target-111-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Desc</a>
+
+<a id='tab-link-111-2' aria-controls='tab-target-111-2' href='#tab-target-111-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Note</a>
+
             </div>
-          </div>
-          <div class="code">
-            <span class="text-warning">font</span> - Sets the font <br />
-            <span class="text-info">syntax</span> : <br />
-            either a tuple : (<span class="text-warning">fontFamily</span>,<span
-              class="text-warning"
-              >fontSize</span
-            >,<span class="text-warning">"bold"/"italic"</span>) <br />
-            or a string : "{<span class="text-warning">fontFamily</span>} {<span
-              class="text-warning"
-              >fontSize</span
-            >} <span class="text-warning">bold/italic</span>"
-            <div class="comment">
-              # Some Font-Families -
-              <span class="text-warning">Helvetica</span> ,
-              <span class="text-warning">Consolas</span>
-            </div>
-          </div>
-          <div class="code">
-            <span class="text-warning">width</span>,<span class="text-warning"
-              >height</span
-            >
-            <br />
-            <span class="text-warning">cursor</span> - specifies the cursor
-            which appears on widget
-            <div class="comment">
-              You can find cursor values at :
-              <a
-                target="_blank"
-                href="https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/cursors.html"
-                >Cursor Values</a
-              >
-            </div>
-          </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-111-0' aria-labelledby='tab-link-111-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>#syntax
+widget.config(**options)</code></pre>
+</div>
+
+<div id='tab-target-111-1' aria-labelledby='tab-link-111-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>Used to change/add an option later in the code for a widget.</code></pre>
+</div>
+
+<div id='tab-target-111-2' aria-labelledby='tab-link-111-2' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>In this method , to set background color , instead of bg option
+background option must be used.
+Same with foreground color.</code></pre>
+</div>
+
         </div>
+</div>
 
-        <!-- **************** -->
-        <div class="section">
-          <h2>Events in tkinter</h2>
-          <div class="code">
-            Get a button which changes its properties at <br>
-            <a href="/src/tkinter-widgets.html">This Link</a>
-          </div>
-          <div class="code">
-            <span class="text-info">syntax: </span>widget.<span
-              class="text-primary"
-              >bind</span
-            >( <span class="text-warning">"&lt;Event&gt;"</span>,<span
-              class="text-warning"
-              >func</span
-            >=function)
-            <div class="comment">
-              # Note that tkinter passes an argument to the given function
+
+<img alt="Before using config method example" class="img-fluid" src="/img/tkinter_images/config_before.png" title="Before using config method example"/>
+
+<img alt="After using config method example" class="img-fluid" src="/img/tkinter_images/config_after.png" title="AFter using config method example"/>
+
+</div><div class='section'><h2 id='h2-19'><span class='badge bg-danger'> </span> tkraise method in tkinter (related to grid)</h2>
+
+<h3 id='h3-38'><span class='badge bg-warning'> </span> When this method is used</h3>
+
+<div id='normal-5' class='normal'>Suppose a widget is having same row and column as another widget gridded under same parent.
+Then tkinter will (by default) show the widget which is gridded later in the code.</div>
+
+<div id='normal-6' class='normal'>Hence , this method is used when two widgets with same row and same column are gridded and one needs to be raised to bring forwards/upwards</div>
+
+<h3 id='h3-39'><span class='badge bg-warning'> </span> syntax</h3>
+
+<pre id='code-83'><code class='python' language='python'>widget.tkraise()</code></pre>
+
+</div><div class='section'><h2 id='h2-20'><span class='badge bg-danger'> </span> Events in tkinter</h2>
+
+<div id='normal-7' class='normal'>Get a button which changes its properties on hover at
+<a href="/src/tkinter-widgets.html">This Link</a></div>
+
+<pre id='code-84'><code class='python' language='python'># syntax
+widget.bind("&lt;event&gt;",func=function)
+
+# Note that tkinter passes an argument e to the function when the event occurs.</code></pre>
+
+<h3 id='h3-40'><span class='badge bg-warning'> </span> The Function is something like</h3>
+
+<pre id='code-85'><code class='python' language='python'>def function(event):
+  # print(dir(event)) to know the properties of the event
+  # your code here</code></pre>
+
+<h3 id='h3-41'><span class='badge bg-warning'> </span> Use Of Lambda Function</h3>
+
+<div id='normal-8' class='normal'>To give argument to the function you can use lambda function.</div>
+
+<pre id='code-86'><code class='python' language='python'># For example:
+widget.bind("&lt;event&gt;",func=lambda event:function(arguments))
+
+# Note that in this case event argument is passed to lambda function.
+# (which is necessay)
+# You can pass that event to the function as well</code></pre>
+
+<h3 id='h3-42'><span class='badge bg-warning'> </span> Mouse events</h3>
+
+<pre id='code-87'><code class='python' language='python'>"&lt;Enter&gt;"
+# Mouse enters any widget (mouse hover)
+"&lt;Leave&gt;"
+# Mouse leaves any widget (mouse leave)</code></pre>
+
+<h3 id='h3-43'><span class='badge bg-warning'> </span> Mouse Click Events</h3>
+
+<pre id='code-88'><code class='python' language='python'>"&lt;Button-1&gt;"
+# Left clicked on a widget
+"&lt;Button-2&gt;"
+# Middle clicked on a widget (now a days mouse does not have middle button)
+"&lt;Button-3&gt;"
+# Right clicked on a widget</code></pre>
+
+<h3 id='h3-44'><span class='badge bg-warning'> </span> Keyboard events</h3>
+
+<pre id='code-89'><code class='python' language='python'>"&lt;Key&gt;"
+# Used pressed a key
+"&lt;KeyRelease&gt;"
+# User released the key</code></pre>
+
+<h3 id='h3-45'><span class='badge bg-warning'> </span> To know more events</h3>
+
+<pre id='code-90'><code class='python' language='python'>#RUN: 
+help(widgetName.bind)</code></pre>
+
+</div><div class='section'><h2 id='h2-21'><span class='badge bg-danger'> </span> Menu Widget in Tkinter</h2>
+
+<h3 id='h3-46'><span class='badge bg-warning'> </span> Creating menu widget instance with options</h3>
+
+<pre id='code-91'><code class='python' language='python'>myMenu = Menu(root,tearoff=0)</code></pre>
+
+<h3 id='h3-47'><span class='badge bg-warning'> </span> Adding the Menu to the Main Window</h3>
+
+<pre id='code-92'><code class='python' language='python'>root/master.config(menu=myMenu)</code></pre>
+
+<h3 id='h3-48'><span class='badge bg-warning'> </span> Add Cascade Function Of menu widget</h3>
+
+
+<div id='code+tab-112'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-112-0' aria-controls='tab-target-112-0' href='#tab-target-112-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Code</a>
+
+<a id='tab-link-112-1' aria-controls='tab-target-112-1' href='#tab-target-112-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Desc</a>
+
             </div>
-            <div class="comment">
-              # Run <span class="text-primary">dir</span>(event) <br />
-              where event is the argument given to function
-            </div>
-          </div>
-          <h3>The Function is something like</h3>
-          <div class="code">
-            <button class="copy"></button>
-            <div>
-              <span class='text-info'>def</span> function(<span class='text-warning'>event</span>): <br>
-              <pre class="tab-pre">&Tab;</pre><span class='text-primary'>dir</span>(<span class='text-warning'>event</span>)
-            </div>
-            <pre class="tab-pre">&Tab;</pre><span class="comment"># event argument is given by tkinter</span>
-          </div>
-          <h3>Use Of Lambda Function</h3>
-          <div class="code">
-            <div class="comment"># Used to call argumented functions</div>
-            widget.<span class="text-primary">bind</span>(<span
-              class="text-warning"
-              >"&lt;Event&gt;"</span
-            >, <br />,<span class="text-warning">func</span>=
-            <span class="text-info">lambda</span> event: funcToCall(arguments))
-            <div class="comment">
-              # Note that in this case event argument is given to
-              <span class="text-info">lambda</span>
-              function and therefore need not to be given to "funcToCall"
-            </div>
-          </div>
-          <h3>Mouse events</h3>
-          <div class="code">
-            <span class="text-warning">"&lt;Enter&gt;"</span>
-            <span class="comment"># Mouse enters any widget (mouse hover)</span>
-            <br /><span class="text-warning">"&lt;Leave&gt;"</span>
-            <span class="comment"># Mouse leaves any widget (mouse leave)</span>
-          </div>
-          <h3>Mouse Click Events</h3>
-          <div class="code">
-            <span class="text-warning">"&lt;Button-1&gt;"</span>
-            <span class="comment"># Left clicked on a widget</span> <br />
-            <span class="text-warning">"&lt;Button-2&gt;"</span>
-            <span class="comment"
-              ># Middle clicked on a widget (<span class="text-danger"
-                >now a days mouse does not have middle button</span
-              >)</span
-            >
-            <br />
-            <span class="text-warning">"&lt;Button-3&gt;"</span>
-            <span class="comment"># Right clicked on a widget</span>
-          </div>
-          <h3>Keyboard events</h3>
-          <div class="code">
-            <span class="text-warning">"&lt;Key&gt;"</span>
-            <span class="comment"># Used pressed a key</span> <br />
-            <span class="text-warning">"&lt;KeyRelease&gt;"</span>
-            <span class="comment"># User released the key </span>
-          </div>
-          <h3>To know more events</h3>
-          <div class="code">
-            <span class="text-danger">RUN: </span
-            ><span class="text-primary">help</span>(widgetName.<span
-              class="text-primary"
-              >bind</span
-            >)
-          </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-112-0' aria-labelledby='tab-link-112-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>myMenu.add_cascade(label="Name of menu",menu=menuObject)</code></pre>
+</div>
+
+<div id='tab-target-112-1' aria-labelledby='tab-link-112-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>Adds another Menu instance to the myMenu instance as shown in img below.</code></pre>
+</div>
+
         </div>
+</div>
 
-        <!-- **************** -->
-        <div class="section">
-          <h2>Menu Widget in Tkinter</h2>
-          <h3>Creating menu widget instance with options</h3>
-          <div class="code">
-            myMenu = <span class="text-primary">Menu</span>(<span
-              class="text-warning"
-              >root</span
-            >,<span class="text-warning">tearoff</span>=0)
-            <div class="comment">
-              # Setting tearoff=0 will remove ugly borders that appears on the
-              widget
+
+<img alt="add_cascade image" class="img-fluid" src="/img/tkinter_images/add_cascade.png"/>
+
+<h3 id='h3-49'><span class='badge bg-warning'> </span> Add Command Function of menu widget</h3>
+
+
+<div id='code+tab-113'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-113-0' aria-controls='tab-target-113-0' href='#tab-target-113-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Code</a>
+
+<a id='tab-link-113-1' aria-controls='tab-target-113-1' href='#tab-target-113-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Desc</a>
+
             </div>
-          </div>
-          <h3>Adding the Menu to the Main Window</h3>
-          <div class="code">
-            root/master.<span class="text-primary">config</span>(<span
-              class="text-warning"
-              >menu</span
-            >=myMenu)
-          </div>
-          <h3>Add Cascade Function Of menu widget</h3>
-          <div class="code">
-            <ul class="tabSection">
-              <div class="tab" data-target="add_cascade_function_code">
-                CODE
-              </div>
-              <div class="tab" data-target="add_cascade_function_desc">
-                DESC
-              </div>
-            </ul>
-            <div id="add_cascade_function_code">
-              myMenu.<span class="text-primary">add_cascade</span>(<span
-                class="text-warning"
-                >label</span
-              >="Name of menu" <br />, <span class="text-warning">menu</span> =
-              menuObject)
-              <div class="comment">
-                # Use Multiple times to add Multiple menus
-              </div>
-            </div>
-            <div id="add_cascade_function_desc">
-              Adds another Menu widget instance to the myMenu instance <br />
-              Basically adds another menu in the main myMenu .
-            </div>
-          </div>
-          <img
-            src="/img/tkinter_images/add_cascade.png"
-            alt="Add Cascade function in tkinter"
-            title="Add Cascade function in tkinter"
-          />
-          <h3>Add Command Function of menu widget</h3>
-          <div class="code">
-            <ul class="tabSection">
-              <div class="tab" data-target="add_command_function_code">
-                CODE
-              </div>
-              <div class="tab" data-target="add_command_function_desc">
-                DESC
-              </div>
-            </ul>
-            <div id="add_command_function_code">
-              <div class="comment">
-                # Let us give commands to file menu shown in the image
-              </div>
-              menuBar.<span class="text-primary">add_command</span>(<span
-                class="text-warning"
-                >label</span
-              >="Close" <br />, <span class="text-warning">command</span>=exit)
-              <div class="comment">
-                # Use Multiple Commands to create Multiple Options
-              </div>
-            </div>
-            <div id="add_command_function_desc">
-              This function is used to create options in vertical direction in
-              menu (in this case file) If user clicks the option the command
-              will be executed
-            </div>
-          </div>
-          <img
-            src="/img/tkinter_images/add_command.png"
-            alt="Add Command function example"
-            title="add command function example"
-          />
-          <h3>
-            What happens when you use add_command with myMenu and not with child
-            menu
-          </h3>
-          <img
-            src="/img/tkinter_images/menu_without_addCascade.png"
-            alt="Menu Without child menus in tkinter"
-            title="Menu Without child menus in tkinter"
-          />
-          <h3>Adding a separator between the menu Options</h3>
-          <div class="code">
-            <span class="text-info">syntax: </span>menuInstance.<span
-              class="text-primary"
-              >add_separator</span
-            >() <br />
-            <span class="text-success">example: </span>file.<span
-              class="text-primary"
-              >add_separator</span
-            >()
-          </div>
-          <img
-            src="/img/tkinter_images/add_separator.png"
-            alt="separator example in tkinter"
-            title="separator example in tkinter"
-          />
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-113-0' aria-labelledby='tab-link-113-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'># Let us give commands to file menu shown in the image
+menuBar.add_command(label="Close",command=exit)</code></pre>
+</div>
+
+<div id='tab-target-113-1' aria-labelledby='tab-link-113-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>This function is used to create options in vertical direction in menu. (In this case) If user clicks the option ,the command 'exit' will be executed.</code></pre>
+</div>
+
         </div>
+</div>
 
-        <!-- **************** -->
-        <div class="section">
-          <h2>Text widget in tkinter</h2>
-          <h3>Creating the text widget instance</h3>
-          <div class="code">
-            <button class="copy"></button>
-            <div>myText = <span class='text-primary'>Text</span>(<span class='text-warning'>master</span>,
-              <span class='text-warning'>**opt</span>)</div>
-          </div>
-          <div class="code">
-            <span class='text-info'>Note</span>: frame of width 100 is smaller than text of width 100.
-            Similar with height
-          </div>
-          <h3>Insertontime and insertofftime options</h3>
-          <div class="code">
-            <ul class='tabSection'>
-              <div class='tab' data-target='insert_ontime_offtime_code'>CODE</div>
-              <div class='tab' data-target='insert_ontime_offtime_desc'>DESC</div>
-            </ul>
-            <div id="insert_ontime_offtime_code">
-              <div class="comment"># Let us use config to change text widget options</div>
-            myText.<span class='text-primary'>config</span>(<span class='text-warning'>insertontime</span>=num1 
-            , <span class='text-warning'>insertofftime</span>=num2)
-            <div class="comment">
-              # Default <span class='text-warning'>insertontime</span> - <span class='text-info'>300</span> <br>
-              # Default <span class='text-warning'>insertofftime</span> - <span class='text-info'>600</span> <br>
-            </div>
-            </div>
-            <div id="insert_ontime_offtime_desc">
-              <span class='text-info'>insertontime</span>: time for which insertion cursor is on the screen 
-              <br>
-              <span class='text-info'>insertofftime</span>: time for which insertion cursor is not on the screen 
-            </div>
-          </div>
-          <video src="/vid/tkinter/insertofftime.mp4" controls></video>
-          <h3>Indexing in text widget - tkinter</h3>
-          <div class="code">
-            <div class="comment"># Basic indexing</div>
-            <span class='text-info'>index</span>: 
-            <span class='text-warning'>"{<span class='text-danger'>lineNo</span>}.{<span class='text-danger'>columnNo</span>}"</span>
-          </div>
-          <div class="code">
-            <div class="comment"># End index of a line</div>
-            <span class='text-info'>index</span>:
-            <span class='text-warning'>"{<span class='text-danger'>lineNo</span>}.end"</span>
-          </div>
-          <div class="code">
-            <div class="comment"># Index of insertion cursor</div>
-            <span class='text-info'>index</span>: 
-            <span class='text-warning'>INSERT</span> or <span class='text-warning'>"insert"</span>
-          </div>
-          <div class="code">
-            <div class="comment"># Index of selected text</div>
-            <span class='text-info'>index</span>:  <br>
-            <span class='text-warning'>SEL_FIRST</span> <span class="comment"># For first index</span> <br>
-            <span class='text-warning'>SEL_LAST</span> <span class="comment"># For last index</span>
-          </div>
-          <img src="/img/tkinter_images/sel_first_last_index.png" alt="SEl_FIRST and SEL_LAST in tkinter"
-          title="SEl_FIRST and SEL_LAST in tkinter">
-          <div class="code">
-            <div class="comment"># index method</div>
-            <span class='text-info'>For ex</span>: <span class="comment"># If you want the index of insertion cursor in "line.col" format</span>
-            <br>
-            insertIndex = myText.<span class='text-primary'>index</span>(<span class='text-warning'>INSERT</span>)
-          </div>
-          <div class="code">
-            <div class="comment">For more info about indexing: </div>
-            <a target="_blank" href="http://effbot.org/tkinterbook/text.htm#:~:text=Indexes%20are%20used%20to%20point,line%2Fcolumn%20(%E2%80%9Cline.">Detailed indexing knowledge</a>
-          </div>
-          <h3>Common Methods</h3>
-          <div class="code">
-            <ul class='tabSection'>
-              <div class='tab' data-target='get_text_code'>get</div>
-              <div class='tab' data-target='insert_text_code'>insert</div>
-            </ul>
-            <div id="get_text_code">
-              <button class="copy"></button>
-              <div>
-                myText.<span class='text-primary'>get</span>(<span class='text-warning'>index1</span>
-                ,<span class='text-warning'>index2</span>)
-              </div>
-              <div class="comment"># Returns text from index1 to index2</div>
-            </div>
-            <div id="insert_text_code">
-              <button class="copy"></button>
-              <div>
-                myText.<span class='text-primary'>insert</span>(<span class='text-warning'>index</span>,
-                <span class='text-warning'>text</span>)
-              </div>
-              <div class="comment"># Inserts text on index</div>
-            </div>
-          </div>
-          <h3>Tags in tkinter</h3>
-          <div class="code">
-            <div class="comment"># What are Tags</div>
-            <span class='text-primary'>tags</span> are like <span class='text-warning'>class in css</span>.
-          </div>
-          <div class="code">
-            You can set a <span class='text-primary'>tag</span> between 2 indices
-            <br>and then you can configure that <span class='text-primary'>tag</span> to change options 
-            like <span class='text-warning'>background</span>,<span class='text-warning'>foreground</span>,
-            <span class='text-warning'>font</span>...etc
-            <br> for that particular region containing that <span class='text-primary'>tag</span>
-          </div>
-          <div class="code">
-            <ul class='tabSection'>
-              <div class='tab' data-target='tag_add_code_tkinter'>CODE</div>
-              <div class='tab' data-target='tag_add_desc_tkinter'>DESC</div>
-            </ul>
-            <div id="tag_add_code_tkinter">
-              <div class="comment"># Adding a tag</div>
-            <button class="copy"></button>
-            <div>myText.<span class='text-primary'>tag_add</span>(<span class='text-warning'>tagName</span>
-              ,<span class='text-warning'>startIndex</span>,<span class='text-warning'>endIndex</span>)
-            </div>
+
+<img alt="Add Command function example" class="img-fluid" src="/img/tkinter_images/add_command.png" title="add command function example"/>
+
+<h3 id='h3-50'><span class='badge bg-warning'> </span> What happens when you use add_command with myMenu and not with child menu</h3>
+
+<img alt="add_command with myMenu example" class="img-fluid" src="/img/tkinter_images/menu_without_addCascade.png"/>
+
+<h3 id='h3-51'><span class='badge bg-warning'> </span> Adding a separator between the menu Options</h3>
+
+<pre id='code-93'><code class='python' language='python'>#syntax: 
+menuInstance.add_separator()
+
+example: file.add_separator()</code></pre>
+
+<img alt="add_separator example" class="img-fluid" src="/img/tkinter_images/add_separator.png"/>
+
+</div><div class='section'><h2 id='h2-22'><span class='badge bg-danger'> </span> Text widget in tkinter</h2>
+
+<h3 id='h3-52'><span class='badge bg-warning'> </span> Creating the text widget instance</h3>
+
+<pre id='code-94'><code class='python' language='python'>myText = Text(master,**opt)
+# Note: frame of width 100 is smaller than text of width 100. Similar with height</code></pre>
+
+<h3 id='h3-53'><span class='badge bg-warning'> </span> Insertontime and insertofftime options</h3>
+
+
+<div id='code+tab-114'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-114-0' aria-controls='tab-target-114-0' href='#tab-target-114-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>insertontime</a>
+
+<a id='tab-link-114-1' aria-controls='tab-target-114-1' href='#tab-target-114-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>insertofftime</a>
 
             </div>
-            <div id="tag_add_desc_tkinter">
-              The <span class='text-warning'>tagName</span> can be user defined 
-              <br>Few tags are defined by tkinter itself like
-              <span class='text-warning'>"sel"</span>
-            </div>
-          </div>
-          <div class="code">
-            <ul class='tabSection'>
-              <div class='tab' data-target='config_tag_in_tkinter_code'>CODE</div>
-              <div class='tab' data-target='config_tag_in_tkinter_desc'>DESC</div>
-            </ul>
-            <div id="config_tag_in_tkinter_code">
-              <div class="comment"># Configuring a tag</div>
-              <button class="copy"></button>
-              <div>
-                myText.<span class='text-primary'>tag_config</span>(<span class='text-warning'>tagName</span>
-              ,<span class='text-warning'>**opt</span>)
-              </div>
-            </div>
-            <div id="config_tag_in_tkinter_desc">
-              <div class="comment"># <span class='text-warning'>**opt</span>
-              includes basic text widget options like font,background,foreground,selectbackground ... etc</div>
-            </div>
-          </div>
-          <div class="code">
-            <div class="comment"># Deleting a tag</div>
-            <button class="copy"></button>
-            <div>myText.<span class='text-primary'>tag_delete</span>(<span class='text-warning'>tagName</span>)</div>
-          </div>
-          <h3>Marks in text widget</h3>
-          <div class="code">
-            <ul class='tabSection'>
-              <div class='tab' data-target='mark_in_tkinter_desc'>Desc</div>
-              <div class='tab' data-target='mark_in_tkinter_note'>Note</div>
-            </ul>
-            <div id="mark_in_tkinter_desc">
-              <div class="comment"># What are marks</div>
-              <span class='text-primary'>marks</span> are like tag with <span class='text-danger'>startIndex=endIndex</span>
-              <br>They are used to mark a specific index in text widget
-            </div>
-            <div id="mark_in_tkinter_note">
-              <div class="comment"># <span class='text-primary'>INSERT</span> is also a mark made by tkinter</div>
-              <div class="comment"># There can be only one mark of one name but you can always change its position</div>
-            </div>
-          </div>
-          <div class="code">
-            <div class="comment"># Creating a mark</div>
-            <button class="copy"></button>
-            <div>
-              myText.<span class='text-primary'>mark_set</span>(<span class='text-warning'>markName</span>
-              ,<span class='text-warning'>IndexToPlace</span>)
-            </div>
-            <div class="comment"># <span class='text-warning'>markName</span> can be user defined</div>
-          </div>
-          <div class="code">
-            <ul class='tabSection'>
-              <div class='tab' data-target='mark_gravity_code'>CODE</div>
-              <div class='tab' data-target='mark_gravity_desc'>DESC</div>
-            </ul>
-            <div id="mark_gravity_code">
-              <div class="comment"># Setting up mark gravity</div>
-              <button class="copy"></button>
-              <div>
-                myText.<span class='text-primary'>mark_gravity</span>(<span class='text-warning'>markName</span>,
-                <span class='text-warning'>value</span>)
-              </div>
-            </div>
-            <div id="mark_gravity_desc">
-              <span class='text-warning'>value</span> can be <br>
-              <span class='text-primary'>LEFT</span>/<span class='text-primary'>"left"</span> <br>
-              or <br>
-              <span class='text-primary'>RIGHT</span>/<span class='text-primary'>"right"</span> <br>
-              <span class='text-primary'>RIGHT</span> is default . 
-            </div>
-          </div>
-          <h3>A video showing mark_gravity effect</h3>
-          <video src="/vid/tkinter/mark_in_tkinter.mp4" controls></video>
-          <h3>Resources for text widget</h3>
-          <div class="code">
-            1. <a href="http://effbot.org/tkinterbook/text.htm" target="_blank">Effbot website</a>
-          </div>
-          <div class="code">
-            2. <a target="_blank" href="https://www.geeksforgeeks.org/python-tkinter-text-widget/">Geeks for geeks website</a>
-          </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-114-0' aria-labelledby='tab-link-114-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>#time for which insertion cursor is on the screen 
+myText.config(insertontime=num) # default num=300</code></pre>
+</div>
+
+<div id='tab-target-114-1' aria-labelledby='tab-link-114-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>#time for which insertion cursor is not on the screen 
+myText.config(insertofftime=num) # default num=600</code></pre>
+</div>
+
         </div>
+</div>
 
-        <!-- **************** -->
-        <div class="section">
-          <h2>Scrollbar widget in tkinter</h2>
-          <div class="code">
-            To get scrollbar widget templates (free) click <br>
-            <a href="/src/tkinter-widgets.html">This Link</a>
-          </div>
-          <div class="code">
-            myScroll = <span class='text-primary'>Scrollbar</span>(<span class='text-warning'>master</span>,<span class='text-warning'>**kwargs</span>)
-          </div>
-          <h3>Required **kwargs</h3>
-          <div class="code">
-            <span class='text-warning'>command</span> parameter must be set . <br>
-            <span class='text-info'>for ex</span>: <span class='text-warning'>command</span> = widget.<span class='text-danger'>yview</span>
-            <div class="comment"># just replace widget by the widget instance</div>
-          </div>
-          <h3>Settings Required for widget instance</h3>
-          <div class="code">
-            <div class="comment"># You need to define yscrollcommand of the widget</div>
-            widget.<span class='text-primary'>config</span>(<span class='text-warning'>yscrollcommand</span> = myScroll.<span class='text-danger'>set</span>)
-          </div>
+
+<video class="container-fluid" controls="" muted="" preload="none" src="/vid/tkinter/insertofftime.mp4" title="If the video does not load then please refresh/reload the page"></video>
+
+<h3 id='h3-54'><span class='badge bg-warning'> </span> Indexing in text widget - tkinter</h3>
+
+<pre id='code-95'><code class='python' language='python'># basic indexing
+index: '{lineNumber}.{columnNumber}'</code></pre>
+
+<pre id='code-96'><code class='python' language='python'># End index of a line
+index:'{lineNumber}.end'</code></pre>
+
+<pre id='code-97'><code class='python' language='python'># Index of insertion cursor
+index: 'insert'</code></pre>
+
+<pre id='code-98'><code class='python' language='python'># Index of selected text
+index: 'sel.first' # for first index
+index: 'sel.last' # for last index</code></pre>
+
+<img alt="SEl_FIRST and SEL_LAST in tkinter" class="img-fluid" src="/img/tkinter_images/sel_first_last_index.png" title="SEl_FIRST and SEL_LAST in tkinter"/>
+
+<pre id='code-99'><code class='python' language='python'># Index of line start and line end
+index: '{index} linestart'
+index: '{index} lineend'</code></pre>
+
+<pre id='code-100'><code class='python' language='python'># Index of word start and word end
+index: '{index} wordstart'
+index: '{index} wordend'</code></pre>
+
+<pre id='code-101'><code class='python' language='python'># Adding and subtracting to index
+index: '{index} +10c' # adds 10 characters to index .
+index: '{index} +2l' # adds 2 lines to index .
+# you can also subtract and use both of them together if required.</code></pre>
+
+<pre id='code-102'><code class='python' language='python'># index method
+# for ex: if you want the index of insertion cursor in 'line.col' format
+insertIndex = myText.index('insert')</code></pre>
+
+<h3 id='h3-55'><span class='badge bg-warning'> </span> Common Methods</h3>
+
+
+<div id='code+tab-115'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-115-0' aria-controls='tab-target-115-0' href='#tab-target-115-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>get</a>
+
+<a id='tab-link-115-1' aria-controls='tab-target-115-1' href='#tab-target-115-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>insert</a>
+
+<a id='tab-link-115-2' aria-controls='tab-target-115-2' href='#tab-target-115-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>search</a>
+
+<a id='tab-link-115-3' aria-controls='tab-target-115-3' href='#tab-target-115-3' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>replace</a>
+
+<a id='tab-link-115-4' aria-controls='tab-target-115-4' href='#tab-target-115-4' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>delete</a>
+
+            </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-115-0' aria-labelledby='tab-link-115-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>myText.get(index1,index2) # Returns text from index1 to index2</code></pre>
+</div>
+
+<div id='tab-target-115-1' aria-labelledby='tab-link-115-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myText.insert(index,text,*args) # inserts text on index
+# In *args you can give tag names and tkinter will put those tags on the inserted text.</code></pre>
+</div>
+
+<div id='tab-target-115-2' aria-labelledby='tab-link-115-2' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myText.search('string/pattern',startIndex,**kwargs)
+# if the string/pattern is found then returns the index of the first character of the string/pattern</code></pre>
+</div>
+
+<div id='tab-target-115-3' aria-labelledby='tab-link-115-3' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myText.replace(startIndex,endIndex,string,*args)
+# replaces the text between startIndex and endIndex with string.
+# In *args you can give tag names and tkinter will put those tags on the inserted text.</code></pre>
+</div>
+
+<div id='tab-target-115-4' aria-labelledby='tab-link-115-4' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myText.delete(startIndex,endIndex) # default endIndex=None
+# Delete the characters between startIndex and endIndex (not included).</code></pre>
+</div>
+
+        </div>
+</div>
+
+
+<h3 id='h3-56'><span class='badge bg-warning'> </span> Tags in tkinter</h3>
+
+<div id='normal-9' class='normal'>What are tags?
+Tags are like classes in tkinter.
+To changes font,foreground color,background color 
+of a certain portion of text , you can do that 
+with tags.</div>
+
+<div id='normal-10' class='normal'>You can set a tag between two indices and then config tag to changes **kwargs of the region comprising that tag.
+# There can be multiple tags as well</div>
+
+
+<div id='code+tab-116'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-116-0' aria-controls='tab-target-116-0' href='#tab-target-116-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Adding a tag</a>
+
+<a id='tab-link-116-1' aria-controls='tab-target-116-1' href='#tab-target-116-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Configuring a tag</a>
+
+<a id='tab-link-116-2' aria-controls='tab-target-116-2' href='#tab-target-116-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Removing A Tag</a>
+
+<a id='tab-link-116-3' aria-controls='tab-target-116-3' href='#tab-target-116-3' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Deleting a tag</a>
+
+            </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-116-0' aria-labelledby='tab-link-116-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>myText.tag_add(tagName,startIndex,endIndex) 
+# tagName can be user defined
+# tkinter defined tag: 'sel'</code></pre>
+</div>
+
+<div id='tab-target-116-1' aria-labelledby='tab-link-116-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myText.tag_config(tagName,**options) 
+# **opt includes basic text widget options like 
+font,background,foreground,selectbackground ... etc</code></pre>
+</div>
+
+<div id='tab-target-116-2' aria-labelledby='tab-link-116-2' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myText.tag_remove(tagName,startIndex,endIndex) # default endIndex=None
+# Remove tag "tagName" from all characters between startIndex and endIndex.</code></pre>
+</div>
+
+<div id='tab-target-116-3' aria-labelledby='tab-link-116-3' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myText.tag_delete(*tagNames)
+# deletes all tagNames 
+# all the text portions comprising that tag are made normal</code></pre>
+</div>
+
+        </div>
+</div>
+
+
+<h3 id='h3-57'><span class='badge bg-warning'> </span> Some more tag methods</h3>
+
+
+<div id='code+tab-117'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-117-0' aria-controls='tab-target-117-0' href='#tab-target-117-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>getting all tag names</a>
+
+<a id='tab-link-117-1' aria-controls='tab-target-117-1' href='#tab-target-117-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>getting all tag indices</a>
+
+            </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-117-0' aria-labelledby='tab-link-117-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>myText.tag_names(index) # default index=None
+# Return a list of all tag names at that index.</code></pre>
+</div>
+
+<div id='tab-target-117-1' aria-labelledby='tab-link-117-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myText.tag_ranges(tagName)
+# Returns a list of the following form
+list = [start-1 , end-1 , start-2 , end-2 .... start-N,end-N]
+this means that tag is applied between (start-1,end-1) , (start-2,end-2) , .... , (start-N,end-N)</code></pre>
+</div>
+
+        </div>
+</div>
+
+
+<h3 id='h3-58'><span class='badge bg-warning'> </span> Marks in text widget</h3>
+
+
+<div id='code+tab-118'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-118-0' aria-controls='tab-target-118-0' href='#tab-target-118-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Desc</a>
+
+<a id='tab-link-118-1' aria-controls='tab-target-118-1' href='#tab-target-118-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Example</a>
+
+            </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-118-0' aria-labelledby='tab-link-118-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'># What are marks?
+marks are like tag with startIndex=endIndex.
+They are used to mark a specific index in text widget.
+marks are user defined.
+# There can be only one mark of one name but you can always change its position</code></pre>
+</div>
+
+<div id='tab-target-118-1' aria-labelledby='tab-link-118-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>"insert" is also a mark made by tkinter
+"insert" is a mark which represents where the character will be placed in text widget when a user presses a key.</code></pre>
+</div>
+
+        </div>
+</div>
+
+
+
+<div id='code+tab-119'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-119-0' aria-controls='tab-target-119-0' href='#tab-target-119-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Setting a mark</a>
+
+<a id='tab-link-119-1' aria-controls='tab-target-119-1' href='#tab-target-119-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Get mark index</a>
+
+<a id='tab-link-119-2' aria-controls='tab-target-119-2' href='#tab-target-119-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Get all mark names</a>
+
+<a id='tab-link-119-3' aria-controls='tab-target-119-3' href='#tab-target-119-3' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Get Next Mark</a>
+
+<a id='tab-link-119-4' aria-controls='tab-target-119-4' href='#tab-target-119-4' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Deleting all marks</a>
+
+            </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-119-0' aria-labelledby='tab-link-119-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>myText.mark_set(markName,indexToPlace)</code></pre>
+</div>
+
+<div id='tab-target-119-1' aria-labelledby='tab-link-119-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myText.index(markName) # returns index of markName</code></pre>
+</div>
+
+<div id='tab-target-119-2' aria-labelledby='tab-link-119-2' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myText.mark_names()
+# return all mark names</code></pre>
+</div>
+
+<div id='tab-target-119-3' aria-labelledby='tab-link-119-3' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myText.mark_next(index) 
+# returns first mark present after given index</code></pre>
+</div>
+
+<div id='tab-target-119-4' aria-labelledby='tab-link-119-4' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myText.mark_previous(index) 
+# returns first mark present before given indexmyText.mark_unset(*markNames)
+# deletes all mark names</code></pre>
+</div>
+
+<div id='tab-target-119-5' aria-labelledby='tab-link-119-5' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'></code></pre>
+</div>
+
+        </div>
+</div>
+
+
+<h3 id='h3-59'><span class='badge bg-warning'> </span> Setting up gravity of mark</h3>
+
+<pre id='code-103'><code class='python' language='python'>myText.mark_gravity(markName,direction)
+# direction='left' or 'right'
+# See the below video to understand what happens with this method</code></pre>
+
+<h3 id='h3-60'><span class='badge bg-warning'> </span> A video showing mark_gravity effect</h3>
+
+<video class="container-fluid" controls="" muted="" preload="none" src="/vid/tkinter/mark_in_tkinter.mp4" title="If the video does not load then please refresh/reload the page"></video>
+
+<h3 id='h3-61'><span class='badge bg-warning'> </span> Great Resource for text widget</h3>
+
+<div id='normal-11' class='normal'><a href="https://www.geeksforgeeks.org/python-tkinter-text-widget/" target="_blank">Geeks for geeks website</a></div>
+
+</div><div class='section'><h2 id='h2-23'><span class='badge bg-danger'> </span> Scrollbar widget in tkinter</h2>
+
+<div id='normal-12' class='normal'>To get scrollbar widget templates (free) click
+<a href="/src/tkinter-widgets.html">This Link</a></div>
+
+<pre id='code-104'><code class='python' language='python'>myScroll = Scrollbar(master,**kwargs)</code></pre>
+
+<h3 id='h3-62'><span class='badge bg-warning'> </span> Required **kwargs</h3>
+
+<pre id='code-105'><code class='python' language='python'>command parameter must be set.
+#for ex:
+widget.yview # just replace the widget by the widget instance</code></pre>
+
+<h3 id='h3-63'><span class='badge bg-warning'> </span> Settings Required for widget instance</h3>
+
+<pre id='code-106'><code class='python' language='python'>#You also need to define yscrollcommand of the widget
+widget.config(yscrollcommand=myScroll.set)</code></pre></div>
+
         </div>
 
       </div>
     </div>
-    <script src="/js/app.js" async></script>
-    <script src="/js/navbar.js"></script>
-    <script src="/js/teleporter.js" async></script>
-    <script src="/js/tabSection.js" async></script>
-    <script src="/js/copy.js" async></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   </body>
+
 </html>

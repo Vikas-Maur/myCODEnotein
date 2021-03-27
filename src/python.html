@@ -1,233 +1,401 @@
+<!-- ! NOTE THAT IF THE TEMPLATE INCLUDE '{}' THEN   -->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/agate.min.css">
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
     <title>Python - by myCODEnotein - The Blog Which Is Designed To Make You Remember Your Python Powers</title>
-    <meta name='description' content='We all love python due to its ease as well as its powers . That said click the link to remember all those python powers which have faded with time from you memories - by myCODEnotein'>
-    <link rel='stylesheet' href='/css/style.css'>
-</head>
-<body>
-    <div class='container'>
-        <div class='heading'>
-           Python --> by myCODEnotein
+    <meta name="description" content="We all love python due to its ease as well as its powers . That said click the link to remember all those python powers which have faded with time from you memories - by myCODEnotein">
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#teleporter" data-bs-offset="0" tabindex="0">
+
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+      <div class="container-fluid">
+        <a class="navbar-brand mr-5 fw-bold fs-3" href="#"><span class='text-warning'>my</span><span class='text-primary'>CODE</span><span class='text-danger'>notein</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item mr-3">
+              <a class="nav-link" aria-current="page" href="#">Blogs |</a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link" href="/src/sql.html">SQL</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Python
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/src/pygame.html">Pygame</a></li>
+                <li><a class="dropdown-item" href="/src/python.html">Python</a></li>
+                <li><a class="dropdown-item" href="/src/python-modules.html">Python Modules</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/src/tkinter.html">tkinter</a></li>
+                <li><a class="dropdown-item" href="/src/tkinter-widgets.html">tkinter-widgets</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mr-5">
+            <a class="btn btn-outline-success mr-5" href="/">Home</a>
+          </form>
         </div>
-        <div class='content'>
-            <div class="section">
-                <h2>Variable and Constants</h2>
-                <h3>Constants</h3>
-                <div class="code">
-                    Constants are fixed values which can not be changed
-                    <br>
-                    <span class='text-info'>For ex</span>: 1 , 1.5 , "vikas"
-                </div>
-                <h3>Variables</h3>
-                <div class="code">
-                    Variables are those values which can be changed.
-                    <br>
-                    <span class='text-info'>For ex</span>: a=1
-                    <div class="comment"># a is a variable </div>
-                </div>
-                <h3>Rules for naming Variables</h3>
-                <div class="code">
-                    <ul>
-                        <li>name can contain alphabets , digits or underscores</li>
-                        <li>name cannot start with digits</li>
-                        <li>name cannot be a <span class='text-danger'>reserved</span> keyword</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="section">
-                <h2>Character Set In Python</h2>
-                <h3>What is a character set ?</h3>
-                <div class="code">
-                    Simply , the set of all <span class='text-danger'>characters/symbols</span> which are defined in any language are called character-sets
-                    <div class="comment">
-                        <span class='text-info'>For ex</span>:All alphabets (a-z) are character-sets of english language
-                    </div>
-                </div>
-                <h3>Character set used In Python</h3>
-                <div class="code">
-                    Python uses <span class='text-danger'>UNICODE</span> character set <br>
-                    The size of character is <span class='text-primary'>2 bytes</span> <br>
-                    meaning that it can contain upto 2<sup>16</sup> characters or symbols
-                </div>
-                <h3>Similarly</h3>
-                <div class="code">
-                    Similarly , there is ASCII character sets
-                    <br>
-                    <span class='text-info'>ASCII-7</span>(7 bits) <span class="comment"># can contain upto 2<sup>7</sup> characters or symbols</span> <br>
-                    <span class='text-info'>ASCII-8</span>(8 bits) <span class="comment"># can contain upto 2<sup>8</sup> characters or symbols</span>
-                </div>
-            </div>
-            <div class="section">
-                <h2>Tokens in python</h2>
-                <div class="code">
-                    <div class="comment"># There Are 5 types of tokens in python</div>
-                    <ul>
-                        <li>Keywords</li>
-                        <li>Literals</li>
-                        <li>Identifiers</li>
-                        <li>Operators</li>
-                        <li>Punctuators</li>
-                    </ul>
-                </div>
-                <h3>Keywords</h3>
-                <div class="code">
-                    Keywords are fixed words which are defined by python language
-                    <div class="comment"># To get a list of Keywords run :</div>
-                    <span class='text-primary'>help</span>("keywords")
-                </div>
-                <div class="code">
-                    <div class="comment text-danger"># List of Keywords:</div> 
-                    <button class="copy"></button>
-                    <div>
-                        keywords = ["<span class='text-info'>False</span>", "<span class='text-info'>None</span>", "<span class='text-info'>True</span>" <br>
-                        , "<span class='text-info'>__peg_parser__</span>", "<span class='text-info'>and</span>", "<span class='text-info'>as</span>", "<span class='text-info'>assert</span>", "<span class='text-info'>async</span>", "<span class='text-info'>await</span>", "<span class='text-info'>break</span>", "<span class='text-info'>class</span>", "<span class='text-info'>continue</span>", "<span class='text-info'>def</span>", "<span class='text-info'>del</span>", "<span class='text-info'>elif</span>", "<span class='text-info'>else</span>", "<span class='text-info'>except</span>", "<span class='text-info'>finally</span>", "<span class='text-info'>for</span>", "<span class='text-info'>from</span>", "<span class='text-info'>global</span>", "<span class='text-info'>if</span>", "<span class='text-info'>import</span>", "<span class='text-info'>in</span>", "<span class='text-info'>is</span>", "<span class='text-info'>lambda</span>", "<span class='text-info'>nonlocal</span>", "<span class='text-info'>not</span>", "<span class='text-info'>or</span>", "<span class='text-info'>pass</span>", "<span class='text-info'>raise</span>", "<span class='text-info'>return</span>", "<span class='text-info'>try</span>", "<span class='text-info'>while</span>", "<span class='text-info'>with</span>", "<span class='text-info'>yield</span>"]
-                    </div>
-                    <div class="comment"># keywords might vary version to version (This list is obtained from python 3.9.0)</div>
-                </div>
-                <div class="code">
-                    <div class="comment"># Note:</div>
-                    <span class='text-info'>you can also run</span>: <span class='text-primary'>help</span>()
-                    <div class="comment">and then type keywords </div>
-                </div>
-                <h3>Literals</h3>
-                <div class="code">
-                    <div class="comment"># Literals are fixed values</div>
-                    <span class='text-danger'>Examples of literals</span>: <br>
-                    <ul>
-                        <li>Numerical Literals <span class="comment"># ex: 1(int) , 2.5(float)</span></li> 
-                        <li>String Literals <span class="comment"># ex: "amit sir","Vikas","myCODEnotein"</span></li> 
-                        <li>Boolean Literals <span class="comment"># ex: <span class='text-primary'>True</span>/<span class='text-primary'>False</span></span></li> 
-                        <li><span class='text-primary'>None</span></li>
-                    </ul>
-                    <div class="comment text-danger">
-                        # <span class='text-primary'>True</span> , <span class='text-primary'>False</span>
-                        and <span class='text-primary'>None</span> are keywords also.
-                    </div>
-                </div>
-                <h3>Identifiers</h3>
-                <div class="code">
-                    <ul class='tabSection'>
-                        <div class='tab' data-target='identifier_python_desc'>Desc</div>
-                        <div class='tab' data-target='identifier_python_note'>Note</div>
-                        <div class='tab' data-target='identifier_python_rules'>Rules</div>
-                    </ul>
-                    <div id="identifier_python_desc">
-                        <span class='text-primary'>Identifiers</span>
-                         are names used to <span class='text-warning'>identify a piece of data</span> like variables,name of functions,name of classes
-                    </div>  
-                    <div id="identifier_python_note">
-                        <span class='text-info'>Note</span>: You can also say that all keywords are also Identifiers
-                    </div>
-                    <div id="identifier_python_rules">
-                        <span class='text-info'>Rules for defining vaiables</span>
-                        = <span class='text-info'>Rules for defining Identifiers</span>
-                    </div>
-                </div>
-                <h3>Punctuators</h3>
-                <div class="code">
-                    <span class='text-primary'>Punctuators</span> are symbols in python which helps to organise the code . <br>
-                    <span class='text-info'>symobls</span> like : , ; ()
-                    <br>are considered as <span class='text-primary'>Punctuators</span>
-                </div>
-                <h3>Operators</h3>
-                <div class="code">
-                    <div class="comment text-danger"># Arithmetic Operators</div>
-                    <span class='text-info'>op</span>: + , - , * , / , // , % , ** 
-                </div>
-                <div class="code">
-                    <ul class='tabSection'>
-                        <div class='tab' data-target='arithmetic_ops_**'>**</div>
-                        <div class='tab' data-target='arithmetic_ops_//'>//</div>
-                        <div class='tab' data-target='arithmetic_ops_%'>%</div>
-                    </ul>
-                    <div id="arithmetic_ops_**">
-                        <div class="comment"># The operator is known as exponential operator</div>
-                        <span class='text-info'>for ex</span>: 2<span class='text-primary'>**</span>5 <br>
-                        <span class='text-danger'>is read as</span>: 2 raise to the power 5 (2<sup>5</sup>) <br>
-                        <span class='text-success'>returns</span>: 32
-                    </div>
-                    <div id="arithmetic_ops_//">
-                    <div class="comment"># Operator is known as floor-division operator</div>
-                    <span class='text-info'>for ex</span>: 9<span class='text-primary'>//</span>4 <br>
-                    <span class='text-success'>returns</span>: 2 (/ operator returns 2.25) <br>
-                    <span class='text-danger'>desc</span>: returns largest-integer , smaller than quotient
-                    </div>
-                    <div id="arithmetic_ops_%">
-                        <div class="comment"># Operator is known as modulus operator</div>
-                        <span class='text-info'>for ex</span>: 3<span class='text-primary'>%</span>5 <br>
-                        <span class='text-success'>returns</span>: 3 (remainder got by dividing 3 by 5) <br>
-                        <span class='text-danger'>desc</span>: returns remainder 
-                    </div>
-                </div>
-            </div>
-            <div class="section">
-                <h2>Quick Functions</h2>
-                <h3>Dir Function</h3>
-                <div class="code">
-                    <div class="comment"># returns a list of functions/classes in a class or module</div>
-                </div>
-                <img src="/img/python/dir_function.png" alt="Dir function with module in python" title="dir function with module in python">
-                <img src="/img/python/dir_function_class.png" alt="Dir function with class in python" title="dir function with class in python">
-                <h3>Help Function</h3>
-                <div class="code">
-                    <span class='text-primary'>help</span>(argument)
-                    <div class="comment">
-                        # <span class='text-warning'>argument</span> can be any function or class or module name
-                    </div>
-                    <div class="comment"># returns a description of the given argument</div>
-                </div>
-                <h3>Input Function</h3>
-                <div class="code">
-                    <button class="copy"></button>
-                    <div>name = <span class='text-primary'>input</span>("message to display")</div>
-                    <div class="comment"># Used to take user input , <span class='text-warning'>obviously</span></div>
-                </div>
-                <h3>Enumerate</h3>
-                <div class="code">
-                    <div class="comment"># Used to get index and value while using for a loop</div>
-                    <div class="comment"># Let us understand enumerate by example</div>
-                    <span class='text-info'>for</span> index,value <span class='text-info'>in</span> 
-                    <span class='text-primary'>enumerate</span>(list_of_values): <br>
-                    <pre class="tab-pre">&Tab;</pre><span class="comment"># Code Here</span> <br>
-                    <pre class="tab-pre">&Tab;</pre><span class='text-primary'>print</span>(index,value)
-                </div>
-                <h3>All and Any Functions</h3>
-                <div class="code">
-                    <div class="comment"># Let there be a list of conditions</div>
-                    list_of_conditions = [<span class='text-warning'>condition1</span>,<span class='text-warning'>condition2</span>,...]
-                    <br>
-                    <span class='text-primary'>all</span>(list_of_conditions) == True <span class="comment"># only if all conditions are True</span>
-                    <br><span class='text-primary'>any</span>(list_of_conditions) == True <span class="comment"># even if one condition is True</span>
-                </div>
-                <h3>Split and Strip functions</h3>
-                <div class="code">
-                    <ul class='tabSection'>
-                        <div class='tab' data-target='split_function_in_python'>split</div>
-                        <div class='tab' data-target='strip_function_in_python'>strip</div>
-                    </ul>
-                    <div id="split_function_in_python">
-                        <div class="comment"># Let there be a string</div>
-                        a = <span class='text-warning'>"Hello world my name is vikas"</span><br>
-                        a = a.<span class='text-primary'>split</span>(" ")
-                        <div class="comment"># Now a=["Hello","world","my","name","is","vikas"]</div>
-                    </div>
-                    <div id="strip_function_in_python">
-                        <div class="comment"># Let there be a string</div>
-                        <pre>a = <span class='text-warning'>"     myCODEnotein  is    best     "</span></pre>
-                        a = a.<span class='text-primary'>strip</span>() 
-                        <pre class="comment"># Now a="myCODEnotein  is    best"</pre>
-                    </div>
-                </div>
-            </div>
+      </div>
+    </nav>
+  </header>
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-sm-3">
+          <div id="teleporter-holder" class="d-none d-sm-none d-md-none d-lg-block">
+            <nav id="teleporter" class="nav nav-pills flex-column bg-light p-5 pt-0 text-wrap">
+                <a href="#" class="navbar-brand text-danger fw-bolder">Teleporter</a>
+                
+<a class='nav-link' href='#h2-12'>Variables and Constants</a>
+
+<nav class='nav nav-pills flex-column ml-3 my-1'>
+
+<a class='nav-link' href='#h3-16'>Constants</a>
+
+<a class='nav-link' href='#h3-17'>Variables</a>
+
+<a class='nav-link' href='#h3-18'>Rules for naming Variables</a>
+
+</nav>
+
+<a class='nav-link' href='#h2-13'>Character Set In Python</a>
+
+<nav class='nav nav-pills flex-column ml-3 my-1'>
+
+<a class='nav-link' href='#h3-19'>What is a character set ?</a>
+
+<a class='nav-link' href='#h3-20'>Character set used In Python</a>
+
+<a class='nav-link' href='#h3-21'>Similarly</a>
+
+</nav>
+
+<a class='nav-link' href='#h2-14'>Tokens in python</a>
+
+<nav class='nav nav-pills flex-column ml-3 my-1'>
+
+<a class='nav-link' href='#h3-22'>Keywords</a>
+
+<a class='nav-link' href='#h3-23'>Literals</a>
+
+<a class='nav-link' href='#h3-24'>Identifiers</a>
+
+<a class='nav-link' href='#h3-25'>Punctuators</a>
+
+<a class='nav-link' href='#h3-26'>Operators</a>
+
+</nav>
+
+<a class='nav-link' href='#h2-15'>Quick Functions</a>
+
+<nav class='nav nav-pills flex-column ml-3 my-1'>
+
+<a class='nav-link' href='#h3-27'>Dir Function</a>
+
+<a class='nav-link' href='#h3-28'>Help Function</a>
+
+<a class='nav-link' href='#h3-29'>Input Function</a>
+
+<a class='nav-link' href='#h3-30'>Enumerate</a>
+
+<a class='nav-link' href='#h3-31'>All and Any Functions</a>
+
+<a class='nav-link' href='#h3-32'>Split and Strip functions</a>
+
+</nav>
+
+            </nav>
+          </div>
         </div>
+
+        <div id="content" class="col-sm-7 p-3">
+<h1 id='h1-11'><span class='badge bg-primary'> </span> Python --> by myCODEnotein <span class='badge bg-primary'> </span></h1>
+
+<div class='section'><h2 id='h2-12'><span class='badge bg-danger'> </span> Variables and Constants</h2>
+
+<h3 id='h3-16'><span class='badge bg-warning'> </span> Constants</h3>
+
+<div id='normal-0' class='normal'>Constants are fixed values which can not be changed
+For ex: 1 , 1.5 , "vikas"</div>
+
+<h3 id='h3-17'><span class='badge bg-warning'> </span> Variables</h3>
+
+<div id='normal-1' class='normal'>Variables are those values which can be changed.
+For ex: a=1
+# a is a variable</div>
+
+<h3 id='h3-18'><span class='badge bg-warning'> </span> Rules for naming Variables</h3>
+
+<div id='normal-2' class='normal'><ul>
+<li>name can contain alphabets , digits or underscores</li>
+<li>name cannot start with digits</li>
+<li>name cannot be a reserved keyword</li>
+</ul></div>
+
+</div><div class='section'><h2 id='h2-13'><span class='badge bg-danger'> </span> Character Set In Python</h2>
+
+<h3 id='h3-19'><span class='badge bg-warning'> </span> What is a character set ?</h3>
+
+<div id='normal-3' class='normal'>Simply,the set of all characters/symbols 
+which are defined in any language are called character-sets
+For ex:All alphabets (a-z) are character-sets of english language</div>
+
+<h3 id='h3-20'><span class='badge bg-warning'> </span> Character set used In Python</h3>
+
+<div id='normal-4' class='normal'>Python uses UNICODE character set
+The size of character is 2 bytes
+meaning that it can contain upto 2<sup>16</sup> characters or symbols</div>
+
+<h3 id='h3-21'><span class='badge bg-warning'> </span> Similarly</h3>
+
+<div id='normal-5' class='normal'>Similarly , there is ASCII character sets
+
+ASCII-7(7 bits) # can contain upto 2<sup>7</sup> characters or symbols 
+ASCII-8(8 bits) # can contain upto 2<sup>8</sup> characters or symbols</div>
+
+</div><div class='section'><h2 id='h2-14'><span class='badge bg-danger'> </span> Tokens in python</h2>
+
+<div id='normal-6' class='normal'># There Are 5 types of tokens in python
+<ul>
+<li>Keywords</li>
+<li>Literals</li>
+<li>Identifiers</li>
+<li>Operators</li>
+<li>Punctuators</li>
+</ul></div>
+
+<h3 id='h3-22'><span class='badge bg-warning'> </span> Keywords</h3>
+
+<div id='normal-7' class='normal'>Keywords are fixed words which are defined by python language</div>
+
+<pre id='code-33'><code class='python' language='python'># To get a list of Keywords run :
+help("keywords")</code></pre>
+
+<pre id='code-34'><code class='python' language='python'># List of Keywords:
+keywords = ["False", "None", "True", "__peg_parser__", "and", "as", "assert", "async", "await", "break", "class", "continue", "def", "del", "elif", "else", "except", "finally", "for", "from", "global", "if", "import", "in", "is", "lambda", "nonlocal", "not", "or", "pass", "raise", "return", "try", "while", "with", "yield"]</code></pre>
+
+<div id='normal-8' class='normal'># keywords might vary version to version (This list is obtained from python 3.9.0)</div>
+
+<pre id='code-35'><code class='python' language='python'># Note:
+you can also run: 
+help()
+and then type keywords</code></pre>
+
+<h3 id='h3-23'><span class='badge bg-warning'> </span> Literals</h3>
+
+<pre id='code-36'><code class='python' language='python'># Literals are fixed values
+Examples of literals:
+<ul>
+<li>Numerical Literals # ex: 1(int) , 2.5(float)</li>
+<li>String Literals # ex: "amit sir","Vikas","myCODEnotein"</li>
+<li>Boolean Literals # ex: True , False</li>
+<li>None</li>
+</ul>#True,False and None are keywords also.</code></pre>
+
+<h3 id='h3-24'><span class='badge bg-warning'> </span> Identifiers</h3>
+
+
+<div id='code+tab-42'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-42-0' aria-controls='tab-target-42-0' href='#tab-target-42-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Desc</a>
+
+<a id='tab-link-42-1' aria-controls='tab-target-42-1' href='#tab-target-42-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Note</a>
+
+<a id='tab-link-42-2' aria-controls='tab-target-42-2' href='#tab-target-42-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Rule</a>
+
+            </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-42-0' aria-labelledby='tab-link-42-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>Identifiers are names used to identify a piece of data like variables,name of functions,name of classes</code></pre>
+</div>
+
+<div id='tab-target-42-1' aria-labelledby='tab-link-42-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>You can also say that all keywords are also Identifiers</code></pre>
+</div>
+
+<div id='tab-target-42-2' aria-labelledby='tab-link-42-2' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>Rules for defining vaiables= Rules for defining Identifiers</code></pre>
+</div>
+
+        </div>
+</div>
+
+
+<h3 id='h3-25'><span class='badge bg-warning'> </span> Punctuators</h3>
+
+<div id='normal-9' class='normal'>are considered as Punctuators</div>
+
+<h3 id='h3-26'><span class='badge bg-warning'> </span> Operators</h3>
+
+<pre id='code-37'><code class='python' language='python'># Arithmetic Operators
+op: + , - , * , / , // , % , **</code></pre>
+
+
+<div id='code+tab-43'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-43-0' aria-controls='tab-target-43-0' href='#tab-target-43-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>**</a>
+
+<a id='tab-link-43-1' aria-controls='tab-target-43-1' href='#tab-target-43-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>//</a>
+
+<a id='tab-link-43-2' aria-controls='tab-target-43-2' href='#tab-target-43-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>%</a>
+
+            </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-43-0' aria-labelledby='tab-link-43-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'># The operator is known as exponential operator
+for ex: 2**5
+is read as: 2 raise to the power 5 (2<sup>5</sup>) 
+returns: 32</code></pre>
+</div>
+
+<div id='tab-target-43-1' aria-labelledby='tab-link-43-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'># Operator is known as floor-division operator
+for ex: 9//4
+returns: 2 (/ operator returns 2.25) 
+desc: returns largest-integer , smaller than quotient</code></pre>
+</div>
+
+<div id='tab-target-43-2' aria-labelledby='tab-link-43-2' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'># Operator is known as modulus operator
+for ex: 3%5 
+returns: 3 (remainder got by dividing 3 by 5) 
+desc: returns remainder</code></pre>
+</div>
+
+        </div>
+</div>
+
+
+</div><div class='section'><h2 id='h2-15'><span class='badge bg-danger'> </span> Quick Functions</h2>
+
+<h3 id='h3-27'><span class='badge bg-warning'> </span> Dir Function</h3>
+
+<div id='normal-10' class='normal'># returns a list of functions/classes in a class or module.</div>
+
+<img alt="Dir function with module in python" class="img-fluid" src="/img/python/dir_function.png" title="dir function with module in python"/>
+
+<img alt="Dir function with class in python" class="img-fluid" src="/img/python/dir_function_class.png" title="dir function with class in python"/>
+
+<h3 id='h3-28'><span class='badge bg-warning'> </span> Help Function</h3>
+
+<pre id='code-38'><code class='python' language='python'>help(argument)
+# argument can be any function or class or module name
+# returns a description of the given argument</code></pre>
+
+<h3 id='h3-29'><span class='badge bg-warning'> </span> Input Function</h3>
+
+<pre id='code-39'><code class='python' language='python'>name = input("message to display")
+# Used to take user input , obviously</code></pre>
+
+<h3 id='h3-30'><span class='badge bg-warning'> </span> Enumerate</h3>
+
+<pre id='code-40'><code class='python' language='python'># Used to get index and value while using for a loop
+# Let us understand enumerate by example
+for index,value in enumerate(list_of_values): 
+	# Code Here 
+	print(index,value)</code></pre>
+
+<h3 id='h3-31'><span class='badge bg-warning'> </span> All and Any Functions</h3>
+
+<pre id='code-41'><code class='python' language='python'># Let there be a list
+myList = [5&gt;0 , 6&lt;0 , 1==0]</code></pre>
+
+
+<div id='code+tab-44'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-44-0' aria-controls='tab-target-44-0' href='#tab-target-44-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>All Function</a>
+
+<a id='tab-link-44-1' aria-controls='tab-target-44-1' href='#tab-target-44-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Any Function</a>
+
+            </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-44-0' aria-labelledby='tab-link-44-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>all(myList)==True # only if all conditions are True
+# In this case all(myList) = False</code></pre>
+</div>
+
+<div id='tab-target-44-1' aria-labelledby='tab-link-44-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>any(myList)==True # even if one condition is True
+# In this case any(myList) = True</code></pre>
+</div>
+
+        </div>
+</div>
+
+
+<h3 id='h3-32'><span class='badge bg-warning'> </span> Split and Strip functions</h3>
+
+
+<div id='code+tab-45'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-45-0' aria-controls='tab-target-45-0' href='#tab-target-45-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>split</a>
+
+<a id='tab-link-45-1' aria-controls='tab-target-45-1' href='#tab-target-45-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>strip</a>
+
+            </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-45-0' aria-labelledby='tab-link-45-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'># For example:
+a = "Hello world my name is vikas"
+a = a.split(" ")
+# Now a=["Hello","world","my","name","is","vikas"]</code></pre>
+</div>
+
+<div id='tab-target-45-1' aria-labelledby='tab-link-45-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'># For example:
+a = "     myCODEnotein  is    best     "
+a = a.strip() 
+# Now a="myCODEnotein  is    best"</code></pre>
+</div>
+
+        </div>
+</div></div>
+
+        </div>
+
+      </div>
     </div>
-    <script src="/js/navbar.js"></script>
-    <script src="/js/app.js" async></script>
-    <script src="/js/teleporter.js" async></script>
-    <script src="/js/tabSection.js" async></script>
-    <script src="/js/copy.js" async></script>
-</body>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+
 </html>

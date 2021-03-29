@@ -14,7 +14,7 @@
     />
 
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/agate.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/stackoverflow-dark.min.css">
     <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
     <title>tkinter - GUI with Python Power - (fastest notes) - By myCODEnotein</title>
     <meta name="description" content="Want to convert a black screened program to a beautiful GUI. Then You are at correct stop . (Advanced notes)(fastest notes) - by myCODEnotein">
@@ -41,6 +41,8 @@
                 Python
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/src/django.html">Django</a></li>
+                <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="/src/pygame.html">Pygame</a></li>
                 <li><a class="dropdown-item" href="/src/python.html">Python</a></li>
                 <li><a class="dropdown-item" href="/src/python-modules.html">Python Modules</a></li>
@@ -66,17 +68,19 @@
             <nav id="teleporter" class="nav nav-pills flex-column bg-light p-5 pt-0 text-wrap">
                 <a href="#" class="navbar-brand text-danger fw-bolder">Teleporter</a>
                 
-<a class='nav-link' href='#h2-28'>Importing tkinter and Starter Template</a>
+<a class='nav-link' href='#h2-25'>Importing tkinter and Starter Template</a>
 
 <nav class='nav nav-pills flex-column ml-3 my-1'>
 
-<a class='nav-link' href='#h3-42'>Importing Tkinter</a>
+<a class='nav-link' href='#h3-41'>Importing Tkinter</a>
+
+<a class='nav-link' href='#h3-42'>Importing ttk</a>
 
 <a class='nav-link' href='#h3-43'>Starter Template</a>
 
 </nav>
 
-<a class='nav-link' href='#h2-29'>Methods Of Tk Class / Configuring root</a>
+<a class='nav-link' href='#h2-26'>Methods Of Tk Class / Configuring root</a>
 
 <nav class='nav nav-pills flex-column ml-3 my-1'>
 
@@ -102,7 +106,7 @@
 
 </nav>
 
-<a class='nav-link' href='#h2-30'>Widgets in Tkinter</a>
+<a class='nav-link' href='#h2-27'>Widgets in Tkinter</a>
 
 <nav class='nav nav-pills flex-column ml-3 my-1'>
 
@@ -110,13 +114,13 @@
 
 </nav>
 
-<a class='nav-link' href='#h2-31'>Some Common Widget Options</a>
+<a class='nav-link' href='#h2-28'>Some Common Widget Options</a>
 
 <nav class='nav nav-pills flex-column ml-3 my-1'>
 
 </nav>
 
-<a class='nav-link' href='#h2-32'>Grid , Pack and Config methods</a>
+<a class='nav-link' href='#h2-29'>Grid , Pack and Config methods</a>
 
 <nav class='nav nav-pills flex-column ml-3 my-1'>
 
@@ -130,7 +134,7 @@
 
 </nav>
 
-<a class='nav-link' href='#h2-33'>tkraise method in tkinter (related to grid)</a>
+<a class='nav-link' href='#h2-30'>tkraise method in tkinter (related to grid)</a>
 
 <nav class='nav nav-pills flex-column ml-3 my-1'>
 
@@ -140,7 +144,7 @@
 
 </nav>
 
-<a class='nav-link' href='#h2-34'>Events in tkinter</a>
+<a class='nav-link' href='#h2-31'>Events in tkinter</a>
 
 <nav class='nav nav-pills flex-column ml-3 my-1'>
 
@@ -166,7 +170,7 @@
 
 </nav>
 
-<a class='nav-link' href='#h2-35'>Menu Widget in Tkinter</a>
+<a class='nav-link' href='#h2-32'>Menu Widget in Tkinter</a>
 
 <nav class='nav nav-pills flex-column ml-3 my-1'>
 
@@ -184,75 +188,97 @@
 
 </nav>
 
-<a class='nav-link' href='#h2-36'>Text widget in tkinter</a>
+<a class='nav-link' href='#h2-33'>Listbox in tkinter</a>
 
 <nav class='nav nav-pills flex-column ml-3 my-1'>
 
-<a class='nav-link' href='#h3-77'>Creating the text widget instance</a>
+<a class='nav-link' href='#h3-77'>Inserting values in listbox</a>
 
-<a class='nav-link' href='#h3-78'>Insertontime and insertofftime options</a>
+<a class='nav-link' href='#h3-78'>What will happen if you insert value at the index which already consists a value</a>
 
-<a class='nav-link' href='#h3-79'>Indexing in text widget - tkinter</a>
-
-<a class='nav-link' href='#h3-80'>Common Methods</a>
-
-<a class='nav-link' href='#h3-81'>Tags in tkinter</a>
-
-<a class='nav-link' href='#h3-82'>Some more tag methods</a>
-
-<a class='nav-link' href='#h3-83'>Marks in text widget</a>
-
-<a class='nav-link' href='#h3-84'>Setting up gravity of mark</a>
-
-<a class='nav-link' href='#h3-85'>A video showing mark_gravity effect</a>
-
-<a class='nav-link' href='#h3-86'>Great Resource for text widget</a>
+<a class='nav-link' href='#h3-79'>Listbox Methods</a>
 
 </nav>
 
-<a class='nav-link' href='#h2-37'>Scrollbar widget in tkinter</a>
+<a class='nav-link' href='#h2-34'>Text widget in tkinter</a>
 
 <nav class='nav nav-pills flex-column ml-3 my-1'>
 
-<a class='nav-link' href='#h3-87'>Required **kwargs</a>
+<a class='nav-link' href='#h3-80'>Creating the text widget instance</a>
 
-<a class='nav-link' href='#h3-88'>Settings Required for widget instance</a>
+<a class='nav-link' href='#h3-81'>Insertontime and insertofftime options</a>
+
+<a class='nav-link' href='#h3-82'>Indexing in text widget - tkinter</a>
+
+<a class='nav-link' href='#h3-83'>Common Methods</a>
+
+<a class='nav-link' href='#h3-84'>Tags in tkinter</a>
+
+<a class='nav-link' href='#h3-85'>Some more tag methods</a>
+
+<a class='nav-link' href='#h3-86'>Marks in text widget</a>
+
+<a class='nav-link' href='#h3-87'>Setting up gravity of mark</a>
+
+<a class='nav-link' href='#h3-88'>A video showing mark_gravity effect</a>
+
+<a class='nav-link' href='#h3-89'>Great Resource for text widget</a>
 
 </nav>
 
-<a class='nav-link' href='#h2-38'>Text Widget With Built In Scrollbar</a>
+<a class='nav-link' href='#h2-35'>Scrollbar widget in tkinter</a>
 
 <nav class='nav nav-pills flex-column ml-3 my-1'>
 
-<a class='nav-link' href='#h3-89'>Importing the widget</a>
+<a class='nav-link' href='#h3-90'>Required **kwargs</a>
 
-<a class='nav-link' href='#h3-90'>Creating the widget</a>
+<a class='nav-link' href='#h3-91'>Settings Required for widget instance</a>
 
 </nav>
 
-<a class='nav-link' href='#h2-39'>Message box in tkinter</a>
+<a class='nav-link' href='#h2-36'>Text Widget With Built In Scrollbar</a>
 
 <nav class='nav nav-pills flex-column ml-3 my-1'>
 
-<a class='nav-link' href='#h3-91'>Importing messagebox from tkinter to use it</a>
+<a class='nav-link' href='#h3-92'>Importing the widget</a>
 
-<a class='nav-link' href='#h3-92'>Various methods:</a>
+<a class='nav-link' href='#h3-93'>Creating the widget</a>
 
 </nav>
 
-<a class='nav-link' href='#h2-40'>Toplevel Widget In tkinter</a>
+<a class='nav-link' href='#h2-37'>Message box in tkinter</a>
+
+<nav class='nav nav-pills flex-column ml-3 my-1'>
+
+<a class='nav-link' href='#h3-94'>Importing messagebox from tkinter to use it</a>
+
+<a class='nav-link' href='#h3-95'>Various methods:</a>
+
+</nav>
+
+<a class='nav-link' href='#h2-38'>Toplevel Widget In tkinter</a>
 
 <nav class='nav nav-pills flex-column ml-3 my-1'>
 
 </nav>
 
-<a class='nav-link' href='#h2-41'>Adding a photo/image</a>
+<a class='nav-link' href='#h2-39'>Progressbar in tkinter</a>
 
 <nav class='nav nav-pills flex-column ml-3 my-1'>
 
-<a class='nav-link' href='#h3-93'>Loading the image</a>
+<a class='nav-link' href='#h3-96'>Example</a>
 
-<a class='nav-link' href='#h3-94'>Use of compound to display both text and image</a>
+<a class='nav-link' href='#h3-97'>Updating the progessbar</a>
+
+</nav>
+
+<a class='nav-link' href='#h2-40'>Adding a photo/image</a>
+
+<nav class='nav nav-pills flex-column ml-3 my-1'>
+
+<a class='nav-link' href='#h3-98'>Loading the image</a>
+
+<a class='nav-link' href='#h3-99'>Use of compound to display both text and image</a>
 
 </nav>
 
@@ -261,533 +287,54 @@
         </div>
 
         <div id="content" class="col-sm-7 p-3">
-<h1 id='h1-27'><span class='badge bg-primary'> </span> Tkinter --> by myCODEnotein <span class='badge bg-primary'> </span></h1>
+<h1 id='h1-24'><span class='badge bg-primary'> </span> Tkinter --> by myCODEnotein <span class='badge bg-primary'> </span></h1>
 
-<div class='section'><h2 id='h2-28'><span class='badge bg-danger'> </span> Importing tkinter and Starter Template</h2>
+<div class='section'><h2 id='h2-25'><span class='badge bg-danger'> </span> Importing tkinter and Starter Template</h2>
 
-<h3 id='h3-42'><span class='badge bg-warning'> </span> Importing Tkinter</h3>
+<h3 id='h3-41'><span class='badge bg-warning'> </span> Importing Tkinter</h3>
 
-<pre id='code-95'><code class='python' language='python'>from tkinter import *</code></pre>
+<pre id='code-100'><code class='python' language='python'>from tkinter import *</code></pre>
+
+<h3 id='h3-42'><span class='badge bg-warning'> </span> Importing ttk</h3>
+
+<div id='normal-0' class='normal'>For new tkinter widgets you need to import ttk by the following command</div>
+
+<pre id='code-101'><code class='python' language='python'>from tkinter import ttk</code></pre>
 
 <h3 id='h3-43'><span class='badge bg-warning'> </span> Starter Template</h3>
 
-<div id='normal-0' class='normal'>Get Full Version Of Starter Template at:<a href="/src/tkinter-widgets.html">This Link</a></div>
+<div id='normal-1' class='normal'>Get Full Version Of Starter Template at:<a href="/src/tkinter-widgets.html">This Link</a></div>
 
-<pre id='code-96'><code class='python' language='python'>from tkinter import *
+<pre id='code-102'><code class='python' language='python'>from tkinter import *
 root = Tk()
 root.mainloop()</code></pre>
 
-</div><div class='section'><h2 id='h2-29'><span class='badge bg-danger'> </span> Methods Of Tk Class / Configuring root</h2>
+</div><div class='section'><h2 id='h2-26'><span class='badge bg-danger'> </span> Methods Of Tk Class / Configuring root</h2>
 
 <h3 id='h3-44'><span class='badge bg-warning'> </span> Setting Up Root Title</h3>
 
-<pre id='code-97'><code class='python' language='python'>root.title("title of gui window")</code></pre>
+<pre id='code-103'><code class='python' language='python'>root.title("title of gui window")</code></pre>
 
 <h3 id='h3-45'><span class='badge bg-warning'> </span> Setting Up root geometry</h3>
 
-<pre id='code-98'><code class='python' language='python'>root.geometry("{screenWidth}x{screenHeight}")</code></pre>
+<pre id='code-104'><code class='python' language='python'>root.geometry("{screenWidth}x{screenHeight}")</code></pre>
 
-<pre id='code-99'><code class='python' language='python'># Optional 
+<pre id='code-105'><code class='python' language='python'># Optional 
 root.geometry("{screenWidth}x{screenHeight}{x_coordinate}{y_coordinate}")</code></pre>
 
-<pre id='code-100'><code class='python' language='python'>For Example
+<pre id='code-106'><code class='python' language='python'>For Example
 1. root.geometry("1100x500+100+5") # Opens window at (100,5)
 2. root.geometry("1100x500-29+5") # Opens window at (-29,5)</code></pre>
 
 <h3 id='h3-46'><span class='badge bg-warning'> </span> Making The window transparent</h3>
 
-<pre id='code-101'><code class='python' language='python'>root.attributes("-alpha",value)
+<pre id='code-107'><code class='python' language='python'>root.attributes("-alpha",value)
 # value lies between 0 and 1
 # 0 is fully transparent and 1 is fully visible</code></pre>
 
 <video class="container-fluid" controls="" muted="" preload="none" src="/vid/tkinter/transparentWindow.mp4" title="If the video does not load then please refresh/reload the page"></video>
 
 <h3 id='h3-47'><span class='badge bg-warning'> </span> Making the window remain at top of all windows</h3>
-
-
-<div id='code+tab-161'>
-        <nav>
-            <div class='nav nav-tabs' role='tablist'>
-
-<a id='tab-link-161-0' aria-controls='tab-target-161-0' href='#tab-target-161-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Code</a>
-
-<a id='tab-link-161-1' aria-controls='tab-target-161-1' href='#tab-target-161-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Desc</a>
-
-            </div>
-        </nav>
-        <div class='tab-content'>
-
-<div id='tab-target-161-0' aria-labelledby='tab-link-161-0' class='tab-pane fade show active' role='tabpanel'>
-<pre><code class='python' langauge='python'>root.attributes("-topmost",value) # value=1 or value=0</code></pre>
-</div>
-
-<div id='tab-target-161-1' aria-labelledby='tab-link-161-1' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>value=1 signifies that window must be at the top of other windows always
-
-value=2 signifies that window may or may not be at the top of other windows always</code></pre>
-</div>
-
-        </div>
-</div>
-
-
-<h3 id='h3-48'><span class='badge bg-warning'> </span> Making the GUI full screen</h3>
-
-
-<div id='code+tab-162'>
-        <nav>
-            <div class='nav nav-tabs' role='tablist'>
-
-<a id='tab-link-162-0' aria-controls='tab-target-162-0' href='#tab-target-162-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Code</a>
-
-<a id='tab-link-162-1' aria-controls='tab-target-162-1' href='#tab-target-162-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Desc</a>
-
-            </div>
-        </nav>
-        <div class='tab-content'>
-
-<div id='tab-target-162-0' aria-labelledby='tab-link-162-0' class='tab-pane fade show active' role='tabpanel'>
-<pre><code class='python' langauge='python'>root.attributes("-fullscreen",value) # value=0 or value&gt;0</code></pre>
-</div>
-
-<div id='tab-target-162-1' aria-labelledby='tab-link-162-1' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>value=0 signifies that window is not in full screen mode
-
-value=1 signifies that window is in full screen mode</code></pre>
-</div>
-
-        </div>
-</div>
-
-
-<h3 id='h3-49'><span class='badge bg-warning'> </span> To know more attribute of root</h3>
-
-<pre id='code-102'><code class='python' language='python'># You can run
-root.attributes()
-# returns the attributes of the root window.</code></pre>
-
-<h3 id='h3-50'><span class='badge bg-warning'> </span> To minimize the window through code</h3>
-
-
-<div id='code+tab-163'>
-        <nav>
-            <div class='nav nav-tabs' role='tablist'>
-
-<a id='tab-link-163-0' aria-controls='tab-target-163-0' href='#tab-target-163-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>iconify</a>
-
-<a id='tab-link-163-1' aria-controls='tab-target-163-1' href='#tab-target-163-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>deiconify</a>
-
-            </div>
-        </nav>
-        <div class='tab-content'>
-
-<div id='tab-target-163-0' aria-labelledby='tab-link-163-0' class='tab-pane fade show active' role='tabpanel'>
-<pre><code class='python' langauge='python'>root.iconify() # Minimizes the window</code></pre>
-</div>
-
-<div id='tab-target-163-1' aria-labelledby='tab-link-163-1' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>root.deiconify() 
-# Pops up the window at the top
-# If window is minimized then displays the window</code></pre>
-</div>
-
-        </div>
-</div>
-
-
-<h3 id='h3-51'><span class='badge bg-warning'> </span> To destroy the window/gui</h3>
-
-<pre id='code-103'><code class='python' language='python'>root.destroy()</code></pre>
-
-<h3 id='h3-52'><span class='badge bg-warning'> </span> To remove the title bar of the window</h3>
-
-<pre id='code-104'><code class='python' language='python'>root.overrideredirect(True)
-</code></pre>
-<h3 id='h3-53'><span class='badge bg-warning'> </span> To call a function when user press the cross on title bar</h3>
-
-<pre id='code-105'><code class='python' language='python'>root.protocol("WM_DELETE_WINDOW",  function)
-# this function is called when a user is exitting the window.
-# Note: This will override the default exit option and then you can to call root.destroy() if you want to destroy the window
-</code></pre>
-
-</div><div class='section'><h2 id='h2-30'><span class='badge bg-danger'> </span> Widgets in Tkinter</h2>
-
-
-<div id='code+tab-164'>
-        <nav>
-            <div class='nav nav-tabs' role='tablist'>
-
-<a id='tab-link-164-0' aria-controls='tab-target-164-0' href='#tab-target-164-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Frame</a>
-
-<a id='tab-link-164-1' aria-controls='tab-target-164-1' href='#tab-target-164-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Label</a>
-
-<a id='tab-link-164-2' aria-controls='tab-target-164-2' href='#tab-target-164-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Button</a>
-
-<a id='tab-link-164-3' aria-controls='tab-target-164-3' href='#tab-target-164-3' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Menu</a>
-
-<a id='tab-link-164-4' aria-controls='tab-target-164-4' href='#tab-target-164-4' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Entry</a>
-
-<a id='tab-link-164-5' aria-controls='tab-target-164-5' href='#tab-target-164-5' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Text</a>
-
-<a id='tab-link-164-6' aria-controls='tab-target-164-6' href='#tab-target-164-6' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Canvas</a>
-
-<a id='tab-link-164-7' aria-controls='tab-target-164-7' href='#tab-target-164-7' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Scrollbar</a>
-
-            </div>
-        </nav>
-        <div class='tab-content'>
-
-<div id='tab-target-164-0' aria-labelledby='tab-link-164-0' class='tab-pane fade show active' role='tabpanel'>
-<pre><code class='python' langauge='python'>myFrame = Frame(master,**options)</code></pre>
-</div>
-
-<div id='tab-target-164-1' aria-labelledby='tab-link-164-1' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>myLabel = Label(master,**options)</code></pre>
-</div>
-
-<div id='tab-target-164-2' aria-labelledby='tab-link-164-2' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>myButton = Button(master,**options)</code></pre>
-</div>
-
-<div id='tab-target-164-3' aria-labelledby='tab-link-164-3' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>myMenu = Menu(master,**option)</code></pre>
-</div>
-
-<div id='tab-target-164-4' aria-labelledby='tab-link-164-4' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>myEntry = Entry(master,**options)</code></pre>
-</div>
-
-<div id='tab-target-164-5' aria-labelledby='tab-link-164-5' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>myText = Text(master,**options)</code></pre>
-</div>
-
-<div id='tab-target-164-6' aria-labelledby='tab-link-164-6' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>myCanvas = Canvas(master,**options)</code></pre>
-</div>
-
-<div id='tab-target-164-7' aria-labelledby='tab-link-164-7' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>myScrollbar = Scrollbar(master,**options)</code></pre>
-</div>
-
-        </div>
-</div>
-
-
-<pre id='code-106'><code class='python' language='python'># To know **options , you can run:
-Widget.keys() # returns all the **options</code></pre>
-
-<h3 id='h3-54'><span class='badge bg-warning'> </span> Note that:</h3>
-
-<div id='normal-1' class='normal'>width and height options as
-characters while
-Frame , canvas like widgets treat
-it as pixels</div>
-
-<div id='normal-2' class='normal'>Basically , among text and frame of width 100
-,text appears to be of larger width than
-frame. Same with height.</div>
-
-</div><div class='section'><h2 id='h2-31'><span class='badge bg-danger'> </span> Some Common Widget Options</h2>
-
-<pre id='code-107'><code class='python' language='python'>bg or background - sets the background color</code></pre>
-
-<pre id='code-108'><code class='python' language='python'>fg or foreground - sets the foreground color</code></pre>
-
-<pre id='code-109'><code class='python' language='python'># you can't use bg or fg option in .config method
-# there you need to give background/foreground for your purpose.</code></pre>
-
-<pre id='code-110'><code class='python' language='python'>font - sets the font 
-# syntax: 
-1.either a tuple: (font_family,font_size,"bold"/"italic") 
-2. or a string  : "font_family,font_size,bold/italic" 
-
-# you can also set any one property if you want</code></pre>
-
-<div id='normal-3' class='normal'>Some font families: helvetica , consolas</div>
-
-<pre id='code-111'><code class='python' language='python'>width,height # takes integer values
-cursor - specifies the cursor when arrow is on the widgets.
-You can find cursor values at <a href="https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/cursors.html" target="_blank">This Link</a></code></pre>
-
-</div><div class='section'><h2 id='h2-32'><span class='badge bg-danger'> </span> Grid , Pack and Config methods</h2>
-
-<h3 id='h3-55'><span class='badge bg-warning'> </span> Pack</h3>
-
-<pre id='code-112'><code class='python' language='python'>#syntax
-widget.pack(**options)</code></pre>
-
-<pre id='code-113'><code class='python' language='python'>To know **options you can run
-help(widget.pack)</code></pre>
-
-<h3 id='h3-56'><span class='badge bg-warning'> </span> Grid</h3>
-
-<pre id='code-114'><code class='python' language='python'>#syntax
-widget.grid(row=ROW_NO,column=COLUMN_NO,**options)</code></pre>
-
-<pre id='code-115'><code class='python' language='python'>To know **options , you can run:</code></pre>
-
-<pre id='code-116'><code class='python' language='python'>help(widget.grid)</code></pre>
-
-<h3 id='h3-57'><span class='badge bg-warning'> </span> Note that:</h3>
-
-<div id='normal-4' class='normal'>Pack and grid cannot be used together.
-Basically , widgets sharing same parent/master
-can either use pack or grid.</div>
-
-<h3 id='h3-58'><span class='badge bg-warning'> </span> .config Method in tkinter</h3>
-
-
-<div id='code+tab-165'>
-        <nav>
-            <div class='nav nav-tabs' role='tablist'>
-
-<a id='tab-link-165-0' aria-controls='tab-target-165-0' href='#tab-target-165-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Code</a>
-
-<a id='tab-link-165-1' aria-controls='tab-target-165-1' href='#tab-target-165-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Desc</a>
-
-<a id='tab-link-165-2' aria-controls='tab-target-165-2' href='#tab-target-165-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Note</a>
-
-            </div>
-        </nav>
-        <div class='tab-content'>
-
-<div id='tab-target-165-0' aria-labelledby='tab-link-165-0' class='tab-pane fade show active' role='tabpanel'>
-<pre><code class='python' langauge='python'>#syntax
-widget.config(**options)</code></pre>
-</div>
-
-<div id='tab-target-165-1' aria-labelledby='tab-link-165-1' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>Used to change/add an option later in the code for a widget.</code></pre>
-</div>
-
-<div id='tab-target-165-2' aria-labelledby='tab-link-165-2' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>In this method , to set background color , instead of bg option
-background option must be used.
-Same with foreground color.</code></pre>
-</div>
-
-        </div>
-</div>
-
-
-<img alt="Before using config method example" class="img-fluid" src="/img/tkinter_images/config_before.png" title="Before using config method example"/>
-
-<img alt="After using config method example" class="img-fluid" src="/img/tkinter_images/config_after.png" title="AFter using config method example"/>
-
-</div><div class='section'><h2 id='h2-33'><span class='badge bg-danger'> </span> tkraise method in tkinter (related to grid)</h2>
-
-<h3 id='h3-59'><span class='badge bg-warning'> </span> When this method is used</h3>
-
-<div id='normal-5' class='normal'>Suppose a widget is having same row and column as another widget gridded under same parent.
-Then tkinter will (by default) show the widget which is gridded later in the code.</div>
-
-<div id='normal-6' class='normal'>Hence , this method is used when two widgets with same row and same column are gridded and one needs to be raised to bring forwards/upwards</div>
-
-<h3 id='h3-60'><span class='badge bg-warning'> </span> syntax</h3>
-
-<pre id='code-117'><code class='python' language='python'>widget.tkraise()</code></pre>
-
-</div><div class='section'><h2 id='h2-34'><span class='badge bg-danger'> </span> Events in tkinter</h2>
-
-<div id='normal-7' class='normal'>Get a button which changes its properties on hover at
-<a href="/src/tkinter-widgets.html">This Link</a></div>
-
-<pre id='code-118'><code class='python' language='python'># syntax
-widget.bind("&lt;event&gt;",func=function)
-
-# Note that tkinter passes an argument e to the function when the event occurs.</code></pre>
-
-<h3 id='h3-61'><span class='badge bg-warning'> </span> The Function is something like</h3>
-
-<pre id='code-119'><code class='python' language='python'>def function(event):
-  # print(dir(event)) to know the properties of the event
-  # your code here</code></pre>
-
-<h3 id='h3-62'><span class='badge bg-warning'> </span> Use Of Lambda Function</h3>
-
-<div id='normal-8' class='normal'>To give argument to the function you can use lambda function.</div>
-
-<pre id='code-120'><code class='python' language='python'># For example:
-widget.bind("&lt;event&gt;",func=lambda event:function(arguments))
-
-# Note that in this case event argument is passed to lambda function.
-# (which is necessay)
-# You can pass that event to the function as well</code></pre>
-
-<h3 id='h3-63'><span class='badge bg-warning'> </span> Returning break (related to keypress events and more)</h3>
-
-
-<div id='code+tab-166'>
-        <nav>
-            <div class='nav nav-tabs' role='tablist'>
-
-<a id='tab-link-166-0' aria-controls='tab-target-166-0' href='#tab-target-166-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Problem</a>
-
-<a id='tab-link-166-1' aria-controls='tab-target-166-1' href='#tab-target-166-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Solution</a>
-
-            </div>
-        </nav>
-        <div class='tab-content'>
-
-<div id='tab-target-166-0' aria-labelledby='tab-link-166-0' class='tab-pane fade show active' role='tabpanel'>
-<pre><code class='python' langauge='python'>Suppose,you want to bind your text widget
-with an event "Control-a".
-You bind it , but along with your function
-tkinter also selects the whole text in the widget
-,which is its default function. 
-Now you want that this thing does not happen
-so for this you need to see the solution</code></pre>
-</div>
-
-<div id='tab-target-166-1' aria-labelledby='tab-link-166-1' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>You need to return: "break"
-in your function which you hade binded with
-the control-a event.</code></pre>
-</div>
-
-        </div>
-</div>
-
-
-<pre id='code-121'><code class='python' language='python'>def myFunction(event):
-	# your code
-	return "break"
-
-myTextWidget('<Control-a>',func=myFunction)
-# This code will just prevent tkinter from selecting the whole text in text widget.
-</code></pre>
-<div id='normal-9' class='normal'>You can also do the same with other events .</div>
-
-<h3 id='h3-64'><span class='badge bg-warning'> </span> Some properties of event argument which tkinter passes to the function</h3>
-
-<pre id='code-122'><code class='python' language='python'># you can simply run: print(dir(event)) in the function to know all properties.
-</code></pre>
-<div id='normal-10' class='normal'>Property:
-event.delta 
-The delta refers to the direction and magnitude where the mouse wheel was rotated.Note the value is not a screen distance but are units of motion in the mouse wheel.Typically these values are multiples of 120. For example, 120 should scroll the text widget up 4 lines and -240 would scroll the text widget down 8 lines.</div>
-
-<pre id='code-123'><code class='python' language='python'># To scroll any scrollable widget within code you can do
-widget.yview_scroll(number,what)
-Shift the y-view according to number.
-what = "units" or "pages"
-</code></pre>
-<pre id='code-124'><code class='python' language='python'>#for example
-myText.yview_scroll(10,'units') # scrolls pages 10 units
-myText.yview_scroll(1,'pages') </code></pre>
-
-<h3 id='h3-65'><span class='badge bg-warning'> </span> Mouse events</h3>
-
-<pre id='code-125'><code class='python' language='python'>"&lt;Enter&gt;"
-# Mouse enters any widget (mouse hover)
-"&lt;Leave&gt;"
-# Mouse leaves any widget (mouse leave)</code></pre>
-
-<h3 id='h3-66'><span class='badge bg-warning'> </span> Mouse Click Events</h3>
-
-<pre id='code-126'><code class='python' language='python'>"&lt;Button-1&gt;"
-# Left clicked on a widget
-"&lt;Button-2&gt;"
-# Middle clicked on a widget (now a days mouse does not have middle button)
-"&lt;Button-3&gt;"
-# Right clicked on a widget</code></pre>
-
-<h3 id='h3-67'><span class='badge bg-warning'> </span> Keyboard events</h3>
-
-<pre id='code-127'><code class='python' language='python'>"&lt;Key&gt;"
-# Used pressed a key
-"&lt;KeyRelease&gt;"
-# User released the key
-</code></pre>
-<h3 id='h3-68'><span class='badge bg-warning'> </span> Binding two or more key presses</h3>
-
-<div id='normal-11' class='normal'>You can also bind keypresses like ctrl+c,ctrl+d,shift+enter..etc
-</div>
-
-<div id='code+tab-167'>
-        <nav>
-            <div class='nav nav-tabs' role='tablist'>
-
-<a id='tab-link-167-0' aria-controls='tab-target-167-0' href='#tab-target-167-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Example</a>
-
-<a id='tab-link-167-1' aria-controls='tab-target-167-1' href='#tab-target-167-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Important Note</a>
-
-            </div>
-        </nav>
-        <div class='tab-content'>
-
-<div id='tab-target-167-0' aria-labelledby='tab-link-167-0' class='tab-pane fade show active' role='tabpanel'>
-<pre><code class='python' langauge='python'>#for example:
-"&lt;Control-Key-1&gt;" # event : ctrl+1
-"&lt;Control-1&gt;" # event : ctrl + left click
-"&lt;Alt-a&gt;" # event : alt + a
-"&lt;Shift-a&gt;" # event : shift + a</code></pre>
-</div>
-
-<div id='tab-target-167-1' aria-labelledby='tab-link-167-1' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>Note that you can write any number/key infront of control,shift,...etc
-But while using numbers , if you want to use number 1 for example
-then you need to do "{Whateverkey}-Key-1".
-Directly writing 1 without key makes tkinter think that you want mouseclick event with {Whateverkey} event.</code></pre>
-</div>
-
-        </div>
-</div>
-
-<div id='normal-17' class='normal'>This thing is also explained in a great stackoverflow article
-</div><a href='https://stackoverflow.com/questions/16082243/how-to-bind-ctrl-in-python-tkinter'>At this link</a>
-
-<h3 id='h3-69'><span class='badge bg-warning'> </span> Some more events</h3>
-
-<pre id='code-133'><code class='python' language='python'>"&lt;FocusIn&gt;"  - when a widget gets focus 
-"&lt;FocusOut&gt;"  - when a widget loses focus 
-"&lt;&lt;ComboboxSelected&gt;&gt;" - when Combobox is Selected
-</code></pre>
-
-<h3 id='h3-70'><span class='badge bg-warning'> </span> To know more events</h3>
-
-<pre id='code-134'><code class='python' language='python'>#RUN: 
-help(widgetName.bind)</code></pre>
-
-</div><div class='section'><h2 id='h2-35'><span class='badge bg-danger'> </span> Menu Widget in Tkinter</h2>
-
-<h3 id='h3-71'><span class='badge bg-warning'> </span> Creating menu widget instance with options</h3>
-
-<pre id='code-135'><code class='python' language='python'>myMenu = Menu(root,tearoff=0)</code></pre>
-
-<h3 id='h3-72'><span class='badge bg-warning'> </span> Adding the Menu to the Main Window</h3>
-
-<pre id='code-136'><code class='python' language='python'>root/master.config(menu=myMenu)</code></pre>
-
-<h3 id='h3-73'><span class='badge bg-warning'> </span> Add Cascade Function Of menu widget</h3>
-
-
-<div id='code+tab-168'>
-        <nav>
-            <div class='nav nav-tabs' role='tablist'>
-
-<a id='tab-link-168-0' aria-controls='tab-target-168-0' href='#tab-target-168-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Code</a>
-
-<a id='tab-link-168-1' aria-controls='tab-target-168-1' href='#tab-target-168-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Desc</a>
-
-            </div>
-        </nav>
-        <div class='tab-content'>
-
-<div id='tab-target-168-0' aria-labelledby='tab-link-168-0' class='tab-pane fade show active' role='tabpanel'>
-<pre><code class='python' langauge='python'>myMenu.add_cascade(label="Name of menu",menu=menuObject)</code></pre>
-</div>
-
-<div id='tab-target-168-1' aria-labelledby='tab-link-168-1' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>Adds another Menu instance to the myMenu instance as shown in img below.</code></pre>
-</div>
-
-        </div>
-</div>
-
-
-<img alt="add_cascade image" class="img-fluid" src="/img/tkinter_images/add_cascade.png"/>
-
-<h3 id='h3-74'><span class='badge bg-warning'> </span> Add Command Function of menu widget</h3>
 
 
 <div id='code+tab-169'>
@@ -803,11 +350,496 @@ help(widgetName.bind)</code></pre>
         <div class='tab-content'>
 
 <div id='tab-target-169-0' aria-labelledby='tab-link-169-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>root.attributes("-topmost",value) # value=1 or value=0</code></pre>
+</div>
+
+<div id='tab-target-169-1' aria-labelledby='tab-link-169-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>value=1 signifies that window must be at the top of other windows always
+
+value=2 signifies that window may or may not be at the top of other windows always</code></pre>
+</div>
+
+        </div>
+</div>
+
+
+<h3 id='h3-48'><span class='badge bg-warning'> </span> Making the GUI full screen</h3>
+
+
+<div id='code+tab-170'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-170-0' aria-controls='tab-target-170-0' href='#tab-target-170-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Code</a>
+
+<a id='tab-link-170-1' aria-controls='tab-target-170-1' href='#tab-target-170-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Desc</a>
+
+            </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-170-0' aria-labelledby='tab-link-170-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>root.attributes("-fullscreen",value) # value=0 or value&gt;0</code></pre>
+</div>
+
+<div id='tab-target-170-1' aria-labelledby='tab-link-170-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>value=0 signifies that window is not in full screen mode
+
+value=1 signifies that window is in full screen mode</code></pre>
+</div>
+
+        </div>
+</div>
+
+
+<h3 id='h3-49'><span class='badge bg-warning'> </span> To know more attribute of root</h3>
+
+<pre id='code-108'><code class='python' language='python'># You can run
+root.attributes()
+# returns the attributes of the root window.</code></pre>
+
+<h3 id='h3-50'><span class='badge bg-warning'> </span> To minimize the window through code</h3>
+
+
+<div id='code+tab-171'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-171-0' aria-controls='tab-target-171-0' href='#tab-target-171-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>iconify</a>
+
+<a id='tab-link-171-1' aria-controls='tab-target-171-1' href='#tab-target-171-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>deiconify</a>
+
+            </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-171-0' aria-labelledby='tab-link-171-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>root.iconify() # Minimizes the window</code></pre>
+</div>
+
+<div id='tab-target-171-1' aria-labelledby='tab-link-171-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>root.deiconify() 
+# Pops up the window at the top
+# If window is minimized then displays the window</code></pre>
+</div>
+
+        </div>
+</div>
+
+
+<h3 id='h3-51'><span class='badge bg-warning'> </span> To destroy the window/gui</h3>
+
+<pre id='code-109'><code class='python' language='python'>root.destroy()</code></pre>
+
+<h3 id='h3-52'><span class='badge bg-warning'> </span> To remove the title bar of the window</h3>
+
+<pre id='code-110'><code class='python' language='python'>root.overrideredirect(True)</code></pre>
+
+<h3 id='h3-53'><span class='badge bg-warning'> </span> To call a function when user press the cross on title bar</h3>
+
+<pre id='code-111'><code class='python' language='python'>root.protocol("WM_DELETE_WINDOW",  function)
+# this function is called when a user is exitting the window.
+# Note: This will override the default exit option and then you can to call root.destroy() if you want to destroy the window</code></pre>
+
+</div><div class='section'><h2 id='h2-27'><span class='badge bg-danger'> </span> Widgets in Tkinter</h2>
+
+
+<div id='code+tab-172'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-172-0' aria-controls='tab-target-172-0' href='#tab-target-172-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Frame</a>
+
+<a id='tab-link-172-1' aria-controls='tab-target-172-1' href='#tab-target-172-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Label</a>
+
+<a id='tab-link-172-2' aria-controls='tab-target-172-2' href='#tab-target-172-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Button</a>
+
+<a id='tab-link-172-3' aria-controls='tab-target-172-3' href='#tab-target-172-3' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Menu</a>
+
+<a id='tab-link-172-4' aria-controls='tab-target-172-4' href='#tab-target-172-4' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Entry</a>
+
+<a id='tab-link-172-5' aria-controls='tab-target-172-5' href='#tab-target-172-5' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Text</a>
+
+<a id='tab-link-172-6' aria-controls='tab-target-172-6' href='#tab-target-172-6' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Canvas</a>
+
+<a id='tab-link-172-7' aria-controls='tab-target-172-7' href='#tab-target-172-7' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Scrollbar</a>
+
+            </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-172-0' aria-labelledby='tab-link-172-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>myFrame = Frame(master,**options)</code></pre>
+</div>
+
+<div id='tab-target-172-1' aria-labelledby='tab-link-172-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myLabel = Label(master,**options)</code></pre>
+</div>
+
+<div id='tab-target-172-2' aria-labelledby='tab-link-172-2' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myButton = Button(master,**options)</code></pre>
+</div>
+
+<div id='tab-target-172-3' aria-labelledby='tab-link-172-3' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myMenu = Menu(master,**option)</code></pre>
+</div>
+
+<div id='tab-target-172-4' aria-labelledby='tab-link-172-4' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myEntry = Entry(master,**options)</code></pre>
+</div>
+
+<div id='tab-target-172-5' aria-labelledby='tab-link-172-5' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myText = Text(master,**options)</code></pre>
+</div>
+
+<div id='tab-target-172-6' aria-labelledby='tab-link-172-6' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myCanvas = Canvas(master,**options)</code></pre>
+</div>
+
+<div id='tab-target-172-7' aria-labelledby='tab-link-172-7' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myScrollbar = Scrollbar(master,**options)</code></pre>
+</div>
+
+        </div>
+</div>
+
+
+<pre id='code-112'><code class='python' language='python'># To know **options , you can run:
+Widget.keys() # returns all the **options</code></pre>
+
+<h3 id='h3-54'><span class='badge bg-warning'> </span> Note that:</h3>
+
+<div id='normal-2' class='normal'>width and height options as
+characters while
+Frame , canvas like widgets treat
+it as pixels</div>
+
+<div id='normal-3' class='normal'>Basically , among text and frame of width 100
+,text appears to be of larger width than
+frame. Same with height.</div>
+
+</div><div class='section'><h2 id='h2-28'><span class='badge bg-danger'> </span> Some Common Widget Options</h2>
+
+<pre id='code-113'><code class='python' language='python'>bg or background - sets the background color</code></pre>
+
+<pre id='code-114'><code class='python' language='python'>fg or foreground - sets the foreground color</code></pre>
+
+<pre id='code-115'><code class='python' language='python'># you can't use bg or fg option in .config method
+# there you need to give background/foreground for your purpose.</code></pre>
+
+<pre id='code-116'><code class='python' language='python'>font - sets the font 
+# syntax: 
+1.either a tuple: (font_family,font_size,"bold"/"italic") 
+2. or a string  : "font_family,font_size,bold/italic" 
+
+# you can also set any one property if you want</code></pre>
+
+<div id='normal-4' class='normal'>Some font families: helvetica , consolas</div>
+
+<pre id='code-117'><code class='python' language='python'>width,height # takes integer values
+cursor - specifies the cursor when arrow is on the widgets.
+You can find cursor values at <a href="https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/cursors.html" target="_blank">This Link</a></code></pre>
+
+</div><div class='section'><h2 id='h2-29'><span class='badge bg-danger'> </span> Grid , Pack and Config methods</h2>
+
+<h3 id='h3-55'><span class='badge bg-warning'> </span> Pack</h3>
+
+<pre id='code-118'><code class='python' language='python'>#syntax
+widget.pack(**options)</code></pre>
+
+<pre id='code-119'><code class='python' language='python'>To know **options you can run
+help(widget.pack)</code></pre>
+
+<h3 id='h3-56'><span class='badge bg-warning'> </span> Grid</h3>
+
+<pre id='code-120'><code class='python' language='python'>#syntax
+widget.grid(row=ROW_NO,column=COLUMN_NO,**options)</code></pre>
+
+<pre id='code-121'><code class='python' language='python'>To know **options , you can run:</code></pre>
+
+<pre id='code-122'><code class='python' language='python'>help(widget.grid)</code></pre>
+
+<h3 id='h3-57'><span class='badge bg-warning'> </span> Note that:</h3>
+
+<div id='normal-5' class='normal'>Pack and grid cannot be used together.
+Basically , widgets sharing same parent/master
+can either use pack or grid.</div>
+
+<h3 id='h3-58'><span class='badge bg-warning'> </span> .config Method in tkinter</h3>
+
+
+<div id='code+tab-173'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-173-0' aria-controls='tab-target-173-0' href='#tab-target-173-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Code</a>
+
+<a id='tab-link-173-1' aria-controls='tab-target-173-1' href='#tab-target-173-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Desc</a>
+
+<a id='tab-link-173-2' aria-controls='tab-target-173-2' href='#tab-target-173-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Note</a>
+
+            </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-173-0' aria-labelledby='tab-link-173-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>#syntax
+widget.config(**options)</code></pre>
+</div>
+
+<div id='tab-target-173-1' aria-labelledby='tab-link-173-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>Used to change/add an option later in the code for a widget.</code></pre>
+</div>
+
+<div id='tab-target-173-2' aria-labelledby='tab-link-173-2' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>In this method , to set background color , instead of bg option
+background option must be used.
+Same with foreground color.</code></pre>
+</div>
+
+        </div>
+</div>
+
+
+<img alt="Before using config method example" class="img-fluid" src="/img/tkinter_images/config_before.png" title="Before using config method example"/>
+
+<img alt="After using config method example" class="img-fluid" src="/img/tkinter_images/config_after.png" title="AFter using config method example"/>
+
+</div><div class='section'><h2 id='h2-30'><span class='badge bg-danger'> </span> tkraise method in tkinter (related to grid)</h2>
+
+<h3 id='h3-59'><span class='badge bg-warning'> </span> When this method is used</h3>
+
+<div id='normal-6' class='normal'>Suppose a widget is having same row and column as another widget gridded under same parent.
+Then tkinter will (by default) show the widget which is gridded later in the code.</div>
+
+<div id='normal-7' class='normal'>Hence , this method is used when two widgets with same row and same column are gridded and one needs to be raised to bring forwards/upwards</div>
+
+<h3 id='h3-60'><span class='badge bg-warning'> </span> syntax</h3>
+
+<pre id='code-123'><code class='python' language='python'>widget.tkraise()</code></pre>
+
+</div><div class='section'><h2 id='h2-31'><span class='badge bg-danger'> </span> Events in tkinter</h2>
+
+<div id='normal-8' class='normal'>Get a button which changes its properties on hover at
+<a href="/src/tkinter-widgets.html">This Link</a></div>
+
+<pre id='code-124'><code class='python' language='python'># syntax
+widget.bind("&lt;event&gt;",func=function)
+
+# Note that tkinter passes an argument e to the function when the event occurs.</code></pre>
+
+<h3 id='h3-61'><span class='badge bg-warning'> </span> The Function is something like</h3>
+
+<pre id='code-125'><code class='python' language='python'>def function(event):
+  # print(dir(event)) to know the properties of the event
+  # your code here</code></pre>
+
+<h3 id='h3-62'><span class='badge bg-warning'> </span> Use Of Lambda Function</h3>
+
+<div id='normal-9' class='normal'>To give argument to the function you can use lambda function.</div>
+
+<pre id='code-126'><code class='python' language='python'># For example:
+widget.bind("&lt;event&gt;",func=lambda event:function(arguments))
+
+# Note that in this case event argument is passed to lambda function.
+# (which is necessay)
+# You can pass that event to the function as well</code></pre>
+
+<h3 id='h3-63'><span class='badge bg-warning'> </span> Returning break (related to keypress events and more)</h3>
+
+
+<div id='code+tab-174'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-174-0' aria-controls='tab-target-174-0' href='#tab-target-174-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Problem</a>
+
+<a id='tab-link-174-1' aria-controls='tab-target-174-1' href='#tab-target-174-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Solution</a>
+
+            </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-174-0' aria-labelledby='tab-link-174-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>Suppose,you want to bind your text widget
+with an event "Control-a".
+You bind it , but along with your function
+tkinter also selects the whole text in the widget
+,which is its default function. 
+Now you want that this thing does not happen
+so for this you need to see the solution</code></pre>
+</div>
+
+<div id='tab-target-174-1' aria-labelledby='tab-link-174-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>You need to return: "break"
+in your function which you hade binded with
+the control-a event.</code></pre>
+</div>
+
+        </div>
+</div>
+
+
+<pre id='code-127'><code class='python' language='python'>def myFunction(event):
+	# your code
+	return "break"
+
+myTextWidget('<control-a>',func=myFunction)
+# This code will just prevent tkinter from selecting the whole text in text widget.
+</control-a></code></pre>
+
+<div id='normal-10' class='normal'>You can also do the same with other events .</div>
+
+<h3 id='h3-64'><span class='badge bg-warning'> </span> Some properties of event argument which tkinter passes to the function</h3>
+
+<pre id='code-128'><code class='python' language='python'># you can simply run: print(dir(event)) in the function to know all properties.</code></pre>
+
+<div id='normal-11' class='normal'>Property:
+event.delta 
+The delta refers to the direction and magnitude where the mouse wheel was rotated.Note the value is not a screen distance but are units of motion in the mouse wheel.Typically these values are multiples of 120. For example, 120 should scroll the text widget up 4 lines and -240 would scroll the text widget down 8 lines.</div>
+
+<pre id='code-129'><code class='python' language='python'># To scroll any scrollable widget within code you can do
+widget.yview_scroll(number,what)
+Shift the y-view according to number.
+what = "units" or "pages"</code></pre>
+
+<pre id='code-130'><code class='python' language='python'>#for example
+myText.yview_scroll(10,'units') # scrolls pages 10 units
+myText.yview_scroll(1,'pages')</code></pre>
+
+<h3 id='h3-65'><span class='badge bg-warning'> </span> Mouse events</h3>
+
+<pre id='code-131'><code class='python' language='python'>"&lt;Enter&gt;"
+# Mouse enters any widget (mouse hover)
+"&lt;Leave&gt;"
+# Mouse leaves any widget (mouse leave)</code></pre>
+
+<h3 id='h3-66'><span class='badge bg-warning'> </span> Mouse Click Events</h3>
+
+<pre id='code-132'><code class='python' language='python'>"&lt;Button-1&gt;"
+# Left clicked on a widget
+"&lt;Button-2&gt;"
+# Middle clicked on a widget (now a days mouse does not have middle button)
+"&lt;Button-3&gt;"
+# Right clicked on a widget</code></pre>
+
+<h3 id='h3-67'><span class='badge bg-warning'> </span> Keyboard events</h3>
+
+<pre id='code-133'><code class='python' language='python'>"&lt;Key&gt;"
+# Used pressed a key
+"&lt;KeyRelease&gt;"
+# User released the key</code></pre>
+
+<h3 id='h3-68'><span class='badge bg-warning'> </span> Binding two or more key presses</h3>
+
+<div id='normal-12' class='normal'>You can also bind keypresses like ctrl+c,ctrl+d,shift+enter..etc</div>
+
+
+<div id='code+tab-175'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-175-0' aria-controls='tab-target-175-0' href='#tab-target-175-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Example</a>
+
+<a id='tab-link-175-1' aria-controls='tab-target-175-1' href='#tab-target-175-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Important Note</a>
+
+            </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-175-0' aria-labelledby='tab-link-175-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>#for example:
+"&lt;Control-Key-1&gt;" # event : ctrl+1
+"&lt;Control-1&gt;" # event : ctrl + left click
+"&lt;Alt-a&gt;" # event : alt + a
+"&lt;Shift-a&gt;" # event : shift + a</code></pre>
+</div>
+
+<div id='tab-target-175-1' aria-labelledby='tab-link-175-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>Note that you can write any number/key infront of control,shift,...etc
+But while using numbers , if you want to use number 1 for example
+then you need to do "{Whateverkey}-Key-1".
+Directly writing 1 without key makes tkinter think that you want mouseclick event with {Whateverkey} event.</code></pre>
+</div>
+
+        </div>
+</div>
+
+
+<div id='normal-13' class='normal'>This thing is also explained in a great stackoverflow article
+<a href="https://stackoverflow.com/questions/16082243/how-to-bind-ctrl-in-python-tkinter">At this link</a></div>
+
+<h3 id='h3-69'><span class='badge bg-warning'> </span> Some more events</h3>
+
+<pre id='code-134'><code class='python' language='python'>"&lt;FocusIn&gt;"  - when a widget gets focus 
+"&lt;FocusOut&gt;"  - when a widget loses focus 
+"&lt;&lt;ComboboxSelected&gt;&gt;" - when Combobox is Selected</code></pre>
+
+<h3 id='h3-70'><span class='badge bg-warning'> </span> To know more events</h3>
+
+<pre id='code-135'><code class='python' language='python'>#RUN: 
+help(widgetName.bind)</code></pre>
+
+</div><div class='section'><h2 id='h2-32'><span class='badge bg-danger'> </span> Menu Widget in Tkinter</h2>
+
+<h3 id='h3-71'><span class='badge bg-warning'> </span> Creating menu widget instance with options</h3>
+
+<pre id='code-136'><code class='python' language='python'>myMenu = Menu(root,tearoff=0)</code></pre>
+
+<h3 id='h3-72'><span class='badge bg-warning'> </span> Adding the Menu to the Main Window</h3>
+
+<pre id='code-137'><code class='python' language='python'>root/master.config(menu=myMenu)</code></pre>
+
+<h3 id='h3-73'><span class='badge bg-warning'> </span> Add Cascade Function Of menu widget</h3>
+
+
+<div id='code+tab-176'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-176-0' aria-controls='tab-target-176-0' href='#tab-target-176-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Code</a>
+
+<a id='tab-link-176-1' aria-controls='tab-target-176-1' href='#tab-target-176-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Desc</a>
+
+            </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-176-0' aria-labelledby='tab-link-176-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>myMenu.add_cascade(label="Name of menu",menu=menuObject)</code></pre>
+</div>
+
+<div id='tab-target-176-1' aria-labelledby='tab-link-176-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>Adds another Menu instance to the myMenu instance as shown in img below.</code></pre>
+</div>
+
+        </div>
+</div>
+
+
+<img alt="add_cascade image" class="img-fluid" src="/img/tkinter_images/add_cascade.png"/>
+
+<h3 id='h3-74'><span class='badge bg-warning'> </span> Add Command Function of menu widget</h3>
+
+
+<div id='code+tab-177'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-177-0' aria-controls='tab-target-177-0' href='#tab-target-177-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Code</a>
+
+<a id='tab-link-177-1' aria-controls='tab-target-177-1' href='#tab-target-177-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Desc</a>
+
+            </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-177-0' aria-labelledby='tab-link-177-0' class='tab-pane fade show active' role='tabpanel'>
 <pre><code class='python' langauge='python'># Let us give commands to file menu shown in the image
 menuBar.add_command(label="Close",command=exit)</code></pre>
 </div>
 
-<div id='tab-target-169-1' aria-labelledby='tab-link-169-1' class='tab-pane fade show ' role='tabpanel'>
+<div id='tab-target-177-1' aria-labelledby='tab-link-177-1' class='tab-pane fade show ' role='tabpanel'>
 <pre><code class='python' langauge='python'>This function is used to create options in vertical direction in menu. (In this case) If user clicks the option ,the command 'exit' will be executed.</code></pre>
 </div>
 
@@ -823,41 +855,88 @@ menuBar.add_command(label="Close",command=exit)</code></pre>
 
 <h3 id='h3-76'><span class='badge bg-warning'> </span> Adding a separator between the menu Options</h3>
 
-<pre id='code-137'><code class='python' language='python'>#syntax: 
+<pre id='code-138'><code class='python' language='python'>#syntax: 
 menuInstance.add_separator()
 
 example: file.add_separator()</code></pre>
 
 <img alt="add_separator example" class="img-fluid" src="/img/tkinter_images/add_separator.png"/>
 
-</div><div class='section'><h2 id='h2-36'><span class='badge bg-danger'> </span> Text widget in tkinter</h2>
+</div><div class='section'><h2 id='h2-33'><span class='badge bg-danger'> </span> Listbox in tkinter</h2>
 
-<h3 id='h3-77'><span class='badge bg-warning'> </span> Creating the text widget instance</h3>
+<div class="callout-info">You can give scrollbar to listbox</div>
 
-<pre id='code-138'><code class='python' language='python'>myText = Text(master,**opt)
-# Note: frame of width 100 is smaller than text of width 100. Similar with height</code></pre>
+<pre id='code-139'><code class='python' language='python'>myListbox = Listbox(master,**options)</code></pre>
 
-<h3 id='h3-78'><span class='badge bg-warning'> </span> Insertontime and insertofftime options</h3>
+<img alt="list box example" class="img-fluid" src="/img/tkinter_images/listbox.png"/>
+
+<h3 id='h3-77'><span class='badge bg-warning'> </span> Inserting values in listbox</h3>
+
+<pre id='code-140'><code class='python' language='python'>myListbox.insert(index,value)
+# index = any integer
+# value = text</code></pre>
+
+<img alt="" class="img-fluid" src="/img/tkinter_images/listbox_with_values.png"/>
+
+<h3 id='h3-78'><span class='badge bg-warning'> </span> What will happen if you insert value at the index which already consists a value</h3>
+
+<img alt="" class="img-fluid" src="/img/tkinter_images/lisbox_updated.png"/>
+
+<h3 id='h3-79'><span class='badge bg-warning'> </span> Listbox Methods</h3>
 
 
-<div id='code+tab-170'>
+<div id='code+tab-178'>
         <nav>
             <div class='nav nav-tabs' role='tablist'>
 
-<a id='tab-link-170-0' aria-controls='tab-target-170-0' href='#tab-target-170-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>insertontime</a>
+<a id='tab-link-178-0' aria-controls='tab-target-178-0' href='#tab-target-178-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Getting value at an index</a>
 
-<a id='tab-link-170-1' aria-controls='tab-target-170-1' href='#tab-target-170-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>insertofftime</a>
+<a id='tab-link-178-1' aria-controls='tab-target-178-1' href='#tab-target-178-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Deleting value at an index</a>
 
             </div>
         </nav>
         <div class='tab-content'>
 
-<div id='tab-target-170-0' aria-labelledby='tab-link-170-0' class='tab-pane fade show active' role='tabpanel'>
+<div id='tab-target-178-0' aria-labelledby='tab-link-178-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>myListbox.get(index)</code></pre>
+</div>
+
+<div id='tab-target-178-1' aria-labelledby='tab-link-178-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>myListbox.delete(index)</code></pre>
+</div>
+
+        </div>
+</div>
+
+
+</div><div class='section'><h2 id='h2-34'><span class='badge bg-danger'> </span> Text widget in tkinter</h2>
+
+<h3 id='h3-80'><span class='badge bg-warning'> </span> Creating the text widget instance</h3>
+
+<pre id='code-141'><code class='python' language='python'>myText = Text(master,**options)
+# Note: frame of width 100 is smaller than text of width 100. Similar with height</code></pre>
+
+<h3 id='h3-81'><span class='badge bg-warning'> </span> Insertontime and insertofftime options</h3>
+
+
+<div id='code+tab-179'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-179-0' aria-controls='tab-target-179-0' href='#tab-target-179-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>insertontime</a>
+
+<a id='tab-link-179-1' aria-controls='tab-target-179-1' href='#tab-target-179-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>insertofftime</a>
+
+            </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-179-0' aria-labelledby='tab-link-179-0' class='tab-pane fade show active' role='tabpanel'>
 <pre><code class='python' langauge='python'>#time for which insertion cursor is on the screen 
 myText.config(insertontime=num) # default num=300</code></pre>
 </div>
 
-<div id='tab-target-170-1' aria-labelledby='tab-link-170-1' class='tab-pane fade show ' role='tabpanel'>
+<div id='tab-target-179-1' aria-labelledby='tab-link-179-1' class='tab-pane fade show ' role='tabpanel'>
 <pre><code class='python' langauge='python'>#time for which insertion cursor is not on the screen 
 myText.config(insertofftime=num) # default num=600</code></pre>
 </div>
@@ -868,85 +947,85 @@ myText.config(insertofftime=num) # default num=600</code></pre>
 
 <video class="container-fluid" controls="" muted="" preload="none" src="/vid/tkinter/insertofftime.mp4" title="If the video does not load then please refresh/reload the page"></video>
 
-<h3 id='h3-79'><span class='badge bg-warning'> </span> Indexing in text widget - tkinter</h3>
+<h3 id='h3-82'><span class='badge bg-warning'> </span> Indexing in text widget - tkinter</h3>
 
-<pre id='code-139'><code class='python' language='python'># basic indexing
+<pre id='code-142'><code class='python' language='python'># basic indexing
 index: '{lineNumber}.{columnNumber}'</code></pre>
 
-<pre id='code-140'><code class='python' language='python'># End index of a line
+<pre id='code-143'><code class='python' language='python'># End index of a line
 index:'{lineNumber}.end'</code></pre>
 
-<pre id='code-141'><code class='python' language='python'># Index of insertion cursor
+<pre id='code-144'><code class='python' language='python'># Index of insertion cursor
 index: 'insert'</code></pre>
 
-<pre id='code-142'><code class='python' language='python'># Index of selected text
+<pre id='code-145'><code class='python' language='python'># Index of selected text
 index: 'sel.first' # for first index
 index: 'sel.last' # for last index</code></pre>
 
 <img alt="SEl_FIRST and SEL_LAST in tkinter" class="img-fluid" src="/img/tkinter_images/sel_first_last_index.png" title="SEl_FIRST and SEL_LAST in tkinter"/>
 
-<pre id='code-143'><code class='python' language='python'># Index of line start and line end
+<pre id='code-146'><code class='python' language='python'># Index of line start and line end
 index: '{index} linestart'
 index: '{index} lineend'</code></pre>
 
-<pre id='code-144'><code class='python' language='python'># Index of word start and word end
+<pre id='code-147'><code class='python' language='python'># Index of word start and word end
 index: '{index} wordstart'
 index: '{index} wordend'</code></pre>
 
-<pre id='code-145'><code class='python' language='python'># Adding and subtracting to index
+<pre id='code-148'><code class='python' language='python'># Adding and subtracting to index
 index: '{index} +10c' # adds 10 characters to index .
 index: '{index} +2l' # adds 2 lines to index .
 # you can also subtract and use both of them together if required.</code></pre>
 
-<pre id='code-146'><code class='python' language='python'># index method
+<pre id='code-149'><code class='python' language='python'># index method
 # for ex: if you want the index of insertion cursor in 'line.col' format
 insertIndex = myText.index('insert')</code></pre>
 
-<pre id='code-147'><code class='python' language='python'># for comparing two indices
+<pre id='code-150'><code class='python' language='python'># for comparing two indices
 myText.compare(index1,operator,index2)</code></pre>
 
-<h3 id='h3-80'><span class='badge bg-warning'> </span> Common Methods</h3>
+<h3 id='h3-83'><span class='badge bg-warning'> </span> Common Methods</h3>
 
 
-<div id='code+tab-171'>
+<div id='code+tab-180'>
         <nav>
             <div class='nav nav-tabs' role='tablist'>
 
-<a id='tab-link-171-0' aria-controls='tab-target-171-0' href='#tab-target-171-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>get</a>
+<a id='tab-link-180-0' aria-controls='tab-target-180-0' href='#tab-target-180-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>get</a>
 
-<a id='tab-link-171-1' aria-controls='tab-target-171-1' href='#tab-target-171-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>insert</a>
+<a id='tab-link-180-1' aria-controls='tab-target-180-1' href='#tab-target-180-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>insert</a>
 
-<a id='tab-link-171-2' aria-controls='tab-target-171-2' href='#tab-target-171-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>search</a>
+<a id='tab-link-180-2' aria-controls='tab-target-180-2' href='#tab-target-180-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>search</a>
 
-<a id='tab-link-171-3' aria-controls='tab-target-171-3' href='#tab-target-171-3' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>replace</a>
+<a id='tab-link-180-3' aria-controls='tab-target-180-3' href='#tab-target-180-3' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>replace</a>
 
-<a id='tab-link-171-4' aria-controls='tab-target-171-4' href='#tab-target-171-4' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>delete</a>
+<a id='tab-link-180-4' aria-controls='tab-target-180-4' href='#tab-target-180-4' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>delete</a>
 
             </div>
         </nav>
         <div class='tab-content'>
 
-<div id='tab-target-171-0' aria-labelledby='tab-link-171-0' class='tab-pane fade show active' role='tabpanel'>
+<div id='tab-target-180-0' aria-labelledby='tab-link-180-0' class='tab-pane fade show active' role='tabpanel'>
 <pre><code class='python' langauge='python'>myText.get(index1,index2) # Returns text from index1 to index2</code></pre>
 </div>
 
-<div id='tab-target-171-1' aria-labelledby='tab-link-171-1' class='tab-pane fade show ' role='tabpanel'>
+<div id='tab-target-180-1' aria-labelledby='tab-link-180-1' class='tab-pane fade show ' role='tabpanel'>
 <pre><code class='python' langauge='python'>myText.insert(index,text,*args) # inserts text on index
 # In *args you can give tag names and tkinter will put those tags on the inserted text.</code></pre>
 </div>
 
-<div id='tab-target-171-2' aria-labelledby='tab-link-171-2' class='tab-pane fade show ' role='tabpanel'>
+<div id='tab-target-180-2' aria-labelledby='tab-link-180-2' class='tab-pane fade show ' role='tabpanel'>
 <pre><code class='python' langauge='python'>myText.search('string/pattern',startIndex,**kwargs)
 # if the string/pattern is found then returns the index of the first character of the string/pattern</code></pre>
 </div>
 
-<div id='tab-target-171-3' aria-labelledby='tab-link-171-3' class='tab-pane fade show ' role='tabpanel'>
+<div id='tab-target-180-3' aria-labelledby='tab-link-180-3' class='tab-pane fade show ' role='tabpanel'>
 <pre><code class='python' langauge='python'>myText.replace(startIndex,endIndex,string,*args)
 # replaces the text between startIndex and endIndex with string.
 # In *args you can give tag names and tkinter will put those tags on the inserted text.</code></pre>
 </div>
 
-<div id='tab-target-171-4' aria-labelledby='tab-link-171-4' class='tab-pane fade show ' role='tabpanel'>
+<div id='tab-target-180-4' aria-labelledby='tab-link-180-4' class='tab-pane fade show ' role='tabpanel'>
 <pre><code class='python' langauge='python'>myText.delete(startIndex,endIndex) # default endIndex=None
 # Delete the characters between startIndex and endIndex (not included).</code></pre>
 </div>
@@ -955,52 +1034,52 @@ myText.compare(index1,operator,index2)</code></pre>
 </div>
 
 
-<h3 id='h3-81'><span class='badge bg-warning'> </span> Tags in tkinter</h3>
+<h3 id='h3-84'><span class='badge bg-warning'> </span> Tags in tkinter</h3>
 
-<div id='normal-18' class='normal'>What are tags?
+<div id='normal-14' class='normal'>What are tags?
 Tags are like classes in tkinter.
 To changes font,foreground color,background color 
 of a certain portion of text , you can do that 
 with tags.</div>
 
-<div id='normal-19' class='normal'>You can set a tag between two indices and then config tag to changes **kwargs of the region comprising that tag.
+<div id='normal-15' class='normal'>You can set a tag between two indices and then config tag to changes **kwargs of the region comprising that tag.
 # There can be multiple tags as well</div>
 
 
-<div id='code+tab-172'>
+<div id='code+tab-181'>
         <nav>
             <div class='nav nav-tabs' role='tablist'>
 
-<a id='tab-link-172-0' aria-controls='tab-target-172-0' href='#tab-target-172-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Adding a tag</a>
+<a id='tab-link-181-0' aria-controls='tab-target-181-0' href='#tab-target-181-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Adding a tag</a>
 
-<a id='tab-link-172-1' aria-controls='tab-target-172-1' href='#tab-target-172-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Configuring a tag</a>
+<a id='tab-link-181-1' aria-controls='tab-target-181-1' href='#tab-target-181-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Configuring a tag</a>
 
-<a id='tab-link-172-2' aria-controls='tab-target-172-2' href='#tab-target-172-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Removing A Tag</a>
+<a id='tab-link-181-2' aria-controls='tab-target-181-2' href='#tab-target-181-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Removing A Tag</a>
 
-<a id='tab-link-172-3' aria-controls='tab-target-172-3' href='#tab-target-172-3' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Deleting a tag</a>
+<a id='tab-link-181-3' aria-controls='tab-target-181-3' href='#tab-target-181-3' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Deleting a tag</a>
 
             </div>
         </nav>
         <div class='tab-content'>
 
-<div id='tab-target-172-0' aria-labelledby='tab-link-172-0' class='tab-pane fade show active' role='tabpanel'>
+<div id='tab-target-181-0' aria-labelledby='tab-link-181-0' class='tab-pane fade show active' role='tabpanel'>
 <pre><code class='python' langauge='python'>myText.tag_add(tagName,startIndex,endIndex) 
 # tagName can be user defined
 # tkinter defined tag: 'sel'</code></pre>
 </div>
 
-<div id='tab-target-172-1' aria-labelledby='tab-link-172-1' class='tab-pane fade show ' role='tabpanel'>
+<div id='tab-target-181-1' aria-labelledby='tab-link-181-1' class='tab-pane fade show ' role='tabpanel'>
 <pre><code class='python' langauge='python'>myText.tag_config(tagName,**options) 
 # **opt includes basic text widget options like 
 font,background,foreground,selectbackground ... etc</code></pre>
 </div>
 
-<div id='tab-target-172-2' aria-labelledby='tab-link-172-2' class='tab-pane fade show ' role='tabpanel'>
+<div id='tab-target-181-2' aria-labelledby='tab-link-181-2' class='tab-pane fade show ' role='tabpanel'>
 <pre><code class='python' langauge='python'>myText.tag_remove(tagName,startIndex,endIndex) # default endIndex=None
 # Remove tag "tagName" from all characters between startIndex and endIndex.</code></pre>
 </div>
 
-<div id='tab-target-172-3' aria-labelledby='tab-link-172-3' class='tab-pane fade show ' role='tabpanel'>
+<div id='tab-target-181-3' aria-labelledby='tab-link-181-3' class='tab-pane fade show ' role='tabpanel'>
 <pre><code class='python' langauge='python'>myText.tag_delete(*tagNames)
 # deletes all tagNames 
 # all the text portions comprising that tag are made normal</code></pre>
@@ -1010,27 +1089,27 @@ font,background,foreground,selectbackground ... etc</code></pre>
 </div>
 
 
-<h3 id='h3-82'><span class='badge bg-warning'> </span> Some more tag methods</h3>
+<h3 id='h3-85'><span class='badge bg-warning'> </span> Some more tag methods</h3>
 
 
-<div id='code+tab-173'>
+<div id='code+tab-182'>
         <nav>
             <div class='nav nav-tabs' role='tablist'>
 
-<a id='tab-link-173-0' aria-controls='tab-target-173-0' href='#tab-target-173-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>getting all tag names</a>
+<a id='tab-link-182-0' aria-controls='tab-target-182-0' href='#tab-target-182-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>getting all tag names</a>
 
-<a id='tab-link-173-1' aria-controls='tab-target-173-1' href='#tab-target-173-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>getting all tag indices</a>
+<a id='tab-link-182-1' aria-controls='tab-target-182-1' href='#tab-target-182-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>getting all tag indices</a>
 
             </div>
         </nav>
         <div class='tab-content'>
 
-<div id='tab-target-173-0' aria-labelledby='tab-link-173-0' class='tab-pane fade show active' role='tabpanel'>
+<div id='tab-target-182-0' aria-labelledby='tab-link-182-0' class='tab-pane fade show active' role='tabpanel'>
 <pre><code class='python' langauge='python'>myText.tag_names(index) # default index=None
 # Return a list of all tag names at that index.</code></pre>
 </div>
 
-<div id='tab-target-173-1' aria-labelledby='tab-link-173-1' class='tab-pane fade show ' role='tabpanel'>
+<div id='tab-target-182-1' aria-labelledby='tab-link-182-1' class='tab-pane fade show ' role='tabpanel'>
 <pre><code class='python' langauge='python'>myText.tag_ranges(tagName)
 # Returns a list of the following form
 list = [start-1 , end-1 , start-2 , end-2 .... start-N,end-N]
@@ -1041,22 +1120,22 @@ this means that tag is applied between (start-1,end-1) , (start-2,end-2) , .... 
 </div>
 
 
-<h3 id='h3-83'><span class='badge bg-warning'> </span> Marks in text widget</h3>
+<h3 id='h3-86'><span class='badge bg-warning'> </span> Marks in text widget</h3>
 
 
-<div id='code+tab-174'>
+<div id='code+tab-183'>
         <nav>
             <div class='nav nav-tabs' role='tablist'>
 
-<a id='tab-link-174-0' aria-controls='tab-target-174-0' href='#tab-target-174-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Desc</a>
+<a id='tab-link-183-0' aria-controls='tab-target-183-0' href='#tab-target-183-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Desc</a>
 
-<a id='tab-link-174-1' aria-controls='tab-target-174-1' href='#tab-target-174-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Example</a>
+<a id='tab-link-183-1' aria-controls='tab-target-183-1' href='#tab-target-183-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Example</a>
 
             </div>
         </nav>
         <div class='tab-content'>
 
-<div id='tab-target-174-0' aria-labelledby='tab-link-174-0' class='tab-pane fade show active' role='tabpanel'>
+<div id='tab-target-183-0' aria-labelledby='tab-link-183-0' class='tab-pane fade show active' role='tabpanel'>
 <pre><code class='python' langauge='python'># What are marks?
 marks are like tag with startIndex=endIndex.
 They are used to mark a specific index in text widget.
@@ -1064,7 +1143,7 @@ marks are user defined.
 # There can be only one mark of one name but you can always change its position</code></pre>
 </div>
 
-<div id='tab-target-174-1' aria-labelledby='tab-link-174-1' class='tab-pane fade show ' role='tabpanel'>
+<div id='tab-target-183-1' aria-labelledby='tab-link-183-1' class='tab-pane fade show ' role='tabpanel'>
 <pre><code class='python' langauge='python'>"insert" is also a mark made by tkinter
 "insert" is a mark which represents where the character will be placed in text widget when a user presses a key.</code></pre>
 </div>
@@ -1074,49 +1153,49 @@ marks are user defined.
 
 
 
-<div id='code+tab-175'>
+<div id='code+tab-184'>
         <nav>
             <div class='nav nav-tabs' role='tablist'>
 
-<a id='tab-link-175-0' aria-controls='tab-target-175-0' href='#tab-target-175-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Setting a mark</a>
+<a id='tab-link-184-0' aria-controls='tab-target-184-0' href='#tab-target-184-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Setting a mark</a>
 
-<a id='tab-link-175-1' aria-controls='tab-target-175-1' href='#tab-target-175-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Get mark index</a>
+<a id='tab-link-184-1' aria-controls='tab-target-184-1' href='#tab-target-184-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Get mark index</a>
 
-<a id='tab-link-175-2' aria-controls='tab-target-175-2' href='#tab-target-175-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Get all mark names</a>
+<a id='tab-link-184-2' aria-controls='tab-target-184-2' href='#tab-target-184-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Get all mark names</a>
 
-<a id='tab-link-175-3' aria-controls='tab-target-175-3' href='#tab-target-175-3' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Get Next Mark</a>
+<a id='tab-link-184-3' aria-controls='tab-target-184-3' href='#tab-target-184-3' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Get Next Mark</a>
 
-<a id='tab-link-175-4' aria-controls='tab-target-175-4' href='#tab-target-175-4' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Deleting all marks</a>
+<a id='tab-link-184-4' aria-controls='tab-target-184-4' href='#tab-target-184-4' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Deleting all marks</a>
 
             </div>
         </nav>
         <div class='tab-content'>
 
-<div id='tab-target-175-0' aria-labelledby='tab-link-175-0' class='tab-pane fade show active' role='tabpanel'>
+<div id='tab-target-184-0' aria-labelledby='tab-link-184-0' class='tab-pane fade show active' role='tabpanel'>
 <pre><code class='python' langauge='python'>myText.mark_set(markName,indexToPlace)</code></pre>
 </div>
 
-<div id='tab-target-175-1' aria-labelledby='tab-link-175-1' class='tab-pane fade show ' role='tabpanel'>
+<div id='tab-target-184-1' aria-labelledby='tab-link-184-1' class='tab-pane fade show ' role='tabpanel'>
 <pre><code class='python' langauge='python'>myText.index(markName) # returns index of markName</code></pre>
 </div>
 
-<div id='tab-target-175-2' aria-labelledby='tab-link-175-2' class='tab-pane fade show ' role='tabpanel'>
+<div id='tab-target-184-2' aria-labelledby='tab-link-184-2' class='tab-pane fade show ' role='tabpanel'>
 <pre><code class='python' langauge='python'>myText.mark_names()
 # return all mark names</code></pre>
 </div>
 
-<div id='tab-target-175-3' aria-labelledby='tab-link-175-3' class='tab-pane fade show ' role='tabpanel'>
+<div id='tab-target-184-3' aria-labelledby='tab-link-184-3' class='tab-pane fade show ' role='tabpanel'>
 <pre><code class='python' langauge='python'>myText.mark_next(index) 
 # returns first mark present after given index</code></pre>
 </div>
 
-<div id='tab-target-175-4' aria-labelledby='tab-link-175-4' class='tab-pane fade show ' role='tabpanel'>
+<div id='tab-target-184-4' aria-labelledby='tab-link-184-4' class='tab-pane fade show ' role='tabpanel'>
 <pre><code class='python' langauge='python'>myText.mark_previous(index) 
 # returns first mark present before given indexmyText.mark_unset(*markNames)
 # deletes all mark names</code></pre>
 </div>
 
-<div id='tab-target-175-5' aria-labelledby='tab-link-175-5' class='tab-pane fade show ' role='tabpanel'>
+<div id='tab-target-184-5' aria-labelledby='tab-link-184-5' class='tab-pane fade show ' role='tabpanel'>
 <pre><code class='python' langauge='python'></code></pre>
 </div>
 
@@ -1124,97 +1203,133 @@ marks are user defined.
 </div>
 
 
-<h3 id='h3-84'><span class='badge bg-warning'> </span> Setting up gravity of mark</h3>
+<h3 id='h3-87'><span class='badge bg-warning'> </span> Setting up gravity of mark</h3>
 
-<pre id='code-148'><code class='python' language='python'>myText.mark_gravity(markName,direction)
+<pre id='code-151'><code class='python' language='python'>myText.mark_gravity(markName,direction)
 # direction='left' or 'right'
 # See the below video to understand what happens with this method</code></pre>
 
-<h3 id='h3-85'><span class='badge bg-warning'> </span> A video showing mark_gravity effect</h3>
+<h3 id='h3-88'><span class='badge bg-warning'> </span> A video showing mark_gravity effect</h3>
 
 <video class="container-fluid" controls="" muted="" preload="none" src="/vid/tkinter/mark_in_tkinter.mp4" title="If the video does not load then please refresh/reload the page"></video>
 
-<h3 id='h3-86'><span class='badge bg-warning'> </span> Great Resource for text widget</h3>
+<h3 id='h3-89'><span class='badge bg-warning'> </span> Great Resource for text widget</h3>
 
-<div id='normal-20' class='normal'><a href="https://www.geeksforgeeks.org/python-tkinter-text-widget/" target="_blank">Geeks for geeks website</a></div>
+<div id='normal-16' class='normal'><a href="https://www.geeksforgeeks.org/python-tkinter-text-widget/" target="_blank">Geeks for geeks website</a></div>
 
-</div><div class='section'><h2 id='h2-37'><span class='badge bg-danger'> </span> Scrollbar widget in tkinter</h2>
+</div><div class='section'><h2 id='h2-35'><span class='badge bg-danger'> </span> Scrollbar widget in tkinter</h2>
 
-<div id='normal-21' class='normal'>To get scrollbar widget templates (free) click
+<div id='normal-17' class='normal'>To get scrollbar widget templates (free) click
 <a href="/src/tkinter-widgets.html">This Link</a></div>
 
-<pre id='code-149'><code class='python' language='python'>myScroll = Scrollbar(master,**kwargs)</code></pre>
+<pre id='code-152'><code class='python' language='python'>myScroll = Scrollbar(master,**kwargs)</code></pre>
 
-<h3 id='h3-87'><span class='badge bg-warning'> </span> Required **kwargs</h3>
+<h3 id='h3-90'><span class='badge bg-warning'> </span> Required **kwargs</h3>
 
-<pre id='code-150'><code class='python' language='python'>command parameter must be set.
+<pre id='code-153'><code class='python' language='python'>command parameter must be set.
 #for ex:
 widget.yview # just replace the widget by the widget instance</code></pre>
 
-<h3 id='h3-88'><span class='badge bg-warning'> </span> Settings Required for widget instance</h3>
+<h3 id='h3-91'><span class='badge bg-warning'> </span> Settings Required for widget instance</h3>
 
-<pre id='code-151'><code class='python' language='python'>#You also need to define yscrollcommand of the widget
+<pre id='code-154'><code class='python' language='python'>#You also need to define yscrollcommand of the widget
 widget.config(yscrollcommand=myScroll.set)</code></pre>
 
+</div><div class='section'><h2 id='h2-36'><span class='badge bg-danger'> </span> Text Widget With Built In Scrollbar</h2>
 
-</div><div class='section'><h2 id='h2-38'><span class='badge bg-danger'> </span> Text Widget With Built In Scrollbar</h2>
+<h3 id='h3-92'><span class='badge bg-warning'> </span> Importing the widget</h3>
 
-<h3 id='h3-89'><span class='badge bg-warning'> </span> Importing the widget</h3>
+<pre id='code-155'><code class='python' language='python'>from tkinter import scrolledtext as s</code></pre>
 
-<pre id='code-152'><code class='python' language='python'>from tkinter import scrolledtext as s
-</code></pre>
-<h3 id='h3-90'><span class='badge bg-warning'> </span> Creating the widget</h3>
+<h3 id='h3-93'><span class='badge bg-warning'> </span> Creating the widget</h3>
 
-<pre id='code-153'><code class='python' language='python'>myScrolledText = s.ScrolledText(master,**options)
+<pre id='code-156'><code class='python' language='python'>myScrolledText = s.ScrolledText(master,**options)
 # creates a widget text widget with scrollbar which is built in.
 **options are basic text widgets options like : font,width,height,background etc.</code></pre>
 
-</div><div class='section'><h2 id='h2-39'><span class='badge bg-danger'> </span> Message box in tkinter</h2>
+</div><div class='section'><h2 id='h2-37'><span class='badge bg-danger'> </span> Message box in tkinter</h2>
 
-<h3 id='h3-91'><span class='badge bg-warning'> </span> Importing messagebox from tkinter to use it
-  </h3>
-<pre id='code-154'><code class='python' language='python'>from tkinter import messagebox
-</code></pre>
-<h3 id='h3-92'><span class='badge bg-warning'> </span> Various methods:</h3>
+<h3 id='h3-94'><span class='badge bg-warning'> </span> Importing messagebox from tkinter to use it</h3>
 
-<div id='normal-22' class='normal'>showinfo , showwarning , showerror , askquestion , askokcancel , askyesno
-</div>
-<pre id='code-155'><code class='python' language='python'>messagebox.showinfo("title of window","message to show")
-# this function simply pops ups a dialog box which shows a message to user (thats it)
-</code></pre>
-<pre id='code-156'><code class='python' language='python'>messagebox.showwarning("title of window","message to show") </code></pre>
+<pre id='code-157'><code class='python' language='python'>from tkinter import messagebox</code></pre>
 
-<pre id='code-157'><code class='python' language='python'>messagebox.showerror("title of window","message to show") </code></pre>
+<h3 id='h3-95'><span class='badge bg-warning'> </span> Various methods:</h3>
 
-<div id='normal-23' class='normal'>Rest are same . The only differnce is in rest functions yes and no (similar types) buttons will appear and some will return True,False,Yes etc.</div>
+<div id='normal-18' class='normal'>showinfo , showwarning , showerror , askquestion , askokcancel , askyesno</div>
 
-</div><div class='section'><h2 id='h2-40'><span class='badge bg-danger'> </span> Toplevel Widget In tkinter</h2>
+<pre id='code-158'><code class='python' language='python'>messagebox.showinfo("title of window","message to show")
+# this function simply pops ups a dialog box which shows a message to user (thats it)</code></pre>
 
-<pre id='code-158'><code class='python' language='python'>myTop = Toplevel()
+<pre id='code-159'><code class='python' language='python'>messagebox.showwarning("title of window","message to show")</code></pre>
+
+<pre id='code-160'><code class='python' language='python'>messagebox.showerror("title of window","message to show")</code></pre>
+
+<div id='normal-19' class='normal'>Rest are same . The only differnce is in rest functions yes and no (similar types) buttons will appear and some will return True,False,Yes etc.</div>
+
+</div><div class='section'><h2 id='h2-38'><span class='badge bg-danger'> </span> Toplevel Widget In tkinter</h2>
+
+<pre id='code-161'><code class='python' language='python'>myTop = Toplevel()
 # creates another window . you can use that window to create custom dialog boxes and any other thing.
 # This works same as any normal Tk class instance would.</code></pre>
 
-</div><div class='section'><h2 id='h2-41'><span class='badge bg-danger'> </span> Adding a photo/image</h2>
+</div><div class='section'><h2 id='h2-39'><span class='badge bg-danger'> </span> Progressbar in tkinter</h2>
 
-<h3 id='h3-93'><span class='badge bg-warning'> </span> Loading the image</h3>
+<div class="callout-info">Importing ttk for the progressbar widget is necessary</div>
 
-<pre id='code-159'><code class='python' language='python'>myImage = PhotoImage(file="filepath") 
+<pre id='code-162'><code class='python' language='python'>myProgressbar = ttk.Progressbar(master,**options)</code></pre>
+
+<pre id='code-163'><code class='python' language='python'>**options include: 
+	orient : "horizontal" or "vertical"
+	length : what is the length (an integer value)
+	mode   : "determinate"  or "indeterminate"
+			 # Just gives different forms of progressbar
+	value  : value is an integer less than length
+			 which determines how 
+			 much the progressbar is filled.
+and many more</code></pre>
+
+<h3 id='h3-96'><span class='badge bg-warning'> </span> Example</h3>
+
+<pre id='code-164'><code class='python' language='python'>myProgessbar = ttk.Progressbar(master
+	,length=100,mode="determinate",orient="horizontal")
+myProgessbar.pack()
+# The image of the following code is below:</code></pre>
+
+<img alt="progressbar" class="img-fluid" src="/img/tkinter_images/progessbar.png"/>
+
+<h3 id='h3-97'><span class='badge bg-warning'> </span> Updating the progessbar</h3>
+
+<div id='normal-20' class='normal'>Now to move the progressbar you need to change the value of the progressbar by the following code.</div>
+
+<pre id='code-165'><code class='python' language='python'>myProgressbar["value"] = someIntegerValue 
+# someIntegerValue&lt;=length</code></pre>
+
+<pre id='code-166'><code class='python' language='python'>#For example
+myProgressbar["value"] = 50</code></pre>
+
+<img alt="progessbar_with_value" class="img-fluid" src="/img/tkinter_images/progessbar_with_value.png"/>
+
+</div><div class='section'><h2 id='h2-40'><span class='badge bg-danger'> </span> Adding a photo/image</h2>
+
+<h3 id='h3-98'><span class='badge bg-warning'> </span> Loading the image</h3>
+
+<pre id='code-167'><code class='python' language='python'>myImage = PhotoImage(file="filepath") 
 # Note: You need to check for the type of image
 # Png images are allowed and rest you need to check.
 # There are more ways to use different kind of images.
-# One of which can be by using pillow module
-</code></pre>
-<div id='normal-24' class='normal'>Now you can use the image in label,button,and other widgets.
-</div>
-<pre id='code-160'><code class='python' language='python'># For example
+# One of which can be by using pillow module</code></pre>
+
+<div id='normal-21' class='normal'>Now you can use the image in label,button,and other widgets.</div>
+
+<pre id='code-168'><code class='python' language='python'># For example
 Label(master,image=myImage).pack()
 Button(master,image=myImage).pack()</code></pre>
 
-<h3 id='h3-94'><span class='badge bg-warning'> </span> Use of compound to display both text and image</h3>
+<h3 id='h3-99'><span class='badge bg-warning'> </span> Use of compound to display both text and image</h3>
 
-<div id='normal-25' class='normal'>You can also display text and compound in widgets to display both text and image.
-</div>
-<div id='normal-26' class='normal'>compound can be bottom, center, left, none, right, or top
+<div id='normal-22' class='normal'>You can also display text and compound in widgets to display both text and image.</div>
+
+<div id='normal-23' class='normal'>compound can be bottom, center, left, none, right, or top
 Just specify the compound="any of the above options" in the **options of the widget.
 For example: setting compound='left'
 will place the image in left.</div></div>

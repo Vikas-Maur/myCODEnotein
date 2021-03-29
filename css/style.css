@@ -67,7 +67,7 @@ pre,.normal{
     background-color: black;
     font-weight: bolder;
     font-family: consolas !important ;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding: 8px;
     border: 0px !important;
     border-radius: 8px !important;
@@ -92,7 +92,25 @@ pre,.normal{
     border-left-width: .25rem;
     border-radius: .25rem;
     border-left-color: var(--info);
+    cursor: pointer;
+    position: relative;
+    z-index: 1;  
 }
+
+.callout-info::after{
+    content: '';
+    position: absolute;
+    background-color: var(--info);
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 400ms ease-in-out;
+}
+
 .callout-warning{
     font-size: 1.2rem;
     font-weight: bolder;
@@ -103,7 +121,24 @@ pre,.normal{
     border-left-width: .25rem;
     border-radius: .25rem;
     border-left-color: var(--warning);
+    cursor: pointer;
+    position: relative;
+    z-index: 1;  
 }
+.callout-warning::after{
+    content: '';
+    position: absolute;
+    background-color: var(--warning);
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 400ms ease-in-out;
+}
+
 .callout-danger{    
     font-size: 1.2rem;
     font-weight: bolder;
@@ -114,8 +149,24 @@ pre,.normal{
     border-left-width: .25rem;
     border-radius: .25rem;
     border-left-color: var(--danger);
+    cursor: pointer;
+    position: relative;
+    z-index: 1;  
 }
-   
+.callout-danger::after{
+    content: '';
+    position: absolute;
+    background-color: var(--danger);
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 400ms ease-in-out;
+}
+
 pre>code>a
 , .normal>a{
     color: var(--primary) !important;
@@ -127,3 +178,33 @@ pre>code>a:hover
     text-decoration: none !important;
 }
 
+#teleporter>a:hover{
+    background-color: var(--danger);
+    color: white;
+}
+
+#teleporter>nav>a:hover{
+    background-color: var(--warning);
+    color: white;
+}
+
+.callout-info:hover{
+    color: white;
+}
+.callout-info:hover::after{
+    transform: scaleX(1);
+}
+
+.callout-warning:hover{
+    color: white;
+}
+.callout-warning:hover::after{
+    transform: scaleX(1);
+}
+
+.callout-danger:hover{
+    color: white;
+}
+.callout-danger:hover::after{
+    transform: scaleX(1);
+}

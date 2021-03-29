@@ -1,0 +1,309 @@
+<!-- ! NOTE THAT IF THE TEMPLATE INCLUDE '{}' THEN   -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/stackoverflow-dark.min.css">
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+    <title>Django --> by myCODEnotein</title>
+    <meta name="description" content="Full Django Notes. All the information you need to start creating a website with django is provided here - by myCODEnotein">
+  </head>
+  <body data-bs-spy="scroll" data-bs-target="#teleporter" data-bs-offset="0" tabindex="0">
+
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+      <div class="container-fluid">
+        <a class="navbar-brand mr-5 fw-bold fs-3" href="#"><span class='text-warning'>my</span><span class='text-primary'>CODE</span><span class='text-danger'>notein</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+            <li class="nav-item mr-3">
+              <a class="nav-link" aria-current="page" href="#">Blogs |</a>
+            </li>
+            <li class="nav-item mr-3">
+              <a class="nav-link" href="/src/sql.html">SQL</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Python
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="/src/django.html">Django</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/src/pygame.html">Pygame</a></li>
+                <li><a class="dropdown-item" href="/src/python.html">Python</a></li>
+                <li><a class="dropdown-item" href="/src/python-modules.html">Python Modules</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/src/tkinter.html">tkinter</a></li>
+                <li><a class="dropdown-item" href="/src/tkinter-widgets.html">tkinter-widgets</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="d-flex mr-5">
+            <a class="btn btn-outline-success mr-5" href="/">Home</a>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-sm-3">
+          <div id="teleporter-holder" class="d-none d-sm-none d-md-none d-lg-block">
+            <nav id="teleporter" class="nav nav-pills flex-column bg-light p-5 pt-0 text-wrap">
+                <a href="#" class="navbar-brand text-danger fw-bolder">Teleporter</a>
+                
+<a class='nav-link' href='#h2-6'>Virtual environment (for windows) (optional)</a>
+
+<nav class='nav nav-pills flex-column ml-3 my-1'>
+
+<a class='nav-link' href='#h3-10'>Creating a virtual environment</a>
+
+<a class='nav-link' href='#h3-11'>Activating a virtual environment</a>
+
+<a class='nav-link' href='#h3-12'>Deactivating the virtual environment</a>
+
+</nav>
+
+<a class='nav-link' href='#h2-7'>Installing django</a>
+
+<nav class='nav nav-pills flex-column ml-3 my-1'>
+
+<a class='nav-link' href='#h3-13'>Pip freeze</a>
+
+</nav>
+
+<a class='nav-link' href='#h2-8'>Creating the project</a>
+
+<nav class='nav nav-pills flex-column ml-3 my-1'>
+
+<a class='nav-link' href='#h3-14'>To run the server:</a>
+
+</nav>
+
+<a class='nav-link' href='#h2-9'>Creating an app</a>
+
+<nav class='nav nav-pills flex-column ml-3 my-1'>
+
+</nav>
+
+            </nav>
+          </div>
+        </div>
+
+        <div id="content" class="col-sm-7 p-3">
+<h1 id='h1-5'><span class='badge bg-primary'> </span> Django --> by myCODEnotein <span class='badge bg-primary'> </span></h1>
+
+<div class='section'><h2 id='h2-6'><span class='badge bg-danger'> </span> Virtual environment (for windows) (optional)</h2>
+
+<h3 id='h3-10'><span class='badge bg-warning'> </span> Creating a virtual environment</h3>
+
+<div id='normal-0' class='normal'>Open up a terminal window and type following :</div>
+
+<pre id='code-15'><code class='python' language='python'>python -m venv name_of_environment
+# Example:
+python -m venv virt</code></pre>
+
+<img alt="creating a virtual environment" class="img-fluid" src="/img/django/creating_virtual_env.png"/>
+
+<h3 id='h3-11'><span class='badge bg-warning'> </span> Activating a virtual environment</h3>
+
+<pre id='code-16'><code class='python' language='python'># In git bash
+source name_of_environment/Scripts/activate
+# In this example:
+source virt/Scripts/activate</code></pre>
+
+<img alt="activating virtual environment in git bash" class="img-fluid" src="/img/django/activating_virt_bash.png"/>
+
+<pre id='code-17'><code class='python' language='python'># In cmd
+name_of_environment\Scripts\activate
+# In this example:
+virt\Scripts\activate</code></pre>
+
+<img alt="activating virtual environment in cmd" class="img-fluid" src="/img/django/activating_virt_cmd.png"/>
+
+<h3 id='h3-12'><span class='badge bg-warning'> </span> Deactivating the virtual environment</h3>
+
+<pre id='code-18'><code class='python' language='python'>deactivate</code></pre>
+
+<div id='normal-1' class='normal'>Note: that now everything you will do will be done after virtual environment is turned on.</div>
+
+</div><div class='section'><h2 id='h2-7'><span class='badge bg-danger'> </span> Installing django</h2>
+
+<pre id='code-19'><code class='python' language='python'>pip install django</code></pre>
+
+<div id='normal-2' class='normal'>Note: If you turned on virtual environment , then django will be installed in that virtual environment and not on the full system.
+You need to pip install django whenever you start a project in a new virtual environment.</div>
+
+<img alt="installing django" class="img-fluid" src="/img/django/installing_django.png"/>
+
+<h3 id='h3-13'><span class='badge bg-warning'> </span> Pip freeze</h3>
+
+<pre id='code-20'><code class='python' language='python'># To see all the modules installed within your virtual environment you can do:
+pip freeze</code></pre>
+
+<img alt="pip freeze" class="img-fluid" src="/img/django/pip_freeze.png"/>
+
+<pre id='code-21'><code class='python' language='python'># To get all the modules installed in virtual environment and save them in an text file you can do following:
+pip freeze &gt; requirements.txt</code></pre>
+
+<img alt="pip freeze &gt; requirements.txt" class="img-fluid" src="/img/django/pip_freeze_output.png"/>
+
+<div id='normal-3' class='normal'><div class="callout-info">To install the modules in requirements.txt you can run: <br/>pip install -r requirements.txt </div></div>
+
+</div><div class='section'><h2 id='h2-8'><span class='badge bg-danger'> </span> Creating the project</h2>
+
+<pre id='code-22'><code class='python' language='python'># Run the following commands in a terminal window.
+# If you are using virtual environment make sure 
+# to activate it.
+
+django-admin.py startproject project_name</code></pre>
+
+<pre id='code-23'><code class='python' language='python'># If that does not works try running:
+django-admin startproject project_name</code></pre>
+
+<img alt="startproject example" class="img-fluid" src="/img/django/startproject.png"/>
+
+<pre id='code-24'><code class='python' language='python'>#Now django would have created a directory structure as follows:
+project_name
+	project_name
+		more files here
+
+	manage.py</code></pre>
+
+<img alt="" class="img-fluid" src="/img/django/directory_structure.png"/>
+
+<pre id='code-25'><code class='python' language='python'># Now move to the main parent folder (in terminal) by the command:
+cd project_name/</code></pre>
+
+<pre id='code-26'><code class='python' language='python'># Now you can see two objects in your current directory :
+	project_name
+		more-files-here
+	manage.py</code></pre>
+
+<img alt="cd project_name example" class="img-fluid" src="/img/django/cd_myBlog.png"/>
+
+<h3 id='h3-14'><span class='badge bg-warning'> </span> To run the server:</h3>
+
+<pre id='code-27'><code class='python' language='python'>python manage.py runserver
+# To stop the server press: ctrl+c in terminal
+"""
+To see the website you can follow the given link 
+(or) enter in browser: localhost:8000
+"""</code></pre>
+
+<img alt="python manage.py runserver : example" class="img-fluid" src="/img/django/runserver.png"/>
+
+<img alt="first look of website" class="img-fluid" src="/img/django/first_load.png"/>
+
+</div><div class='section'><h2 id='h2-9'><span class='badge bg-danger'> </span> Creating an app</h2>
+
+<pre id='code-28'><code class='python' language='python'>python manage.py startapp app_name
+# Example:
+python manage.py startapp blog</code></pre>
+
+<img alt="startapp example" class="img-fluid" src="/img/django/startapp.png"/>
+
+<div id='normal-4' class='normal'>This command creates a new folder in the current working directory of name : app_name</div>
+
+<pre id='code-29'><code class='python' language='python'># Directory structure now: 
+	project_name
+		files-here
+	app_name
+		files-here
+	manage.py</code></pre>
+
+<pre id='code-30'><code class='python' language='python'>Now create a file named : "urls.py" in the "app_name" folder</code></pre>
+
+<pre id='code-31'><code class='python' language='python'># Directory structure now: 
+	project_name
+		files-here
+	app_name
+		files-here
+		urls.py
+	manage.py</code></pre>
+
+<img alt="creating urls.py" class="img-fluid" src="/img/django/creating_urls.png"/>
+
+<pre id='code-32'><code class='python' language='python'>Now Go To "settings.py" in the "project_name" folder</code></pre>
+
+<img alt="" class="img-fluid" src="/img/django/go_to_settings.png"/>
+
+<pre id='code-33'><code class='python' language='python'># Now find out a list in it named
+INSTALLED_APPS
+# and add
+"app_name"
+at last of it.</code></pre>
+
+<img alt="find installed_apps in settings.py" class="img-fluid" src="/img/django/find_installed_apps.png"/>
+
+<img alt="add your app_name in installed_apps in settings.py" class="img-fluid" src="/img/django/updated_installed_app.png"/>
+
+
+<div id='code+tab-34'>
+        <nav>
+            <div class='nav nav-tabs' role='tablist'>
+
+<a id='tab-link-34-0' aria-controls='tab-target-34-0' href='#tab-target-34-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Previous Installed_Apps</a>
+
+<a id='tab-link-34-1' aria-controls='tab-target-34-1' href='#tab-target-34-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>New Installed_Apps</a>
+
+            </div>
+        </nav>
+        <div class='tab-content'>
+
+<div id='tab-target-34-0' aria-labelledby='tab-link-34-0' class='tab-pane fade show active' role='tabpanel'>
+<pre><code class='python' langauge='python'>#(looks similar to this before adding the name)
+INSTALLED_APPS = [
+'django.contrib.admin',
+'django.contrib.auth',
+'django.contrib.contenttypes',
+'django.contrib.sessions',
+'django.contrib.messages',
+'django.contrib.staticfiles',
+]</code></pre>
+</div>
+
+<div id='tab-target-34-1' aria-labelledby='tab-link-34-1' class='tab-pane fade show ' role='tabpanel'>
+<pre><code class='python' langauge='python'>#(looks similar to this after adding the name)
+INSTALLED_APPS = [
+'django.contrib.admin',
+'django.contrib.auth',
+'django.contrib.contenttypes',
+'django.contrib.sessions',
+'django.contrib.messages',
+'django.contrib.staticfiles',
+'blog' , # your app_name here
+]</code></pre>
+</div>
+
+        </div>
+</div></div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+
+</html>

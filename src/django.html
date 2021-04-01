@@ -68,7 +68,7 @@
             <nav id="teleporter" class="nav nav-pills flex-column bg-light p-5 pt-0 text-wrap">
                 <a href="#" class="navbar-brand text-danger fw-bolder">Teleporter</a>
                 
-<a class='nav-link' href='#h2-6'>Virtual environment (for windows) (optional)</a>
+<a class='nav-link' href='#h2-5'>Virtual environment (for windows) (optional)</a>
 
 <nav class='nav nav-pills flex-column ml-3 my-1'>
 
@@ -80,7 +80,7 @@
 
 </nav>
 
-<a class='nav-link' href='#h2-7'>Installing django</a>
+<a class='nav-link' href='#h2-6'>Installing django</a>
 
 <nav class='nav nav-pills flex-column ml-3 my-1'>
 
@@ -88,7 +88,7 @@
 
 </nav>
 
-<a class='nav-link' href='#h2-8'>Creating the project</a>
+<a class='nav-link' href='#h2-7'>Creating the project</a>
 
 <nav class='nav nav-pills flex-column ml-3 my-1'>
 
@@ -96,7 +96,13 @@
 
 </nav>
 
-<a class='nav-link' href='#h2-9'>Creating an app</a>
+<a class='nav-link' href='#h2-8'>Creating an app</a>
+
+<nav class='nav nav-pills flex-column ml-3 my-1'>
+
+</nav>
+
+<a class='nav-link' href='#h2-9'>Adding the first page to our website</a>
 
 <nav class='nav nav-pills flex-column ml-3 my-1'>
 
@@ -107,9 +113,9 @@
         </div>
 
         <div id="content" class="col-sm-7 p-3">
-<h1 id='h1-5'><span class='badge bg-primary'> </span> Django --> by myCODEnotein <span class='badge bg-primary'> </span></h1>
+<h1 id='h1-4'><span class='badge bg-primary'> </span> Django --> by myCODEnotein <span class='badge bg-primary'> </span></h1>
 
-<div class='section'><h2 id='h2-6'><span class='badge bg-danger'> </span> Virtual environment (for windows) (optional)</h2>
+<div class='section'><h2 id='h2-5'><span class='badge bg-danger'> </span> Virtual environment (for windows) (optional)</h2>
 
 <h3 id='h3-10'><span class='badge bg-warning'> </span> Creating a virtual environment</h3>
 
@@ -143,7 +149,7 @@ virt\Scripts\activate</code></pre>
 
 <div id='normal-1' class='normal'>Note: that now everything you will do will be done after virtual environment is turned on.</div>
 
-</div><div class='section'><h2 id='h2-7'><span class='badge bg-danger'> </span> Installing django</h2>
+</div><div class='section'><h2 id='h2-6'><span class='badge bg-danger'> </span> Installing django</h2>
 
 <pre id='code-19'><code class='python' language='python'>pip install django</code></pre>
 
@@ -164,9 +170,9 @@ pip freeze &gt; requirements.txt</code></pre>
 
 <img alt="pip freeze &gt; requirements.txt" class="img-fluid" src="/img/django/pip_freeze_output.png"/>
 
-<div id='normal-3' class='normal'><div class="callout-info">To install the modules in requirements.txt you can run: <br/>pip install -r requirements.txt </div></div>
+<div class="callout-info">To install the modules in requirements.txt you can run: <br/>pip install -r requirements.txt </div>
 
-</div><div class='section'><h2 id='h2-8'><span class='badge bg-danger'> </span> Creating the project</h2>
+</div><div class='section'><h2 id='h2-7'><span class='badge bg-danger'> </span> Creating the project</h2>
 
 <pre id='code-22'><code class='python' language='python'># Run the following commands in a terminal window.
 # If you are using virtual environment make sure 
@@ -211,7 +217,7 @@ To see the website you can follow the given link
 
 <img alt="first look of website" class="img-fluid" src="/img/django/first_load.png"/>
 
-</div><div class='section'><h2 id='h2-9'><span class='badge bg-danger'> </span> Creating an app</h2>
+</div><div class='section'><h2 id='h2-8'><span class='badge bg-danger'> </span> Creating an app</h2>
 
 <pre id='code-28'><code class='python' language='python'>python manage.py startapp app_name
 # Example:
@@ -219,7 +225,7 @@ python manage.py startapp blog</code></pre>
 
 <img alt="startapp example" class="img-fluid" src="/img/django/startapp.png"/>
 
-<div id='normal-4' class='normal'>This command creates a new folder in the current working directory of name : app_name</div>
+<div id='normal-3' class='normal'>This command creates a new folder in the current working directory of name : app_name</div>
 
 <pre id='code-29'><code class='python' language='python'># Directory structure now: 
 	project_name
@@ -293,7 +299,10 @@ INSTALLED_APPS = [
 </div>
 
         </div>
-</div></div>
+</div>
+
+
+</div><div class='section'><h2 id='h2-9'><span class='badge bg-danger'> </span> Adding the first page to our website</h2></div>
 
         </div>
 

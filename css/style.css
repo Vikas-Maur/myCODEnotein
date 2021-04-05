@@ -5,7 +5,7 @@
     --secondary: rgb(108,117,125);
     --success: rgb(40,167,69);
     --danger: rgb(220,53,69);
-    --warning: rgb(255,193,7) ;
+    --warning: rgb(255,193,7);
     --info: rgb(23,162,184);
     --light: rgb(248,249,250);
     --dark: rgb(52,58,64);
@@ -179,12 +179,12 @@ pre>code>a:hover
 }
 
 #teleporter>a:hover{
-    background-color: var(--danger);
+    background-color: rgba(220,53,69,0.7);
     color: white;
 }
 
 #teleporter>nav>a:hover{
-    background-color: var(--warning);
+    background-color: rgba(255,193,7,0.5);
     color: white;
 }
 

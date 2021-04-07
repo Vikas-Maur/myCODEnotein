@@ -28,7 +28,8 @@ h2{
 }
 
 h3{
-    color: var(--warning);
+    /* color: var(--warning); */
+    color: #cc9a06;
     margin-bottom: 30px;
     text-transform: uppercase;
 }
@@ -55,6 +56,7 @@ video , img{
 }
 
 #content{
+    margin-bottom: 50px;
     position: relative;
 }
 

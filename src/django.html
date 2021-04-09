@@ -1,4 +1,3 @@
-<!-- ! NOTE THAT IF THE TEMPLATE INCLUDE '{}' THEN   -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,7 +18,7 @@
     <title>Django --> by myCODEnotein</title>
     <meta name="description" content="Full Django Notes. All the information you need to start creating a website with django is provided here - by myCODEnotein">
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#teleporter" data-bs-offset="0" tabindex="0">
+  <body>
 
   <header class="sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
@@ -63,70 +62,123 @@
     <div class="container-fluid">
       <div class="row">
 
-        <div class="col-sm-3">
-          <div id="teleporter-holder" class="d-none d-sm-none d-md-none d-lg-block">
+        <div class="d-none d-lg-block col-lg-4 col-xl-3">
+          <div id="teleporter-holder">
             <nav id="teleporter" class="nav nav-pills flex-column bg-light p-5 pt-0 text-wrap">
-                <a href="#" class="navbar-brand text-danger fw-bolder">Teleporter</a>
-                
-<a class='nav-link' href='#h2-17'>Virtual environment (for windows) (optional)</a>
+              <a href="#" class="d-flex align-items-center pb-3 my-2 link-dark text-decoration-none border-bottom">
+                <span class="fs-5 fw-semibold">Teleporter</span>
+              </a>
 
-<nav class='nav nav-pills flex-column ml-3 my-1'>
+              <ul class="list-unstyled ps-0">
+            
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-0" data-bs-toggle="collapse" data-targetid="h2-17">
+  Virtual environment (for windows) (optional)
+ </button>
+ <div class="collapse" id="teleporter-collapse-0">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-23">
+     Creating a virtual environment
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-24">
+     Activating a virtual environment
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-25">
+     Deactivating the virtual environment
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-1" data-bs-toggle="collapse" data-targetid="h2-18">
+  Installing django
+ </button>
+ <div class="collapse" id="teleporter-collapse-1">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-26">
+     Pip freeze
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-2" data-bs-toggle="collapse" data-targetid="h2-19">
+  Creating the project
+ </button>
+ <div class="collapse" id="teleporter-collapse-2">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-27">
+     To run the server:
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-3" data-bs-toggle="collapse" data-targetid="h2-20">
+  Creating an app
+ </button>
+ <div class="collapse" id="teleporter-collapse-3">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-4" data-bs-toggle="collapse" data-targetid="h2-21">
+  Understanding path and include in django
+ </button>
+ <div class="collapse" id="teleporter-collapse-4">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-28">
+     Understanding first argument of path
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-29">
+     Understanding second argument of path
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-30">
+     Understanding third argument of path
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-31">
+     Full Path Example
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-5" data-bs-toggle="collapse" data-targetid="h2-22">
+  Adding the first page to our website
+ </button>
+ <div class="collapse" id="teleporter-collapse-5">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+  </ul>
+ </div>
+</li>
 
-<a class='nav-link' href='#h3-23'>Creating a virtual environment</a>
-
-<a class='nav-link' href='#h3-24'>Activating a virtual environment</a>
-
-<a class='nav-link' href='#h3-25'>Deactivating the virtual environment</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-18'>Installing django</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-26'>Pip freeze</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-19'>Creating the project</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-27'>To run the server:</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-20'>Creating an app</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-</nav>
-
-<a class='nav-link' href='#h2-21'>Understanding path and include in django</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-28'>Understanding first argument of path</a>
-
-<a class='nav-link' href='#h3-29'>Understanding second argument of path</a>
-
-<a class='nav-link' href='#h3-30'>Understanding third argument of path</a>
-
-<a class='nav-link' href='#h3-31'>Full Path Example</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-22'>Adding the first page to our website</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-</nav>
-
+            
+              </ul>
+            
             </nav>
           </div>
         </div>
 
-        <div id="content" class="col-sm-7 p-3">
+        <div id="content" class="col-sm-10 col-lg-6 col-xl-7 p-3">
 <h1 id='h1-16'><span class='badge bg-primary'> </span> Django --> by myCODEnotein <span class='badge bg-primary'> </span></h1>
 
 <div class='section'><h2 id='h2-17'><span class='badge bg-danger'> </span> Virtual environment (for windows) (optional)</h2>
@@ -478,6 +530,7 @@ to see the output</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+  <script src="/js/teleporter.js"></script>
   </body>
 
 </html>

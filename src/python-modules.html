@@ -1,4 +1,3 @@
-<!-- ! NOTE THAT IF THE TEMPLATE INCLUDE '{}' THEN   -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,7 +18,7 @@
     <title>Python Modules -- Python Power in One Page (Fast and Effective) -- by myCODEnotein</title>
     <meta name="description" content="Useful python modules ( mysql-connector , os , tkinter ) wrapped up in one blog - by myCODEnotein">
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#teleporter" data-bs-offset="0" tabindex="0">
+  <body>
 
   <header class="sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
@@ -63,70 +62,141 @@
     <div class="container-fluid">
       <div class="row">
 
-        <div class="col-sm-3">
-          <div id="teleporter-holder" class="d-none d-sm-none d-md-none d-lg-block">
+        <div class="d-none d-lg-block col-lg-4 col-xl-3">
+          <div id="teleporter-holder">
             <nav id="teleporter" class="nav nav-pills flex-column bg-light p-5 pt-0 text-wrap">
-                <a href="#" class="navbar-brand text-danger fw-bolder">Teleporter</a>
-                
-<a class='nav-link' href='#h2-5'>MySQL with Python</a>
+              <a href="#" class="d-flex align-items-center pb-3 my-2 link-dark text-decoration-none border-bottom">
+                <span class="fs-5 fw-semibold">Teleporter</span>
+              </a>
 
-<nav class='nav nav-pills flex-column ml-3 my-1'>
+              <ul class="list-unstyled ps-0">
+            
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-0" data-bs-toggle="collapse" data-targetid="h2-5">
+  MySQL with Python
+ </button>
+ <div class="collapse" id="teleporter-collapse-0">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-8">
+     Installing the module
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-9">
+     Importing the module
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-10">
+     Connecting with the database
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-11">
+     Creating a cursor object -- to execute queries
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-12">
+     Executing queries
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-13">
+     Fetching records
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-14">
+     rowcount function
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-1" data-bs-toggle="collapse" data-targetid="h2-6">
+  OS module in python
+ </button>
+ <div class="collapse" id="teleporter-collapse-1">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-15">
+     Importing os module
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-16">
+     Check if file/dir exists
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-17">
+     Directory Functions
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-18">
+     Start A file with os module
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-19">
+     Running a terminal command through os module
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-2" data-bs-toggle="collapse" data-targetid="h2-7">
+  Tkinter ---&gt; GUI dev in python
+ </button>
+ <div class="collapse" id="teleporter-collapse-2">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-20">
+     Importing tkinter
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-21">
+     Required Code
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-22">
+     Basic widget forming syntax
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-23">
+     Displaying the widgets on screen
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-24">
+     Basic widgets
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-25">
+     Some New widgets
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
 
-<a class='nav-link' href='#h3-8'>Installing the module</a>
-
-<a class='nav-link' href='#h3-9'>Importing the module</a>
-
-<a class='nav-link' href='#h3-10'>Connecting with the database</a>
-
-<a class='nav-link' href='#h3-11'>Creating a cursor object -- to execute queries</a>
-
-<a class='nav-link' href='#h3-12'>Executing queries</a>
-
-<a class='nav-link' href='#h3-13'>Fetching records</a>
-
-<a class='nav-link' href='#h3-14'>rowcount function</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-6'>OS module in python</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-15'>Importing os module</a>
-
-<a class='nav-link' href='#h3-16'>Check if file/dir exists</a>
-
-<a class='nav-link' href='#h3-17'>Directory Functions</a>
-
-<a class='nav-link' href='#h3-18'>Start A file with os module</a>
-
-<a class='nav-link' href='#h3-19'>Running a terminal command through os module</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-7'>Tkinter ---> GUI dev in python</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-20'>Importing tkinter</a>
-
-<a class='nav-link' href='#h3-21'>Required Code</a>
-
-<a class='nav-link' href='#h3-22'>Basic widget forming syntax</a>
-
-<a class='nav-link' href='#h3-23'>Displaying the widgets on screen</a>
-
-<a class='nav-link' href='#h3-24'>Basic widgets</a>
-
-<a class='nav-link' href='#h3-25'>Some New widgets</a>
-
-</nav>
-
+            
+              </ul>
+            
             </nav>
           </div>
         </div>
 
-        <div id="content" class="col-sm-7 p-3">
+        <div id="content" class="col-sm-10 col-lg-6 col-xl-7 p-3">
 <h1 id='h1-4'><span class='badge bg-primary'> </span> Python Modules --> by myCODEnotein <span class='badge bg-primary'> </span></h1>
 
 <div class='section'><h2 id='h2-5'><span class='badge bg-danger'> </span> MySQL with Python</h2>
@@ -352,6 +422,7 @@ from tkinter import ttk</code></pre>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+  <script src="/js/teleporter.js"></script>
   </body>
 
 </html>

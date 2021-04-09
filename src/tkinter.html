@@ -1,4 +1,3 @@
-<!-- ! NOTE THAT IF THE TEMPLATE INCLUDE '{}' THEN   -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,7 +18,7 @@
     <title>tkinter - GUI with Python Power - (fastest notes) - By myCODEnotein</title>
     <meta name="description" content="Want to convert a black screened program to a beautiful GUI. Then You are at correct stop . (Advanced notes)(fastest notes) - by myCODEnotein">
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#teleporter" data-bs-offset="0" tabindex="0">
+  <body>
 
   <header class="sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
@@ -63,280 +62,564 @@
     <div class="container-fluid">
       <div class="row">
 
-        <div class="col-sm-3">
-          <div id="teleporter-holder" class="d-none d-sm-none d-md-none d-lg-block">
+        <div class="d-none d-lg-block col-lg-4 col-xl-3">
+          <div id="teleporter-holder">
             <nav id="teleporter" class="nav nav-pills flex-column bg-light p-5 pt-0 text-wrap">
-                <a href="#" class="navbar-brand text-danger fw-bolder">Teleporter</a>
-                
-<a class='nav-link' href='#h2-33'>Importing tkinter and Starter Template</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-53'>Importing Tkinter</a>
-
-<a class='nav-link' href='#h3-54'>Importing ttk</a>
-
-<a class='nav-link' href='#h3-55'>Starter Template</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-34'>Methods Of Tk Class / Configuring root</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-56'>Setting Up Root Title</a>
-
-<a class='nav-link' href='#h3-57'>Setting Up root geometry</a>
-
-<a class='nav-link' href='#h3-58'>Making The window transparent</a>
-
-<a class='nav-link' href='#h3-59'>Making the window remain at top of all windows</a>
-
-<a class='nav-link' href='#h3-60'>Making the GUI full screen</a>
-
-<a class='nav-link' href='#h3-61'>To know more attribute of root</a>
-
-<a class='nav-link' href='#h3-62'>To minimize the window through code</a>
-
-<a class='nav-link' href='#h3-63'>To destroy the window/gui</a>
-
-<a class='nav-link' href='#h3-64'>To remove the title bar of the window</a>
-
-<a class='nav-link' href='#h3-65'>To call a function when user press the cross on title bar</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-35'>Widgets in Tkinter</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-66'>Note that:</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-36'>Some Common Widget Options</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-</nav>
-
-<a class='nav-link' href='#h2-37'>Grid , Pack and Config methods</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-67'>Pack</a>
-
-<a class='nav-link' href='#h3-68'>Grid</a>
-
-<a class='nav-link' href='#h3-69'>Note that:</a>
-
-<a class='nav-link' href='#h3-70'>.config Method in tkinter</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-38'>tkraise method in tkinter (related to grid)</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-71'>When this method is used</a>
-
-<a class='nav-link' href='#h3-72'>syntax</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-39'>Events in tkinter</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-73'>The Function is something like</a>
-
-<a class='nav-link' href='#h3-74'>Use Of Lambda Function</a>
-
-<a class='nav-link' href='#h3-75'>Returning break (related to keypress events and more)</a>
-
-<a class='nav-link' href='#h3-76'>Some properties of event argument which tkinter passes to the function</a>
-
-<a class='nav-link' href='#h3-77'>Mouse events</a>
-
-<a class='nav-link' href='#h3-78'>Mouse Click Events</a>
-
-<a class='nav-link' href='#h3-79'>Keyboard events</a>
-
-<a class='nav-link' href='#h3-80'>Binding two or more key presses</a>
-
-<a class='nav-link' href='#h3-81'>Some more events</a>
-
-<a class='nav-link' href='#h3-82'>To know more events</a>
-
-<a class='nav-link' href='#h3-83'>Generating an event in tkinter</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-40'>Menu Widget in Tkinter</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-84'>Creating menu widget instance with options</a>
-
-<a class='nav-link' href='#h3-85'>Adding the Menu to the Main Window</a>
-
-<a class='nav-link' href='#h3-86'>Add Cascade Function Of menu widget</a>
-
-<a class='nav-link' href='#h3-87'>Add Command Function of menu widget</a>
-
-<a class='nav-link' href='#h3-88'>What happens when you use add_command with myMenu and not with child menu</a>
-
-<a class='nav-link' href='#h3-89'>Adding a separator between the menu Options</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-41'>Listbox in tkinter</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-90'>Inserting values in listbox</a>
-
-<a class='nav-link' href='#h3-91'>What will happen if you insert value at the index which already consists a value</a>
-
-<a class='nav-link' href='#h3-92'>Listbox Methods</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-42'>Text widget in tkinter</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-93'>Creating the text widget instance</a>
-
-<a class='nav-link' href='#h3-94'>Insertontime and insertofftime options</a>
-
-<a class='nav-link' href='#h3-95'>Indexing in text widget - tkinter</a>
-
-<a class='nav-link' href='#h3-96'>Common Methods</a>
-
-<a class='nav-link' href='#h3-97'>Tags in tkinter</a>
-
-<a class='nav-link' href='#h3-98'>Some more tag methods</a>
-
-<a class='nav-link' href='#h3-99'>Marks in text widget</a>
-
-<a class='nav-link' href='#h3-100'>Setting up gravity of mark</a>
-
-<a class='nav-link' href='#h3-101'>A video showing mark_gravity effect</a>
-
-<a class='nav-link' href='#h3-102'>Great Resource for text widget</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-43'>Scrollbar widget in tkinter</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-103'>Required **kwargs</a>
-
-<a class='nav-link' href='#h3-104'>Settings Required for widget instance</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-44'>Text Widget With Built In Scrollbar</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-105'>Importing the widget</a>
-
-<a class='nav-link' href='#h3-106'>Creating the widget</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-45'>Setting Variable Values In Tkinter Widget</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-107'>4 types of variable values which can be set</a>
-
-<a class='nav-link' href='#h3-108'>Syntax of Variable</a>
-
-<a class='nav-link' href='#h3-109'>How To Apply to a Widget</a>
-
-<a class='nav-link' href='#h3-110'>Set And Get Method Of VariableValue</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-46'>Entry Widget In tkinter</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-111'>Using Entry Widget From ttk module</a>
-
-<a class='nav-link' href='#h3-112'>Methods of entry widget</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-47'>OptionMenu Widget in tkinter</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-113'>Other **options</a>
-
-<a class='nav-link' href='#h3-114'>To get the current value</a>
-
-<a class='nav-link' href='#h3-115'>To set the OptionMenu Value</a>
-
-<a class='nav-link' href='#h3-116'>Using OptionMenu With Command Option</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-48'>Message box in tkinter</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-117'>Importing messagebox from tkinter to use it</a>
-
-<a class='nav-link' href='#h3-118'>Various methods:</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-49'>Toplevel Widget In tkinter</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-</nav>
-
-<a class='nav-link' href='#h2-50'>Progressbar in tkinter</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-119'>Example</a>
-
-<a class='nav-link' href='#h3-120'>Updating the progessbar</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-51'>ColorChooser in tkinter</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-121'>Importing ColorChooser</a>
-
-<a class='nav-link' href='#h3-122'>Asking for color</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-52'>Adding a photo/image</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-123'>Loading the image</a>
-
-<a class='nav-link' href='#h3-124'>Use of compound to display both text and image</a>
-
-</nav>
-
+              <a href="#" class="d-flex align-items-center pb-3 my-2 link-dark text-decoration-none border-bottom">
+                <span class="fs-5 fw-semibold">Teleporter</span>
+              </a>
+
+              <ul class="list-unstyled ps-0">
+            
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-0" data-bs-toggle="collapse" data-targetid="h2-33">
+  Importing tkinter and Starter Template
+ </button>
+ <div class="collapse" id="teleporter-collapse-0">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-53">
+     Importing Tkinter
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-54">
+     Importing ttk
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-55">
+     Starter Template
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-1" data-bs-toggle="collapse" data-targetid="h2-34">
+  Methods Of Tk Class / Configuring root
+ </button>
+ <div class="collapse" id="teleporter-collapse-1">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-56">
+     Setting Up Root Title
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-57">
+     Setting Up root geometry
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-58">
+     Making The window transparent
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-59">
+     Making the window remain at top of all windows
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-60">
+     Making the GUI full screen
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-61">
+     To know more attribute of root
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-62">
+     To minimize the window through code
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-63">
+     To destroy the window/gui
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-64">
+     To remove the title bar of the window
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-65">
+     To call a function when user press the cross on title bar
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-2" data-bs-toggle="collapse" data-targetid="h2-35">
+  Widgets in Tkinter
+ </button>
+ <div class="collapse" id="teleporter-collapse-2">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-66">
+     Note that:
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-3" data-bs-toggle="collapse" data-targetid="h2-36">
+  Some Common Widget Options
+ </button>
+ <div class="collapse" id="teleporter-collapse-3">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-4" data-bs-toggle="collapse" data-targetid="h2-37">
+  Grid , Pack and Config methods
+ </button>
+ <div class="collapse" id="teleporter-collapse-4">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-67">
+     Pack
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-68">
+     Grid
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-69">
+     Note that:
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-70">
+     .config Method in tkinter
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-5" data-bs-toggle="collapse" data-targetid="h2-38">
+  tkraise method in tkinter (related to grid)
+ </button>
+ <div class="collapse" id="teleporter-collapse-5">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-71">
+     When this method is used
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-72">
+     syntax
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-6" data-bs-toggle="collapse" data-targetid="h2-39">
+  Events in tkinter
+ </button>
+ <div class="collapse" id="teleporter-collapse-6">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-73">
+     The Function is something like
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-74">
+     Use Of Lambda Function
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-75">
+     Returning break (related to keypress events and more)
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-76">
+     Some properties of event argument which tkinter passes to the function
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-77">
+     Mouse events
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-78">
+     Mouse Click Events
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-79">
+     Keyboard events
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-80">
+     Binding two or more key presses
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-81">
+     Some more events
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-82">
+     To know more events
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-83">
+     Generating an event in tkinter
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-7" data-bs-toggle="collapse" data-targetid="h2-40">
+  Menu Widget in Tkinter
+ </button>
+ <div class="collapse" id="teleporter-collapse-7">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-84">
+     Creating menu widget instance with options
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-85">
+     Adding the Menu to the Main Window
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-86">
+     Add Cascade Function Of menu widget
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-87">
+     Add Command Function of menu widget
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-88">
+     What happens when you use add_command with myMenu and not with child menu
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-89">
+     Adding a separator between the menu Options
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-8" data-bs-toggle="collapse" data-targetid="h2-41">
+  Listbox in tkinter
+ </button>
+ <div class="collapse" id="teleporter-collapse-8">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-90">
+     Inserting values in listbox
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-91">
+     What will happen if you insert value at the index which already consists a value
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-92">
+     Listbox Methods
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-9" data-bs-toggle="collapse" data-targetid="h2-42">
+  Text widget in tkinter
+ </button>
+ <div class="collapse" id="teleporter-collapse-9">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-93">
+     Creating the text widget instance
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-94">
+     Insertontime and insertofftime options
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-95">
+     Indexing in text widget - tkinter
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-96">
+     Common Methods
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-97">
+     Tags in tkinter
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-98">
+     Some more tag methods
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-99">
+     Marks in text widget
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-100">
+     Setting up gravity of mark
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-101">
+     A video showing mark_gravity effect
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-102">
+     Great Resource for text widget
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-10" data-bs-toggle="collapse" data-targetid="h2-43">
+  Scrollbar widget in tkinter
+ </button>
+ <div class="collapse" id="teleporter-collapse-10">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-103">
+     Required **kwargs
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-104">
+     Settings Required for widget instance
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-11" data-bs-toggle="collapse" data-targetid="h2-44">
+  Text Widget With Built In Scrollbar
+ </button>
+ <div class="collapse" id="teleporter-collapse-11">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-105">
+     Importing the widget
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-106">
+     Creating the widget
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-12" data-bs-toggle="collapse" data-targetid="h2-45">
+  Setting Variable Values In Tkinter Widget
+ </button>
+ <div class="collapse" id="teleporter-collapse-12">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-107">
+     4 types of variable values which can be set
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-108">
+     Syntax of Variable
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-109">
+     How To Apply to a Widget
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-110">
+     Set And Get Method Of VariableValue
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-13" data-bs-toggle="collapse" data-targetid="h2-46">
+  Entry Widget In tkinter
+ </button>
+ <div class="collapse" id="teleporter-collapse-13">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-111">
+     Using Entry Widget From ttk module
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-112">
+     Methods of entry widget
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-14" data-bs-toggle="collapse" data-targetid="h2-47">
+  OptionMenu Widget in tkinter
+ </button>
+ <div class="collapse" id="teleporter-collapse-14">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-113">
+     Other **options
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-114">
+     To get the current value
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-115">
+     To set the OptionMenu Value
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-116">
+     Using OptionMenu With Command Option
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-15" data-bs-toggle="collapse" data-targetid="h2-48">
+  Message box in tkinter
+ </button>
+ <div class="collapse" id="teleporter-collapse-15">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-117">
+     Importing messagebox from tkinter to use it
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-118">
+     Various methods:
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-16" data-bs-toggle="collapse" data-targetid="h2-49">
+  Toplevel Widget In tkinter
+ </button>
+ <div class="collapse" id="teleporter-collapse-16">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-17" data-bs-toggle="collapse" data-targetid="h2-50">
+  Progressbar in tkinter
+ </button>
+ <div class="collapse" id="teleporter-collapse-17">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-119">
+     Example
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-120">
+     Updating the progessbar
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-18" data-bs-toggle="collapse" data-targetid="h2-51">
+  ColorChooser in tkinter
+ </button>
+ <div class="collapse" id="teleporter-collapse-18">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-121">
+     Importing ColorChooser
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-122">
+     Asking for color
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-19" data-bs-toggle="collapse" data-targetid="h2-52">
+  Adding a photo/image
+ </button>
+ <div class="collapse" id="teleporter-collapse-19">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-123">
+     Loading the image
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-124">
+     Use of compound to display both text and image
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+
+            
+              </ul>
+            
             </nav>
           </div>
         </div>
 
-        <div id="content" class="col-sm-7 p-3">
+        <div id="content" class="col-sm-10 col-lg-6 col-xl-7 p-3">
 <h1 id='h1-32'><span class='badge bg-primary'> </span> Tkinter --> by myCODEnotein <span class='badge bg-primary'> </span></h1>
 
 <div class='section'><h2 id='h2-33'><span class='badge bg-danger'> </span> Importing tkinter and Starter Template</h2>
@@ -584,8 +867,8 @@ frame. Same with height.</div>
 2. or a string  : "font_family,font_size,bold/italic" 
 # you can also set any one property if you want</div>
 
-<div id='normal-7' class='normal'>Some font families: helvetica , consolas
-</div>
+<div id='normal-7' class='normal'>Some font families: helvetica , consolas</div>
+
 <pre id='code-139'><code class='python' language='python'># for example
 font="consolas 18 bold"
 # (or)
@@ -1691,6 +1974,7 @@ will place the image in left.</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+  <script src="/js/teleporter.js"></script>
   </body>
 
 </html>

@@ -1,4 +1,3 @@
-<!-- ! NOTE THAT IF THE TEMPLATE INCLUDE '{}' THEN   -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,7 +18,7 @@
     <title>SQL - The DATABASE LANGUAGE (Covered Super Quickly) - myCODEnotein</title>
     <meta name="description" content="SQL - Structured query language - quick , fast and effective notes of sql which will make you remember sql in few minutes">
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#teleporter" data-bs-offset="0" tabindex="0">
+  <body>
 
   <header class="sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
@@ -63,146 +62,277 @@
     <div class="container-fluid">
       <div class="row">
 
-        <div class="col-sm-3">
-          <div id="teleporter-holder" class="d-none d-sm-none d-md-none d-lg-block">
+        <div class="d-none d-lg-block col-lg-4 col-xl-3">
+          <div id="teleporter-holder">
             <nav id="teleporter" class="nav nav-pills flex-column bg-light p-5 pt-0 text-wrap">
-                <a href="#" class="navbar-brand text-danger fw-bolder">Teleporter</a>
-                
-<a class='nav-link' href='#h2-18'>Running mysql from cmd</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-30'>For ex:</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-19'>Creating the databasr</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-31'>Let us connect with the database</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-20'>Creating a table</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-</nav>
-
-<a class='nav-link' href='#h2-21'>Datatypes in SQL</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-</nav>
-
-<a class='nav-link' href='#h2-22'>Insert command in SQL</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-32'>Insertion of one value</a>
-
-<a class='nav-link' href='#h3-33'>Insertion of one mutliple values</a>
-
-<a class='nav-link' href='#h3-34'>Inserting Few Columns</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-23'>Querying in SQL</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-35'>Selection of all records</a>
-
-<a class='nav-link' href='#h3-36'>Selection of specific column</a>
-
-<a class='nav-link' href='#h3-37'>Selection of specific records</a>
-
-<a class='nav-link' href='#h3-38'>Selection of distinct/different records</a>
-
-<a class='nav-link' href='#h3-39'>Ordering/Arranging the records</a>
-
-<a class='nav-link' href='#h3-40'>Displaying different name of column + expressions in SQL</a>
-
-<a class='nav-link' href='#h3-41'>Displaying different values in records if the value is NULL</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-24'>Operators in sql</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-42'>Comparison operators</a>
-
-<a class='nav-link' href='#h3-43'>"BETWEEN" , "IN" and "IS" operator</a>
-
-<a class='nav-link' href='#h3-44'>"AND" and "OR" operator</a>
-
-<a class='nav-link' href='#h3-45'>"NOT" operator</a>
-
-<a class='nav-link' href='#h3-46'>"LIKE" operator</a>
-
-<a class='nav-link' href='#h3-47'>Wild Card Characters</a>
-
-<a class='nav-link' href='#h3-48'>LIKE with DATE datatype</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-25'>Update command in SQL</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-</nav>
-
-<a class='nav-link' href='#h2-26'>Functions in SQL</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-49'>CONCAT function in SQL</a>
-
-<a class='nav-link' href='#h3-50'>LENGTH function in SQL</a>
-
-<a class='nav-link' href='#h3-51'>LEFT function in SQL</a>
-
-<a class='nav-link' href='#h3-52'>RIGHT function in SQL</a>
-
-<a class='nav-link' href='#h3-53'>Much more advanced example of functions</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-27'>Delete command in SQL</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-</nav>
-
-<a class='nav-link' href='#h2-28'>Drop command in SQL</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-</nav>
-
-<a class='nav-link' href='#h2-29'>Alter command in sql</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-54'>rename clause</a>
-
-<a class='nav-link' href='#h3-55'>Drop clause</a>
-
-<a class='nav-link' href='#h3-56'>Add Clause</a>
-
-<a class='nav-link' href='#h3-57'>Change Clause</a>
-
-<a class='nav-link' href='#h3-58'>Modify clause</a>
-
-</nav>
-
+              <a href="#" class="d-flex align-items-center pb-3 my-2 link-dark text-decoration-none border-bottom">
+                <span class="fs-5 fw-semibold">Teleporter</span>
+              </a>
+
+              <ul class="list-unstyled ps-0">
+            
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-0" data-bs-toggle="collapse" data-targetid="h2-18">
+  Running mysql from cmd
+ </button>
+ <div class="collapse" id="teleporter-collapse-0">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-30">
+     For ex:
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-1" data-bs-toggle="collapse" data-targetid="h2-19">
+  Creating the databasr
+ </button>
+ <div class="collapse" id="teleporter-collapse-1">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-31">
+     Let us connect with the database
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-2" data-bs-toggle="collapse" data-targetid="h2-20">
+  Creating a table
+ </button>
+ <div class="collapse" id="teleporter-collapse-2">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-3" data-bs-toggle="collapse" data-targetid="h2-21">
+  Datatypes in SQL
+ </button>
+ <div class="collapse" id="teleporter-collapse-3">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-4" data-bs-toggle="collapse" data-targetid="h2-22">
+  Insert command in SQL
+ </button>
+ <div class="collapse" id="teleporter-collapse-4">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-32">
+     Insertion of one value
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-33">
+     Insertion of one mutliple values
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-34">
+     Inserting Few Columns
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-5" data-bs-toggle="collapse" data-targetid="h2-23">
+  Querying in SQL
+ </button>
+ <div class="collapse" id="teleporter-collapse-5">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-35">
+     Selection of all records
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-36">
+     Selection of specific column
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-37">
+     Selection of specific records
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-38">
+     Selection of distinct/different records
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-39">
+     Ordering/Arranging the records
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-40">
+     Displaying different name of column + expressions in SQL
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-41">
+     Displaying different values in records if the value is NULL
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-6" data-bs-toggle="collapse" data-targetid="h2-24">
+  Operators in sql
+ </button>
+ <div class="collapse" id="teleporter-collapse-6">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-42">
+     Comparison operators
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-43">
+     "BETWEEN" , "IN" and "IS" operator
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-44">
+     "AND" and "OR" operator
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-45">
+     "NOT" operator
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-46">
+     "LIKE" operator
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-47">
+     Wild Card Characters
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-48">
+     LIKE with DATE datatype
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-7" data-bs-toggle="collapse" data-targetid="h2-25">
+  Update command in SQL
+ </button>
+ <div class="collapse" id="teleporter-collapse-7">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-8" data-bs-toggle="collapse" data-targetid="h2-26">
+  Functions in SQL
+ </button>
+ <div class="collapse" id="teleporter-collapse-8">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-49">
+     CONCAT function in SQL
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-50">
+     LENGTH function in SQL
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-51">
+     LEFT function in SQL
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-52">
+     RIGHT function in SQL
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-53">
+     Much more advanced example of functions
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-9" data-bs-toggle="collapse" data-targetid="h2-27">
+  Delete command in SQL
+ </button>
+ <div class="collapse" id="teleporter-collapse-9">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-10" data-bs-toggle="collapse" data-targetid="h2-28">
+  Drop command in SQL
+ </button>
+ <div class="collapse" id="teleporter-collapse-10">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-11" data-bs-toggle="collapse" data-targetid="h2-29">
+  Alter command in sql
+ </button>
+ <div class="collapse" id="teleporter-collapse-11">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-54">
+     rename clause
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-55">
+     Drop clause
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-56">
+     Add Clause
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-57">
+     Change Clause
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-58">
+     Modify clause
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+
+            
+              </ul>
+            
             </nav>
           </div>
         </div>
 
-        <div id="content" class="col-sm-7 p-3">
+        <div id="content" class="col-sm-10 col-lg-6 col-xl-7 p-3">
 <h1 id='h1-17'><span class='badge bg-primary'> </span> LET US MAKE A HOSPITAL MANAGEMENT SYSTEM <span class='badge bg-primary'> </span></h1>
 
 <div class='section'><h2 id='h2-18'><span class='badge bg-danger'> </span> Running mysql from cmd</h2>
@@ -731,6 +861,7 @@ NULL/NOT NULL/DEFAULT value FIRST/AFTER colname</code></pre>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+  <script src="/js/teleporter.js"></script>
   </body>
 
 </html>

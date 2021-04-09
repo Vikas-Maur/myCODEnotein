@@ -1,4 +1,3 @@
-<!-- ! NOTE THAT IF THE TEMPLATE INCLUDE '{}' THEN   -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,7 +18,7 @@
     <title>tkinter widgets,classes,templates - by myCODEnotein</title>
     <meta name="description" content="If you dont want to write those boiler plate code for tkinter anymore . You are at correct place . Just click the link and make sure to bookmark the page for future as well - by myCODEnotein">
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#teleporter" data-bs-offset="0" tabindex="0">
+  <body>
 
   <header class="sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
@@ -63,38 +62,61 @@
     <div class="container-fluid">
       <div class="row">
 
-        <div class="col-sm-3">
-          <div id="teleporter-holder" class="d-none d-sm-none d-md-none d-lg-block">
+        <div class="d-none d-lg-block col-lg-4 col-xl-3">
+          <div id="teleporter-holder">
             <nav id="teleporter" class="nav nav-pills flex-column bg-light p-5 pt-0 text-wrap">
-                <a href="#" class="navbar-brand text-danger fw-bolder">Teleporter</a>
-                
-<a class='nav-link' href='#h2-1'>Starter Template With Usual Methods</a>
+              <a href="#" class="d-flex align-items-center pb-3 my-2 link-dark text-decoration-none border-bottom">
+                <span class="fs-5 fw-semibold">Teleporter</span>
+              </a>
 
-<nav class='nav nav-pills flex-column ml-3 my-1'>
+              <ul class="list-unstyled ps-0">
+            
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-0" data-bs-toggle="collapse" data-targetid="h2-1">
+  Starter Template With Usual Methods
+ </button>
+ <div class="collapse" id="teleporter-collapse-0">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-1" data-bs-toggle="collapse" data-targetid="h2-2">
+  Hoverable Button and events
+ </button>
+ <div class="collapse" id="teleporter-collapse-1">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-4">
+     Creating a button which changes colors on hover
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-5">
+     A Class For Making An Hoverable Button
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-2" data-bs-toggle="collapse" data-targetid="h2-3">
+  Adding a Scrollbar To Text widget (Full Template)
+ </button>
+ <div class="collapse" id="teleporter-collapse-2">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+  </ul>
+ </div>
+</li>
 
-</nav>
-
-<a class='nav-link' href='#h2-2'>Hoverable Button and events</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-4'>Creating a button which changes colors on hover</a>
-
-<a class='nav-link' href='#h3-5'>A Class For Making An Hoverable Button</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-3'>Adding a Scrollbar To Text widget (Full Template)</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-</nav>
-
+            
+              </ul>
+            
             </nav>
           </div>
         </div>
 
-        <div id="content" class="col-sm-7 p-3">
+        <div id="content" class="col-sm-10 col-lg-6 col-xl-7 p-3">
 <h1 id='h1-0'><span class='badge bg-primary'> </span> Tkinter Widgets --> by myCODEnotein <span class='badge bg-primary'> </span></h1>
 
 <div class='section'><h2 id='h2-1'><span class='badge bg-danger'> </span> Starter Template With Usual Methods</h2>
@@ -120,12 +142,12 @@ myButton = Button(root,text='Hoverable Button',bg='red',fg='white')
 myButton.pack()
 
 # When mouse enters the button 
-myButton.bind('<enter>',func=lambda e:ChangeBG(e,'grey'))
+myButton.bind('&lt;enter&gt;',func=lambda e:ChangeBG(e,'grey'))
 
 # When mouse leaves the button 
-myButton.bind('<leave>',func=lambda e:ChangeBG(e,'red'))
+myButton.bind('&lt;leave&gt;',func=lambda e:ChangeBG(e,'red'))
 
-root.mainloop()</leave></enter></code></pre>
+root.mainloop()</code></pre>
 
 <video class="container-fluid" controls="" muted="" preload="none" src="/vid/tkinter/hoverableButton.mp4" title="If the video does not load then please refresh/reload the page"></video>
 
@@ -147,9 +169,8 @@ root.mainloop()</leave></enter></code></pre>
 		self.MakeHoverable() # changing the widget on hover
 
 	def MakeHoverable(self):
-		self.bind('<enter>',lambda e:self.config(**self.on_enter))
-		self.bind('<leave>',lambda e:self.config(**self.on_leave))
-</leave></enter></code></pre>
+		self.bind('&lt;enter&gt;',lambda e:self.config(**self.on_enter))
+		self.bind('&lt;leave&gt;',lambda e:self.config(**self.on_leave))</code></pre>
 
 </div><div class='section'><h2 id='h2-3'><span class='badge bg-danger'> </span> Adding a Scrollbar To Text widget (Full Template)</h2>
 
@@ -174,6 +195,7 @@ myText.config(yscrollcommand=myScroll.set)</code></pre>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+  <script src="/js/teleporter.js"></script>
   </body>
 
 </html>

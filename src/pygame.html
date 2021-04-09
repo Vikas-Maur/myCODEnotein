@@ -1,4 +1,3 @@
-<!-- ! NOTE THAT IF THE TEMPLATE INCLUDE '{}' THEN   -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,7 +18,7 @@
     <title>Pygame - Making games with python power (fastest guide) - myCODEnotein</title>
     <meta name="description" content="Pygame - a python module for making games - If you had not worked on it for days then these notes will help you to remember your concepts of pygame easily and quickly">
   </head>
-  <body data-bs-spy="scroll" data-bs-target="#teleporter" data-bs-offset="0" tabindex="0">
+  <body>
 
   <header class="sticky-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
@@ -63,68 +62,118 @@
     <div class="container-fluid">
       <div class="row">
 
-        <div class="col-sm-3">
-          <div id="teleporter-holder" class="d-none d-sm-none d-md-none d-lg-block">
+        <div class="d-none d-lg-block col-lg-4 col-xl-3">
+          <div id="teleporter-holder">
             <nav id="teleporter" class="nav nav-pills flex-column bg-light p-5 pt-0 text-wrap">
-                <a href="#" class="navbar-brand text-danger fw-bolder">Teleporter</a>
-                
-<a class='nav-link' href='#h2-2'>Installing Pygame</a>
+              <a href="#" class="d-flex align-items-center pb-3 my-2 link-dark text-decoration-none border-bottom">
+                <span class="fs-5 fw-semibold">Teleporter</span>
+              </a>
 
-<nav class='nav nav-pills flex-column ml-3 my-1'>
+              <ul class="list-unstyled ps-0">
+            
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-0" data-bs-toggle="collapse" data-targetid="h2-2">
+  Installing Pygame
+ </button>
+ <div class="collapse" id="teleporter-collapse-0">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-1" data-bs-toggle="collapse" data-targetid="h2-3">
+  Basic pygame starting
+ </button>
+ <div class="collapse" id="teleporter-collapse-1">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-2" data-bs-toggle="collapse" data-targetid="h2-4">
+  Basic required code
+ </button>
+ <div class="collapse" id="teleporter-collapse-2">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-3" data-bs-toggle="collapse" data-targetid="h2-5">
+  Drawing with pygame
+ </button>
+ <div class="collapse" id="teleporter-collapse-3">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-8">
+     Drawing a rectangle
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-9">
+     Doing the same thing with pygame.Rect
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-10">
+     Resizing the rectangle
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-11">
+     Drawing a circle
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-4" data-bs-toggle="collapse" data-targetid="h2-6">
+  Mouse Related Functions
+ </button>
+ <div class="collapse" id="teleporter-collapse-4">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+  </ul>
+ </div>
+</li>
+<li class="mb-1">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-5" data-bs-toggle="collapse" data-targetid="h2-7">
+  Dealing with images
+ </button>
+ <div class="collapse" id="teleporter-collapse-5">
+  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-12">
+     Loading the image --&gt; First step
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-13">
+     Converting the image with convert_alpha
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-14">
+     Changing the image size
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-15">
+     Drawing the image on screen
+    </a>
+   </li>
+  </ul>
+ </div>
+</li>
 
-</nav>
-
-<a class='nav-link' href='#h2-3'>Basic pygame starting</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-</nav>
-
-<a class='nav-link' href='#h2-4'>Basic required code</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-</nav>
-
-<a class='nav-link' href='#h2-5'>Drawing with pygame</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-8'>Drawing a rectangle</a>
-
-<a class='nav-link' href='#h3-9'>Doing the same thing with pygame.Rect</a>
-
-<a class='nav-link' href='#h3-10'>Resizing the rectangle</a>
-
-<a class='nav-link' href='#h3-11'>Drawing a circle</a>
-
-</nav>
-
-<a class='nav-link' href='#h2-6'>MOUSE RELATED FUNCTIONS</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-</nav>
-
-<a class='nav-link' href='#h2-7'>Dealing with images</a>
-
-<nav class='nav nav-pills flex-column ml-3 my-1'>
-
-<a class='nav-link' href='#h3-12'>Loading the image --> First step</a>
-
-<a class='nav-link' href='#h3-13'>Converting the image with convert_alpha</a>
-
-<a class='nav-link' href='#h3-14'>Changing the image size</a>
-
-<a class='nav-link' href='#h3-15'>Drawing the image on screen</a>
-
-</nav>
-
+            
+              </ul>
+            
             </nav>
           </div>
         </div>
 
-        <div id="content" class="col-sm-7 p-3">
+        <div id="content" class="col-sm-10 col-lg-6 col-xl-7 p-3">
 <h1 id='h1-1'><span class='badge bg-primary'> </span> Pygame --> by myCODEnotein <span class='badge bg-primary'> </span></h1>
 
 <div class='section'><h2 id='h2-2'><span class='badge bg-danger'> </span> Installing Pygame</h2>
@@ -166,7 +215,7 @@ pygame.draw.rect(surface,(r,g,b),rect)</code></pre>
 
 <pre id='code-21'><code class='python' language='python'>pygame.draw.circle(surface,(r,g,b),(x,y),radius,thickness)</code></pre>
 
-</div><div class='section'><h2 id='h2-6'><span class='badge bg-danger'> </span> MOUSE RELATED FUNCTIONS</h2>
+</div><div class='section'><h2 id='h2-6'><span class='badge bg-danger'> </span> Mouse Related Functions</h2>
 
 <pre id='code-22'><code class='python' language='python'>mouseX , mouseY = pygame.mouse.get_pos()
 # Returns mouse x coordinates and y coordinates</code></pre>
@@ -200,6 +249,7 @@ pygame.draw.rect(surface,(r,g,b),rect)</code></pre>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
+  <script src="/js/teleporter.js"></script>
   </body>
 
 </html>

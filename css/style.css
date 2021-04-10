@@ -41,7 +41,7 @@ img {
 }
 
 #teleporter-holder {
-  height: 85vh;
+  height: 90vh;
   overflow: hidden;
   overflow-y: auto;
   position: fixed;

@@ -48,6 +48,7 @@
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" href="/src/tkinter.html">tkinter</a></li>
                 <li><a class="dropdown-item" href="/src/tkinter-widgets.html">tkinter-widgets</a></li>
+                <li><a class="dropdown-item" href="/src/ttk.html">ttk</a></li>
               </ul>
             </li>
           </ul>
@@ -142,10 +143,10 @@ myButton = Button(root,text='Hoverable Button',bg='red',fg='white')
 myButton.pack()
 
 # When mouse enters the button 
-myButton.bind('&lt;enter&gt;',func=lambda e:ChangeBG(e,'grey'))
+myButton.bind('&lt;Enter&gt;',func=lambda e:ChangeBG(e,'grey'))
 
 # When mouse leaves the button 
-myButton.bind('&lt;leave&gt;',func=lambda e:ChangeBG(e,'red'))
+myButton.bind('&lt;Leave&gt;',func=lambda e:ChangeBG(e,'red'))
 
 root.mainloop()</code></pre>
 
@@ -169,8 +170,8 @@ root.mainloop()</code></pre>
 		self.MakeHoverable() # changing the widget on hover
 
 	def MakeHoverable(self):
-		self.bind('&lt;enter&gt;',lambda e:self.config(**self.on_enter))
-		self.bind('&lt;leave&gt;',lambda e:self.config(**self.on_leave))</code></pre>
+		self.bind('&lt;Enter&gt;',lambda e:self.config(**self.on_enter))
+		self.bind('&lt;Leave&gt;',lambda e:self.config(**self.on_leave))</code></pre>
 
 </div><div class='section'><h2 id='h2-3'><span class='badge bg-danger'> </span> Adding a Scrollbar To Text widget (Full Template)</h2>
 

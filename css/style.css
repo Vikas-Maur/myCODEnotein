@@ -241,7 +241,7 @@ pre > code > a:hover,
 }
 .btn-toggle-nav a:hover,
 .btn-toggle-nav a:focus {
-  background-color: rgba(255, 193, 7, 0.2);
+  background-color: rgba(255, 193, 7, 0.4);
 }
 
 @media(max-width:991px){

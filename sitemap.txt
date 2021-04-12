@@ -6,3 +6,4 @@ https://mycodenotein.netlify.app/src/python-modules.html
 https://mycodenotein.netlify.app/src/sql.html
 https://mycodenotein.netlify.app/src/tkinter.html
 https://mycodenotein.netlify.app/src/tkinter-widgets.html
+https://mycodenotein.netlify.app/src/ttk.html

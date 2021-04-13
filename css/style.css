@@ -10,7 +10,6 @@
   --light: rgb(248, 249, 250);
   --dark: rgb(52, 58, 64);
 }
-
 h1 {
   color: var(--bs-primary);
   margin-bottom: 50px;
@@ -32,7 +31,8 @@ h3 {
 }
 
 video,
-img {
+img,
+iframe{
   margin-bottom: 30px;
 }
 

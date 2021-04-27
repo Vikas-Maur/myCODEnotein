@@ -249,3 +249,31 @@ pre > code > a:hover,
     margin: auto;
   }
 }
+
+
+/* PAGE TRANSITIONS */
+
+/* .transition-card{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1000;
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 15%;
+  background-color: #212529;
+  pointer-events: none;
+  clip-path: circle(0px at 50% 50%);
+  transition: all 2s ease-in-out;
+}
+html.is-changing .transition-card{
+  clip-path: circle(1000px at 50% 50%);
+  
+}
+
+html.is-rendering .transition-card{
+  clip-path: circle(0px at 50% 50%);
+} */

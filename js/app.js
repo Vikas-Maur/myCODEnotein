@@ -1,0 +1,2 @@
+SetTeleporterButtons();
+hljs.highlightAll();

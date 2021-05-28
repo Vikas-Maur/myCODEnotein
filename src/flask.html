@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/stackoverflow-dark.min.css">
     <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
-    <title>tkinter widgets,classes,templates - by myCODEnotein</title>
-    <meta name="description" content="If you dont want to write those boiler plate code for tkinter anymore . You are at correct place . Just click the link and make sure to bookmark the page for future as well - by myCODEnotein">
+    <title>Everything about flask | by myCODEnotein</title>
+    <meta name="description" content="Everything about flask | by myCODEnotein">
   </head>
   <body>
     <header class="sticky-top">
@@ -111,36 +111,36 @@
               <ul class="list-unstyled ps-0">
             
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-0" data-bs-toggle="collapse" data-targetid="h2-1">
-  Starter Template With Usual Methods
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-0" data-bs-toggle="collapse" data-targetid="h2-5">
+  Creating a virtual environment (Optional)
  </button>
  <div class="collapse" id="teleporter-collapse-0">
   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-8">
+     Activating a virtual environment
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-9">
+     Deactivating a virtual environment
+    </a>
+   </li>
   </ul>
  </div>
 </li>
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-1" data-bs-toggle="collapse" data-targetid="h2-2">
-  Hoverable Button and events
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-1" data-bs-toggle="collapse" data-targetid="h2-6">
+  Installation of flask
  </button>
  <div class="collapse" id="teleporter-collapse-1">
   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-   <li>
-    <a class="link-dark rounded" href="#h3-4">
-     Creating a button which changes colors on hover
-    </a>
-   </li>
-   <li>
-    <a class="link-dark rounded" href="#h3-5">
-     A Class For Making An Hoverable Button
-    </a>
-   </li>
   </ul>
  </div>
 </li>
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-2" data-bs-toggle="collapse" data-targetid="h2-3">
-  Adding a Scrollbar To Text widget (Full Template)
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-2" data-bs-toggle="collapse" data-targetid="h2-7">
+  Starting with coding and Starter code
  </button>
  <div class="collapse" id="teleporter-collapse-2">
   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
@@ -156,74 +156,55 @@
         </div>
 
         <div id="content" class="col-sm-10 col-lg-6 col-xl-7 p-3">
-<h1 id='h1-0'><span class='badge bg-primary'> </span> Tkinter Widgets --> by myCODEnotein <span class='badge bg-primary'> </span></h1>
+<h1 id='h1-4'><span class='badge bg-primary'> </span> Everything about flask --> by myCODEnotein <span class='badge bg-primary'> </span></h1>
 
-<div class='section'><h2 id='h2-1'><span class='badge bg-danger'> </span> Starter Template With Usual Methods</h2>
+<div class='section'><h2 id='h2-5'><span class='badge bg-danger'> </span> Creating a virtual environment (Optional)</h2>
 
-<pre id='code-6'><code class='python' language='python'>from tkinter import *
-root = Tk()
-root.geometry('1300x700')
-root.title('')
-root.mainloop()</code></pre>
+<div class="callout-info">Note that by creating virtual environment you need to install all the required modules again. Also everything you do in the terminal must be done after activating the virtual environment</div>
 
-</div><div class='section'><h2 id='h2-2'><span class='badge bg-danger'> </span> Hoverable Button and events</h2>
+<div id='normal-0' class='normal'>Run the following command in terminal</div>
 
-<h3 id='h3-4'><span class='badge bg-warning'> </span> Creating a button which changes colors on hover</h3>
+<pre id='code-10'><code class='python' language='python'>python -m venv name_of_environment
+# Example:
+python -m venv virt</code></pre>
 
-<pre id='code-7'><code class='python' language='python'>from tkinter import *
-root = Tk()
+<h3 id='h3-8'><span class='badge bg-warning'> </span> Activating a virtual environment</h3>
 
-def ChangeBG(event,color):
-	event.widget.config(background=color) 
-	# there are more ways of doing this
+<pre id='code-11'><code class='python' language='python'># In git bash
+source name_of_environment/Scripts/activate
+# In this example:
+source virt/Scripts/activate</code></pre>
 
-myButton = Button(root,text='Hoverable Button',bg='red',fg='white')
-myButton.pack()
+<pre id='code-12'><code class='python' language='python'># In cmd
+name_of_environment\Scripts\activate
+# In this example:
+virt\Scripts\activate</code></pre>
 
-# When mouse enters the button 
-myButton.bind('&lt;Enter&gt;',func=lambda e:ChangeBG(e,'grey'))
+<h3 id='h3-9'><span class='badge bg-warning'> </span> Deactivating a virtual environment</h3>
 
-# When mouse leaves the button 
-myButton.bind('&lt;Leave&gt;',func=lambda e:ChangeBG(e,'red'))
+<div id='normal-1' class='normal'>just run the command:
+deactivate</div>
 
-root.mainloop()</code></pre>
+</div><div class='section'><h2 id='h2-6'><span class='badge bg-danger'> </span> Installation of flask</h2>
 
-<video class="container-fluid" controls="" muted="" preload="none" src="/vid/tkinter/hoverableButton.mp4" title="If the video does not load then please refresh/reload the page"></video>
+<div id='normal-2' class='normal'>pip install flask</div>
 
-<h3 id='h3-5'><span class='badge bg-warning'> </span> A Class For Making An Hoverable Button</h3>
+</div><div class='section'><h2 id='h2-7'><span class='badge bg-danger'> </span> Starting with coding and Starter code</h2>
 
-<pre id='code-8'><code class='python' language='python'>class MyButton(Button):
-	def __init__(self,master,on_enter,**kwargs):
-		super().__init__(master,**kwargs)
-		'''
-		on_enter: a dictionary 
-		# This specifies **options when mouse enters the
-		
-		kwargs: a dictionary
-		# This specifies normal **options
-		'''
-		self.on_enter = on_enter 
-		self.on_leave = kwargs
+<div id='normal-3' class='normal'>Firstly let us create a file named app.py
+in the current directory.
+And then write/paste the below code in it.</div>
 
-		self.MakeHoverable() # changing the widget on hover
+<pre id='code-13'><code class='python' language='python'>from flask import Flask
 
-	def MakeHoverable(self):
-		self.bind('&lt;Enter&gt;',lambda e:self.config(**self.on_enter))
-		self.bind('&lt;Leave&gt;',lambda e:self.config(**self.on_leave))</code></pre>
+app = Flask(__name__)
 
-</div><div class='section'><h2 id='h2-3'><span class='badge bg-danger'> </span> Adding a Scrollbar To Text widget (Full Template)</h2>
+@app.route('/')
+def home():
+    return 'myCODEnotein is best'
 
-<pre id='code-9'><code class='python' language='python'># Creating a text widget instance
-myText = Text(master,**options)
-myText.pack(side='left',expand=True,fill='both')
-
-# Creating a scrollbar widget instance
-myScroll = Scrollbar(master,command=myText.yview,**options)
-myScroll.pack(side='right',expand=True,fill='y')
-
-myText.config(yscrollcommand=myScroll.set)</code></pre>
-
-<video class="container-fluid" controls="" muted="" preload="none" src="/vid/tkinter/scrollbar.mp4" title="If the video does not load then please refresh/reload the page"></video></div>
+if __name__=="__main__":
+    app.run(debug=True) # True only while development</code></pre></div>
 
         </div>
 

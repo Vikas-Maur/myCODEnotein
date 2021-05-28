@@ -15,8 +15,8 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/stackoverflow-dark.min.css">
     <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
-    <title>tkinter widgets,classes,templates - by myCODEnotein</title>
-    <meta name="description" content="If you dont want to write those boiler plate code for tkinter anymore . You are at correct place . Just click the link and make sure to bookmark the page for future as well - by myCODEnotein">
+    <title>Everything about PyQt5 | by myCODEnotein</title>
+    <meta name="description" content="Everything about pyt5 wrapped up in one blog - by myCODEnotein">
   </head>
   <body>
     <header class="sticky-top">
@@ -111,39 +111,49 @@
               <ul class="list-unstyled ps-0">
             
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-0" data-bs-toggle="collapse" data-targetid="h2-1">
-  Starter Template With Usual Methods
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-0" data-bs-toggle="collapse" data-targetid="h2-3">
+  Installation
  </button>
  <div class="collapse" id="teleporter-collapse-0">
   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-6">
+     Installing PyQt5 Designer
+    </a>
+   </li>
   </ul>
  </div>
 </li>
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-1" data-bs-toggle="collapse" data-targetid="h2-2">
-  Hoverable Button and events
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-1" data-bs-toggle="collapse" data-targetid="h2-4">
+  Importing Related stuff
  </button>
  <div class="collapse" id="teleporter-collapse-1">
   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
-   <li>
-    <a class="link-dark rounded" href="#h3-4">
-     Creating a button which changes colors on hover
-    </a>
-   </li>
-   <li>
-    <a class="link-dark rounded" href="#h3-5">
-     A Class For Making An Hoverable Button
-    </a>
-   </li>
   </ul>
  </div>
 </li>
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-2" data-bs-toggle="collapse" data-targetid="h2-3">
-  Adding a Scrollbar To Text widget (Full Template)
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-2" data-bs-toggle="collapse" data-targetid="h2-5">
+  Creating the Main Window and related stuff
  </button>
  <div class="collapse" id="teleporter-collapse-2">
   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+   <li>
+    <a class="link-dark rounded" href="#h3-7">
+     Creating a class
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-8">
+     Making an instance of the class and running the app
+    </a>
+   </li>
+   <li>
+    <a class="link-dark rounded" href="#h3-9">
+     Setting the title of the window
+    </a>
+   </li>
   </ul>
  </div>
 </li>
@@ -156,74 +166,58 @@
         </div>
 
         <div id="content" class="col-sm-10 col-lg-6 col-xl-7 p-3">
-<h1 id='h1-0'><span class='badge bg-primary'> </span> Tkinter Widgets --> by myCODEnotein <span class='badge bg-primary'> </span></h1>
+<h1 id='h1-2'><span class='badge bg-primary'> </span> PyQt5 --> by myCODEnotein <span class='badge bg-primary'> </span></h1>
 
-<div class='section'><h2 id='h2-1'><span class='badge bg-danger'> </span> Starter Template With Usual Methods</h2>
+<div class='section'><h2 id='h2-3'><span class='badge bg-danger'> </span> Installation</h2>
 
-<pre id='code-6'><code class='python' language='python'>from tkinter import *
-root = Tk()
-root.geometry('1300x700')
-root.title('')
-root.mainloop()</code></pre>
+<div id='normal-0' class='normal'>pip install PyQt5</div>
 
-</div><div class='section'><h2 id='h2-2'><span class='badge bg-danger'> </span> Hoverable Button and events</h2>
+<h3 id='h3-6'><span class='badge bg-warning'> </span> Installing PyQt5 Designer</h3>
 
-<h3 id='h3-4'><span class='badge bg-warning'> </span> Creating a button which changes colors on hover</h3>
+<div id='normal-1' class='normal'>pip install PyQt5Designer</div>
 
-<pre id='code-7'><code class='python' language='python'>from tkinter import *
-root = Tk()
+<pre id='code-10'><code class='python' language='python'># To run it , enter the below command in terminal
+designer.exe</code></pre>
 
-def ChangeBG(event,color):
-	event.widget.config(background=color) 
-	# there are more ways of doing this
+<img alt="PyQt5 Designer" class="img-fluid" src="/img/pyqt5/designer.png"/>
 
-myButton = Button(root,text='Hoverable Button',bg='red',fg='white')
-myButton.pack()
+</div><div class='section'><h2 id='h2-4'><span class='badge bg-danger'> </span> Importing Related stuff</h2>
 
-# When mouse enters the button 
-myButton.bind('&lt;Enter&gt;',func=lambda e:ChangeBG(e,'grey'))
+<pre id='code-11'><code class='python' language='python'>import PyQt5.QtWidgets as qtw</code></pre>
 
-# When mouse leaves the button 
-myButton.bind('&lt;Leave&gt;',func=lambda e:ChangeBG(e,'red'))
+</div><div class='section'><h2 id='h2-5'><span class='badge bg-danger'> </span> Creating the Main Window and related stuff</h2>
 
-root.mainloop()</code></pre>
+<h3 id='h3-7'><span class='badge bg-warning'> </span> Creating a class</h3>
 
-<video class="container-fluid" controls="" muted="" preload="none" src="/vid/tkinter/hoverableButton.mp4" title="If the video does not load then please refresh/reload the page"></video>
+<pre id='code-12'><code class='python' language='python'>class MainWindow(qtw.QWidget):
+    def __init__(self):
+        super().__init__()
 
-<h3 id='h3-5'><span class='badge bg-warning'> </span> A Class For Making An Hoverable Button</h3>
+        self.show() # This will show the app when we start it</code></pre>
 
-<pre id='code-8'><code class='python' language='python'>class MyButton(Button):
-	def __init__(self,master,on_enter,**kwargs):
-		super().__init__(master,**kwargs)
-		'''
-		on_enter: a dictionary 
-		# This specifies **options when mouse enters the
-		
-		kwargs: a dictionary
-		# This specifies normal **options
-		'''
-		self.on_enter = on_enter 
-		self.on_leave = kwargs
+<h3 id='h3-8'><span class='badge bg-warning'> </span> Making an instance of the class and running the app</h3>
 
-		self.MakeHoverable() # changing the widget on hover
+<pre id='code-13'><code class='python' language='python'>app = qtw.QApplication([])
+main_window = MainWindow()
 
-	def MakeHoverable(self):
-		self.bind('&lt;Enter&gt;',lambda e:self.config(**self.on_enter))
-		self.bind('&lt;Leave&gt;',lambda e:self.config(**self.on_leave))</code></pre>
+#Running the app
+app.exec_()</code></pre>
 
-</div><div class='section'><h2 id='h2-3'><span class='badge bg-danger'> </span> Adding a Scrollbar To Text widget (Full Template)</h2>
+<img alt="running pyqt5 app for first time" class="img-fluid" src="/img/pyqt5/running_for_first_time.png"/>
 
-<pre id='code-9'><code class='python' language='python'># Creating a text widget instance
-myText = Text(master,**options)
-myText.pack(side='left',expand=True,fill='both')
+<h3 id='h3-9'><span class='badge bg-warning'> </span> Setting the title of the window</h3>
 
-# Creating a scrollbar widget instance
-myScroll = Scrollbar(master,command=myText.yview,**options)
-myScroll.pack(side='right',expand=True,fill='y')
+<pre id='code-14'><code class='python' language='python'># Method1
+# Add the below line above self.show in the MainWindow Class
+self.setWindowTitle('myCODEnotein')</code></pre>
 
-myText.config(yscrollcommand=myScroll.set)</code></pre>
+<img alt="Setting title of pyqt5 window using method 1" class="img-fluid" src="/img/pyqt5/setitle_method1.png"/>
 
-<video class="container-fluid" controls="" muted="" preload="none" src="/vid/tkinter/scrollbar.mp4" title="If the video does not load then please refresh/reload the page"></video></div>
+<pre id='code-15'><code class='python' language='python'># Method2
+# Add the below line below the main_window instance
+main_window.setWindowTitle('myCODEnotein')</code></pre>
+
+<img alt="Setting title of pyqt5 window using method2" class="img-fluid" src="/img/pyqt5/settitle_method2.png"/></div>
 
         </div>
 

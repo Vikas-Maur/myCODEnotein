@@ -13,90 +13,98 @@
     />
 
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/stackoverflow-dark.min.css">
+    <link rel="stylesheet" href="/css/highlight/stackoverflow-dark.css">
     <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json">
+    <!-- IOS SUPPORT -->
+    <link rel="apple-touch-icon" href="/img/logo-192.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#212529">
+
+    <meta name="theme-color" content="#212529">
+
     <title>Pygame - Making games with python power (fastest guide) - myCODEnotein</title>
     <meta name="description" content="Pygame - a python module for making games - If you had not worked on it for days then these notes will help you to remember your concepts of pygame easily and quickly">
   </head>
   <body>
     <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand mr-5 fw-bold fs-3" href="/">
-            <span class="text-warning">my</span><span class="text-primary">CODE</span><span class="text-danger">notein</span>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-            <li class="nav-item mr-3">
-              <a class="nav-link" aria-current="page" href="/#second-section">Blogs |</a>
-            </li>
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="/src/sql.html">SQL</a>
-            </li>
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="/src/flutter.html">Flutter</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Python
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="/src/django.html">Django</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/flask.html">Flask</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="/src/pygame.html">Pygame</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/python.html">Python</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/python-modules.html">Python Modules</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/pyqt5.html">PyQT5</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="/src/tkinter.html"
-                    >tkinter</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/tkinter-widgets.html"
-                    >tkinter-widgets</a
-                  >
-                </li>
-                <li><a class="dropdown-item" href="/src/ttk.html">ttk</a></li>
-              </ul>
-            </li>
-          </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand mr-5 fw-bold fs-3" href="/">
+              <span class="text-warning">my</span><span class="text-primary">CODE</span><span class="text-danger">notein</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+              <li class="nav-item mr-3">
+                <a class="nav-link" aria-current="page" href="/#second-section">Blogs |</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="/src/sql.html">SQL</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="/src/flutter.html">Flutter</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Python
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="/src/django.html">Django</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/flask.html">Flask</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="/src/pygame.html">Pygame</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/python.html">Python</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/python-modules.html">Python Modules</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/pyqt5.html">PyQT5</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="/src/tkinter.html"
+                      >tkinter</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/tkinter-widgets.html"
+                      >tkinter-widgets</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="/src/ttk.html">ttk</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button id="installPWA" class="btn btn-primary mr-5">Install Our App (PWA)</button>
+          </div>
         </div>
-      </div>
-    </nav>
-</header>
+      </nav>
+    </header>
 
     <div class="container-fluid">
       <div class="row">
@@ -213,70 +221,44 @@
         </div>
 
         <div id="content" class="col-sm-10 col-lg-6 col-xl-7 p-3">
-<h1 id='h1-1'><span class='badge bg-primary'> </span> Pygame --> by myCODEnotein <span class='badge bg-primary'> </span></h1>
-
-<div class='section'><h2 id='h2-2'><span class='badge bg-danger'> </span> Installing Pygame</h2>
-
-<div id='normal-0' class='normal'>pip install pygame</div>
-
-</div><div class='section'><h2 id='h2-3'><span class='badge bg-danger'> </span> Basic pygame starting</h2>
-
-<pre id='code-16'><code class='python' language='python'>import pygame
+<h1 id="h1-1"><span class="badge bg-primary"> </span> Pygame --&gt; by myCODEnotein <span class="badge bg-primary"> </span></h1>
+<div class="section"><h2 id="h2-2"><span class="badge bg-danger"> </span> Installing Pygame</h2>
+<div class="normal" id="normal-0">pip install pygame</div>
+</div><div class="section"><h2 id="h2-3"><span class="badge bg-danger"> </span> Basic pygame starting</h2>
+<pre id="code-16"><code class="python" language="python">import pygame
 pygame.init()
 screen = pygame.display.set_mode((WIDTH,HEIGHT))</code></pre>
-
-</div><div class='section'><h2 id='h2-4'><span class='badge bg-danger'> </span> Basic required code</h2>
-
-<pre id='code-17'><code class='python' language='python'>running=True
+</div><div class="section"><h2 id="h2-4"><span class="badge bg-danger"> </span> Basic required code</h2>
+<pre id="code-17"><code class="python" language="python">running=True
 while running:
 	for event in pygame.event.get():
 		if event.type==pygame.QUIT:
 			running=False</code></pre>
-
-</div><div class='section'><h2 id='h2-5'><span class='badge bg-danger'> </span> Drawing with pygame</h2>
-
-<h3 id='h3-8'><span class='badge bg-warning'> </span> Drawing a rectangle</h3>
-
-<pre id='code-18'><code class='python' language='python'>pygame.draw.rect(surface,(r,g,b),(x,y,width,height))</code></pre>
-
-<h3 id='h3-9'><span class='badge bg-warning'> </span> Doing the same thing with pygame.Rect</h3>
-
-<pre id='code-19'><code class='python' language='python'>rect = pygame.rect(x,y,width,height) 
+</div><div class="section"><h2 id="h2-5"><span class="badge bg-danger"> </span> Drawing with pygame</h2>
+<h3 id="h3-8"><span class="badge bg-warning"> </span> Drawing a rectangle</h3>
+<pre id="code-18"><code class="python" language="python">pygame.draw.rect(surface,(r,g,b),(x,y,width,height))</code></pre>
+<h3 id="h3-9"><span class="badge bg-warning"> </span> Doing the same thing with pygame.Rect</h3>
+<pre id="code-19"><code class="python" language="python">rect = pygame.rect(x,y,width,height) 
 pygame.draw.rect(surface,(r,g,b),rect)</code></pre>
-
-<h3 id='h3-10'><span class='badge bg-warning'> </span> Resizing the rectangle</h3>
-
-<pre id='code-20'><code class='python' language='python'>rect.inflate(width,height)
+<h3 id="h3-10"><span class="badge bg-warning"> </span> Resizing the rectangle</h3>
+<pre id="code-20"><code class="python" language="python">rect.inflate(width,height)
 # -ve values make it smaller and vice-versa
 # Note that to see change rect must be draw again on screen , if it is already drawn</code></pre>
-
-<h3 id='h3-11'><span class='badge bg-warning'> </span> Drawing a circle</h3>
-
-<pre id='code-21'><code class='python' language='python'>pygame.draw.circle(surface,(r,g,b),(x,y),radius,thickness)</code></pre>
-
-</div><div class='section'><h2 id='h2-6'><span class='badge bg-danger'> </span> Mouse Related Functions</h2>
-
-<pre id='code-22'><code class='python' language='python'>mouseX , mouseY = pygame.mouse.get_pos()
+<h3 id="h3-11"><span class="badge bg-warning"> </span> Drawing a circle</h3>
+<pre id="code-21"><code class="python" language="python">pygame.draw.circle(surface,(r,g,b),(x,y),radius,thickness)</code></pre>
+</div><div class="section"><h2 id="h2-6"><span class="badge bg-danger"> </span> Mouse Related Functions</h2>
+<pre id="code-22"><code class="python" language="python">mouseX , mouseY = pygame.mouse.get_pos()
 # Returns mouse x coordinates and y coordinates</code></pre>
-
-</div><div class='section'><h2 id='h2-7'><span class='badge bg-danger'> </span> Dealing with images</h2>
-
-<h3 id='h3-12'><span class='badge bg-warning'> </span> Loading the image --> First step</h3>
-
-<pre id='code-23'><code class='python' language='python'>myImg = pygame.image.load(pathOfImage)</code></pre>
-
-<h3 id='h3-13'><span class='badge bg-warning'> </span> Converting the image with convert_alpha</h3>
-
-<pre id='code-24'><code class='python' language='python'>myImg = myImg.convert_alpha()</code></pre>
-
-<h3 id='h3-14'><span class='badge bg-warning'> </span> Changing the image size</h3>
-
-<pre id='code-25'><code class='python' language='python'>myImg = pygame.transform.scale(myImg,(width,height))
+</div><div class="section"><h2 id="h2-7"><span class="badge bg-danger"> </span> Dealing with images</h2>
+<h3 id="h3-12"><span class="badge bg-warning"> </span> Loading the image --&gt; First step</h3>
+<pre id="code-23"><code class="python" language="python">myImg = pygame.image.load(pathOfImage)</code></pre>
+<h3 id="h3-13"><span class="badge bg-warning"> </span> Converting the image with convert_alpha</h3>
+<pre id="code-24"><code class="python" language="python">myImg = myImg.convert_alpha()</code></pre>
+<h3 id="h3-14"><span class="badge bg-warning"> </span> Changing the image size</h3>
+<pre id="code-25"><code class="python" language="python">myImg = pygame.transform.scale(myImg,(width,height))
 # Note that myImg used as argument is already loaded</code></pre>
-
-<h3 id='h3-15'><span class='badge bg-warning'> </span> Drawing the image on screen</h3>
-
-<pre id='code-26'><code class='python' language='python'>surface_or_screen.blit(myImg,(x,y))
+<h3 id="h3-15"><span class="badge bg-warning"> </span> Drawing the image on screen</h3>
+<pre id="code-26"><code class="python" language="python">surface_or_screen.blit(myImg,(x,y))
 # Note that here screen is the variable created at the starting of notes</code></pre></div>
 
         </div>
@@ -284,10 +266,10 @@ pygame.draw.rect(surface,(r,g,b),rect)</code></pre>
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="/js/highlight.pack.js"></script>
     <script src="/js/teleporter.js"></script>
+    <script src="/js/blog.js"></script>
     <script src="/js/app.js"></script>
   </body>
 

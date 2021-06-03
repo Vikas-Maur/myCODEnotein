@@ -13,90 +13,98 @@
     />
 
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/stackoverflow-dark.min.css">
+    <link rel="stylesheet" href="/css/highlight/stackoverflow-dark.css">
     <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json">
+    <!-- IOS SUPPORT -->
+    <link rel="apple-touch-icon" href="/img/logo-192.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#212529">
+
+    <meta name="theme-color" content="#212529">
+
     <title>Flutter | Dart | Mobile Apps | NOTES - by myCODEnotein</title>
     <meta name="description" content="Flutter notes which are easy to understand and covers a lot of things along with concepts and also with an easy navigation with the help of TELEPORTER. Brought to you - by myCODEnotein">
   </head>
   <body>
     <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand mr-5 fw-bold fs-3" href="/">
-            <span class="text-warning">my</span><span class="text-primary">CODE</span><span class="text-danger">notein</span>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-            <li class="nav-item mr-3">
-              <a class="nav-link" aria-current="page" href="/#second-section">Blogs |</a>
-            </li>
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="/src/sql.html">SQL</a>
-            </li>
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="/src/flutter.html">Flutter</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Python
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="/src/django.html">Django</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/flask.html">Flask</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="/src/pygame.html">Pygame</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/python.html">Python</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/python-modules.html">Python Modules</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/pyqt5.html">PyQT5</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="/src/tkinter.html"
-                    >tkinter</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/tkinter-widgets.html"
-                    >tkinter-widgets</a
-                  >
-                </li>
-                <li><a class="dropdown-item" href="/src/ttk.html">ttk</a></li>
-              </ul>
-            </li>
-          </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand mr-5 fw-bold fs-3" href="/">
+              <span class="text-warning">my</span><span class="text-primary">CODE</span><span class="text-danger">notein</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+              <li class="nav-item mr-3">
+                <a class="nav-link" aria-current="page" href="/#second-section">Blogs |</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="/src/sql.html">SQL</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="/src/flutter.html">Flutter</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Python
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="/src/django.html">Django</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/flask.html">Flask</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="/src/pygame.html">Pygame</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/python.html">Python</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/python-modules.html">Python Modules</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/pyqt5.html">PyQT5</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="/src/tkinter.html"
+                      >tkinter</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/tkinter-widgets.html"
+                      >tkinter-widgets</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="/src/ttk.html">ttk</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button id="installPWA" class="btn btn-primary mr-5">Install Our App (PWA)</button>
+          </div>
         </div>
-      </div>
-    </nav>
-</header>
+      </nav>
+    </header>
 
     <div class="container-fluid">
       <div class="row">
@@ -182,195 +190,136 @@
         </div>
 
         <div id="content" class="col-sm-10 col-lg-6 col-xl-7 p-3">
-<h1 id='h1-26'><span class='badge bg-primary'> </span> Flutter --> by myCODEnotein <span class='badge bg-primary'> </span></h1>
-
-<div class='section'><h2 id='h2-27'><span class='badge bg-danger'> </span> Installing Flutter</h2>
-
-<div id='normal-0' class='normal'>Below the installation process for windows is given.(git is required)
-For other os you can follow the link : <a href="https://flutter.dev/docs/get-started/install" target="_blank">flutter installation website</a>
+<h1 id="h1-26"><span class="badge bg-primary"> </span> Flutter --&gt; by myCODEnotein <span class="badge bg-primary"> </span></h1>
+<div class="section"><h2 id="h2-27"><span class="badge bg-danger"> </span> Installing Flutter</h2>
+<div class="normal" id="normal-0">Below the installation process for windows is given.(git is required)
+For other os you can follow the link : <a href="https://flutter.dev/docs/get-started/install" rel="noreferrer" target="_blank">flutter installation website</a>
 You can install without git as well but then you need to follow the documentation only.</div>
-
-<h3 id='h3-29'><span class='badge bg-warning'> </span> For windows (only) | (git required)</h3>
-
-<div id='normal-1' class='normal'>You can either watch a video below which
+<h3 id="h3-29"><span class="badge bg-warning"> </span> For windows (only) | (git required)</h3>
+<div class="normal" id="normal-1">You can either watch a video below which
 is by TechWithTim 
 (or)
 read the below post section.
 I recommend you to watch the video but its your wish.</div>
-
 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/ly0hAtV7EBg" title="YouTube video player" width="560"></iframe>
-
-<div id='normal-2' class='normal'>Just go to any folder where you want to install flutter .
+<div class="normal" id="normal-2">Just go to any folder where you want to install flutter .
 Make sure the folder is normal and does not contains any special rights.
 Also make sure that the folder does not contain any folder named "flutter"
 And then open git bash in that folder and run the below command:</div>
-
-<div id='normal-3' class='normal'>git clone https://github.com/flutter/flutter.git -b stable
+<div class="normal" id="normal-3">git clone https://github.com/flutter/flutter.git -b stable
 
 // You can paste the link(after copying it , obviously) in git bash using insert key.</div>
-
 <img alt="Cloning the flutter sdk with git clone" class="img-fluid" src="/img/flutter/cloning_the_flutter.png"/>
-
-<h3 id='h3-30'><span class='badge bg-warning'> </span> Adding flutter to path</h3>
-
-<div id='normal-4' class='normal'>Just go to the "flutter" folder (created above) and 
+<h3 id="h3-30"><span class="badge bg-warning"> </span> Adding flutter to path</h3>
+<div class="normal" id="normal-4">Just go to the "flutter" folder (created above) and 
 find a folder named "bin" inside it.
 Copy the path of bin folder .</div>
-
-<div id='normal-5' class='normal'>In my case it looks like this:
+<div class="normal" id="normal-5">In my case it looks like this:
 E:\installed_flutter\flutter\bin</div>
-
-<div id='normal-6' class='normal'>Just edit the environment variables as shown
+<div class="normal" id="normal-6">Just edit the environment variables as shown
 in below video.</div>
-
 <video class="container-fluid" controls="" muted="" preload="none" src="/vid/flutter/adding_flutter_to_path.mp4" title="If the video does not load then please refresh/reload the page"></video>
-
-<div id='normal-7' class='normal'>Now restart the git/cmd and run the command
+<div class="normal" id="normal-7">Now restart the git/cmd and run the command
 flutter
 (if you see any output then , you are good to go.)</div>
-
 <img alt="Running flutter command" class="img-fluid" src="/img/flutter/running_flutter_command.png"/>
-
-<h3 id='h3-31'><span class='badge bg-warning'> </span> Flutter doctor</h3>
-
-<div id='normal-8' class='normal'>Now run the below command:
+<h3 id="h3-31"><span class="badge bg-warning"> </span> Flutter doctor</h3>
+<div class="normal" id="normal-8">Now run the below command:
 flutter doctor</div>
-
-<div id='normal-9' class='normal'>This will command will scan your system for
+<div class="normal" id="normal-9">This will command will scan your system for
 correct flutter dependencies , install
 them automatically or will tell you to do
 something.</div>
-
 <img alt="Running flutter doctor" class="img-fluid" src="/img/flutter/flutter_doctor.png"/>
-
-<div id='normal-10' class='normal'>Right now flutter is telling me to install java jdk
+<div class="normal" id="normal-10">Right now flutter is telling me to install java jdk
 and android studio.
 I will install android studio which will automatically
 install java jdk as well.
 So , let me do that.</div>
-
-<div id='normal-11' class='normal'>If you also get any kind of message
+<div class="normal" id="normal-11">If you also get any kind of message
 you just follow it.
 If you are unable to understand the message 
 then just google it and you will get the answer.
 Click the image to go to android studio website and
 download android studio from there:</div>
-
-<a href="https://developer.android.com/studio?gclid=Cj0KCQjwgtWDBhDZARIsADEKwgM5Td9HxIChTzt668qBBQoV7jsTV9kZYo_yZDkaFZi-mmcH9e8hyoQaArfUEALw_wcB&amp;gclsrc=aw.ds" target="_blank"><img alt="Android Studio Website" class="img-fluid" src="/img/flutter/android_studio_website.png"/></a>
-
-<div id='normal-12' class='normal'>After that flutter said me to run a command
+<a href="https://developer.android.com/studio?gclid=Cj0KCQjwgtWDBhDZARIsADEKwgM5Td9HxIChTzt668qBBQoV7jsTV9kZYo_yZDkaFZi-mmcH9e8hyoQaArfUEALw_wcB&amp;gclsrc=aw.ds" rel="noreferrer" target="_blank"><img alt="Android Studio Website" class="img-fluid" src="/img/flutter/android_studio_website.png"/></a>
+<div class="normal" id="normal-12">After that flutter said me to run a command
 for android licenses which i ran.
 While the command was running , I was
 asked to enter "y" which i did as shown
 in image below:</div>
-
 <img alt="Flutter doctor - android licenses" class="img-fluid" src="/img/flutter/flutter_doctor_android_licenses.png"/>
-
-<div id='normal-13' class='normal'>Then i ran 
+<div class="normal" id="normal-13">Then i ran 
 flutter doctor 
 again and got the following output:</div>
-
 <img alt="flutter_doctor_after_android_license_command" class="img-fluid" src="/img/flutter/flutter_doctor_after_android_license_command.png"/>
-
-<h3 id='h3-32'><span class='badge bg-warning'> </span> Creating an emulator</h3>
-
-<div id='normal-14' class='normal'>Now , you have two options:
+<h3 id="h3-32"><span class="badge bg-warning"> </span> Creating an emulator</h3>
+<div class="normal" id="normal-14">Now , you have two options:
 either you connect a physical device
 to your pc/laptop .
 (or)
 create a virtual device through an emulator.
 Now to create an emulator i will recommend
 you to watch the below video and follow it.</div>
-
 <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" frameborder="0" height="315" src="https://www.youtube.com/embed/ly0hAtV7EBg" title="YouTube video player" width="560"></iframe>
-
-<h3 id='h3-33'><span class='badge bg-warning'> </span> VSCode setup for flutter</h3>
-
-<div id='normal-15' class='normal'>Now you can use android studio or
+<h3 id="h3-33"><span class="badge bg-warning"> </span> VSCode setup for flutter</h3>
+<div class="normal" id="normal-15">Now you can use android studio or
 Visual studio code for the development.
 I am gonna use visual studio code.
 Click the image to go to visual studio website
 and download visual studio from there.</div>
-
-<a href="https://code.visualstudio.com/download" target="_blank"><img alt="Download visual studio code" class="img-fluid" src="/img/flutter/download_visual_studio_code.png"/></a>
-
-<div id='normal-16' class='normal'>Just open visual studio code and install
+<a href="https://code.visualstudio.com/download" rel="noreferrer" target="_blank"><img alt="Download visual studio code" class="img-fluid" src="/img/flutter/download_visual_studio_code.png"/></a>
+<div class="normal" id="normal-16">Just open visual studio code and install
 flutter and dart extension by going to extension tab.
 When you download flutter extension , the dart extension
 gets downloaded automatically.
 But still make sure that it is downloaded and installed.</div>
-
 <img alt="Download flutter extension" class="img-fluid" src="/img/flutter/download_flutter_extension.png"/>
-
 <img alt="Download dart extension" class="img-fluid" src="/img/flutter/download_dart_extension.png"/>
-
 <div class="callout-info">Finally everything is done and now we can move on towards the coding process</div>
-
-</div><div class='section'><h2 id='h2-28'><span class='badge bg-danger'> </span> Starting a new project</h2>
-
-<div id='normal-17' class='normal'>Now to start a new project you have three options.
+</div><div class="section"><h2 id="h2-28"><span class="badge bg-danger"> </span> Starting a new project</h2>
+<div class="normal" id="normal-17">Now to start a new project you have three options.
 You can do it in android studio , visual studio or 
 through terminal.
 These notes cover visual studio and terminal method .
-For android studio you can go to: <a href="https://flutter.dev/docs/get-started/test-drive?tab=androidstudio" target="_blank">Documentation</a></div>
-
-<h3 id='h3-34'><span class='badge bg-warning'> </span> Creating a project through terminal (normal)</h3>
-
-<div id='normal-18' class='normal'>If in case you are having some problems you can visit:
-<a href="https://flutter.dev/docs/get-started/test-drive?tab=terminal" target="_blank">Flutter documentation for terminal </a></div>
-
-<pre id='code-38'><code class='dart' language='dart'>flutter create app_name
+For android studio you can go to: <a href="https://flutter.dev/docs/get-started/test-drive?tab=androidstudio" rel="noreferrer" target="_blank">Documentation</a></div>
+<h3 id="h3-34"><span class="badge bg-warning"> </span> Creating a project through terminal (normal)</h3>
+<div class="normal" id="normal-18">If in case you are having some problems you can visit:
+<a href="https://flutter.dev/docs/get-started/test-drive?tab=terminal" rel="noreferrer" target="_blank">Flutter documentation for terminal </a></div>
+<pre id="code-38"><code class="dart" language="dart">flutter create app_name
 // Run the command in command prompt.
 // Run in that folder where you want to create the project in.</code></pre>
-
-<div id='normal-19' class='normal'>Rules for writing app_name : <a href="https://dart.dev/tools/pub/pubspec#name" target="_blank">Documentation</a></div>
-
+<div class="normal" id="normal-19">Rules for writing app_name : <a href="https://dart.dev/tools/pub/pubspec#name" rel="noreferrer" target="_blank">Documentation</a></div>
 <img alt="Creating flutter app in terminal" class="img-fluid" src="/img/flutter/create_app_terminal.png"/>
-
-<div id='normal-20' class='normal'>When i ran this command i got an error.
+<div class="normal" id="normal-20">When i ran this command i got an error.
 The error told me to visit a link (specified above in rules).
 When i went there i got to know that you can 
 use lowercase letters only in app_name.
 Hence if you also got an error , i am sure you'll
 be able to find answer to that.</div>
-
-<pre id='code-39'><code class='dart' language='dart'>cd app_name
+<pre id="code-39"><code class="dart" language="dart">cd app_name
 // Now move to the created folder</code></pre>
-
 <img alt="cd app_name" class="img-fluid" src="/img/flutter/cd_testapp_terminal.png"/>
-
-<h3 id='h3-35'><span class='badge bg-warning'> </span> Running the app (terminal method)</h3>
-
-<pre id='code-40'><code class='dart' language='dart'>// Check that the android device is connected properly or not.
+<h3 id="h3-35"><span class="badge bg-warning"> </span> Running the app (terminal method)</h3>
+<pre id="code-40"><code class="dart" language="dart">// Check that the android device is connected properly or not.
 flutter devices</code></pre>
-
-<div id='normal-21' class='normal'>If you are not shown anything follow the device-specific instructions on the <a href="https://flutter.dev/docs/get-started/install" target="_blank">Install</a> page for your OS.</div>
-
-<pre id='code-41'><code class='dart' language='dart'>// Run the app with following command
+<div class="normal" id="normal-21">If you are not shown anything follow the device-specific instructions on the <a href="https://flutter.dev/docs/get-started/install" rel="noreferrer" target="_blank">Install</a> page for your OS.</div>
+<pre id="code-41"><code class="dart" language="dart">// Run the app with following command
 flutter run</code></pre>
-
-<h3 id='h3-36'><span class='badge bg-warning'> </span> Hot reload (through terminal)</h3>
-
-<div id='normal-22' class='normal'>To update the app without restarting or losing app state :
+<h3 id="h3-36"><span class="badge bg-warning"> </span> Hot reload (through terminal)</h3>
+<div class="normal" id="normal-22">To update the app without restarting or losing app state :
 Just press 'r' in the terminal.</div>
-
-<div id='normal-23' class='normal'>After the app build completes, you�ll see the starter app on your device.</div>
-
-<h3 id='h3-37'><span class='badge bg-warning'> </span> Creating a project through VSCode (easier)</h3>
-
+<div class="normal" id="normal-23">After the app build completes, you�ll see the starter app on your device.</div>
+<h3 id="h3-37"><span class="badge bg-warning"> </span> Creating a project through VSCode (easier)</h3>
 <div class="callout-danger">Firstly if you haven't install flutter extension and dart extension shown above in installation . Please do that.</div>
-
-<div id='normal-24' class='normal'>Just open command palette in VSCode through (ctrl+shift+p) or directly
+<div class="normal" id="normal-24">Just open command palette in VSCode through (ctrl+shift+p) or directly
 and write there flutter new application and select the shown command.
 (also shown in below image)</div>
-
 <img alt="Creating flutter project in vscode" class="img-fluid" src="/img/flutter/flutter_start_project_vscode.png"/>
-
-<div id='normal-25' class='normal'>Select the folder where you want to create the project in
+<div class="normal" id="normal-25">Select the folder where you want to create the project in
 and then write the project name you want.
 The project name must follow the rules described at this link:
-<a href="https://dart.dev/tools/pub/pubspec#name" target="_blank">Flutter documentation</a></div>
-
+<a href="https://dart.dev/tools/pub/pubspec#name" rel="noreferrer" target="_blank">Flutter documentation</a></div>
 <img alt="Flutter app first look in vscode" class="img-fluid" src="/img/flutter/flutter_app_created_first_look_vscode.png"/></div>
 
         </div>
@@ -378,10 +327,10 @@ The project name must follow the rules described at this link:
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="/js/highlight.pack.js"></script>
     <script src="/js/teleporter.js"></script>
+    <script src="/js/blog.js"></script>
     <script src="/js/app.js"></script>
   </body>
 

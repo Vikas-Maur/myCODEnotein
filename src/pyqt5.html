@@ -13,90 +13,98 @@
     />
 
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/stackoverflow-dark.min.css">
+    <link rel="stylesheet" href="/css/highlight/stackoverflow-dark.css">
     <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json">
+    <!-- IOS SUPPORT -->
+    <link rel="apple-touch-icon" href="/img/logo-192.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#212529">
+
+    <meta name="theme-color" content="#212529">
+
     <title>Everything about PyQt5 | by myCODEnotein</title>
     <meta name="description" content="Everything about pyt5 wrapped up in one blog - by myCODEnotein">
   </head>
   <body>
     <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand mr-5 fw-bold fs-3" href="/">
-            <span class="text-warning">my</span><span class="text-primary">CODE</span><span class="text-danger">notein</span>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-            <li class="nav-item mr-3">
-              <a class="nav-link" aria-current="page" href="/#second-section">Blogs |</a>
-            </li>
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="/src/sql.html">SQL</a>
-            </li>
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="/src/flutter.html">Flutter</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Python
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="/src/django.html">Django</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/flask.html">Flask</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="/src/pygame.html">Pygame</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/python.html">Python</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/python-modules.html">Python Modules</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/pyqt5.html">PyQT5</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="/src/tkinter.html"
-                    >tkinter</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/tkinter-widgets.html"
-                    >tkinter-widgets</a
-                  >
-                </li>
-                <li><a class="dropdown-item" href="/src/ttk.html">ttk</a></li>
-              </ul>
-            </li>
-          </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand mr-5 fw-bold fs-3" href="/">
+              <span class="text-warning">my</span><span class="text-primary">CODE</span><span class="text-danger">notein</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+              <li class="nav-item mr-3">
+                <a class="nav-link" aria-current="page" href="/#second-section">Blogs |</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="/src/sql.html">SQL</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="/src/flutter.html">Flutter</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Python
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="/src/django.html">Django</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/flask.html">Flask</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="/src/pygame.html">Pygame</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/python.html">Python</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/python-modules.html">Python Modules</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/pyqt5.html">PyQT5</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="/src/tkinter.html"
+                      >tkinter</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/tkinter-widgets.html"
+                      >tkinter-widgets</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="/src/ttk.html">ttk</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button id="installPWA" class="btn btn-primary mr-5">Install Our App (PWA)</button>
+          </div>
         </div>
-      </div>
-    </nav>
-</header>
+      </nav>
+    </header>
 
     <div class="container-fluid">
       <div class="row">
@@ -166,57 +174,38 @@
         </div>
 
         <div id="content" class="col-sm-10 col-lg-6 col-xl-7 p-3">
-<h1 id='h1-2'><span class='badge bg-primary'> </span> PyQt5 --> by myCODEnotein <span class='badge bg-primary'> </span></h1>
-
-<div class='section'><h2 id='h2-3'><span class='badge bg-danger'> </span> Installation</h2>
-
-<div id='normal-0' class='normal'>pip install PyQt5</div>
-
-<h3 id='h3-6'><span class='badge bg-warning'> </span> Installing PyQt5 Designer</h3>
-
-<div id='normal-1' class='normal'>pip install PyQt5Designer</div>
-
-<pre id='code-10'><code class='python' language='python'># To run it , enter the below command in terminal
+<h1 id="h1-2"><span class="badge bg-primary"> </span> PyQt5 --&gt; by myCODEnotein <span class="badge bg-primary"> </span></h1>
+<div class="section"><h2 id="h2-3"><span class="badge bg-danger"> </span> Installation</h2>
+<div class="normal" id="normal-0">pip install PyQt5</div>
+<h3 id="h3-6"><span class="badge bg-warning"> </span> Installing PyQt5 Designer</h3>
+<div class="normal" id="normal-1">pip install PyQt5Designer</div>
+<pre id="code-10"><code class="python" language="python"># To run it , enter the below command in terminal
 designer.exe</code></pre>
-
 <img alt="PyQt5 Designer" class="img-fluid" src="/img/pyqt5/designer.png"/>
-
-</div><div class='section'><h2 id='h2-4'><span class='badge bg-danger'> </span> Importing Related stuff</h2>
-
-<pre id='code-11'><code class='python' language='python'>import PyQt5.QtWidgets as qtw</code></pre>
-
-</div><div class='section'><h2 id='h2-5'><span class='badge bg-danger'> </span> Creating the Main Window and related stuff</h2>
-
-<h3 id='h3-7'><span class='badge bg-warning'> </span> Creating a class</h3>
-
-<pre id='code-12'><code class='python' language='python'>class MainWindow(qtw.QWidget):
+</div><div class="section"><h2 id="h2-4"><span class="badge bg-danger"> </span> Importing Related stuff</h2>
+<pre id="code-11"><code class="python" language="python">import PyQt5.QtWidgets as qtw</code></pre>
+</div><div class="section"><h2 id="h2-5"><span class="badge bg-danger"> </span> Creating the Main Window and related stuff</h2>
+<h3 id="h3-7"><span class="badge bg-warning"> </span> Creating a class</h3>
+<pre id="code-12"><code class="python" language="python">class MainWindow(qtw.QWidget):
     def __init__(self):
         super().__init__()
 
         self.show() # This will show the app when we start it</code></pre>
-
-<h3 id='h3-8'><span class='badge bg-warning'> </span> Making an instance of the class and running the app</h3>
-
-<pre id='code-13'><code class='python' language='python'>app = qtw.QApplication([])
+<h3 id="h3-8"><span class="badge bg-warning"> </span> Making an instance of the class and running the app</h3>
+<pre id="code-13"><code class="python" language="python">app = qtw.QApplication([])
 main_window = MainWindow()
 
 #Running the app
 app.exec_()</code></pre>
-
 <img alt="running pyqt5 app for first time" class="img-fluid" src="/img/pyqt5/running_for_first_time.png"/>
-
-<h3 id='h3-9'><span class='badge bg-warning'> </span> Setting the title of the window</h3>
-
-<pre id='code-14'><code class='python' language='python'># Method1
+<h3 id="h3-9"><span class="badge bg-warning"> </span> Setting the title of the window</h3>
+<pre id="code-14"><code class="python" language="python"># Method1
 # Add the below line above self.show in the MainWindow Class
 self.setWindowTitle('myCODEnotein')</code></pre>
-
 <img alt="Setting title of pyqt5 window using method 1" class="img-fluid" src="/img/pyqt5/setitle_method1.png"/>
-
-<pre id='code-15'><code class='python' language='python'># Method2
+<pre id="code-15"><code class="python" language="python"># Method2
 # Add the below line below the main_window instance
 main_window.setWindowTitle('myCODEnotein')</code></pre>
-
 <img alt="Setting title of pyqt5 window using method2" class="img-fluid" src="/img/pyqt5/settitle_method2.png"/></div>
 
         </div>
@@ -224,10 +213,10 @@ main_window.setWindowTitle('myCODEnotein')</code></pre>
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="/js/highlight.pack.js"></script>
     <script src="/js/teleporter.js"></script>
+    <script src="/js/blog.js"></script>
     <script src="/js/app.js"></script>
   </body>
 

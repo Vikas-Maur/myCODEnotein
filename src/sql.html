@@ -13,90 +13,98 @@
     />
 
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/stackoverflow-dark.min.css">
+    <link rel="stylesheet" href="/css/highlight/stackoverflow-dark.css">
     <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json">
+    <!-- IOS SUPPORT -->
+    <link rel="apple-touch-icon" href="/img/logo-192.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#212529">
+
+    <meta name="theme-color" content="#212529">
+
     <title>SQL - The DATABASE LANGUAGE (Covered Super Quickly) - myCODEnotein</title>
     <meta name="description" content="SQL - Structured query language - quick , fast and effective notes of sql which will make you remember sql in few minutes">
   </head>
   <body>
     <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand mr-5 fw-bold fs-3" href="/">
-            <span class="text-warning">my</span><span class="text-primary">CODE</span><span class="text-danger">notein</span>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-            <li class="nav-item mr-3">
-              <a class="nav-link" aria-current="page" href="/#second-section">Blogs |</a>
-            </li>
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="/src/sql.html">SQL</a>
-            </li>
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="/src/flutter.html">Flutter</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Python
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="/src/django.html">Django</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/flask.html">Flask</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="/src/pygame.html">Pygame</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/python.html">Python</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/python-modules.html">Python Modules</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/pyqt5.html">PyQT5</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="/src/tkinter.html"
-                    >tkinter</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/tkinter-widgets.html"
-                    >tkinter-widgets</a
-                  >
-                </li>
-                <li><a class="dropdown-item" href="/src/ttk.html">ttk</a></li>
-              </ul>
-            </li>
-          </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand mr-5 fw-bold fs-3" href="/">
+              <span class="text-warning">my</span><span class="text-primary">CODE</span><span class="text-danger">notein</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+              <li class="nav-item mr-3">
+                <a class="nav-link" aria-current="page" href="/#second-section">Blogs |</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="/src/sql.html">SQL</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="/src/flutter.html">Flutter</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Python
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="/src/django.html">Django</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/flask.html">Flask</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="/src/pygame.html">Pygame</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/python.html">Python</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/python-modules.html">Python Modules</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/pyqt5.html">PyQT5</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="/src/tkinter.html"
+                      >tkinter</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/tkinter-widgets.html"
+                      >tkinter-widgets</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="/src/ttk.html">ttk</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button id="installPWA" class="btn btn-primary mr-5">Install Our App (PWA)</button>
+          </div>
         </div>
-      </div>
-    </nav>
-</header>
+      </nav>
+    </header>
 
     <div class="container-fluid">
       <div class="row">
@@ -111,13 +119,13 @@
               <ul class="list-unstyled ps-0">
             
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-0" data-bs-toggle="collapse" data-targetid="h2-41">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-0" data-bs-toggle="collapse" data-targetid="h2-43">
   Running mysql from cmd
  </button>
  <div class="collapse" id="teleporter-collapse-0">
   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
    <li>
-    <a class="link-dark rounded" href="#h3-56">
+    <a class="link-dark rounded" href="#h3-58">
      For ex:
     </a>
    </li>
@@ -125,13 +133,13 @@
  </div>
 </li>
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-1" data-bs-toggle="collapse" data-targetid="h2-42">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-1" data-bs-toggle="collapse" data-targetid="h2-44">
   Creating the database
  </button>
  <div class="collapse" id="teleporter-collapse-1">
   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
    <li>
-    <a class="link-dark rounded" href="#h3-57">
+    <a class="link-dark rounded" href="#h3-59">
      Let us connect with the database
     </a>
    </li>
@@ -139,7 +147,7 @@
  </div>
 </li>
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-2" data-bs-toggle="collapse" data-targetid="h2-43">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-2" data-bs-toggle="collapse" data-targetid="h2-45">
   Creating a table
  </button>
  <div class="collapse" id="teleporter-collapse-2">
@@ -148,7 +156,7 @@
  </div>
 </li>
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-3" data-bs-toggle="collapse" data-targetid="h2-44">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-3" data-bs-toggle="collapse" data-targetid="h2-46">
   Datatypes in SQL
  </button>
  <div class="collapse" id="teleporter-collapse-3">
@@ -157,23 +165,23 @@
  </div>
 </li>
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-4" data-bs-toggle="collapse" data-targetid="h2-45">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-4" data-bs-toggle="collapse" data-targetid="h2-47">
   Insert command in SQL
  </button>
  <div class="collapse" id="teleporter-collapse-4">
   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
    <li>
-    <a class="link-dark rounded" href="#h3-58">
+    <a class="link-dark rounded" href="#h3-60">
      Insertion of one value
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-59">
+    <a class="link-dark rounded" href="#h3-61">
      Insertion of one mutliple values
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-60">
+    <a class="link-dark rounded" href="#h3-62">
      Inserting Few Columns
     </a>
    </li>
@@ -181,43 +189,43 @@
  </div>
 </li>
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-5" data-bs-toggle="collapse" data-targetid="h2-46">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-5" data-bs-toggle="collapse" data-targetid="h2-48">
   Querying in SQL
  </button>
  <div class="collapse" id="teleporter-collapse-5">
   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
    <li>
-    <a class="link-dark rounded" href="#h3-61">
+    <a class="link-dark rounded" href="#h3-63">
      Selection of all records
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-62">
+    <a class="link-dark rounded" href="#h3-64">
      Selection of specific column
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-63">
+    <a class="link-dark rounded" href="#h3-65">
      Selection of specific records
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-64">
+    <a class="link-dark rounded" href="#h3-66">
      Selection of distinct/different records
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-65">
+    <a class="link-dark rounded" href="#h3-67">
      Ordering/Arranging the records
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-66">
+    <a class="link-dark rounded" href="#h3-68">
      Displaying different name of column + expressions in SQL
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-67">
+    <a class="link-dark rounded" href="#h3-69">
      Displaying different values in records if the value is NULL
     </a>
    </li>
@@ -225,43 +233,43 @@
  </div>
 </li>
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-6" data-bs-toggle="collapse" data-targetid="h2-47">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-6" data-bs-toggle="collapse" data-targetid="h2-49">
   Operators in sql
  </button>
  <div class="collapse" id="teleporter-collapse-6">
   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
    <li>
-    <a class="link-dark rounded" href="#h3-68">
+    <a class="link-dark rounded" href="#h3-70">
      Comparison operators
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-69">
+    <a class="link-dark rounded" href="#h3-71">
      "BETWEEN" , "IN" and "IS" operator
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-70">
+    <a class="link-dark rounded" href="#h3-72">
      "AND" and "OR" operator
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-71">
+    <a class="link-dark rounded" href="#h3-73">
      "NOT" operator
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-72">
+    <a class="link-dark rounded" href="#h3-74">
      "LIKE" operator
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-73">
+    <a class="link-dark rounded" href="#h3-75">
      Wild Card Characters
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-74">
+    <a class="link-dark rounded" href="#h3-76">
      LIKE with DATE datatype
     </a>
    </li>
@@ -269,7 +277,7 @@
  </div>
 </li>
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-7" data-bs-toggle="collapse" data-targetid="h2-48">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-7" data-bs-toggle="collapse" data-targetid="h2-50">
   Update command in SQL
  </button>
  <div class="collapse" id="teleporter-collapse-7">
@@ -278,28 +286,28 @@
  </div>
 </li>
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-8" data-bs-toggle="collapse" data-targetid="h2-49">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-8" data-bs-toggle="collapse" data-targetid="h2-51">
   Aggregate Functions in SQL
  </button>
  <div class="collapse" id="teleporter-collapse-8">
   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
    <li>
-    <a class="link-dark rounded" href="#h3-75">
+    <a class="link-dark rounded" href="#h3-77">
      Max/Min Function
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-76">
+    <a class="link-dark rounded" href="#h3-78">
      Avg function
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-77">
+    <a class="link-dark rounded" href="#h3-79">
      Sum Function
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-78">
+    <a class="link-dark rounded" href="#h3-80">
      Count function
     </a>
    </li>
@@ -307,28 +315,28 @@
  </div>
 </li>
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-9" data-bs-toggle="collapse" data-targetid="h2-50">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-9" data-bs-toggle="collapse" data-targetid="h2-52">
   Date Based Functions in SQL
  </button>
  <div class="collapse" id="teleporter-collapse-9">
   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
    <li>
-    <a class="link-dark rounded" href="#h3-79">
+    <a class="link-dark rounded" href="#h3-81">
      Now Function
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-80">
+    <a class="link-dark rounded" href="#h3-82">
      Date Function
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-81">
+    <a class="link-dark rounded" href="#h3-83">
      Month and MonthName Function
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-82">
+    <a class="link-dark rounded" href="#h3-84">
      Day and Dayname function
     </a>
    </li>
@@ -336,23 +344,23 @@
  </div>
 </li>
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-10" data-bs-toggle="collapse" data-targetid="h2-51">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-10" data-bs-toggle="collapse" data-targetid="h2-53">
   Mathematical functions in SQL
  </button>
  <div class="collapse" id="teleporter-collapse-10">
   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
    <li>
-    <a class="link-dark rounded" href="#h3-83">
+    <a class="link-dark rounded" href="#h3-85">
      Power/Pow Function
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-84">
+    <a class="link-dark rounded" href="#h3-86">
      Mod Function (Remainder)
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-85">
+    <a class="link-dark rounded" href="#h3-87">
      Round Function
     </a>
    </li>
@@ -360,63 +368,63 @@
  </div>
 </li>
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-11" data-bs-toggle="collapse" data-targetid="h2-52">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-11" data-bs-toggle="collapse" data-targetid="h2-54">
   Text Based Functions in SQL
  </button>
  <div class="collapse" id="teleporter-collapse-11">
   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
    <li>
-    <a class="link-dark rounded" href="#h3-86">
+    <a class="link-dark rounded" href="#h3-88">
      UCASE/UPPER Function
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-87">
+    <a class="link-dark rounded" href="#h3-89">
      LCASE/LOWER Function
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-88">
+    <a class="link-dark rounded" href="#h3-90">
      CONCAT function
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-89">
+    <a class="link-dark rounded" href="#h3-91">
      LENGTH function
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-90">
+    <a class="link-dark rounded" href="#h3-92">
      LEFT function
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-91">
+    <a class="link-dark rounded" href="#h3-93">
      RIGHT function
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-92">
+    <a class="link-dark rounded" href="#h3-94">
      Much more advanced example of functions
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-93">
+    <a class="link-dark rounded" href="#h3-95">
      MID/SUBSTRING/SUBSTR function
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-94">
+    <a class="link-dark rounded" href="#h3-96">
      INSTR Function
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-95">
+    <a class="link-dark rounded" href="#h3-97">
      LTRIM and RTRIM Function
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-96">
+    <a class="link-dark rounded" href="#h3-98">
      TRIM Function in SQL
     </a>
    </li>
@@ -424,7 +432,7 @@
  </div>
 </li>
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-12" data-bs-toggle="collapse" data-targetid="h2-53">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-12" data-bs-toggle="collapse" data-targetid="h2-55">
   Delete command in SQL
  </button>
  <div class="collapse" id="teleporter-collapse-12">
@@ -433,7 +441,7 @@
  </div>
 </li>
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-13" data-bs-toggle="collapse" data-targetid="h2-54">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-13" data-bs-toggle="collapse" data-targetid="h2-56">
   Drop command in SQL
  </button>
  <div class="collapse" id="teleporter-collapse-13">
@@ -442,33 +450,33 @@
  </div>
 </li>
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-14" data-bs-toggle="collapse" data-targetid="h2-55">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-14" data-bs-toggle="collapse" data-targetid="h2-57">
   Alter command in sql
  </button>
  <div class="collapse" id="teleporter-collapse-14">
   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
    <li>
-    <a class="link-dark rounded" href="#h3-97">
+    <a class="link-dark rounded" href="#h3-99">
      rename clause
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-98">
+    <a class="link-dark rounded" href="#h3-100">
      Drop clause
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-99">
+    <a class="link-dark rounded" href="#h3-101">
      Add Clause
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-100">
+    <a class="link-dark rounded" href="#h3-102">
      Change Clause
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-101">
+    <a class="link-dark rounded" href="#h3-103">
      Modify clause
     </a>
    </li>
@@ -485,30 +493,18 @@
 
         <div id="content" class="col-sm-10 col-lg-6 col-xl-7 p-3">
 <img alt="MySQL - By myCODEnotein | HeroImage" class="img-fluid hero-img" src="/img/sql_images/mysql.png"/>
-
-<h1 id='h1-40'><span class='badge bg-primary'> </span> Everything About MySQL <span class='badge bg-primary'> </span></h1>
-
-<div class='section'><h2 id='h2-41'><span class='badge bg-danger'> </span> Running mysql from cmd</h2>
-
-<pre id='code-102'><code class='sql' language='sql'>mysql -u<username> -p</username></code></pre>
-
-<h3 id='h3-56'><span class='badge bg-warning'> </span> For ex:</h3>
-
-<pre id='code-103'><code class='sql' language='sql'>mysql -uroot -p</code></pre>
-
-</div><div class='section'><h2 id='h2-42'><span class='badge bg-danger'> </span> Creating the database</h2>
-
-<pre id='code-104'><code class='sql' language='sql'>CREATE DATABASE hospital ;</code></pre>
-
-<h3 id='h3-57'><span class='badge bg-warning'> </span> Let us connect with the database</h3>
-
-<pre id='code-105'><code class='sql' language='sql'>CONNECT/USE hospital ;</code></pre>
-
-</div><div class='section'><h2 id='h2-43'><span class='badge bg-danger'> </span> Creating a table</h2>
-
-<pre id='code-106'><code class='sql' language='sql'>CREATE TABLE name_of_table(col1 datatype constraints , ....);</code></pre>
-
-<pre id='code-107'><code class='sql' language='sql'>CREATE TABLE patient
+<h1 id="h1-42"><span class="badge bg-primary"> </span> Everything About MySQL <span class="badge bg-primary"> </span></h1>
+<div class="section"><h2 id="h2-43"><span class="badge bg-danger"> </span> Running mysql from cmd</h2>
+<div class="normal" id="normal-0">mysql -u&lt;username&gt; -p</div>
+<h3 id="h3-58"><span class="badge bg-warning"> </span> For ex:</h3>
+<div class="normal" id="normal-1">mysql -uroot -p</div>
+</div><div class="section"><h2 id="h2-44"><span class="badge bg-danger"> </span> Creating the database</h2>
+<pre id="code-104"><code class="sql" language="sql">CREATE DATABASE hospital ;</code></pre>
+<h3 id="h3-59"><span class="badge bg-warning"> </span> Let us connect with the database</h3>
+<pre id="code-105"><code class="sql" language="sql">CONNECT/USE hospital ;</code></pre>
+</div><div class="section"><h2 id="h2-45"><span class="badge bg-danger"> </span> Creating a table</h2>
+<pre id="code-106"><code class="sql" language="sql">CREATE TABLE name_of_table(col1 datatype constraints , ....);</code></pre>
+<pre id="code-107"><code class="sql" language="sql">CREATE TABLE patient
 (sno INT PRIMARY KEY
 ,name CHAR(20)
 ,age INT
@@ -517,569 +513,363 @@
 ,charges INT NOT NULL
 ,gender ENUM('M','F') DEFAULT 'M'	
 );</code></pre>
-
 <img alt="CREATE TABLE COMMAND" class="img-fluid" src="/img/sql_images/createTable.jpg" title="CREATE TABLE : example"/>
-
-<div id='normal-0' class='normal'>There are a lot of more constraints.</div>
-
-<pre id='code-108'><code class='sql' language='sql'>UNIQUE KEY and PRIMARY KEY constraint can be applied at row level also.</code></pre>
-
+<div class="normal" id="normal-2">There are a lot of more constraints.</div>
+<pre id="code-108"><code class="sql" language="sql">UNIQUE KEY and PRIMARY KEY constraint can be applied at row level also.</code></pre>
 <img alt="TABLE AT ROW LEVEL EXAMPLE" class="img-fluid" src="/img/sql_images/rowLevel.jpg"/>
-
-<div id='normal-1' class='normal'>Note: you can write 'UNIQUE' in place of 'UNIQUE KEY'.</div>
-
-<pre id='code-109'><code class='sql' language='sql'>To get info about a table:
+<div class="normal" id="normal-3">Note: you can write 'UNIQUE' in place of 'UNIQUE KEY'.</div>
+<pre id="code-109"><code class="sql" language="sql">To get info about a table:
 DESC/DESCRIBE/EXPLAIN nameOfTable;</code></pre>
-
-</div><div class='section'><h2 id='h2-44'><span class='badge bg-danger'> </span> Datatypes in SQL</h2>
-
+</div><div class="section"><h2 id="h2-46"><span class="badge bg-danger"> </span> Datatypes in SQL</h2>
 <img alt="DATATYPES IN SQL" class="img-fluid" src="/img/sql_images/sql-datatypes.png" style="background-size: cover;height: 100vh;"/>
-
-<pre id='code-110'><code class='sql' language='sql'>--Format of writing date,time and datetime
+<pre id="code-110"><code class="sql" language="sql">--Format of writing date,time and datetime
 DATE : yyyy/mm/dd  (or)   yyyy-mm-dd
 TIME : hh:mm:ss
 DATETIME : yyyy/mm/dd hh:mm:ss</code></pre>
-
-<pre id='code-111'><code class='sql' language='sql'>YEAR(2) -- last 2 digits of year
+<pre id="code-111"><code class="sql" language="sql">YEAR(2) -- last 2 digits of year
 YEAR(4) -- all 4 digits of year</code></pre>
-
-<pre id='code-112'><code class='sql' language='sql'>CHAR -- default size is 1 ( if not specified )
+<pre id="code-112"><code class="sql" language="sql">CHAR -- default size is 1 ( if not specified )
 ENUM -- storage of specified  values</code></pre>
-
-</div><div class='section'><h2 id='h2-45'><span class='badge bg-danger'> </span> Insert command in SQL</h2>
-
-<h3 id='h3-58'><span class='badge bg-warning'> </span> Insertion of one value</h3>
-
-<pre id='code-113'><code class='sql' language='sql'>INSERT INTO nameOfTable VALUES (val1,val2,...valn);</code></pre>
-
-<div id='normal-2' class='normal'>You can also use DEFAULT 
+</div><div class="section"><h2 id="h2-47"><span class="badge bg-danger"> </span> Insert command in SQL</h2>
+<h3 id="h3-60"><span class="badge bg-warning"> </span> Insertion of one value</h3>
+<pre id="code-113"><code class="sql" language="sql">INSERT INTO nameOfTable VALUES (val1,val2,...valn);</code></pre>
+<div class="normal" id="normal-4">You can also use DEFAULT 
 keyword to put the default value in column.</div>
-
 <img alt="INSERTING ONE RECORD" class="img-fluid" src="/img/sql_images/insert1.jpg"/>
-
-<h3 id='h3-59'><span class='badge bg-warning'> </span> Insertion of one mutliple values</h3>
-
+<h3 id="h3-61"><span class="badge bg-warning"> </span> Insertion of one mutliple values</h3>
 <img alt="INSERTING MULTIPLE RECORDS" class="img-fluid" src="/img/sql_images/insertMutiple.jpg"/>
-
-<h3 id='h3-60'><span class='badge bg-warning'> </span> Inserting Few Columns</h3>
-
-<pre id='code-114'><code class='sql' language='sql'>INSERT INTO nameOfTable 
+<h3 id="h3-62"><span class="badge bg-warning"> </span> Inserting Few Columns</h3>
+<pre id="code-114"><code class="sql" language="sql">INSERT INTO nameOfTable 
 (col1,col2,...coln) VALUES (val1,val2,...valn);</code></pre>
-
 <img alt="Inserting few column" class="img-fluid" src="/img/sql_images/insert_few_col.png"/>
-
-</div><div class='section'><h2 id='h2-46'><span class='badge bg-danger'> </span> Querying in SQL</h2>
-
-<pre id='code-115'><code class='sql' language='sql'>SELECT columns FROM nameOfTable
+</div><div class="section"><h2 id="h2-48"><span class="badge bg-danger"> </span> Querying in SQL</h2>
+<pre id="code-115"><code class="sql" language="sql">SELECT columns FROM nameOfTable
 WHERE conditions
 ORDER BY ASC/DESC;</code></pre>
-
-<div id='normal-3' class='normal'>Note: * represents all columns</div>
-
-<h3 id='h3-61'><span class='badge bg-warning'> </span> Selection of all records</h3>
-
+<div class="normal" id="normal-5">Note: * represents all columns</div>
+<h3 id="h3-63"><span class="badge bg-warning"> </span> Selection of all records</h3>
 <img alt="SELECT ALL COLUMNS BY * EXAMPLE" class="img-fluid" src="/img/sql_images/selectAll.jpg"/>
-
-<h3 id='h3-62'><span class='badge bg-warning'> </span> Selection of specific column</h3>
-
+<h3 id="h3-64"><span class="badge bg-warning"> </span> Selection of specific column</h3>
 <img alt="SELECTION OG SPECIFIC COLUMNS" class="img-fluid" src="/img/sql_images/selectSpecific.jpg"/>
-
-<h3 id='h3-63'><span class='badge bg-warning'> </span> Selection of specific records</h3>
-
+<h3 id="h3-65"><span class="badge bg-warning"> </span> Selection of specific records</h3>
 <img alt="SELECTION OF SPECIFIC RECORDS" class="img-fluid" src="/img/sql_images/selectANDwhere.jpg"/>
-
-<h3 id='h3-64'><span class='badge bg-warning'> </span> Selection of distinct/different records</h3>
-
-<div id='normal-4' class='normal'>DISTINCT keyword is used before column name to get distinct records.</div>
-
+<h3 id="h3-66"><span class="badge bg-warning"> </span> Selection of distinct/different records</h3>
+<div class="normal" id="normal-6">DISTINCT keyword is used before column name to get distinct records.</div>
 <img alt="DISTINCT RECORDS" class="img-fluid" src="/img/sql_images/distinct_keyword.jpg"/>
-
-<h3 id='h3-65'><span class='badge bg-warning'> </span> Ordering/Arranging the records</h3>
-
+<h3 id="h3-67"><span class="badge bg-warning"> </span> Ordering/Arranging the records</h3>
 <img alt="ORDER BY EXAMPLE" class="img-fluid" src="/img/sql_images/orderBy.jpg"/>
-
-<pre id='code-116'><code class='sql' language='sql'>ORDER clause: ORDER BY desc/asc
+<pre id="code-116"><code class="sql" language="sql">ORDER clause: ORDER BY desc/asc
 default:  asc</code></pre>
-
-<div id='normal-5' class='normal'>asc = ascending order
+<div class="normal" id="normal-7">asc = ascending order
 desc = descending order
 If you don't write anything then by default it will show in ascending order</div>
-
-<h3 id='h3-66'><span class='badge bg-warning'> </span> Displaying different name of column + expressions in SQL</h3>
-
+<h3 id="h3-68"><span class="badge bg-warning"> </span> Displaying different name of column + expressions in SQL</h3>
 <img alt="USE OF AS AND EXPRESSIONS" class="img-fluid" src="/img/sql_images/use_of_as_and_expression.jpg"/>
-
-<pre id='code-117'><code class='sql' language='sql'>Note : AS can be used with simple columns as well</code></pre>
-
-<h3 id='h3-67'><span class='badge bg-warning'> </span> Displaying different values in records if the value is NULL</h3>
-
+<pre id="code-117"><code class="sql" language="sql">Note : AS can be used with simple columns as well</code></pre>
+<h3 id="h3-69"><span class="badge bg-warning"> </span> Displaying different values in records if the value is NULL</h3>
 <img alt="IFNULL FUNCTION IN SQL" class="img-fluid" src="/img/sql_images/ifnull_function.jpg"/>
-
-</div><div class='section'><h2 id='h2-47'><span class='badge bg-danger'> </span> Operators in sql</h2>
-
-<h3 id='h3-68'><span class='badge bg-warning'> </span> Comparison operators</h3>
-
-<pre id='code-118'><code class='sql' language='sql'>&lt; , &lt;= , &gt; , &gt;= , = , != or &lt;&gt; 
+</div><div class="section"><h2 id="h2-49"><span class="badge bg-danger"> </span> Operators in sql</h2>
+<h3 id="h3-70"><span class="badge bg-warning"> </span> Comparison operators</h3>
+<pre id="code-118"><code class="sql" language="sql">&lt; , &lt;= , &gt; , &gt;= , = , != or &lt;&gt; 
 Note that NULL value can not be checked by "=" operator.
 It requires IS operator.</code></pre>
-
-<h3 id='h3-69'><span class='badge bg-warning'> </span> "BETWEEN" , "IN" and "IS" operator</h3>
-
-
-<div id='code+tab-171'>
-        <nav>
-            <div class='nav nav-tabs' role='tablist'>
-
-<a id='tab-link-171-0' aria-controls='tab-target-171-0' href='#tab-target-171-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>BETWEEN</a>
-
-<a id='tab-link-171-1' aria-controls='tab-target-171-1' href='#tab-target-171-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>IN</a>
-
-<a id='tab-link-171-2' aria-controls='tab-target-171-2' href='#tab-target-171-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>IS</a>
-
-            </div>
-        </nav>
-        <div class='tab-content'>
-
-<div id='tab-target-171-0' aria-labelledby='tab-link-171-0' class='tab-pane fade show active' role='tabpanel'>
-<pre><code class='sql' langauge='sql'>colname BETWEEN value1 AND value2 
-# checks if value corresponding to the colname 
-# is in between value1 and value2  
-# or  
-# not</code></pre>
+<h3 id="h3-71"><span class="badge bg-warning"> </span> "BETWEEN" , "IN" and "IS" operator</h3>
+<div id="code+tab-171">
+<nav>
+<div class="nav nav-tabs" role="tablist">
+<a aria-controls="tab-target-171-0" aria-selected="true" class="nav-link active" data-bs-toggle="tab" href="#tab-target-171-0" id="tab-link-171-0" role="tab">BETWEEN</a>
+<a aria-controls="tab-target-171-1" aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#tab-target-171-1" id="tab-link-171-1" role="tab">IN</a>
+<a aria-controls="tab-target-171-2" aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#tab-target-171-2" id="tab-link-171-2" role="tab">IS</a>
 </div>
-
-<div id='tab-target-171-1' aria-labelledby='tab-link-171-1' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='sql' langauge='sql'>colname IN(val1,val2,...) 
-# checks if value corresponding to the colname 
-# is in the val1,val2,...
-# or  
-# not</code></pre>
+</nav>
+<div class="tab-content">
+<div aria-labelledby="tab-link-171-0" class="tab-pane fade show active" id="tab-target-171-0" role="tabpanel">
+<pre><code class="sql" langauge="sql">colname BETWEEN value1 AND value2 
+--checks if value corresponding to the colname 
+--is in between value1 and value2  
+--or  
+--not</code></pre>
 </div>
-
-<div id='tab-target-171-2' aria-labelledby='tab-link-171-2' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='sql' langauge='sql'>colname IS value
-# checks if value corresponding to the colname is equal to value
+<div aria-labelledby="tab-link-171-1" class="tab-pane fade show" id="tab-target-171-1" role="tabpanel">
+<pre><code class="sql" langauge="sql">colname IN(val1,val2,...) 
+--checks if value corresponding to the colname 
+--is in the val1,val2,...
+--or  
+--not</code></pre>
+</div>
+<div aria-labelledby="tab-link-171-2" class="tab-pane fade show" id="tab-target-171-2" role="tabpanel">
+<pre><code class="sql" langauge="sql">colname IS value
+--checks if value corresponding to the colname is equal to value
 To Check For null value : colname IS NULL</code></pre>
 </div>
-
-        </div>
 </div>
-
-
-<pre id='code-119'><code class='sql' language='sql'>Note: NOT BETWEEN , NOT IN AND IS NOT ALSO EXISTS</code></pre>
-
-<h3 id='h3-70'><span class='badge bg-warning'> </span> "AND" and "OR" operator</h3>
-
-
-<div id='code+tab-172'>
-        <nav>
-            <div class='nav nav-tabs' role='tablist'>
-
-<a id='tab-link-172-0' aria-controls='tab-target-172-0' href='#tab-target-172-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>AND</a>
-
-<a id='tab-link-172-1' aria-controls='tab-target-172-1' href='#tab-target-172-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>OR</a>
-
-            </div>
-        </nav>
-        <div class='tab-content'>
-
-<div id='tab-target-172-0' aria-labelledby='tab-link-172-0' class='tab-pane fade show active' role='tabpanel'>
-<pre><code class='sql' langauge='sql'>AND can also be written as &amp;&amp;
+</div>
+<pre id="code-119"><code class="sql" language="sql">Note: NOT BETWEEN , NOT IN AND IS NOT ALSO EXISTS</code></pre>
+<h3 id="h3-72"><span class="badge bg-warning"> </span> "AND" and "OR" operator</h3>
+<div id="code+tab-172">
+<nav>
+<div class="nav nav-tabs" role="tablist">
+<a aria-controls="tab-target-172-0" aria-selected="true" class="nav-link active" data-bs-toggle="tab" href="#tab-target-172-0" id="tab-link-172-0" role="tab">AND</a>
+<a aria-controls="tab-target-172-1" aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#tab-target-172-1" id="tab-link-172-1" role="tab">OR</a>
+</div>
+</nav>
+<div class="tab-content">
+<div aria-labelledby="tab-link-172-0" class="tab-pane fade show active" id="tab-target-172-0" role="tabpanel">
+<pre><code class="sql" langauge="sql">AND can also be written as &amp;&amp;
 condition1 AND condition2 
-# returns true if both conditions are true</code></pre>
+--returns true if both conditions are true</code></pre>
 </div>
-
-<div id='tab-target-172-1' aria-labelledby='tab-link-172-1' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='sql' langauge='sql'>OR can also be written as ||
+<div aria-labelledby="tab-link-172-1" class="tab-pane fade show" id="tab-target-172-1" role="tabpanel">
+<pre><code class="sql" langauge="sql">OR can also be written as ||
 condition1 OR condition2
-# returns true if any condition is true</code></pre>
+--returns true if any condition is true</code></pre>
 </div>
-
-        </div>
 </div>
-
-
-<div id='normal-6' class='normal'>Note: NOT AND AND NOT OR DOES NOT EXISTS</div>
-
-<div id='normal-7' class='normal'>Note: AND used in "BETWEEN" operator is not "AND" operator and cannot be replaced by "&amp;&amp;" symbol</div>
-
-<h3 id='h3-71'><span class='badge bg-warning'> </span> "NOT" operator</h3>
-
-
-<div id='code+tab-173'>
-        <nav>
-            <div class='nav nav-tabs' role='tablist'>
-
-<a id='tab-link-173-0' aria-controls='tab-target-173-0' href='#tab-target-173-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Code</a>
-
-<a id='tab-link-173-1' aria-controls='tab-target-173-1' href='#tab-target-173-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Desc</a>
-
-            </div>
-        </nav>
-        <div class='tab-content'>
-
-<div id='tab-target-173-0' aria-labelledby='tab-link-173-0' class='tab-pane fade show active' role='tabpanel'>
-<pre><code class='sql' langauge='sql'>NOT condition</code></pre>
 </div>
-
-<div id='tab-target-173-1' aria-labelledby='tab-link-173-1' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='sql' langauge='sql'>Converts a condition which is true to false and vice-versa</code></pre>
+<div class="normal" id="normal-8">Note: NOT AND AND NOT OR DOES NOT EXISTS</div>
+<div class="normal" id="normal-9">Note: AND used in "BETWEEN" operator is not "AND" operator and cannot be replaced by "&amp;&amp;" symbol</div>
+<h3 id="h3-73"><span class="badge bg-warning"> </span> "NOT" operator</h3>
+<div id="code+tab-173">
+<nav>
+<div class="nav nav-tabs" role="tablist">
+<a aria-controls="tab-target-173-0" aria-selected="true" class="nav-link active" data-bs-toggle="tab" href="#tab-target-173-0" id="tab-link-173-0" role="tab">Code</a>
+<a aria-controls="tab-target-173-1" aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#tab-target-173-1" id="tab-link-173-1" role="tab">Desc</a>
 </div>
-
-        </div>
+</nav>
+<div class="tab-content">
+<div aria-labelledby="tab-link-173-0" class="tab-pane fade show active" id="tab-target-173-0" role="tabpanel">
+<pre><code class="sql" langauge="sql">NOT condition</code></pre>
 </div>
-
-
-<h3 id='h3-72'><span class='badge bg-warning'> </span> "LIKE" operator</h3>
-
+<div aria-labelledby="tab-link-173-1" class="tab-pane fade show" id="tab-target-173-1" role="tabpanel">
+<pre><code class="sql" langauge="sql">Converts a condition which is true to false and vice-versa</code></pre>
+</div>
+</div>
+</div>
+<h3 id="h3-74"><span class="badge bg-warning"> </span> "LIKE" operator</h3>
 <img alt="LIKE OPERATOR EXAMPLE" class="img-fluid" src="/img/sql_images/like_with_under_and_percent.jpg"/>
-
-<h3 id='h3-73'><span class='badge bg-warning'> </span> Wild Card Characters</h3>
-
-<pre id='code-120'><code class='sql' language='sql'>_ REPRESENTS 1 character BEFORE "a" 
+<h3 id="h3-75"><span class="badge bg-warning"> </span> Wild Card Characters</h3>
+<pre id="code-120"><code class="sql" language="sql">_ REPRESENTS 1 character BEFORE "a" 
 % REPRESENTS any no of character(includes 0) AFTER "a"</code></pre>
-
-<pre id='code-121'><code class='sql' language='sql'>Similarly: NOT LIKE also exists</code></pre>
-
-<h3 id='h3-74'><span class='badge bg-warning'> </span> LIKE with DATE datatype</h3>
-
+<pre id="code-121"><code class="sql" language="sql">Similarly: NOT LIKE also exists</code></pre>
+<h3 id="h3-76"><span class="badge bg-warning"> </span> LIKE with DATE datatype</h3>
 <img alt="DATE DATATYPE WITH LIKE OPERATOR" class="img-fluid" src="/img/sql_images/matching_date_with_like.jpg"/>
-
-<div id='normal-8' class='normal'>5 underscores for: yyyy/ or yyyy- 
+<div class="normal" id="normal-10">5 underscores for: yyyy/ or yyyy- 
 % for: another "/ or -" + any no of character in days</div>
-
-<div id='normal-9' class='normal'>% is used because we don't care about no of characters after month</div>
-
-<pre id='code-122'><code class='sql' language='sql'>--Another way of doing the same thing
+<div class="normal" id="normal-11">% is used because we don't care about no of characters after month</div>
+<pre id="code-122"><code class="sql" language="sql">--Another way of doing the same thing
 
 SELECT * FROM patient 
 WHERE MONTH(dateOfAdm) = 11 ;
 
 Similarly "DAY" and "YEAR" function also exists</code></pre>
-
-</div><div class='section'><h2 id='h2-48'><span class='badge bg-danger'> </span> Update command in SQL</h2>
-
-<pre id='code-123'><code class='sql' language='sql'>UPDATE nameOfTable
+</div><div class="section"><h2 id="h2-50"><span class="badge bg-danger"> </span> Update command in SQL</h2>
+<pre id="code-123"><code class="sql" language="sql">UPDATE nameOfTable
 SET colname=value
 WHERE condition;</code></pre>
-
-<pre id='code-124'><code class='sql' language='sql'>--To change multiple columns
+<pre id="code-124"><code class="sql" language="sql">--To change multiple columns
 UPDATE nameOfTable
 SET colName1 = value1 , colName2 = value2
 WHERE condition;</code></pre>
-
-</div><div class='section'><h2 id='h2-49'><span class='badge bg-danger'> </span> Aggregate Functions in SQL</h2>
-
-<div id='normal-10' class='normal'>The aggregate functions works with multiple rows
+</div><div class="section"><h2 id="h2-51"><span class="badge bg-danger"> </span> Aggregate Functions in SQL</h2>
+<div class="normal" id="normal-12">The aggregate functions works with multiple rows
 at a time and return aggregated value.</div>
-
-<h3 id='h3-75'><span class='badge bg-warning'> </span> Max/Min Function</h3>
-
-<div id='normal-11' class='normal'>Max function returns the maximum value of an expression.
+<h3 id="h3-77"><span class="badge bg-warning"> </span> Max/Min Function</h3>
+<div class="normal" id="normal-13">Max function returns the maximum value of an expression.
 Min function returns the minimum value of an expression.</div>
-
-<pre id='code-125'><code class='sql' language='sql'>--syntax
+<pre id="code-125"><code class="sql" language="sql">--syntax
 MAX(columname) -- for getting the max value in a column
 MIN(columname) -- for getting the min value in a column</code></pre>
-
-<h3 id='h3-76'><span class='badge bg-warning'> </span> Avg function</h3>
-
-<div id='normal-12' class='normal'>Returns the average value of a column.</div>
-
-<pre id='code-126'><code class='sql' language='sql'>--syntax
+<h3 id="h3-78"><span class="badge bg-warning"> </span> Avg function</h3>
+<div class="normal" id="normal-14">Returns the average value of a column.</div>
+<pre id="code-126"><code class="sql" language="sql">--syntax
 AVG(columname)</code></pre>
-
-<h3 id='h3-77'><span class='badge bg-warning'> </span> Sum Function</h3>
-
-<div id='normal-13' class='normal'>Returns the sum of all the values in a column.</div>
-
-<pre id='code-127'><code class='sql' language='sql'>--syntax
+<h3 id="h3-79"><span class="badge bg-warning"> </span> Sum Function</h3>
+<div class="normal" id="normal-15">Returns the sum of all the values in a column.</div>
+<pre id="code-127"><code class="sql" language="sql">--syntax
 SUM(columname)</code></pre>
-
-<h3 id='h3-78'><span class='badge bg-warning'> </span> Count function</h3>
-
-<div id='normal-14' class='normal'>Returns the count/no. of values inside a column.</div>
-
-<pre id='code-128'><code class='sql' language='sql'>--syntax
+<h3 id="h3-80"><span class="badge bg-warning"> </span> Count function</h3>
+<div class="normal" id="normal-16">Returns the count/no. of values inside a column.</div>
+<pre id="code-128"><code class="sql" language="sql">--syntax
 COUNT(columname) --returns count of all values inside a column
 COUNT(DISTINCT columname) --returns count of distinct values inside a column
 COUNT(*) -- returns count of all records in a table</code></pre>
-
-</div><div class='section'><h2 id='h2-50'><span class='badge bg-danger'> </span> Date Based Functions in SQL</h2>
-
-<h3 id='h3-79'><span class='badge bg-warning'> </span> Now Function</h3>
-
-<div id='normal-15' class='normal'>Returns the current date and time.</div>
-
-<pre id='code-129'><code class='sql' language='sql'>--Example
+</div><div class="section"><h2 id="h2-52"><span class="badge bg-danger"> </span> Date Based Functions in SQL</h2>
+<h3 id="h3-81"><span class="badge bg-warning"> </span> Now Function</h3>
+<div class="normal" id="normal-17">Returns the current date and time.</div>
+<pre id="code-129"><code class="sql" language="sql">--Example
 SELECT NOW();</code></pre>
-
 <img alt="Now Function Result" class="img-fluid" src="/img/sql_images/now_function.png"/>
-
-<h3 id='h3-80'><span class='badge bg-warning'> </span> Date Function</h3>
-
-<div id='normal-16' class='normal'>Returns date from a string of the format
+<h3 id="h3-82"><span class="badge bg-warning"> </span> Date Function</h3>
+<div class="normal" id="normal-18">Returns date from a string of the format
 date (or) date time</div>
-
-<pre id='code-130'><code class='sql' language='sql'>--Example
+<pre id="code-130"><code class="sql" language="sql">--Example
 SELECT DATE(NOW());
 SELECT DATE('2004/07/13'); -- my birth date
 SELECT DATE('2004/07/13 13:11:09');</code></pre>
-
 <img alt="Date Function In SQL" class="img-fluid" src="/img/sql_images/date_function.png"/>
-
-<h3 id='h3-81'><span class='badge bg-warning'> </span> Month and MonthName Function</h3>
-
-<div id='normal-17' class='normal'>Month function returns month no. from date/datetime
+<h3 id="h3-83"><span class="badge bg-warning"> </span> Month and MonthName Function</h3>
+<div class="normal" id="normal-19">Month function returns month no. from date/datetime
 formatted string , while monthname returns the full
 name of the month.</div>
-
-<pre id='code-131'><code class='sql' language='sql'>--Example:1
+<pre id="code-131"><code class="sql" language="sql">--Example:1
 SELECT MONTH(NOW());
 SELECT MONTHNAME(NOW());</code></pre>
-
 <img alt="Month Function Example 1" class="img-fluid" src="/img/sql_images/month_function_1.png"/>
-
-<pre id='code-132'><code class='sql' language='sql'>--Example:2
+<pre id="code-132"><code class="sql" language="sql">--Example:2
 SELECT MONTH('2004/07/13') AS 'Birth Month No.' , MONTHNAME('2004/07/13') AS 'Birth Month Name';</code></pre>
-
 <img alt="Month Function Example 2" class="img-fluid" src="/img/sql_images/month_function_2.png"/>
-
-<h3 id='h3-82'><span class='badge bg-warning'> </span> Day and Dayname function</h3>
-
-<div id='normal-18' class='normal'>Day function returns day no. from date/datetime
+<h3 id="h3-84"><span class="badge bg-warning"> </span> Day and Dayname function</h3>
+<div class="normal" id="normal-20">Day function returns day no. from date/datetime
 formatted string , while dayname returns the full
 name of the day.</div>
-
-<pre id='code-133'><code class='sql' language='sql'>--Example:1
+<pre id="code-133"><code class="sql" language="sql">--Example:1
 SELECT DAY(NOW()) , DAYNAME(NOW());</code></pre>
-
 <img alt="Day Function Example 1" class="img-fluid" src="/img/sql_images/day_function1.png"/>
-
-<pre id='code-134'><code class='sql' language='sql'>--Example:2
+<pre id="code-134"><code class="sql" language="sql">--Example:2
 SELECT DAY('2004/07/13') AS 'Birth Day No.' , 
 DAYNAME('2004/07/13') AS 'Birth Day Name';</code></pre>
-
 <img alt="Day Function Example 2" class="img-fluid" src="/img/sql_images/day_function2.png"/>
-
-</div><div class='section'><h2 id='h2-51'><span class='badge bg-danger'> </span> Mathematical functions in SQL</h2>
-
-<div id='normal-19' class='normal'>m and n (used below) can be columname : for tables
+</div><div class="section"><h2 id="h2-53"><span class="badge bg-danger"> </span> Mathematical functions in SQL</h2>
+<div class="normal" id="normal-21">m and n (used below) can be columname : for tables
 (or) numbers
 (or) an algebric expression like 1+1,2*2 etc.</div>
-
-<h3 id='h3-83'><span class='badge bg-warning'> </span> Power/Pow Function</h3>
-
-<div id='normal-20' class='normal'>returns: m<sup>n</sup></div>
-
-<pre id='code-135'><code class='sql' language='sql'>--syntax:
+<h3 id="h3-85"><span class="badge bg-warning"> </span> Power/Pow Function</h3>
+<div class="normal" id="normal-22">returns: m<sup>n</sup></div>
+<pre id="code-135"><code class="sql" language="sql">--syntax:
 POW(m,n) 
 --or:
 POWER(m,n)</code></pre>
-
-<pre id='code-136'><code class='sql' language='sql'>--Example
+<pre id="code-136"><code class="sql" language="sql">--Example
 SELECT POW(2,3),POWER(3,2);</code></pre>
-
 <img alt="Power Function example" class="img-fluid" src="/img/sql_images/power_function.png"/>
-
-<h3 id='h3-84'><span class='badge bg-warning'> </span> Mod Function (Remainder)</h3>
-
-<div id='normal-21' class='normal'>returns remainder of m/n</div>
-
-<pre id='code-137'><code class='sql' language='sql'>--syntax
+<h3 id="h3-86"><span class="badge bg-warning"> </span> Mod Function (Remainder)</h3>
+<div class="normal" id="normal-23">returns remainder of m/n</div>
+<pre id="code-137"><code class="sql" language="sql">--syntax
 m MOD n  --or
 MOD(m,n) --or
 m % n</code></pre>
-
-<pre id='code-138'><code class='sql' language='sql'>--Example
+<pre id="code-138"><code class="sql" language="sql">--Example
 SELECT 2%3 , 2 MOD 3 , MOD(3,2);</code></pre>
-
 <img alt="Mod Function In SQL" class="img-fluid" src="/img/sql_images/mod_function.png"/>
-
-<h3 id='h3-85'><span class='badge bg-warning'> </span> Round Function</h3>
-
-<div id='normal-22' class='normal'>Rounds off a number m 
+<h3 id="h3-87"><span class="badge bg-warning"> </span> Round Function</h3>
+<div class="normal" id="normal-24">Rounds off a number m 
 upto n deicmal places.
 (n can be negative as well)</div>
-
-<pre id='code-139'><code class='sql' language='sql'>--syntax
+<pre id="code-139"><code class="sql" language="sql">--syntax
 ROUND(m,n)</code></pre>
-
-<pre id='code-140'><code class='sql' language='sql'>--Example:1
+<pre id="code-140"><code class="sql" language="sql">--Example:1
 SELECT ROUND(1.073,2) -- 1.07
 ,ROUND(1.073,1)    	  -- 1.1
 ,ROUND(1.073,-1)      -- 0
 ,ROUND(1.073,-3);     -- 0</code></pre>
-
 <img alt="Round Function Example 1" class="img-fluid" src="/img/sql_images/round_function_1.png"/>
-
-<pre id='code-141'><code class='sql' language='sql'>--Example:2
+<pre id="code-141"><code class="sql" language="sql">--Example:2
 SELECT ROUND(149,2) -- 149
 ,ROUND(149,-1)      -- 150
 ,ROUND(149,-3);     -- 0</code></pre>
-
 <img alt="Round Function Example 2" class="img-fluid" src="/img/sql_images/round_function_example2.png"/>
-
-</div><div class='section'><h2 id='h2-52'><span class='badge bg-danger'> </span> Text Based Functions in SQL</h2>
-
-<div id='normal-23' class='normal'>Operators like + ,- etc can be used within a function</div>
-
-<h3 id='h3-86'><span class='badge bg-warning'> </span> UCASE/UPPER Function</h3>
-
-<div id='normal-24' class='normal'>Converts the text to uppercase.</div>
-
-<pre id='code-142'><code class='sql' language='sql'>--syntax
+</div><div class="section"><h2 id="h2-54"><span class="badge bg-danger"> </span> Text Based Functions in SQL</h2>
+<div class="normal" id="normal-25">Operators like + ,- etc can be used within a function</div>
+<h3 id="h3-88"><span class="badge bg-warning"> </span> UCASE/UPPER Function</h3>
+<div class="normal" id="normal-26">Converts the text to uppercase.</div>
+<pre id="code-142"><code class="sql" language="sql">--syntax
 UCASE(string) --or
 UPPER(string)</code></pre>
-
-<pre id='code-143'><code class='sql' language='sql'>--Example
+<pre id="code-143"><code class="sql" language="sql">--Example
 SELECT UCASE('hello')          -- HELLO
 ,UPPER('My name is vikas!!!'); -- MY NAME IS VIKAS!!!</code></pre>
-
 <img alt="Upper/Ucase function in sql" class="img-fluid" src="/img/sql_images/upper_function.png"/>
-
-<h3 id='h3-87'><span class='badge bg-warning'> </span> LCASE/LOWER Function</h3>
-
-<div id='normal-25' class='normal'>Converts the textto lowercase.</div>
-
-<pre id='code-144'><code class='sql' language='sql'>--syntax
+<h3 id="h3-89"><span class="badge bg-warning"> </span> LCASE/LOWER Function</h3>
+<div class="normal" id="normal-27">Converts the textto lowercase.</div>
+<pre id="code-144"><code class="sql" language="sql">--syntax
 LCASE(string) --or
 LOWER(string)</code></pre>
-
-<pre id='code-145'><code class='sql' language='sql'>--Example
+<pre id="code-145"><code class="sql" language="sql">--Example
 SELECT LCASE('hello')          -- hello     
 ,LOWER('My name is vikas!!!'); -- my name is vikas!!!</code></pre>
-
 <img alt="LCase/Lower Function in sql" class="img-fluid" src="/img/sql_images/lower_function.png"/>
-
-<h3 id='h3-88'><span class='badge bg-warning'> </span> CONCAT function</h3>
-
-
-<div id='code+tab-174'>
-        <nav>
-            <div class='nav nav-tabs' role='tablist'>
-
-<a id='tab-link-174-0' aria-controls='tab-target-174-0' href='#tab-target-174-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Syntax</a>
-
-<a id='tab-link-174-1' aria-controls='tab-target-174-1' href='#tab-target-174-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Desc</a>
-
-<a id='tab-link-174-2' aria-controls='tab-target-174-2' href='#tab-target-174-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Example</a>
-
-            </div>
-        </nav>
-        <div class='tab-content'>
-
-<div id='tab-target-174-0' aria-labelledby='tab-link-174-0' class='tab-pane fade show active' role='tabpanel'>
-<pre><code class='sql' langauge='sql'>CONCAT(string1 , string2 , string3 ,...)</code></pre>
+<h3 id="h3-90"><span class="badge bg-warning"> </span> CONCAT function</h3>
+<div id="code+tab-174">
+<nav>
+<div class="nav nav-tabs" role="tablist">
+<a aria-controls="tab-target-174-0" aria-selected="true" class="nav-link active" data-bs-toggle="tab" href="#tab-target-174-0" id="tab-link-174-0" role="tab">Syntax</a>
+<a aria-controls="tab-target-174-1" aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#tab-target-174-1" id="tab-link-174-1" role="tab">Desc</a>
+<a aria-controls="tab-target-174-2" aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#tab-target-174-2" id="tab-link-174-2" role="tab">Example</a>
 </div>
-
-<div id='tab-target-174-1' aria-labelledby='tab-link-174-1' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='sql' langauge='sql'>'Used to add two strings.'</code></pre>
+</nav>
+<div class="tab-content">
+<div aria-labelledby="tab-link-174-0" class="tab-pane fade show active" id="tab-target-174-0" role="tabpanel">
+<pre><code class="sql" langauge="sql">CONCAT(string1 , string2 , string3 ,...)</code></pre>
 </div>
-
-<div id='tab-target-174-2' aria-labelledby='tab-link-174-2' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='sql' langauge='sql'>UPDATE patient 
+<div aria-labelledby="tab-link-174-1" class="tab-pane fade show" id="tab-target-174-1" role="tabpanel">
+<pre><code class="sql" langauge="sql">'Used to add two strings.'</code></pre>
+</div>
+<div aria-labelledby="tab-link-174-2" class="tab-pane fade show" id="tab-target-174-2" role="tabpanel">
+<pre><code class="sql" langauge="sql">UPDATE patient 
 SET name = CONCAT("Mr." , name) 
 WHERE gender = "M" ;</code></pre>
 </div>
-
-        </div>
 </div>
-
-
-<h3 id='h3-89'><span class='badge bg-warning'> </span> LENGTH function</h3>
-
-
-<div id='code+tab-175'>
-        <nav>
-            <div class='nav nav-tabs' role='tablist'>
-
-<a id='tab-link-175-0' aria-controls='tab-target-175-0' href='#tab-target-175-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Syntax</a>
-
-<a id='tab-link-175-1' aria-controls='tab-target-175-1' href='#tab-target-175-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Desc</a>
-
-<a id='tab-link-175-2' aria-controls='tab-target-175-2' href='#tab-target-175-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Example</a>
-
-            </div>
-        </nav>
-        <div class='tab-content'>
-
-<div id='tab-target-175-0' aria-labelledby='tab-link-175-0' class='tab-pane fade show active' role='tabpanel'>
-<pre><code class='sql' langauge='sql'>LENGTH(string)</code></pre>
 </div>
-
-<div id='tab-target-175-1' aria-labelledby='tab-link-175-1' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='sql' langauge='sql'>'returns length of a string'</code></pre>
+<h3 id="h3-91"><span class="badge bg-warning"> </span> LENGTH function</h3>
+<div id="code+tab-175">
+<nav>
+<div class="nav nav-tabs" role="tablist">
+<a aria-controls="tab-target-175-0" aria-selected="true" class="nav-link active" data-bs-toggle="tab" href="#tab-target-175-0" id="tab-link-175-0" role="tab">Syntax</a>
+<a aria-controls="tab-target-175-1" aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#tab-target-175-1" id="tab-link-175-1" role="tab">Desc</a>
+<a aria-controls="tab-target-175-2" aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#tab-target-175-2" id="tab-link-175-2" role="tab">Example</a>
 </div>
-
-<div id='tab-target-175-2' aria-labelledby='tab-link-175-2' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='sql' langauge='sql'>LENGTH('hello')
+</nav>
+<div class="tab-content">
+<div aria-labelledby="tab-link-175-0" class="tab-pane fade show active" id="tab-target-175-0" role="tabpanel">
+<pre><code class="sql" langauge="sql">LENGTH(string)</code></pre>
+</div>
+<div aria-labelledby="tab-link-175-1" class="tab-pane fade show" id="tab-target-175-1" role="tabpanel">
+<pre><code class="sql" langauge="sql">'returns length of a string'</code></pre>
+</div>
+<div aria-labelledby="tab-link-175-2" class="tab-pane fade show" id="tab-target-175-2" role="tabpanel">
+<pre><code class="sql" langauge="sql">LENGTH('hello')
 returns: 5</code></pre>
 </div>
-
-        </div>
 </div>
-
-
-<h3 id='h3-90'><span class='badge bg-warning'> </span> LEFT function</h3>
-
-<pre id='code-146'><code class='sql' language='sql'>--Used to get starting n characters from a string
+</div>
+<h3 id="h3-92"><span class="badge bg-warning"> </span> LEFT function</h3>
+<pre id="code-146"><code class="sql" language="sql">--Used to get starting n characters from a string
 syntax : LEFT(string , n_Characters)</code></pre>
-
-
-<div id='code+tab-176'>
-        <nav>
-            <div class='nav nav-tabs' role='tablist'>
-
-<a id='tab-link-176-0' aria-controls='tab-target-176-0' href='#tab-target-176-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Example</a>
-
-<a id='tab-link-176-1' aria-controls='tab-target-176-1' href='#tab-target-176-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Output of Example</a>
-
-            </div>
-        </nav>
-        <div class='tab-content'>
-
-<div id='tab-target-176-0' aria-labelledby='tab-link-176-0' class='tab-pane fade show active' role='tabpanel'>
-<pre><code class='sql' langauge='sql'>UPDATE patient
+<div id="code+tab-176">
+<nav>
+<div class="nav nav-tabs" role="tablist">
+<a aria-controls="tab-target-176-0" aria-selected="true" class="nav-link active" data-bs-toggle="tab" href="#tab-target-176-0" id="tab-link-176-0" role="tab">Example</a>
+<a aria-controls="tab-target-176-1" aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#tab-target-176-1" id="tab-link-176-1" role="tab">Output of Example</a>
+</div>
+</nav>
+<div class="tab-content">
+<div aria-labelledby="tab-link-176-0" class="tab-pane fade show active" id="tab-target-176-0" role="tabpanel">
+<pre><code class="sql" langauge="sql">UPDATE patient
 SET name=LEFT(name,3);</code></pre>
 </div>
-
-<div id='tab-target-176-1' aria-labelledby='tab-link-176-1' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='sql' langauge='sql'>'All the name will be having first 3 characters stored only .'</code></pre>
+<div aria-labelledby="tab-link-176-1" class="tab-pane fade show" id="tab-target-176-1" role="tabpanel">
+<pre><code class="sql" langauge="sql">'All the name will be having first 3 characters stored only .'</code></pre>
 </div>
-
-        </div>
 </div>
-
-
+</div>
 <img alt="LEFT FUNCTION " class="img-fluid" src="/img/sql_images/leftFunction.jpg"/>
-
-<div id='normal-26' class='normal'>NOTE : This cannot be done on columns having datatypes like ENUM</div>
-
-<h3 id='h3-91'><span class='badge bg-warning'> </span> RIGHT function</h3>
-
-<pre id='code-147'><code class='sql' language='sql'>--Used to get ending n characters from a string
+<div class="normal" id="normal-28">NOTE : This cannot be done on columns having datatypes like ENUM</div>
+<h3 id="h3-93"><span class="badge bg-warning"> </span> RIGHT function</h3>
+<pre id="code-147"><code class="sql" language="sql">--Used to get ending n characters from a string
 syntax : LEFT(string , n_Characters)</code></pre>
-
-<h3 id='h3-92'><span class='badge bg-warning'> </span> Much more advanced example of functions</h3>
-
-
-<div id='code+tab-177'>
-        <nav>
-            <div class='nav nav-tabs' role='tablist'>
-
-<a id='tab-link-177-0' aria-controls='tab-target-177-0' href='#tab-target-177-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Problem</a>
-
-<a id='tab-link-177-1' aria-controls='tab-target-177-1' href='#tab-target-177-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Code/Solution</a>
-
-<a id='tab-link-177-2' aria-controls='tab-target-177-2' href='#tab-target-177-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Explanation</a>
-
-            </div>
-        </nav>
-        <div class='tab-content'>
-
-<div id='tab-target-177-0' aria-labelledby='tab-link-177-0' class='tab-pane fade show active' role='tabpanel'>
-<pre><code class='sql' langauge='sql'>'Suppose we had stored below paths in a column named file
+<h3 id="h3-94"><span class="badge bg-warning"> </span> Much more advanced example of functions</h3>
+<div id="code+tab-177">
+<nav>
+<div class="nav nav-tabs" role="tablist">
+<a aria-controls="tab-target-177-0" aria-selected="true" class="nav-link active" data-bs-toggle="tab" href="#tab-target-177-0" id="tab-link-177-0" role="tab">Problem</a>
+<a aria-controls="tab-target-177-1" aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#tab-target-177-1" id="tab-link-177-1" role="tab">Code/Solution</a>
+<a aria-controls="tab-target-177-2" aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#tab-target-177-2" id="tab-link-177-2" role="tab">Explanation</a>
+</div>
+</nav>
+<div class="tab-content">
+<div aria-labelledby="tab-link-177-0" class="tab-pane fade show active" id="tab-target-177-0" role="tabpanel">
+<pre><code class="sql" langauge="sql">'Suppose we had stored below paths in a column named file
 of a table named path.
 
 C://testpath//pygame.html
@@ -1091,14 +881,12 @@ If we want to store only name
 and remove the starting "C://testpath//"
 then we can do that by the given code'</code></pre>
 </div>
-
-<div id='tab-target-177-1' aria-labelledby='tab-link-177-1' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='sql' langauge='sql'>UPDATE path
+<div aria-labelledby="tab-link-177-1" class="tab-pane fade show" id="tab-target-177-1" role="tabpanel">
+<pre><code class="sql" langauge="sql">UPDATE path
 SET file = RIGHT(file, LENGTH(file)-14)</code></pre>
 </div>
-
-<div id='tab-target-177-2' aria-labelledby='tab-link-177-2' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='sql' langauge='sql'>'Here 14 is the length of C://testpath//
+<div aria-labelledby="tab-link-177-2" class="tab-pane fade show" id="tab-target-177-2" role="tabpanel">
+<pre><code class="sql" langauge="sql">'Here 14 is the length of C://testpath//
 LENGTH(file) = LENGTH of the path
 
 Hence , we are saying that calculate the total length of path
@@ -1108,175 +896,118 @@ after C://testpath//
 and then we can use RIGHT function
 to get those file names and save them'</code></pre>
 </div>
-
-        </div>
 </div>
-
-
-<h3 id='h3-93'><span class='badge bg-warning'> </span> MID/SUBSTRING/SUBSTR function</h3>
-
-<div id='normal-27' class='normal'>The function is used to get a substring from a given string.</div>
-
-<pre id='code-148'><code class='sql' language='sql'>--syntax
+</div>
+<h3 id="h3-95"><span class="badge bg-warning"> </span> MID/SUBSTRING/SUBSTR function</h3>
+<div class="normal" id="normal-29">The function is used to get a substring from a given string.</div>
+<pre id="code-148"><code class="sql" language="sql">--syntax
 MID(string,start_position,length)
 SUBSTR(string,start_position,length)
 SUBSTRING(string,start_position,length)</code></pre>
-
-<div id='normal-28' class='normal'>Position in a string starts from 1.
+<div class="normal" id="normal-30">Position in a string starts from 1.
 also you can use -ve positions.
 Last character is -1 , second last is -2 and so on.</div>
-
-<pre id='code-149'><code class='sql' language='sql'>--Examples
+<pre id="code-149"><code class="sql" language="sql">--Examples
 SELECT SUBSTRING('I love my India.',2,4);  -- lov
 SELECT SUBSTRING('I love my India.',-2,4); -- a.</code></pre>
-
 <img alt="Mid/Substring/substr function" class="img-fluid" src="/img/sql_images/substring_function.png"/>
-
-<h3 id='h3-94'><span class='badge bg-warning'> </span> INSTR Function</h3>
-
-<div id='normal-29' class='normal'>Used to check if the given substring is present
+<h3 id="h3-96"><span class="badge bg-warning"> </span> INSTR Function</h3>
+<div class="normal" id="normal-31">Used to check if the given substring is present
 in a string and returns the location of the first
 character (of the substring) if the substring is present.</div>
-
-<div id='normal-30' class='normal'>Positions in a string starts from 1.
+<div class="normal" id="normal-32">Positions in a string starts from 1.
 If the substring is not present it returns 0.</div>
-
-<pre id='code-150'><code class='sql' language='sql'>--syntax
+<pre id="code-150"><code class="sql" language="sql">--syntax
 INSTR(string,substring)</code></pre>
-
-<pre id='code-151'><code class='sql' language='sql'>--Example
+<pre id="code-151"><code class="sql" language="sql">--Example
 SELECT INSTR('I Love My India','India') -- 11
 ,INSTR('I Love My India','Hate');       -- 0</code></pre>
-
 <img alt="Instr function in sql" class="img-fluid" src="/img/sql_images/instr_function.png"/>
-
-<h3 id='h3-95'><span class='badge bg-warning'> </span> LTRIM and RTRIM Function</h3>
-
-<div id='normal-31' class='normal'>LTRIM function removes spaces in the starting of a string.
+<h3 id="h3-97"><span class="badge bg-warning"> </span> LTRIM and RTRIM Function</h3>
+<div class="normal" id="normal-33">LTRIM function removes spaces in the starting of a string.
 RTRIM function removes spaces in the ending of a string.</div>
-
-<pre id='code-152'><code class='sql' language='sql'>--syntax
+<pre id="code-152"><code class="sql" language="sql">--syntax
 LTRIM(string)
 RTRIM(string)</code></pre>
-
-<pre id='code-153'><code class='sql' language='sql'>--Example
+<pre id="code-153"><code class="sql" language="sql">--Example
 SELECT LTRIM('   I am vikas') -- (I am vikas):result
 ,RTRIM('I love India   ')					-- (I love India):result</code></pre>
-
 <img alt="LTRIM and RTRIM Function in SQL" class="img-fluid" src="/img/sql_images/ltrim_rtrim_function.png"/>
-
-<h3 id='h3-96'><span class='badge bg-warning'> </span> TRIM Function in SQL</h3>
-
-<div id='normal-32' class='normal'>Removes specified character/substring from
+<h3 id="h3-98"><span class="badge bg-warning"> </span> TRIM Function in SQL</h3>
+<div class="normal" id="normal-34">Removes specified character/substring from
 the specified position(Leading/Trailing/Both).</div>
-
-<pre id='code-154'><code class='sql' language='sql'>--syntax
+<pre id="code-154"><code class="sql" language="sql">--syntax
 TRIM([{LEADING/TRAILING/BOTH} {char/substring} FROM] string)</code></pre>
-
-<div id='normal-33' class='normal'>Leading : trims the char/substring present in the starting
+<div class="normal" id="normal-35">Leading : trims the char/substring present in the starting
 Trailing : trims the char/substring present in the ending
 Both : trims the char/substring present in both sides</div>
-
-<div id='normal-34' class='normal'>char/substring : the character/substring to remove.</div>
-
+<div class="normal" id="normal-36">char/substring : the character/substring to remove.</div>
 <div class="callout-info">If char/substring and leading/trailing/both is not specified then it removes white spaces from both sides of the string , by default</div>
-
-<pre id='code-155'><code class='sql' language='sql'>--Example:1 
+<pre id="code-155"><code class="sql" language="sql">--Example:1 
 SELECT TRIM('   I love India    '); -- 'I love India'</code></pre>
-
 <img alt="Trim Function in SQL example 1" class="img-fluid" src="/img/sql_images/trim_example1.png"/>
-
-<pre id='code-156'><code class='sql' language='sql'>--Example:2
+<pre id="code-156"><code class="sql" language="sql">--Example:2
 SELECT TRIM(BOTH 'v' FROM 'vvvI Love India vvvv')
 ,TRIM(LEADING 'v' FROM 'vvvI Love India vvvv')
 ,TRIM(TRAILING 'v' FROM 'vvvI Love India vvvv');</code></pre>
-
 <img alt="Trim Function in SQL example 2" class="img-fluid" src="/img/sql_images/trim_example2.png"/>
-
-<pre id='code-157'><code class='sql' language='sql'>--Example:3
+<pre id="code-157"><code class="sql" language="sql">--Example:3
 SELECT TRIM(LEADING 'v,' FROM 'v,v,v,vikas is my namev,v,v,');</code></pre>
-
 <img alt="Trim Function in SQL example 3" class="img-fluid" src="/img/sql_images/trim_example3.png"/>
-
-</div><div class='section'><h2 id='h2-53'><span class='badge bg-danger'> </span> Delete command in SQL</h2>
-
-<pre id='code-158'><code class='sql' language='sql'>DELETE FROM nameOfTable 
+</div><div class="section"><h2 id="h2-55"><span class="badge bg-danger"> </span> Delete command in SQL</h2>
+<pre id="code-158"><code class="sql" language="sql">DELETE FROM nameOfTable 
 WHERE condition;</code></pre>
-
-</div><div class='section'><h2 id='h2-54'><span class='badge bg-danger'> </span> Drop command in SQL</h2>
-
-<pre id='code-159'><code class='sql' language='sql'>DROP DATABASE/TABLE nameOf_Datbase/Table;</code></pre>
-
-</div><div class='section'><h2 id='h2-55'><span class='badge bg-danger'> </span> Alter command in sql</h2>
-
-<pre id='code-160'><code class='sql' language='sql'>ALTER TABLE nameOfTable CLAUSE changeInStructure ;</code></pre>
-
-<pre id='code-161'><code class='sql' language='sql'>--5 clauses used : 
+</div><div class="section"><h2 id="h2-56"><span class="badge bg-danger"> </span> Drop command in SQL</h2>
+<pre id="code-159"><code class="sql" language="sql">DROP DATABASE/TABLE nameOf_Datbase/Table;</code></pre>
+</div><div class="section"><h2 id="h2-57"><span class="badge bg-danger"> </span> Alter command in sql</h2>
+<pre id="code-160"><code class="sql" language="sql">ALTER TABLE nameOfTable CLAUSE changeInStructure ;</code></pre>
+<pre id="code-161"><code class="sql" language="sql">--5 clauses used : 
 ADD,RENAME,CHANGE,DROP,MODIFY</code></pre>
-
-<div id='normal-35' class='normal'>NOTE: Add the syntax of all clauses (EXPLAINED BELOW) after 
+<div class="normal" id="normal-37">NOTE: Add the syntax of all clauses (EXPLAINED BELOW) after 
 "ALTER TABLE nameOfTable"</div>
-
-<h3 id='h3-97'><span class='badge bg-warning'> </span> rename clause</h3>
-
-<pre id='code-162'><code class='sql' language='sql'>--Used to rename a column
+<h3 id="h3-99"><span class="badge bg-warning"> </span> rename clause</h3>
+<pre id="code-162"><code class="sql" language="sql">--Used to rename a column
 syntax: RENAME newName</code></pre>
-
-<h3 id='h3-98'><span class='badge bg-warning'> </span> Drop clause</h3>
-
-<div id='normal-36' class='normal'>Used to remove a COLUMN/PRIMARY-KEY/UNIQUE-KEY</div>
-
-<pre id='code-163'><code class='sql' language='sql'>--1. TO REMOVE A COLUMN:- 
+<h3 id="h3-100"><span class="badge bg-warning"> </span> Drop clause</h3>
+<div class="normal" id="normal-38">Used to remove a COLUMN/PRIMARY-KEY/UNIQUE-KEY</div>
+<pre id="code-163"><code class="sql" language="sql">--1. TO REMOVE A COLUMN:- 
 DROP nameOfColumn</code></pre>
-
-<pre id='code-164'><code class='sql' language='sql'>--2. TO REMOVE THE PRIMARY KEY:- 
+<pre id="code-164"><code class="sql" language="sql">--2. TO REMOVE THE PRIMARY KEY:- 
 DROP PRIMARY KEY</code></pre>
-
-<pre id='code-165'><code class='sql' language='sql'>--3. TO REMOVE THE UNIQUE KEY:- 
+<pre id="code-165"><code class="sql" language="sql">--3. TO REMOVE THE UNIQUE KEY:- 
 DROP INDEX indexOfUniqueKey 
 
 --Note: Usually indexOfUniqueKey is the name of column 
 --To see the index : SHOW CREATE TABLE nameOfTable;</code></pre>
-
-<pre id='code-166'><code class='sql' language='sql'>SHOW CREATE DATABASE nameOfDatabase ; 
+<pre id="code-166"><code class="sql" language="sql">SHOW CREATE DATABASE nameOfDatabase ; 
 --This is also a valid command.</code></pre>
-
-<h3 id='h3-99'><span class='badge bg-warning'> </span> Add Clause</h3>
-
-<pre id='code-167'><code class='sql' language='sql'>--1. ADDING COLUMN:- 
+<h3 id="h3-101"><span class="badge bg-warning"> </span> Add Clause</h3>
+<pre id="code-167"><code class="sql" language="sql">--1. ADDING COLUMN:- 
 ADD colname DATATYPE CONSTRAINTS</code></pre>
-
-<pre id='code-168'><code class='sql' language='sql'>--2. ADDING PRIMARY KEY/UNIQUE KEY :-
+<pre id="code-168"><code class="sql" language="sql">--2. ADDING PRIMARY KEY/UNIQUE KEY :-
 ADD PRIMARY KEY(nameOfCol1,nameOfCol2,..) 
 ADD UNIQUE KEY(nameOfCol1,nameOfCol2,..)</code></pre>
-
-<h3 id='h3-100'><span class='badge bg-warning'> </span> Change Clause</h3>
-
-<pre id='code-169'><code class='sql' language='sql'>--To change/rename the column names
+<h3 id="h3-102"><span class="badge bg-warning"> </span> Change Clause</h3>
+<pre id="code-169"><code class="sql" language="sql">--To change/rename the column names
 CHANGE oldName newName DATATYPE</code></pre>
-
-<h3 id='h3-101'><span class='badge bg-warning'> </span> Modify clause</h3>
-
-<div id='normal-37' class='normal'>Used to apply default,not null,null(store null value) constraint.
+<h3 id="h3-103"><span class="badge bg-warning"> </span> Modify clause</h3>
+<div class="normal" id="normal-39">Used to apply default,not null,null(store null value) constraint.
 To change the datatype or datatype size , to reorder the columns.</div>
-
-<pre id='code-170'><code class='sql' language='sql'>--To apply constraints or change datatype or reorder:
+<pre id="code-170"><code class="sql" language="sql">--To apply constraints or change datatype or reorder:
 MODIFY colName NEW/OLD_DATATYPE 
 NULL/NOT NULL/DEFAULT value FIRST/AFTER colname</code></pre>
-
-<div id='normal-38' class='normal'>Note: Reorder can be done in ADD clause as well</div>
-
-<div id='normal-39' class='normal'>Note: applying constraint is not neccessary but if not applied then previous NOT NULL/DEFAULT constraint will be removed if exists</div></div>
+<div class="normal" id="normal-40">Note: Reorder can be done in ADD clause as well</div>
+<div class="normal" id="normal-41">Note: applying constraint is not neccessary but if not applied then previous NOT NULL/DEFAULT constraint will be removed if exists</div></div>
 
         </div>
 
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="/js/highlight.pack.js"></script>
     <script src="/js/teleporter.js"></script>
+    <script src="/js/blog.js"></script>
     <script src="/js/app.js"></script>
   </body>
 

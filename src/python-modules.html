@@ -13,90 +13,98 @@
     />
 
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/stackoverflow-dark.min.css">
+    <link rel="stylesheet" href="/css/highlight/stackoverflow-dark.css">
     <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
+    <link rel="manifest" href="/manifest.json">
+    <!-- IOS SUPPORT -->
+    <link rel="apple-touch-icon" href="/img/logo-192.png">
+    <meta name="apple-mobile-web-app-status-bar" content="#212529">
+
+    <meta name="theme-color" content="#212529">
+
     <title>Python Modules -- Python Power in One Page (Fast and Effective) -- by myCODEnotein</title>
     <meta name="description" content="Useful python modules ( mysql-connector , os , tkinter ) wrapped up in one blog - by myCODEnotein">
   </head>
   <body>
     <header class="sticky-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand mr-5 fw-bold fs-3" href="/">
-            <span class="text-warning">my</span><span class="text-primary">CODE</span><span class="text-danger">notein</span>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-            <li class="nav-item mr-3">
-              <a class="nav-link" aria-current="page" href="/#second-section">Blogs |</a>
-            </li>
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="/src/sql.html">SQL</a>
-            </li>
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="/src/flutter.html">Flutter</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdown"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Python
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li>
-                  <a class="dropdown-item" href="/src/django.html">Django</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/flask.html">Flask</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="/src/pygame.html">Pygame</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/python.html">Python</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/python-modules.html">Python Modules</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/pyqt5.html">PyQT5</a>
-                </li>
-                <li><hr class="dropdown-divider" /></li>
-                <li>
-                  <a class="dropdown-item" href="/src/tkinter.html"
-                    >tkinter</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/src/tkinter-widgets.html"
-                    >tkinter-widgets</a
-                  >
-                </li>
-                <li><a class="dropdown-item" href="/src/ttk.html">ttk</a></li>
-              </ul>
-            </li>
-          </ul>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand mr-5 fw-bold fs-3" href="/">
+              <span class="text-warning">my</span><span class="text-primary">CODE</span><span class="text-danger">notein</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+              <li class="nav-item mr-3">
+                <a class="nav-link" aria-current="page" href="/#second-section">Blogs |</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="/src/sql.html">SQL</a>
+              </li>
+              <li class="nav-item mr-3">
+                <a class="nav-link" href="/src/flutter.html">Flutter</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Python
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="/src/django.html">Django</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/flask.html">Flask</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="/src/pygame.html">Pygame</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/python.html">Python</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/python-modules.html">Python Modules</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/pyqt5.html">PyQT5</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="/src/tkinter.html"
+                      >tkinter</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="/src/tkinter-widgets.html"
+                      >tkinter-widgets</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="/src/ttk.html">ttk</a></li>
+                </ul>
+              </li>
+            </ul>
+            <button id="installPWA" class="btn btn-primary mr-5">Install Our App (PWA)</button>
+          </div>
         </div>
-      </div>
-    </nav>
-</header>
+      </nav>
+    </header>
 
     <div class="container-fluid">
       <div class="row">
@@ -111,43 +119,43 @@
               <ul class="list-unstyled ps-0">
             
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-0" data-bs-toggle="collapse" data-targetid="h2-12">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-0" data-bs-toggle="collapse" data-targetid="h2-5">
   MySQL with Python
  </button>
  <div class="collapse" id="teleporter-collapse-0">
   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
    <li>
-    <a class="link-dark rounded" href="#h3-16">
+    <a class="link-dark rounded" href="#h3-9">
      Installing the module
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-17">
+    <a class="link-dark rounded" href="#h3-10">
      Importing the module
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-18">
+    <a class="link-dark rounded" href="#h3-11">
      Connecting with the database
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-19">
+    <a class="link-dark rounded" href="#h3-12">
      Creating a cursor object -- to execute queries
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-20">
+    <a class="link-dark rounded" href="#h3-13">
      Executing queries
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-21">
+    <a class="link-dark rounded" href="#h3-14">
      Fetching records
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-22">
+    <a class="link-dark rounded" href="#h3-15">
      rowcount function
     </a>
    </li>
@@ -155,33 +163,33 @@
  </div>
 </li>
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-1" data-bs-toggle="collapse" data-targetid="h2-13">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-1" data-bs-toggle="collapse" data-targetid="h2-6">
   OS module in python
  </button>
  <div class="collapse" id="teleporter-collapse-1">
   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
    <li>
-    <a class="link-dark rounded" href="#h3-23">
+    <a class="link-dark rounded" href="#h3-16">
      Importing os module
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-24">
+    <a class="link-dark rounded" href="#h3-17">
      Check if file/dir exists
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-25">
+    <a class="link-dark rounded" href="#h3-18">
      Directory Functions
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-26">
+    <a class="link-dark rounded" href="#h3-19">
      Start A file with os module
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-27">
+    <a class="link-dark rounded" href="#h3-20">
      Running a terminal command through os module
     </a>
    </li>
@@ -189,38 +197,38 @@
  </div>
 </li>
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-2" data-bs-toggle="collapse" data-targetid="h2-14">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-2" data-bs-toggle="collapse" data-targetid="h2-7">
   Tkinter ---&gt; GUI dev in python
  </button>
  <div class="collapse" id="teleporter-collapse-2">
   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
    <li>
-    <a class="link-dark rounded" href="#h3-28">
+    <a class="link-dark rounded" href="#h3-21">
      Importing tkinter
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-29">
+    <a class="link-dark rounded" href="#h3-22">
      Required Code
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-30">
+    <a class="link-dark rounded" href="#h3-23">
      Basic widget forming syntax
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-31">
+    <a class="link-dark rounded" href="#h3-24">
      Displaying the widgets on screen
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-32">
+    <a class="link-dark rounded" href="#h3-25">
      Basic widgets
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-33">
+    <a class="link-dark rounded" href="#h3-26">
      Some New widgets
     </a>
    </li>
@@ -228,18 +236,18 @@
  </div>
 </li>
 <li class="mb-1">
- <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-3" data-bs-toggle="collapse" data-targetid="h2-15">
+ <button aria-expanded="false" class="btn btn-toggle align-items-center rounded collapsed" data-bs-target="#teleporter-collapse-3" data-bs-toggle="collapse" data-targetid="h2-8">
   Datetime module in python
  </button>
  <div class="collapse" id="teleporter-collapse-3">
   <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
    <li>
-    <a class="link-dark rounded" href="#h3-34">
+    <a class="link-dark rounded" href="#h3-27">
      Importing the module
     </a>
    </li>
    <li>
-    <a class="link-dark rounded" href="#h3-35">
+    <a class="link-dark rounded" href="#h3-28">
      Knowing today's date
     </a>
    </li>
@@ -255,199 +263,126 @@
         </div>
 
         <div id="content" class="col-sm-10 col-lg-6 col-xl-7 p-3">
-<h1 id='h1-11'><span class='badge bg-primary'> </span> Python Modules --> by myCODEnotein <span class='badge bg-primary'> </span></h1>
-
-<div class='section'><h2 id='h2-12'><span class='badge bg-danger'> </span> MySQL with Python</h2>
-
-<h3 id='h3-16'><span class='badge bg-warning'> </span> Installing the module</h3>
-
-<div id='normal-0' class='normal'>pip install mysql-connector</div>
-
-<h3 id='h3-17'><span class='badge bg-warning'> </span> Importing the module</h3>
-
-<pre id='code-36'><code class='python' language='python'>import mysql.connector as m</code></pre>
-
-<h3 id='h3-18'><span class='badge bg-warning'> </span> Connecting with the database</h3>
-
-
-<div id='code+tab-56'>
-        <nav>
-            <div class='nav nav-tabs' role='tablist'>
-
-<a id='tab-link-56-0' aria-controls='tab-target-56-0' href='#tab-target-56-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Syntax</a>
-
-<a id='tab-link-56-1' aria-controls='tab-target-56-1' href='#tab-target-56-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Example</a>
-
-            </div>
-        </nav>
-        <div class='tab-content'>
-
-<div id='tab-target-56-0' aria-labelledby='tab-link-56-0' class='tab-pane fade show active' role='tabpanel'>
-<pre><code class='python' langauge='python'>connection = m.connect(**options)</code></pre>
+<h1 id="h1-4"><span class="badge bg-primary"> </span> Python Modules --&gt; by myCODEnotein <span class="badge bg-primary"> </span></h1>
+<div class="section"><h2 id="h2-5"><span class="badge bg-danger"> </span> MySQL with Python</h2>
+<h3 id="h3-9"><span class="badge bg-warning"> </span> Installing the module</h3>
+<div class="normal" id="normal-0">pip install mysql-connector</div>
+<h3 id="h3-10"><span class="badge bg-warning"> </span> Importing the module</h3>
+<pre id="code-29"><code class="python" language="python">import mysql.connector as m</code></pre>
+<h3 id="h3-11"><span class="badge bg-warning"> </span> Connecting with the database</h3>
+<div id="code+tab-49">
+<nav>
+<div class="nav nav-tabs" role="tablist">
+<a aria-controls="tab-target-49-0" aria-selected="true" class="nav-link active" data-bs-toggle="tab" href="#tab-target-49-0" id="tab-link-49-0" role="tab">Syntax</a>
+<a aria-controls="tab-target-49-1" aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#tab-target-49-1" id="tab-link-49-1" role="tab">Example</a>
 </div>
-
-<div id='tab-target-56-1' aria-labelledby='tab-link-56-1' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>connection = m.connect(host='localhost',user='myCODEnotein',password='myCODEnotein',database='myCODEnotein')</code></pre>
+</nav>
+<div class="tab-content">
+<div aria-labelledby="tab-link-49-0" class="tab-pane fade show active" id="tab-target-49-0" role="tabpanel">
+<pre><code class="python" langauge="python">connection = m.connect(**options)</code></pre>
 </div>
-
-        </div>
+<div aria-labelledby="tab-link-49-1" class="tab-pane fade show" id="tab-target-49-1" role="tabpanel">
+<pre><code class="python" langauge="python">connection = m.connect(host='localhost',user='myCODEnotein',password='myCODEnotein',database='myCODEnotein')</code></pre>
 </div>
-
-
-<h3 id='h3-19'><span class='badge bg-warning'> </span> Creating a cursor object -- to execute queries</h3>
-
-<pre id='code-37'><code class='python' language='python'>cursor = connection.cursor()</code></pre>
-
-<h3 id='h3-20'><span class='badge bg-warning'> </span> Executing queries</h3>
-
-<pre id='code-38'><code class='python' language='python'>cursor.execute(query)
+</div>
+</div>
+<h3 id="h3-12"><span class="badge bg-warning"> </span> Creating a cursor object -- to execute queries</h3>
+<pre id="code-30"><code class="python" language="python">cursor = connection.cursor()</code></pre>
+<h3 id="h3-13"><span class="badge bg-warning"> </span> Executing queries</h3>
+<pre id="code-31"><code class="python" language="python">cursor.execute(query)
 # Note: if a command like "SELECT" is already used then another select command can only be executed after you have fetched the retrieved records</code></pre>
-
-<h3 id='h3-21'><span class='badge bg-warning'> </span> Fetching records</h3>
-
-<pre id='code-39'><code class='python' language='python'>records = cursor.fetchall()
+<h3 id="h3-14"><span class="badge bg-warning"> </span> Fetching records</h3>
+<pre id="code-32"><code class="python" language="python">records = cursor.fetchall()
 
 # To Get One Record
 onlyOneRecord = cursor.fetchone() 
                     
 # This function works like read function in file handle. After fecthing one record if the function is called again then next record will be returned</code></pre>
-
-<h3 id='h3-22'><span class='badge bg-warning'> </span> rowcount function</h3>
-
-<pre id='code-40'><code class='python' language='python'>rowsAffected = cursor.rowcount()
+<h3 id="h3-15"><span class="badge bg-warning"> </span> rowcount function</h3>
+<pre id="code-33"><code class="python" language="python">rowsAffected = cursor.rowcount()
 # Returns the rows affected by a query , usually after a dml command</code></pre>
-
-</div><div class='section'><h2 id='h2-13'><span class='badge bg-danger'> </span> OS module in python</h2>
-
-<h3 id='h3-23'><span class='badge bg-warning'> </span> Importing os module</h3>
-
-<pre id='code-41'><code class='python' language='python'>import os</code></pre>
-
-<h3 id='h3-24'><span class='badge bg-warning'> </span> Check if file/dir exists</h3>
-
-<pre id='code-42'><code class='python' language='python'>os.path.isfile(Path) 
+</div><div class="section"><h2 id="h2-6"><span class="badge bg-danger"> </span> OS module in python</h2>
+<h3 id="h3-16"><span class="badge bg-warning"> </span> Importing os module</h3>
+<pre id="code-34"><code class="python" language="python">import os</code></pre>
+<h3 id="h3-17"><span class="badge bg-warning"> </span> Check if file/dir exists</h3>
+<pre id="code-35"><code class="python" language="python">os.path.isfile(Path) 
 os.path.isdir(Path)</code></pre>
-
-<h3 id='h3-25'><span class='badge bg-warning'> </span> Directory Functions</h3>
-
-
-<div id='code+tab-57'>
-        <nav>
-            <div class='nav nav-tabs' role='tablist'>
-
-<a id='tab-link-57-0' aria-controls='tab-target-57-0' href='#tab-target-57-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>MakeDir</a>
-
-<a id='tab-link-57-1' aria-controls='tab-target-57-1' href='#tab-target-57-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>RemoveDir</a>
-
-<a id='tab-link-57-2' aria-controls='tab-target-57-2' href='#tab-target-57-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>ListingDir</a>
-
-<a id='tab-link-57-3' aria-controls='tab-target-57-3' href='#tab-target-57-3' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>CurrentDir</a>
-
-<a id='tab-link-57-4' aria-controls='tab-target-57-4' href='#tab-target-57-4' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>ChangeCurrentDir</a>
-
-            </div>
-        </nav>
-        <div class='tab-content'>
-
-<div id='tab-target-57-0' aria-labelledby='tab-link-57-0' class='tab-pane fade show active' role='tabpanel'>
-<pre><code class='python' langauge='python'>os.mkdir(name_of_dir)</code></pre>
+<h3 id="h3-18"><span class="badge bg-warning"> </span> Directory Functions</h3>
+<div id="code+tab-50">
+<nav>
+<div class="nav nav-tabs" role="tablist">
+<a aria-controls="tab-target-50-0" aria-selected="true" class="nav-link active" data-bs-toggle="tab" href="#tab-target-50-0" id="tab-link-50-0" role="tab">MakeDir</a>
+<a aria-controls="tab-target-50-1" aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#tab-target-50-1" id="tab-link-50-1" role="tab">RemoveDir</a>
+<a aria-controls="tab-target-50-2" aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#tab-target-50-2" id="tab-link-50-2" role="tab">ListingDir</a>
+<a aria-controls="tab-target-50-3" aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#tab-target-50-3" id="tab-link-50-3" role="tab">CurrentDir</a>
+<a aria-controls="tab-target-50-4" aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#tab-target-50-4" id="tab-link-50-4" role="tab">ChangeCurrentDir</a>
 </div>
-
-<div id='tab-target-57-1' aria-labelledby='tab-link-57-1' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>os.rmdir(path_of_dir)</code></pre>
+</nav>
+<div class="tab-content">
+<div aria-labelledby="tab-link-50-0" class="tab-pane fade show active" id="tab-target-50-0" role="tabpanel">
+<pre><code class="python" langauge="python">os.mkdir(name_of_dir)</code></pre>
 </div>
-
-<div id='tab-target-57-2' aria-labelledby='tab-link-57-2' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>os.listdir(list_dirs_in) # list_dirs_in by default = current working directory</code></pre>
+<div aria-labelledby="tab-link-50-1" class="tab-pane fade show" id="tab-target-50-1" role="tabpanel">
+<pre><code class="python" langauge="python">os.rmdir(path_of_dir)</code></pre>
 </div>
-
-<div id='tab-target-57-3' aria-labelledby='tab-link-57-3' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>os.getcwd() # returns current working directory</code></pre>
+<div aria-labelledby="tab-link-50-2" class="tab-pane fade show" id="tab-target-50-2" role="tabpanel">
+<pre><code class="python" langauge="python">os.listdir(list_dirs_in) # list_dirs_in by default = current working directory</code></pre>
 </div>
-
-<div id='tab-target-57-4' aria-labelledby='tab-link-57-4' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>os.chdir(path_of_dir) # changes current working dir to path_of_dir</code></pre>
+<div aria-labelledby="tab-link-50-3" class="tab-pane fade show" id="tab-target-50-3" role="tabpanel">
+<pre><code class="python" langauge="python">os.getcwd() # returns current working directory</code></pre>
 </div>
-
-        </div>
+<div aria-labelledby="tab-link-50-4" class="tab-pane fade show" id="tab-target-50-4" role="tabpanel">
+<pre><code class="python" langauge="python">os.chdir(path_of_dir) # changes current working dir to path_of_dir</code></pre>
 </div>
-
-
-<h3 id='h3-26'><span class='badge bg-warning'> </span> Start A file with os module</h3>
-
-<pre id='code-43'><code class='python' language='python'>os.startfile(filePath)</code></pre>
-
-<h3 id='h3-27'><span class='badge bg-warning'> </span> Running a terminal command through os module</h3>
-
-<pre id='code-44'><code class='python' language='python'>syntax: os.system(command_name) # command_name is strings</code></pre>
-
-<pre id='code-45'><code class='python' language='python'>#For example:
+</div>
+</div>
+<h3 id="h3-19"><span class="badge bg-warning"> </span> Start A file with os module</h3>
+<pre id="code-36"><code class="python" language="python">os.startfile(filePath)</code></pre>
+<h3 id="h3-20"><span class="badge bg-warning"> </span> Running a terminal command through os module</h3>
+<pre id="code-37"><code class="python" language="python">syntax: os.system(command_name) # command_name is strings</code></pre>
+<pre id="code-38"><code class="python" language="python">#For example:
 os.system('cls') # clears the command prompt screen in windows</code></pre>
-
-</div><div class='section'><h2 id='h2-14'><span class='badge bg-danger'> </span> Tkinter ---> GUI dev in python</h2>
-
-<div id='normal-1' class='normal'>Click the link for <a href="/src/tkinter.html">Detailed Notes</a></div>
-
-<h3 id='h3-28'><span class='badge bg-warning'> </span> Importing tkinter</h3>
-
-<pre id='code-46'><code class='python' language='python'>from tkinter import *</code></pre>
-
-<h3 id='h3-29'><span class='badge bg-warning'> </span> Required Code</h3>
-
-<pre id='code-47'><code class='python' language='python'>root = Tk()
+</div><div class="section"><h2 id="h2-7"><span class="badge bg-danger"> </span> Tkinter ---&gt; GUI dev in python</h2>
+<div class="normal" id="normal-1">Click the link for <a href="/src/tkinter.html">Detailed Notes</a></div>
+<h3 id="h3-21"><span class="badge bg-warning"> </span> Importing tkinter</h3>
+<pre id="code-39"><code class="python" language="python">from tkinter import *</code></pre>
+<h3 id="h3-22"><span class="badge bg-warning"> </span> Required Code</h3>
+<pre id="code-40"><code class="python" language="python">root = Tk()
 # Note this is valid only if 2nd import statement is written
 root.geometry("widthxheight")
 root.title("myCODEnotein -- python modules")
 root.mainloop()</code></pre>
-
-<h3 id='h3-30'><span class='badge bg-warning'> </span> Basic widget forming syntax</h3>
-
-<pre id='code-48'><code class='python' language='python'>widgetHolder = Widget(master,**options)
+<h3 id="h3-23"><span class="badge bg-warning"> </span> Basic widget forming syntax</h3>
+<pre id="code-41"><code class="python" language="python">widgetHolder = Widget(master,**options)
 # To know **options run widgetHolder.keys()</code></pre>
-
-<h3 id='h3-31'><span class='badge bg-warning'> </span> Displaying the widgets on screen</h3>
-
-<div id='normal-2' class='normal'>To display widgets on screen you can use pack,grid or place.</div>
-
-
-<div id='code+tab-58'>
-        <nav>
-            <div class='nav nav-tabs' role='tablist'>
-
-<a id='tab-link-58-0' aria-controls='tab-target-58-0' href='#tab-target-58-0' class='nav-link active' aria-selected='true' data-bs-toggle='tab' role='tab'>Pack</a>
-
-<a id='tab-link-58-1' aria-controls='tab-target-58-1' href='#tab-target-58-1' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Grid</a>
-
-<a id='tab-link-58-2' aria-controls='tab-target-58-2' href='#tab-target-58-2' class='nav-link ' aria-selected='false' data-bs-toggle='tab' role='tab'>Place</a>
-
-            </div>
-        </nav>
-        <div class='tab-content'>
-
-<div id='tab-target-58-0' aria-labelledby='tab-link-58-0' class='tab-pane fade show active' role='tabpanel'>
-<pre><code class='python' langauge='python'>widgetHolder.pack(**options)
+<h3 id="h3-24"><span class="badge bg-warning"> </span> Displaying the widgets on screen</h3>
+<div class="normal" id="normal-2">To display widgets on screen you can use pack,grid or place.</div>
+<div id="code+tab-51">
+<nav>
+<div class="nav nav-tabs" role="tablist">
+<a aria-controls="tab-target-51-0" aria-selected="true" class="nav-link active" data-bs-toggle="tab" href="#tab-target-51-0" id="tab-link-51-0" role="tab">Pack</a>
+<a aria-controls="tab-target-51-1" aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#tab-target-51-1" id="tab-link-51-1" role="tab">Grid</a>
+<a aria-controls="tab-target-51-2" aria-selected="false" class="nav-link" data-bs-toggle="tab" href="#tab-target-51-2" id="tab-link-51-2" role="tab">Place</a>
+</div>
+</nav>
+<div class="tab-content">
+<div aria-labelledby="tab-link-51-0" class="tab-pane fade show active" id="tab-target-51-0" role="tabpanel">
+<pre><code class="python" langauge="python">widgetHolder.pack(**options)
 # pack and grid can't be used in widgets with same parent</code></pre>
 </div>
-
-<div id='tab-target-58-1' aria-labelledby='tab-link-58-1' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>widgetHolder.grid(row=rowNo,column=columnNo,**options)
+<div aria-labelledby="tab-link-51-1" class="tab-pane fade show" id="tab-target-51-1" role="tabpanel">
+<pre><code class="python" langauge="python">widgetHolder.grid(row=rowNo,column=columnNo,**options)
 # pack and grid can't be used in widgets with same parent</code></pre>
 </div>
-
-<div id='tab-target-58-2' aria-labelledby='tab-link-58-2' class='tab-pane fade show ' role='tabpanel'>
-<pre><code class='python' langauge='python'>widgetHolder.place(x=x_coordinate,y=y_coordinate,**options)</code></pre>
+<div aria-labelledby="tab-link-51-2" class="tab-pane fade show" id="tab-target-51-2" role="tabpanel">
+<pre><code class="python" langauge="python">widgetHolder.place(x=x_coordinate,y=y_coordinate,**options)</code></pre>
 </div>
-
-        </div>
 </div>
-
-
-<pre id='code-49'><code class='python' language='python'>To know **options you can run 
+</div>
+<pre id="code-42"><code class="python" language="python">To know **options you can run 
 help(widgetHolder.pack/grid/place)</code></pre>
-
-<h3 id='h3-32'><span class='badge bg-warning'> </span> Basic widgets</h3>
-
-<div id='normal-3' class='normal'><ul>
+<h3 id="h3-25"><span class="badge bg-warning"> </span> Basic widgets</h3>
+<div class="normal" id="normal-3"><ul>
 <li>Label</li>
 <li>Frame</li>
 <li>Text</li>
@@ -455,13 +390,10 @@ help(widgetHolder.pack/grid/place)</code></pre>
 <li>Button</li>
 <li>Canvas</li>
 </ul> and a lot more</div>
-
-<h3 id='h3-33'><span class='badge bg-warning'> </span> Some New widgets</h3>
-
-<pre id='code-50'><code class='python' language='python'># To get the new widgets importing ttk module in tkinter is required
+<h3 id="h3-26"><span class="badge bg-warning"> </span> Some New widgets</h3>
+<pre id="code-43"><code class="python" language="python"># To get the new widgets importing ttk module in tkinter is required
 from tkinter import ttk</code></pre>
-
-<pre id='code-51'><code class='python' language='python'>New Widgets:<ul>
+<pre id="code-44"><code class="python" language="python">New Widgets:<ul>
 <li>Combobox --&gt; # Entry + MenuButton</li>
 <li>Notebook --&gt; # Used to give tabs</li>
 <li>Progressbar</li>
@@ -469,36 +401,28 @@ from tkinter import ttk</code></pre>
 <li>Sizegrip</li>
 <li>Treeview</li>
 </ul>Click the link for More info :
-<a href="https://docs.python.org/3/library/tkinter.ttk.html" target="_blank">Official python tkinter docs</a></code></pre>
-
-</div><div class='section'><h2 id='h2-15'><span class='badge bg-danger'> </span> Datetime module in python</h2>
-
-<h3 id='h3-34'><span class='badge bg-warning'> </span> Importing the module</h3>
-
-<pre id='code-52'><code class='python' language='python'>import datetime
-</code></pre>
-<pre id='code-53'><code class='python' language='python'># Importing date class only
-from datetime import date
-</code></pre>
-<h3 id='h3-35'><span class='badge bg-warning'> </span> Knowing today's date</h3>
-
-<pre id='code-54'><code class='python' language='python'>d = date.today()
-</code></pre>
-<pre id='code-55'><code class='python' language='python'>#Knowing the month,year,day
+<a href="https://docs.python.org/3/library/tkinter.ttk.html" rel="noreferrer" target="_blank">Official python tkinter docs</a></code></pre>
+</div><div class="section"><h2 id="h2-8"><span class="badge bg-danger"> </span> Datetime module in python</h2>
+<h3 id="h3-27"><span class="badge bg-warning"> </span> Importing the module</h3>
+<pre id="code-45"><code class="python" language="python">import datetime</code></pre>
+<pre id="code-46"><code class="python" language="python"># Importing date class only
+from datetime import date</code></pre>
+<h3 id="h3-28"><span class="badge bg-warning"> </span> Knowing today's date</h3>
+<pre id="code-47"><code class="python" language="python">d = date.today()</code></pre>
+<pre id="code-48"><code class="python" language="python">#Knowing the month,year,day
 d.month   # Returns integer type value
 d.year   # Returns integer type value
-d.day   # Returns integer type value
-</code></pre></div>
+d.day   # Returns integer type value</code></pre></div>
 
         </div>
 
       </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="/js/highlight.pack.js"></script>
     <script src="/js/teleporter.js"></script>
+    <script src="/js/blog.js"></script>
     <script src="/js/app.js"></script>
   </body>
 

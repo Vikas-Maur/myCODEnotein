@@ -1,8 +1,5 @@
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker
-    .register("/sw.js")
-    .then((reg) => console.log("Service worker registered", reg))
-    .catch((err) => console.log("Service worker not registered", err));
+  navigator.serviceWorker.register("/sw.js");
 }
 
 let pwaInstallPrompt = null;
@@ -21,22 +18,38 @@ const installPWAHTML = `
 </div>
 `;
 document.body.innerHTML += installPWAHTML;
+let toastElement = document.querySelector('.toast');
+let toastBody = toastElement.querySelector('.toast-body');
+let toast = null;
 
-window.addEventListener("beforeinstallprompt", (e) => {
+window.addEventListener('beforeinstallprompt',e=>{
   pwaInstallPrompt = e;
-  const toast = new bootstrap.Toast(document.querySelector('.toast'),{autohide:false});
-  toast.show();
-
-  document.getElementById('installPWA').addEventListener("click", (e) => {
-    if (pwaInstallPrompt){
-      toast.hide();
-      pwaInstallPrompt.prompt();
-    }
-  });
-  
+  toast = new bootstrap.Toast(toastElement,{autohide:false});
+  toast.show()
 });
 
+document.getElementById('installPWA').addEventListener('click',async (e)=>{
+  if(pwaInstallPrompt===null){
+    return;
+  }
+  pwaInstallPrompt.prompt();
+  toast.hide();
+  const userChoice = await pwaInstallPrompt.userChoice;
+  if(userChoice.outcome==='dismissed'){
+    return;
+  }
+});
 
-window.addEventListener('appinstalled',(e)=>{
-  document.getElementById('installationPrompt').remove();
+window.addEventListener('appinstalled',(e)=>{  
+  document.getElementById('installationPrompt').innerHTML = `<div class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+  <div class="d-flex">
+    <div class="toast-body fw-bold">
+      Successfully Installed The App.
+    </div>
+    <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+  </div></div>`;
+  toastElement = document.querySelector('.toast');
+  toast = new bootstrap.Toast(toastElement);
+  toast.show()
+
 }) 

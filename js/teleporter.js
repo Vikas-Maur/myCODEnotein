@@ -1,4 +1,4 @@
-function SetTeleporterButtons(){
+function SetTeleporterButtons() {
     const teleporterButtons = document.querySelectorAll(
         "#teleporter li button.btn-toggle"
     );
@@ -13,4 +13,3 @@ function SetTeleporterButtons(){
         });
     });
 }
-

@@ -5,7 +5,7 @@ const assets = [
   ,'https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'
   ,'/logo.png'
   ,'/logo-big.png'
-  ,'/js/app.js'
+  // ,'/js/app.js'
   ,'/js/blog.js'
   ,'/js/teleporter.js'
   ,'/js/highlight.pack.js'

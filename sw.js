@@ -1,11 +1,11 @@
-const staticCacheName = 'site-static-v1';
+const staticCacheName = 'site-static-v1.1';
 const assets = [
   'https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css'
   ,'https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js'
   ,'https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap'
   ,'/logo.png'
   ,'/logo-big.png'
-  // ,'/js/app.js'
+  ,'/js/app.js'
   ,'/js/blog.js'
   ,'/js/teleporter.js'
   ,'/js/highlight.pack.js'
@@ -20,7 +20,6 @@ const assets = [
 self.addEventListener('install', evt => {
   evt.waitUntil(
     caches.open(staticCacheName).then((cache) => {
-      console.log('caching shell assets');
       cache.addAll(assets);
     })
   );
@@ -30,7 +29,6 @@ self.addEventListener('install', evt => {
 self.addEventListener('activate', evt => {
   evt.waitUntil(
     caches.keys().then(keys => {
-      //console.log(keys);
       return Promise.all(keys
         .filter(key => key !== staticCacheName)
         .map(key => caches.delete(key))
@@ -41,7 +39,6 @@ self.addEventListener('activate', evt => {
 
 // fetch event
 self.addEventListener('fetch', evt => {
-  //console.log('fetch event', evt);
   evt.respondWith(
     caches.match(evt.request).then(cacheRes => {
       return cacheRes || fetch(evt.request)
